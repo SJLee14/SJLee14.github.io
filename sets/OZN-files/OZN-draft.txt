@@ -1,0 +1,3620 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Avenging Dusklord",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Vampire Knight ",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/45_Avenging Dusklord.png"
+			}
+		},
+		{
+			"name": "Hexspear Legionnaire",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Vampire Knight Warlock ",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/55_Hexspear Legionnaire.png"
+			}
+		},
+		{
+			"name": "Ringblade Deserter",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Creature — Vampire Rogue ",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/198_Ringblade Deserter.png"
+			}
+		},
+		{
+			"name": "Ainsley, Radiant Hope",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{R}{W}",
+			"type": "Legendary Creature — Human Knight ",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/111_Ainsley, Radiant Hope.png"
+			}
+		},
+		{
+			"name": "Gothrian Manifestation",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/164_Gothrian Manifestation.png"
+			}
+		},
+		{
+			"name": "Bloodfire Soulless",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Artifact Creature — Construct Knight ",
+			"collector_number": "120",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/120_Bloodfire Soulless.png"
+			}
+		},
+		{
+			"name": "Rever Knight",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Artifact Creature — Construct Knight ",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/85_Rever Knight.png"
+			}
+		},
+		{
+			"name": "Certhina's Cultivation",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{G}{W}",
+			"type": "Sorcery",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/126_Certhina's Cultivation.png"
+			}
+		},
+		{
+			"name": "Zera's Cloaker",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Creature — Bird Rogue ",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/240_Zera's Cloaker.png"
+			}
+		},
+		{
+			"name": "Steelclade Herald",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}{U}",
+			"type": "Artifact Creature — Construct Angel ",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/215_Steelclade Herald.png"
+			}
+		},
+		{
+			"name": "Forsaken Empire",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Ruins ",
+			"collector_number": "285",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/285_Forsaken Empire.png"
+			}
+		},
+		{
+			"name": "Faeruson Invasion",
+			"rarity": "rare",
+			"mana_cost": "{5}{U}{B}{R}",
+			"type": " Sorcery",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/155_Faeruson Invasion.png"
+			}
+		},
+		{
+			"name": "Zera, Crow Martyr",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{B}{B}",
+			"type": "Legendary Creature — Spirit Warlock ",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/239_Zera, Crow Martyr.png"
+			}
+		},
+		{
+			"name": "Faeruson Hellwurm",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Artifact Creature — Dragon Horror ",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/77_Faeruson Hellwurm.png"
+			}
+		},
+		{
+			"name": "Faeruson Temple",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Artifact Land — Mountain Capital ",
+			"collector_number": "284",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/284_Faeruson Temple.png"
+			}
+		},
+		{
+			"name": "Toiling Chemist",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Creature — Human Wizard ",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/226_Toiling Chemist.png"
+			}
+		},
+		{
+			"name": "Certhina Archivist",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Advisor ",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/3_Certhina Archivist.png"
+			}
+		},
+		{
+			"name": "Primordial Calling",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{R}{R}",
+			"type": "Instant",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/190_Primordial Calling.png"
+			}
+		},
+		{
+			"name": "Moorlani Skywaker",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Elemental Giant ",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/105_Moorlani Skywaker.png"
+			}
+		},
+		{
+			"name": "Revival Herald",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{W}{W}",
+			"type": "Creature — Angel Cleric ",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/197_Revival Herald.png"
+			}
+		},
+		{
+			"name": "Righteous Herald",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Angel Warrior ",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/15_Righteous Herald.png"
+			}
+		},
+		{
+			"name": "Inquisitor of Kronos",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}{U}{R}",
+			"type": "Creature — Angel Wizard Knight ",
+			"collector_number": "170",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/170_Inquisitor of Kronos.png"
+			}
+		},
+		{
+			"name": "Battlerite Herald",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Creature — Angel Warrior ",
+			"collector_number": "115",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/115_Battlerite Herald.png"
+			}
+		},
+		{
+			"name": "Shackle Herald",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}{W}{W}",
+			"type": "Creature — Angel Cleric Knight ",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/203_Shackle Herald.png"
+			}
+		},
+		{
+			"name": "Extradite Intent",
+			"rarity": "common",
+			"mana_cost": "{W}{U}",
+			"type": "Instant",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/153_Extradite Intent.png"
+			}
+		},
+		{
+			"name": "Truelight Priestess",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Creature — Human Cleric ",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/228_Truelight Priestess.png"
+			}
+		},
+		{
+			"name": "Trinity Phoenix",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}{R}",
+			"type": "Creature — Pheonix ",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/227_Trinity Phoenix.png"
+			}
+		},
+		{
+			"name": "Soul Reduction",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Instant",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/211_Soul Reduction.png"
+			}
+		},
+		{
+			"name": "Time Coil",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Instant",
+			"collector_number": "225",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/225_Time Coil.png"
+			}
+		},
+		{
+			"name": "Sweeping Siphon",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}{B}",
+			"type": "Sorcery",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/221_Sweeping Siphon.png"
+			}
+		},
+		{
+			"name": "Enduring Herald",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}{W}{W}",
+			"type": "Creature — Angel Cleric Ranger ",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/142_Enduring Herald.png"
+			}
+		},
+		{
+			"name": "Auriclious, the Halycon",
+			"rarity": "mythic",
+			"mana_cost": "{8}",
+			"type": "Legendary Artifact Creature — Dragon God ",
+			"collector_number": "251",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/251_Auriclious, the Halycon.png"
+			}
+		},
+		{
+			"name": "Idolization Catalys",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/263_Idolization Catalys.png"
+			}
+		},
+		{
+			"name": "Bloodfire Archdemon",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}{R}",
+			"type": "Creature — Demon Horror Warlock ",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/117_Bloodfire Archdemon.png"
+			}
+		},
+		{
+			"name": "Cloudshift Herald",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{W}{U}",
+			"type": "Creature — Angel Warrior ",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/129_Cloudshift Herald.png"
+			}
+		},
+		{
+			"name": "Razhiel, Sunmade Archangel",
+			"rarity": "mythic",
+			"mana_cost": "{4}{R}{W}{W}",
+			"type": "Legendary Creature — Angel Spirit Knight ",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/195_Razhiel, Sunmade Archangel.png"
+			}
+		},
+		{
+			"name": "The Corrupted Ideal",
+			"rarity": "mythic",
+			"mana_cost": "{4}{W}{B}{B}",
+			"type": "Legendary Creature — Angel Warlock ",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/130_The Corrupted Ideal.png"
+			}
+		},
+		{
+			"name": "Triumphant Assualt",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}",
+			"type": "Sorcery",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/21_Triumphant Assualt.png"
+			}
+		},
+		{
+			"name": "Certhina Armaments",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/4_Certhina Armaments.png"
+			}
+		},
+		{
+			"name": "Enter the Maw",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{R}{G}",
+			"type": "Sorcery",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/143_Enter the Maw.png"
+			}
+		},
+		{
+			"name": "Bounties Beauty",
+			"rarity": "rare",
+			"mana_cost": "{6}{G}{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/121_Bounties Beauty.png"
+			}
+		},
+		{
+			"name": "Two Headed Boargesh",
+			"rarity": "common",
+			"mana_cost": "{R}{G}",
+			"type": "Creature — Boar Warrior ",
+			"collector_number": "229",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/229_Two Headed Boargesh.png"
+			}
+		},
+		{
+			"name": "Improvised Shelling",
+			"rarity": "common",
+			"mana_cost": "{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/169_Improvised Shelling.png"
+			}
+		},
+		{
+			"name": "Grasping for Hope",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "165",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/165_Grasping for Hope.png"
+			}
+		},
+		{
+			"name": "Bloodfire Dragon",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{R}{R}",
+			"type": "Artifact Creature — Dragon ",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/119_Bloodfire Dragon.png"
+			}
+		},
+		{
+			"name": "Essence Mystic",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Creature — Elf Cleric Shaman ",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/149_Essence Mystic.png"
+			}
+		},
+		{
+			"name": "Coveted Gemstone",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/256_Coveted Gemstone.png"
+			}
+		},
+		{
+			"name": "Tome of Ideals",
+			"rarity": "uncommon",
+			"mana_cost": "{5}",
+			"type": "Artifact",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/275_Tome of Ideals.png"
+			}
+		},
+		{
+			"name": "Razorwind",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Instant",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/35_Razorwind.png"
+			}
+		},
+		{
+			"name": "Ozin Onus",
+			"rarity": "mythic",
+			"mana_cost": "{6}",
+			"type": "Legendary Artifact",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/268_Ozin Onus.png"
+			}
+		},
+		{
+			"name": "Blazing Barrage",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/69_Blazing Barrage.png"
+			}
+		},
+		{
+			"name": "Sunder the Ancients",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{R}{G}",
+			"type": "Instant",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/217_Sunder the Ancients.png"
+			}
+		},
+		{
+			"name": "Master of Essence",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}{U}",
+			"type": "Creature — Elf Wizard Shaman ",
+			"collector_number": "178",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/178_Master of Essence.png"
+			}
+		},
+		{
+			"name": "Moorlani Palace",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Artifact Land — Forest Capital ",
+			"collector_number": "290",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/290_Moorlani Palace.png"
+			}
+		},
+		{
+			"name": "Divine Geyser",
+			"rarity": "mythic",
+			"mana_cost": "{5}{W}{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/138_Divine Geyser.png"
+			}
+		},
+		{
+			"name": "Moorlani Ravager",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Creature — Centaur Warrior ",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/181_Moorlani Ravager.png"
+			}
+		},
+		{
+			"name": "Coronation of Drakes",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/9_Coronation of Drakes.png"
+			}
+		},
+		{
+			"name": "Carqis, Avenger of Gothr",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}{B}",
+			"type": "Legendary Creature — Demon Knight ",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/46_Carqis, Avenger of Gothr.png"
+			}
+		},
+		{
+			"name": "An Alternate Age",
+			"rarity": "mythic",
+			"mana_cost": "{5}{G}{U}",
+			"type": "Sorcery",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/112_An Alternate Age.png"
+			}
+		},
+		{
+			"name": "Willow King Phantom",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}{G}",
+			"type": "Creature — Skeleton Spirit Noble ",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/233_Willow King Phantom.png"
+			}
+		},
+		{
+			"name": "The Nine Gates",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}{R}",
+			"type": "Enchantment — Ideology ",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/83_The Nine Gates.png"
+			}
+		},
+		{
+			"name": "Jagged Pursuit",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/13_Jagged Pursuit.png"
+			}
+		},
+		{
+			"name": "Cross the Fourth Gate",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Instant",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/71_Cross the Fourth Gate.png"
+			}
+		},
+		{
+			"name": "Escaped Chimera",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}{R}",
+			"type": "Creature — Devil Chimera ",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/146_Escaped Chimera.png"
+			}
+		},
+		{
+			"name": "Imp Swarm",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Instant",
+			"collector_number": "168",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/168_Imp Swarm.png"
+			}
+		},
+		{
+			"name": "Gothrian Skullcapper",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Artifact Creature — Skeleton Warrior ",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/53_Gothrian Skullcapper.png"
+			}
+		},
+		{
+			"name": "Bloodfire Corruption",
+			"rarity": "common",
+			"mana_cost": "{5}{B}{R}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/118_Bloodfire Corruption.png"
+			}
+		},
+		{
+			"name": "Surviving the First Winter",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Sorcery",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/219_Surviving the First Winter.png"
+			}
+		},
+		{
+			"name": "Zera's Disciple",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Creature — Human Rogue Warlock ",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/241_Zera's Disciple.png"
+			}
+		},
+		{
+			"name": "Gothrian Crusader",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Vampire Cleric Knight ",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/50_Gothrian Crusader.png"
+			}
+		},
+		{
+			"name": "Certhina Steppe Dragon",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Dragon ",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/6_Certhina Steppe Dragon.png"
+			}
+		},
+		{
+			"name": "Cult of the Exiles",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/131_Cult of the Exiles.png"
+			}
+		},
+		{
+			"name": "Essence Chroma",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/148_Essence Chroma.png"
+			}
+		},
+		{
+			"name": "Exiles Procession",
+			"rarity": "common",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/151_Exiles Procession.png"
+			}
+		},
+		{
+			"name": "Seroalite Analyst",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Rogue ",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/37_Seroalite Analyst.png"
+			}
+		},
+		{
+			"name": "Sustain Velocity",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/43_Sustain Velocity.png"
+			}
+		},
+		{
+			"name": "Patroned Witch",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Creature — Vampire Warlock ",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/187_Patroned Witch.png"
+			}
+		},
+		{
+			"name": "Vile Patron",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{G}",
+			"type": "Creature — Demon Horror ",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/231_Vile Patron.png"
+			}
+		},
+		{
+			"name": "Xakuron, Patron of Plagues",
+			"rarity": "mythic",
+			"mana_cost": "{5}{B}{B}{G}",
+			"type": "Legendary Creature — Demon Warlock ",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/238_Xakuron, Patron of Plagues.png"
+			}
+		},
+		{
+			"name": "Seroalite Cityscape",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Artifact Land — Island Capital ",
+			"collector_number": "295",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/295_Seroalite Cityscape.png"
+			}
+		},
+		{
+			"name": "Glaring Death",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}{G}",
+			"type": "Instant",
+			"collector_number": "161",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/161_Glaring Death.png"
+			}
+		},
+		{
+			"name": "Distribute Plague",
+			"rarity": "common",
+			"mana_cost": "{3}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/136_Distribute Plague.png"
+			}
+		},
+		{
+			"name": "Resonation Mystic",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Creature — Elf Wizard Shaman ",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/196_Resonation Mystic.png"
+			}
+		},
+		{
+			"name": "Desperate Mending",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}",
+			"type": "Instant",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/134_Desperate Mending.png"
+			}
+		},
+		{
+			"name": "Scribe Squire",
+			"rarity": "common",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/16_Scribe Squire.png"
+			}
+		},
+		{
+			"name": "Faeruson Lancer",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Artifact Creature — Construct Knight ",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/79_Faeruson Lancer.png"
+			}
+		},
+		{
+			"name": "Natural Purge",
+			"rarity": "rare",
+			"mana_cost": "{R}{R}{G}",
+			"type": "Instant",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/183_Natural Purge.png"
+			}
+		},
+		{
+			"name": "Exiled Reaper",
+			"rarity": "common",
+			"mana_cost": "{W}{B}",
+			"type": "Artifact Creature — Skeleton Rogue Knight ",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/150_Exiled Reaper.png"
+			}
+		},
+		{
+			"name": "Seroalite Flux Mage",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Human Artificer Wizard ",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/38_Seroalite Flux Mage.png"
+			}
+		},
+		{
+			"name": "Mind Eruption",
+			"rarity": "common",
+			"mana_cost": "{1}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/82_Mind Eruption.png"
+			}
+		},
+		{
+			"name": "Faeruson Smokestacker",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Artifact Creature — Construct Dog ",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/80_Faeruson Smokestacker.png"
+			}
+		},
+		{
+			"name": "Faerson Pheonix",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Pheonix ",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/74_Faerson Pheonix.png"
+			}
+		},
+		{
+			"name": "Faeruson Glutton",
+			"rarity": "common",
+			"mana_cost": "{4}{R}",
+			"type": "Artifact Creature — Construct Horror ",
+			"collector_number": "76",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/76_Faeruson Glutton.png"
+			}
+		},
+		{
+			"name": "Soulless Company",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/212_Soulless Company.png"
+			}
+		},
+		{
+			"name": "Blizzard Rider",
+			"rarity": "common",
+			"mana_cost": "{W}{B}",
+			"type": "Artifact Creature — Skeleton Knight ",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/116_Blizzard Rider.png"
+			}
+		},
+		{
+			"name": "Scavenge Cavalier",
+			"rarity": "common",
+			"mana_cost": "{B}{G}",
+			"type": "Creature — Elf Knight ",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/201_Scavenge Cavalier.png"
+			}
+		},
+		{
+			"name": "Soul Eclipse",
+			"rarity": "common",
+			"mana_cost": "{6}{B}{G}",
+			"type": "Sorcery",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/210_Soul Eclipse.png"
+			}
+		},
+		{
+			"name": "Magmatic Compositing",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Instant",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/177_Magmatic Compositing.png"
+			}
+		},
+		{
+			"name": "Sunspear",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{W}",
+			"type": "Instant",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/218_Sunspear.png"
+			}
+		},
+		{
+			"name": "Moorlani Skypropagator",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Creature — Insect Beast ",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/104_Moorlani Skypropagator.png"
+			}
+		},
+		{
+			"name": "Beacon Horror",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Horror ",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/252_Beacon Horror.png"
+			}
+		},
+		{
+			"name": "Skingraft Rupture",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/205_Skingraft Rupture.png"
+			}
+		},
+		{
+			"name": "Emberstack Mage",
+			"rarity": "rare",
+			"mana_cost": "{R}{R}",
+			"type": "Artifact Creature — Construct Wizard ",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/72_Emberstack Mage.png"
+			}
+		},
+		{
+			"name": "Soulless Spellbinder",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Artifact Creature — Skeleton Wizard ",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/213_Soulless Spellbinder.png"
+			}
+		},
+		{
+			"name": "Flamebraced Slayer",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/158_Flamebraced Slayer.png"
+			}
+		},
+		{
+			"name": "Cyrogenesis Chamber",
+			"rarity": "common",
+			"mana_cost": "{U}{R}",
+			"type": "Artifact",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/132_Cyrogenesis Chamber.png"
+			}
+		},
+		{
+			"name": "Moorlani Shrine",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/182_Moorlani Shrine.png"
+			}
+		},
+		{
+			"name": "Faeruson Hybrid",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}{R}{R}",
+			"type": "Artifact Creature — Construct Demon Angel ",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/78_Faeruson Hybrid.png"
+			}
+		},
+		{
+			"name": "Solar Wreath",
+			"rarity": "common",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/209_Solar Wreath.png"
+			}
+		},
+		{
+			"name": "Wrong Page",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/22_Wrong Page.png"
+			}
+		},
+		{
+			"name": "Soul Tome",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "273",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/273_Soul Tome.png"
+			}
+		},
+		{
+			"name": "Dreadborn Demon",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Creature — Demon Horror ",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/49_Dreadborn Demon.png"
+			}
+		},
+		{
+			"name": "Raining Death",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/59_Raining Death.png"
+			}
+		},
+		{
+			"name": "Radiant Lightning",
+			"rarity": "common",
+			"mana_cost": "{R}{G}{W}",
+			"type": "Instant",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/193_Radiant Lightning.png"
+			}
+		},
+		{
+			"name": "Enhance Understanding",
+			"rarity": "common",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/31_Enhance Understanding.png"
+			}
+		},
+		{
+			"name": "Unexpected Guests",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/87_Unexpected Guests.png"
+			}
+		},
+		{
+			"name": "Radiant Pulse",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Instant",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/84_Radiant Pulse.png"
+			}
+		},
+		{
+			"name": "Radiant Staff",
+			"rarity": "common",
+			"mana_cost": "{R}{W}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/194_Radiant Staff.png"
+			}
+		},
+		{
+			"name": "Drake Summons",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/10_Drake Summons.png"
+			}
+		},
+		{
+			"name": "Coalesce Machina",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Sorcery",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/24_Coalesce Machina.png"
+			}
+		},
+		{
+			"name": "Shadow Harvest",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/62_Shadow Harvest.png"
+			}
+		},
+		{
+			"name": "Seed the Sands",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Sorcery",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/17_Seed the Sands.png"
+			}
+		},
+		{
+			"name": "Faeruson Titan",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{B}{R}",
+			"type": "Artifact Creature — Golem Horror ",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/156_Faeruson Titan.png"
+			}
+		},
+		{
+			"name": "Peak into the Light",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Enchantment",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/188_Peak into the Light.png"
+			}
+		},
+		{
+			"name": "Price of Souls",
+			"rarity": "common",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Enchantment",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/189_Price of Souls.png"
+			}
+		},
+		{
+			"name": "Archaic Skyrazer",
+			"rarity": "common",
+			"mana_cost": "{7}{R}",
+			"type": "Creature — Dragon ",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/68_Archaic Skyrazer.png"
+			}
+		},
+		{
+			"name": "Reality Check",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{B}",
+			"type": "Instant",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/60_Reality Check.png"
+			}
+		},
+		{
+			"name": "Escalating Heat",
+			"rarity": "common",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Instant",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/145_Escalating Heat.png"
+			}
+		},
+		{
+			"name": "Herald of Beauty",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{W}{U}",
+			"type": "Creature — Angel Cleric ",
+			"collector_number": "166",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/166_Herald of Beauty.png"
+			}
+		},
+		{
+			"name": "Search Warrant",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/271_Search Warrant.png"
+			}
+		},
+		{
+			"name": "Lumira, Diviner Polaris",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{U}{U}",
+			"type": "Legendary Creature — Human Wizard ",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/176_Lumira, Diviner Polaris.png"
+			}
+		},
+		{
+			"name": "Moorlani Dragonslayer",
+			"rarity": "common",
+			"mana_cost": "{B}{R}{G}",
+			"type": "Creature — Human Warrior Barbarian ",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/180_Moorlani Dragonslayer.png"
+			}
+		},
+		{
+			"name": "Certhina Dragon Master",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{R}{G}{W}",
+			"type": "Creature — Human Knight Ranger ",
+			"collector_number": "125",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/125_Certhina Dragon Master.png"
+			}
+		},
+		{
+			"name": "Lost Guardian",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Artifact Creature — Construct Giant Knight ",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/58_Lost Guardian.png"
+			}
+		},
+		{
+			"name": "Moorlani Druid",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Elf Druid ",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/99_Moorlani Druid.png"
+			}
+		},
+		{
+			"name": "Moorlani Overgrown",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Elemental Giant ",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/102_Moorlani Overgrown.png"
+			}
+		},
+		{
+			"name": "Staticsphere",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{U}",
+			"type": "Artifact",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/214_Staticsphere.png"
+			}
+		},
+		{
+			"name": "Talltale Goliath",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Creature — Elephant Turtle ",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/222_Talltale Goliath.png"
+			}
+		},
+		{
+			"name": "Feast of Revival",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Sorcery",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/157_Feast of Revival.png"
+			}
+		},
+		{
+			"name": "Lifewood Archer",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Creature — Elf Archer ",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/172_Lifewood Archer.png"
+			}
+		},
+		{
+			"name": "Moorlani Explorer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Elf Ranger ",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/100_Moorlani Explorer.png"
+			}
+		},
+		{
+			"name": "Lifewood Matron",
+			"rarity": "common",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Creature — Elf Cleric Shaman ",
+			"collector_number": "174",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/174_Lifewood Matron.png"
+			}
+		},
+		{
+			"name": "Lifewood Blade",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/173_Lifewood Blade.png"
+			}
+		},
+		{
+			"name": "Essence Bow",
+			"rarity": "common",
+			"mana_cost": "{G}{U}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/147_Essence Bow.png"
+			}
+		},
+		{
+			"name": "Scalebane's Regret",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/200_Scalebane's Regret.png"
+			}
+		},
+		{
+			"name": "Awe Inspired Faith",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}{W}",
+			"type": "Enchantment — Ideology ",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/2_Awe Inspired Faith.png"
+			}
+		},
+		{
+			"name": "Life Cycle Hermit",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Creature — Human Druid Rogue ",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/94_Life Cycle Hermit.png"
+			}
+		},
+		{
+			"name": "Wildlands Flamechainer",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Human Wizard Shaman ",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/88_Wildlands Flamechainer.png"
+			}
+		},
+		{
+			"name": "The Lifewood Soul",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}{G}{G}",
+			"type": "Legendary Creature — Spirit Avatar ",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/96_The Lifewood Soul.png"
+			}
+		},
+		{
+			"name": "Latent Revival",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/14_Latent Revival.png"
+			}
+		},
+		{
+			"name": "Survivor's Tale",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{U}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/220_Survivor's Tale.png"
+			}
+		},
+		{
+			"name": "Horde of Bones",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Artifact Creature — Skeleton Knight ",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/167_Horde of Bones.png"
+			}
+		},
+		{
+			"name": "Volley of Blackstone",
+			"rarity": "mythic",
+			"mana_cost": "{X}{B}{G}{G}",
+			"type": "Instant",
+			"collector_number": "232",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/232_Volley of Blackstone.png"
+			}
+		},
+		{
+			"name": "Seroalite Swiftblade",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/40_Seroalite Swiftblade.png"
+			}
+		},
+		{
+			"name": "Willow Preserver",
+			"rarity": "common",
+			"mana_cost": "{4}{B}{G}",
+			"type": "Creature — Treefolk Wizard Shaman ",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/234_Willow Preserver.png"
+			}
+		},
+		{
+			"name": "Gothrian Mercenary",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Human Warrior ",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/52_Gothrian Mercenary.png"
+			}
+		},
+		{
+			"name": "Certhina Biblioplex",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Enchantment",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/5_Certhina Biblioplex.png"
+			}
+		},
+		{
+			"name": "Beastmaster Herald",
+			"rarity": "rare",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Angel Warrior ",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/89_Beastmaster Herald.png"
+			}
+		},
+		{
+			"name": "Skydrop Griffin",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Creature — Griffin ",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/18_Skydrop Griffin.png"
+			}
+		},
+		{
+			"name": "Protective Custody",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/191_Protective Custody.png"
+			}
+		},
+		{
+			"name": "Challenger Golem",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{W}",
+			"type": "Artifact Creature — Golem Knight ",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/127_Challenger Golem.png"
+			}
+		},
+		{
+			"name": "Charged Surge",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{W}",
+			"type": "Sorcery",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/128_Charged Surge.png"
+			}
+		},
+		{
+			"name": "Glass Shredder Spirit",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{G}{W}",
+			"type": "Creature — Spirit Horror ",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/162_Glass Shredder Spirit.png"
+			}
+		},
+		{
+			"name": "Soaring Dreams",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/208_Soaring Dreams.png"
+			}
+		},
+		{
+			"name": "Moorlani Ambusher",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Human Elf Ranger Rogue ",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/98_Moorlani Ambusher.png"
+			}
+		},
+		{
+			"name": "Envigorating Essence",
+			"rarity": "common",
+			"mana_cost": "{G}{W}",
+			"type": "Sorcery",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/144_Envigorating Essence.png"
+			}
+		},
+		{
+			"name": "Giant Challenge",
+			"rarity": "common",
+			"mana_cost": "{3}{G}",
+			"type": "Instant",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/92_Giant Challenge.png"
+			}
+		},
+		{
+			"name": "Certhina War Captain",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Human Knight ",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/7_Certhina War Captain.png"
+			}
+		},
+		{
+			"name": "Deserter's Drake",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Creature — Drake ",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/48_Deserter's Drake.png"
+			}
+		},
+		{
+			"name": "Certhina Citadel",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Artifact Land — Plains Capital ",
+			"collector_number": "278",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/278_Certhina Citadel.png"
+			}
+		},
+		{
+			"name": "Th'Grud, Primordial King",
+			"rarity": "mythic",
+			"mana_cost": "{X}{R}{G}{G}",
+			"type": "Legendary Creature — Elemental Giant ",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/224_Th'Grud, Primordial King.png"
+			}
+		},
+		{
+			"name": "Timeline Collider",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{U}{U}",
+			"type": "Artifact",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/44_Timeline Collider.png"
+			}
+		},
+		{
+			"name": "Assorted Keys",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/250_Assorted Keys.png"
+			}
+		},
+		{
+			"name": "Bloodfire Knight",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Artifact Creature — Construct Knight ",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/70_Bloodfire Knight.png"
+			}
+		},
+		{
+			"name": "Conscript Cavalry",
+			"rarity": "common",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/8_Conscript Cavalry.png"
+			}
+		},
+		{
+			"name": "Moorlani Resurgence",
+			"rarity": "uncommon",
+			"mana_cost": "{5}{G}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/103_Moorlani Resurgence.png"
+			}
+		},
+		{
+			"name": "Legacy Blade",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/264_Legacy Blade.png"
+			}
+		},
+		{
+			"name": "Endless Passage",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Artifact — Clue ",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/257_Endless Passage.png"
+			}
+		},
+		{
+			"name": "Passage Scholar",
+			"rarity": "common",
+			"mana_cost": "{4}{W}{U}",
+			"type": "Creature — Human Advisor Wizard ",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/186_Passage Scholar.png"
+			}
+		},
+		{
+			"name": "Lifewood Ring",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/265_Lifewood Ring.png"
+			}
+		},
+		{
+			"name": "Arcane Warding",
+			"rarity": "common",
+			"mana_cost": "{U}{B/R}",
+			"type": "Instant",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/243_Arcane Warding.png"
+			}
+		},
+		{
+			"name": "Obsidian Manticore",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Manticore ",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/266_Obsidian Manticore.png"
+			}
+		},
+		{
+			"name": "Outdated Bounty",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/267_Outdated Bounty.png"
+			}
+		},
+		{
+			"name": "Refurbished Compass",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/270_Refurbished Compass.png"
+			}
+		},
+		{
+			"name": "Submission Chains",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/42_Submission Chains.png"
+			}
+		},
+		{
+			"name": "Explorer's Tale",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{W}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/152_Explorer's Tale.png"
+			}
+		},
+		{
+			"name": "Searoalite Refractor",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Human Artificer Wizard ",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/36_Searoalite Refractor.png"
+			}
+		},
+		{
+			"name": "Combustion Ring",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/254_Combustion Ring.png"
+			}
+		},
+		{
+			"name": "Gothrian Chambers",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Artifact Land — Swamp Capital ",
+			"collector_number": "286",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/286_Gothrian Chambers.png"
+			}
+		},
+		{
+			"name": "Steadfast Blade",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/274_Steadfast Blade.png"
+			}
+		},
+		{
+			"name": "Crescent Shakedown",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/91_Crescent Shakedown.png"
+			}
+		},
+		{
+			"name": "Unearthed History",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Artifact",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/109_Unearthed History.png"
+			}
+		},
+		{
+			"name": "Paradoxical Stairs",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Legendary Artifact",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/269_Paradoxical Stairs.png"
+			}
+		},
+		{
+			"name": "Look's Better On Me",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Sorcery",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/57_Look's Better On Me.png"
+			}
+		},
+		{
+			"name": "Encompass Wilderness",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{R}{G}",
+			"type": "Legendary Enchantment",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/141_Encompass Wilderness.png"
+			}
+		},
+		{
+			"name": "Diffuse Situation",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{U}",
+			"type": "Instant",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/29_Diffuse Situation.png"
+			}
+		},
+		{
+			"name": "Forbidden Altar",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Enchantment",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/160_Forbidden Altar.png"
+			}
+		},
+		{
+			"name": "Instill Plague",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "171",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/171_Instill Plague.png"
+			}
+		},
+		{
+			"name": "Shackled Gargoyle",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Artifact Creature — Gargoyle ",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/61_Shackled Gargoyle.png"
+			}
+		},
+		{
+			"name": "Fleeting Possesion",
+			"rarity": "mythic",
+			"mana_cost": "{4}{U}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "159",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/159_Fleeting Possesion.png"
+			}
+		},
+		{
+			"name": "Briar Dragon",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Elemental Dragon ",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/90_Briar Dragon.png"
+			}
+		},
+		{
+			"name": "Demanding Durgal",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}{G}",
+			"type": "Creature — Beast ",
+			"collector_number": "133",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/133_Demanding Durgal.png"
+			}
+		},
+		{
+			"name": "The World Expands",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{G}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "236",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/236_The World Expands.png"
+			}
+		},
+		{
+			"name": "Overgrown Tiger",
+			"rarity": "common",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Creature — Cat Spirit ",
+			"collector_number": "185",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/185_Overgrown Tiger.png"
+			}
+		},
+		{
+			"name": "Stormchaser Banner",
+			"rarity": "common",
+			"mana_cost": "{U}{R}",
+			"type": "Artifact",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/216_Stormchaser Banner.png"
+			}
+		},
+		{
+			"name": "Divination Storm",
+			"rarity": "common",
+			"mana_cost": "{X}{1}{U}{R}",
+			"type": "Instant",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/137_Divination Storm.png"
+			}
+		},
+		{
+			"name": "Diviner's Monastery",
+			"rarity": "common",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/140_Diviner's Monastery.png"
+			}
+		},
+		{
+			"name": "Disciple of Lumira",
+			"rarity": "common",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Creature — Human Monk Wizard ",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/135_Disciple of Lumira.png"
+			}
+		},
+		{
+			"name": "Bubbling Tonic",
+			"rarity": "common",
+			"mana_cost": "{U}{B}",
+			"type": "Artifact — Food ",
+			"collector_number": "123",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/123_Bubbling Tonic.png"
+			}
+		},
+		{
+			"name": "Zera's Mistculler",
+			"rarity": "common",
+			"mana_cost": "{U}{B}",
+			"type": "Creature — Bird Rogue Warlock ",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/242_Zera's Mistculler.png"
+			}
+		},
+		{
+			"name": "Wrapping Warp",
+			"rarity": "common",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/237_Wrapping Warp.png"
+			}
+		},
+		{
+			"name": "Diviner's Antithesis",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Instant",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/139_Diviner's Antithesis.png"
+			}
+		},
+		{
+			"name": "Woodland Aggression",
+			"rarity": "common",
+			"mana_cost": "{R}{G}",
+			"type": "Sorcery",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/235_Woodland Aggression.png"
+			}
+		},
+		{
+			"name": "Briarbulb",
+			"rarity": "common",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Artifact Creature — Construct Beast ",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/122_Briarbulb.png"
+			}
+		},
+		{
+			"name": "Skyfall Brigade",
+			"rarity": "common",
+			"mana_cost": "{6}{R}{G}",
+			"type": "Sorcery",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/206_Skyfall Brigade.png"
+			}
+		},
+		{
+			"name": "Autumn Willow",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{G}",
+			"type": "Creature — Treefolk Shaman ",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/113_Autumn Willow.png"
+			}
+		},
+		{
+			"name": "Skycastle Solitude",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Island Plains Stage ",
+			"collector_number": "296",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/296_Skycastle Solitude.png"
+			}
+		},
+		{
+			"name": "Secluded Bastion",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Mountain Plains Stage ",
+			"collector_number": "294",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/294_Secluded Bastion.png"
+			}
+		},
+		{
+			"name": "Bloodgem Mines",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Swamp Mountain Stage ",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/277_Bloodgem Mines.png"
+			}
+		},
+		{
+			"name": "Deserter's Holy Grounds",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Plains Swamp Stage ",
+			"collector_number": "280",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/280_Deserter's Holy Grounds.png"
+			}
+		},
+		{
+			"name": "Welcoming Homestead",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Forest Plains Stage ",
+			"collector_number": "300",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/300_Welcoming Homestead.png"
+			}
+		},
+		{
+			"name": "Unhallowed Wetlands",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Island Swamp Stage ",
+			"collector_number": "299",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/299_Unhallowed Wetlands.png"
+			}
+		},
+		{
+			"name": "Blazened Acres",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Mountain Forest Stage ",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/276_Blazened Acres.png"
+			}
+		},
+		{
+			"name": "Scholars Retreat",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Island Mountain Stage ",
+			"collector_number": "293",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/293_Scholars Retreat.png"
+			}
+		},
+		{
+			"name": "Outdated Mill",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Forest Island Stage ",
+			"collector_number": "291",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/291_Outdated Mill.png"
+			}
+		},
+		{
+			"name": "Engraved Thicket",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Swamp Forest Stage ",
+			"collector_number": "283",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/283_Engraved Thicket.png"
+			}
+		},
+		{
+			"name": "Frostcutter",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/259_Frostcutter.png"
+			}
+		},
+		{
+			"name": "Enscription Monolith",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/258_Enscription Monolith.png"
+			}
+		},
+		{
+			"name": "Harversting Sickle",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/262_Harversting Sickle.png"
+			}
+		},
+		{
+			"name": "Seashore Crab",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Construct Crab ",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/272_Seashore Crab.png"
+			}
+		},
+		{
+			"name": "Coralcollage Ammonite",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Construct Squid ",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/255_Coralcollage Ammonite.png"
+			}
+		},
+		{
+			"name": "Glowshroom Grub",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Construct Insect ",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/261_Glowshroom Grub.png"
+			}
+		},
+		{
+			"name": "Fungalflurry Snail",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Construct Snail ",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/260_Fungalflurry Snail.png"
+			}
+		},
+		{
+			"name": "Bushgarden Tortoise",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact Creature — Construct Turtle ",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/253_Bushgarden Tortoise.png"
+			}
+		},
+		{
+			"name": "Vial of Venom",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Artifact",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/110_Vial of Venom.png"
+			}
+		},
+		{
+			"name": "Old Age Guardian",
+			"rarity": "common",
+			"mana_cost": "{7}{G}",
+			"type": "Creature — Elemental Giant ",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/106_Old Age Guardian.png"
+			}
+		},
+		{
+			"name": "Moorlani Muse",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Artifact",
+			"collector_number": "101",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/101_Moorlani Muse.png"
+			}
+		},
+		{
+			"name": "Volatile Statuette",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Artifact Creature — Gargoyle ",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/66_Volatile Statuette.png"
+			}
+		},
+		{
+			"name": "Illuminate Oddities",
+			"rarity": "common",
+			"mana_cost": "{5}{B}",
+			"type": "Sorcery",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/56_Illuminate Oddities.png"
+			}
+		},
+		{
+			"name": "Crusade of the Corpses",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Enchantment — Saga ",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/47_Crusade of the Corpses.png"
+			}
+		},
+		{
+			"name": "Yawning Brushland",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Nexus ",
+			"collector_number": "301",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/301_Yawning Brushland.png"
+			}
+		},
+		{
+			"name": "Rivervalley Village",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Nexus ",
+			"collector_number": "292",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/292_Rivervalley Village.png"
+			}
+		},
+		{
+			"name": "Towering Utopia",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Nexus ",
+			"collector_number": "298",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/298_Towering Utopia.png"
+			}
+		},
+		{
+			"name": "Desolate Chapel",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Nexus ",
+			"collector_number": "281",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/281_Desolate Chapel.png"
+			}
+		},
+		{
+			"name": "Hellfire Bridge",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Nexus ",
+			"collector_number": "287",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/287_Hellfire Bridge.png"
+			}
+		},
+		{
+			"name": "Swallowing Woods",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Inverse ",
+			"collector_number": "297",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/297_Swallowing Woods.png"
+			}
+		},
+		{
+			"name": "Ingrown Drylands",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Inverse ",
+			"collector_number": "288",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/288_Ingrown Drylands.png"
+			}
+		},
+		{
+			"name": "Encompassing Bog",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Inverse ",
+			"collector_number": "282",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/282_Encompassing Bog.png"
+			}
+		},
+		{
+			"name": "Collapsing Waterfall",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Inverse ",
+			"collector_number": "279",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/279_Collapsing Waterfall.png"
+			}
+		},
+		{
+			"name": "Inverting Volcano",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Inverse ",
+			"collector_number": "289",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/289_Inverting Volcano.png"
+			}
+		},
+		{
+			"name": "Jug Bug",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Artifact Creature — Construct Insect ",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/32_Jug Bug.png"
+			}
+		},
+		{
+			"name": "Defensive Matrix",
+			"rarity": "common",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Instant",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/28_Defensive Matrix.png"
+			}
+		},
+		{
+			"name": "Dauntless Soulless",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Artifact Creature — Skeleton Warrior ",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/27_Dauntless Soulless.png"
+			}
+		},
+		{
+			"name": "Disruption Agent",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Elf Wizard Warrior ",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/30_Disruption Agent.png"
+			}
+		},
+		{
+			"name": "Crystalline Cohorts",
+			"rarity": "common",
+			"mana_cost": "{3}{U}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/26_Crystalline Cohorts.png"
+			}
+		},
+		{
+			"name": "Mooncleave Axe",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Legendary Artifact — Equipment ",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/34_Mooncleave Axe.png"
+			}
+		},
+		{
+			"name": "Night Gaze",
+			"rarity": "common",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/184_Night Gaze.png"
+			}
+		},
+		{
+			"name": "Queen's Rally",
+			"rarity": "common",
+			"mana_cost": "{1}{R}{G}{W}{W}",
+			"type": "Instant",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/192_Queen's Rally.png"
+			}
+		},
+		{
+			"name": "Slow Culling",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{R}{G}{G}",
+			"type": "Enchantment",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/207_Slow Culling.png"
+			}
+		},
+		{
+			"name": "Coagulant Casting",
+			"rarity": "common",
+			"mana_cost": "{1}{B}{U/R}",
+			"type": "Enchantment",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/244_Coagulant Casting.png"
+			}
+		},
+		{
+			"name": "Shifting Essence",
+			"rarity": "common",
+			"mana_cost": "{G}{W}{U}{U}",
+			"type": "Enchantment",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/204_Shifting Essence.png"
+			}
+		},
+		{
+			"name": "Ripping Genesis",
+			"rarity": "rare",
+			"mana_cost": "{U}{B}{R}{R}",
+			"type": "Instant",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/199_Ripping Genesis.png"
+			}
+		},
+		{
+			"name": "Faeruson Charm",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{B}{R}",
+			"type": "Instant",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/154_Faeruson Charm.png"
+			}
+		},
+		{
+			"name": "Dreadhorror Golem",
+			"rarity": "common",
+			"mana_cost": "{2}{U/B}{R}{R}",
+			"type": "Artifact Creature — Golem Horror ",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/247_Dreadhorror Golem.png"
+			}
+		},
+		{
+			"name": "Unleash the Masses",
+			"rarity": "rare",
+			"mana_cost": "{R}{G}{W}{W}",
+			"type": "Instant",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/230_Unleash the Masses.png"
+			}
+		},
+		{
+			"name": "Dawnreach Willow",
+			"rarity": "common",
+			"mana_cost": "{1{R}/G}{W}{W}",
+			"type": "Creature — Treefolk Warrior ",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/245_Dawnreach Willow.png"
+			}
+		},
+		{
+			"name": "Moorlani Charm",
+			"rarity": "uncommon",
+			"mana_cost": "{B}{R}{G}",
+			"type": "Instant",
+			"collector_number": "179",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/179_Moorlani Charm.png"
+			}
+		},
+		{
+			"name": "Gothrian Charm",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Instant",
+			"collector_number": "163",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/163_Gothrian Charm.png"
+			}
+		},
+		{
+			"name": "Terrorizing Racking",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/223_Terrorizing Racking.png"
+			}
+		},
+		{
+			"name": "Soulless Soldier",
+			"rarity": "common",
+			"mana_cost": "{W/U}{B}{B}",
+			"type": "Artifact Creature — Skeleton Soldier ",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/249_Soulless Soldier.png"
+			}
+		},
+		{
+			"name": "Certhina Charm",
+			"rarity": "uncommon",
+			"mana_cost": "{R}{G}{W}",
+			"type": "Instant",
+			"collector_number": "124",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/124_Certhina Charm.png"
+			}
+		},
+		{
+			"name": "Disturbed Heir",
+			"rarity": "common",
+			"mana_cost": "{1{B}/R}{G}{G}",
+			"type": "Creature — Spirit Warrior Noble ",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/246_Disturbed Heir.png"
+			}
+		},
+		{
+			"name": "Awaken Moorlani",
+			"rarity": "rare",
+			"mana_cost": "{B}{R}{G}{G}",
+			"type": "Instant",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/114_Awaken Moorlani.png"
+			}
+		},
+		{
+			"name": "Skyswipper Willow",
+			"rarity": "common",
+			"mana_cost": "{1{G}/W}{U}{U}",
+			"type": "Creature — Treefolk Rogue ",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/248_Skyswipper Willow.png"
+			}
+		},
+		{
+			"name": "Long Lost Lesson",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}{U}{U}",
+			"type": "Instant",
+			"collector_number": "175",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/175_Long Lost Lesson.png"
+			}
+		},
+		{
+			"name": "Seroalite Charm",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Instant",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/202_Seroalite Charm.png"
+			}
+		},
+		{
+			"name": "Faerson Pod",
+			"rarity": "common",
+			"mana_cost": "{R}{R}",
+			"type": "Artifact",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/75_Faerson Pod.png"
+			}
+		},
+		{
+			"name": "Flare Up",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/81_Flare Up.png"
+			}
+		},
+		{
+			"name": "Gothrian Spirit",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Spirit Cleric Soldier ",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/54_Gothrian Spirit.png"
+			}
+		},
+		{
+			"name": "Soul Release",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/63_Soul Release.png"
+			}
+		},
+		{
+			"name": "Triangulate Defect",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Instant",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/86_Triangulate Defect.png"
+			}
+		},
+		{
+			"name": "Euphoric Ignition",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Instant",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/73_Euphoric Ignition.png"
+			}
+		},
+		{
+			"name": "Sunmade Ending",
+			"rarity": "common",
+			"mana_cost": "{W}{W}",
+			"type": "Instant",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/20_Sunmade Ending.png"
+			}
+		},
+		{
+			"name": "Halt Trangressions",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/12_Halt Trangressions.png"
+			}
+		},
+		{
+			"name": "Aspiring Herald",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Angel Cleric Knight ",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/1_Aspiring Herald.png"
+			}
+		},
+		{
+			"name": "Forging Diagram",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Sorcery",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/11_Forging Diagram.png"
+			}
+		},
+		{
+			"name": "Spilled Spirits",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Sorcery",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/64_Spilled Spirits.png"
+			}
+		},
+		{
+			"name": "Provisioned Rations",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Artifact — Food ",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/107_Provisioned Rations.png"
+			}
+		},
+		{
+			"name": "Seroalite Renegades",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Human Warrior Rogue ",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/39_Seroalite Renegades.png"
+			}
+		},
+		{
+			"name": "Lagoonbound Tiger",
+			"rarity": "common",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Cat Spirit ",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/33_Lagoonbound Tiger.png"
+			}
+		},
+		{
+			"name": "Lose To Tale",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/97_Lose To Tale.png"
+			}
+		},
+		{
+			"name": "Lifewood Keeper",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Elf Cleric Druid ",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/95_Lifewood Keeper.png"
+			}
+		},
+		{
+			"name": "Rootborn Growth",
+			"rarity": "common",
+			"mana_cost": "{X}{G}{G}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/108_Rootborn Growth.png"
+			}
+		},
+		{
+			"name": "Gothrian Informant",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Human Rogue ",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/51_Gothrian Informant.png"
+			}
+		},
+		{
+			"name": "Assorted Kunai",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Artifact — Equipment ",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/23_Assorted Kunai.png"
+			}
+		},
+		{
+			"name": "Congealment",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment — Aura ",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/25_Congealment.png"
+			}
+		},
+		{
+			"name": "Indoctrined Traditions",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}{G}",
+			"type": "Enchantment — Ideology ",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/93_Indoctrined Traditions.png"
+			}
+		},
+		{
+			"name": "Spiritbound Manuscript",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}{U}",
+			"type": "Enchantment — Ideology ",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/41_Spiritbound Manuscript.png"
+			}
+		},
+		{
+			"name": "Unhallowed Beliefs",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}{B}",
+			"type": "Enchantment — Ideology ",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/65_Unhallowed Beliefs.png"
+			}
+		},
+		{
+			"name": "Antagonize Essence",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Sorcery",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/67_Antagonize Essence.png"
+			}
+		},
+		{
+			"name": "Sunmade Champion",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Artifact Creature — Construct Knight ",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/OZN-files/img/19_Sunmade Champion.png"
+			}
+		}
+	]
+[RareSlot(1)]
+2 Avenging Dusklord
+2 Hexspear Legionnaire
+2 Gothrian Manifestation
+2 Certhina's Cultivation
+2 Steelclade Herald
+2 Faeruson Invasion
+2 Faeruson Temple
+2 Primordial Calling
+2 Revival Herald
+2 Shackle Herald
+2 Trinity Phoenix
+2 Sweeping Siphon
+2 Idolization Catalys
+2 Cloudshift Herald
+2 Enter the Maw
+2 Bounties Beauty
+2 Grasping for Hope
+2 Bloodfire Dragon
+2 Coveted Gemstone
+2 Master of Essence
+2 Moorlani Palace
+2 Willow King Phantom
+2 The Nine Gates
+2 Escaped Chimera
+2 Zera's Disciple
+2 Certhina Steppe Dragon
+2 Cult of the Exiles
+2 Essence Chroma
+2 Seroalite Cityscape
+2 Glaring Death
+2 Natural Purge
+2 Seroalite Flux Mage
+2 Faerson Pheonix
+2 Moorlani Skypropagator
+2 Emberstack Mage
+2 Flamebraced Slayer
+2 Moorlani Shrine
+2 Dreadborn Demon
+2 Search Warrant
+2 Awe Inspired Faith
+2 Life Cycle Hermit
+2 Certhina Biblioplex
+2 Beastmaster Herald
+2 Glass Shredder Spirit
+2 Certhina Citadel
+2 Legacy Blade
+2 Endless Passage
+2 Submission Chains
+2 Searoalite Refractor
+2 Gothrian Chambers
+2 Ripping Genesis
+2 Unleash the Masses
+2 Terrorizing Racking
+2 Awaken Moorlani
+2 Long Lost Lesson
+2 Indoctrined Traditions
+2 Spiritbound Manuscript
+2 Unhallowed Beliefs
+2 Antagonize Essence
+2 Sunmade Champion
+1 Ainsley, Radiant Hope
+1 Zera, Crow Martyr
+1 Inquisitor of Kronos
+1 Enduring Herald
+1 Auriclious, the Halycon
+1 Bloodfire Archdemon
+1 Razhiel, Sunmade Archangel
+1 The Corrupted Ideal
+1 Ozin Onus
+1 Divine Geyser
+1 Coronation of Drakes
+1 Carqis, Avenger of Gothr
+1 An Alternate Age
+1 Xakuron, Patron of Plagues
+1 Faeruson Hybrid
+1 Lumira, Diviner Polaris
+1 The Lifewood Soul
+1 Volley of Blackstone
+1 Th'Grud, Primordial King
+1 Timeline Collider
+1 Encompass Wilderness
+1 Fleeting Possesion
+[UncommonSlot(3)]
+9 Ringblade Deserter
+9 Bloodfire Soulless
+9 Rever Knight
+9 Zera's Cloaker
+9 Forsaken Empire
+9 Faeruson Hellwurm
+9 Toiling Chemist
+9 Certhina Archivist
+9 Righteous Herald
+9 Battlerite Herald
+9 Truelight Priestess
+9 Soul Reduction
+9 Time Coil
+9 Triumphant Assualt
+9 Essence Mystic
+9 Tome of Ideals
+9 Razorwind
+9 Blazing Barrage
+9 Sunder the Ancients
+9 Moorlani Ravager
+9 Cross the Fourth Gate
+9 Imp Swarm
+9 Surviving the First Winter
+9 Patroned Witch
+9 Vile Patron
+9 Resonation Mystic
+9 Desperate Mending
+9 Soulless Company
+9 Magmatic Compositing
+9 Sunspear
+9 Beacon Horror
+9 Soulless Spellbinder
+9 Raining Death
+9 Unexpected Guests
+9 Coalesce Machina
+9 Shadow Harvest
+9 Seed the Sands
+9 Faeruson Titan
+9 Peak into the Light
+9 Reality Check
+9 Certhina Dragon Master
+9 Lost Guardian
+9 Staticsphere
+9 Talltale Goliath
+9 Feast of Revival
+9 Lifewood Archer
+9 Moorlani Explorer
+9 Scalebane's Regret
+9 Seroalite Swiftblade
+9 Skydrop Griffin
+9 Protective Custody
+9 Soaring Dreams
+9 Deserter's Drake
+9 Moorlani Resurgence
+9 Obsidian Manticore
+9 Outdated Bounty
+9 Combustion Ring
+9 Crescent Shakedown
+9 Unearthed History
+9 Paradoxical Stairs
+9 Diffuse Situation
+9 Forbidden Altar
+9 Briar Dragon
+9 Demanding Durgal
+9 The World Expands
+9 Skycastle Solitude
+9 Secluded Bastion
+9 Bloodgem Mines
+9 Deserter's Holy Grounds
+9 Welcoming Homestead
+9 Unhallowed Wetlands
+9 Blazened Acres
+9 Scholars Retreat
+9 Outdated Mill
+9 Engraved Thicket
+9 Frostcutter
+9 Mooncleave Axe
+9 Faeruson Charm
+9 Moorlani Charm
+9 Gothrian Charm
+9 Certhina Charm
+9 Seroalite Charm
+9 Euphoric Ignition
+9 Halt Trangressions
+9 Seroalite Renegades
+9 Lose To Tale
+9 Gothrian Informant
+[CommonSlot(8)]
+30 Moorlani Skywaker
+30 Extradite Intent
+30 Certhina Armaments
+30 Two Headed Boargesh
+30 Improvised Shelling
+30 Jagged Pursuit
+30 Gothrian Skullcapper
+30 Bloodfire Corruption
+30 Gothrian Crusader
+30 Exiles Procession
+30 Seroalite Analyst
+30 Sustain Velocity
+30 Distribute Plague
+30 Scribe Squire
+30 Faeruson Lancer
+30 Exiled Reaper
+30 Mind Eruption
+30 Faeruson Smokestacker
+30 Faeruson Glutton
+30 Blizzard Rider
+30 Scavenge Cavalier
+30 Soul Eclipse
+30 Skingraft Rupture
+30 Cyrogenesis Chamber
+30 Solar Wreath
+30 Wrong Page
+30 Soul Tome
+30 Radiant Lightning
+30 Enhance Understanding
+30 Radiant Pulse
+30 Radiant Staff
+30 Drake Summons
+30 Price of Souls
+30 Archaic Skyrazer
+30 Escalating Heat
+30 Herald of Beauty
+30 Moorlani Dragonslayer
+30 Moorlani Druid
+30 Moorlani Overgrown
+30 Lifewood Matron
+30 Lifewood Blade
+30 Essence Bow
+30 Wildlands Flamechainer
+30 Latent Revival
+30 Survivor's Tale
+30 Horde of Bones
+30 Willow Preserver
+30 Gothrian Mercenary
+30 Challenger Golem
+30 Charged Surge
+30 Moorlani Ambusher
+30 Envigorating Essence
+30 Giant Challenge
+30 Certhina War Captain
+30 Assorted Keys
+30 Bloodfire Knight
+30 Conscript Cavalry
+30 Passage Scholar
+30 Lifewood Ring
+30 Arcane Warding
+30 Refurbished Compass
+30 Explorer's Tale
+30 Steadfast Blade
+30 Look's Better On Me
+30 Instill Plague
+30 Shackled Gargoyle
+30 Overgrown Tiger
+30 Stormchaser Banner
+30 Divination Storm
+30 Diviner's Monastery
+30 Disciple of Lumira
+30 Bubbling Tonic
+30 Zera's Mistculler
+30 Wrapping Warp
+30 Diviner's Antithesis
+30 Woodland Aggression
+30 Briarbulb
+30 Skyfall Brigade
+30 Autumn Willow
+30 Enscription Monolith
+30 Harversting Sickle
+30 Seashore Crab
+30 Coralcollage Ammonite
+30 Glowshroom Grub
+30 Fungalflurry Snail
+30 Bushgarden Tortoise
+30 Vial of Venom
+30 Old Age Guardian
+30 Moorlani Muse
+30 Volatile Statuette
+30 Illuminate Oddities
+30 Crusade of the Corpses
+30 Yawning Brushland
+30 Rivervalley Village
+30 Towering Utopia
+30 Desolate Chapel
+30 Hellfire Bridge
+30 Swallowing Woods
+30 Ingrown Drylands
+30 Encompassing Bog
+30 Collapsing Waterfall
+30 Inverting Volcano
+30 Jug Bug
+30 Defensive Matrix
+30 Dauntless Soulless
+30 Disruption Agent
+30 Crystalline Cohorts
+30 Night Gaze
+30 Queen's Rally
+30 Slow Culling
+30 Coagulant Casting
+30 Shifting Essence
+30 Dreadhorror Golem
+30 Dawnreach Willow
+30 Soulless Soldier
+30 Disturbed Heir
+30 Skyswipper Willow
+30 Faerson Pod
+30 Flare Up
+30 Gothrian Spirit
+30 Soul Release
+30 Triangulate Defect
+30 Sunmade Ending
+30 Aspiring Herald
+30 Forging Diagram
+30 Spilled Spirits
+30 Provisioned Rations
+30 Lagoonbound Tiger
+30 Lifewood Keeper
+30 Rootborn Growth
+30 Assorted Kunai
+30 Congealment
+[WildcardSlot(2)]
+10 Avenging Dusklord
+10 Hexspear Legionnaire
+10 Ringblade Deserter
+10 Ainsley, Radiant Hope
+10 Gothrian Manifestation
+10 Bloodfire Soulless
+10 Rever Knight
+10 Certhina's Cultivation
+10 Zera's Cloaker
+10 Steelclade Herald
+10 Forsaken Empire
+10 Faeruson Invasion
+10 Zera, Crow Martyr
+10 Faeruson Hellwurm
+10 Faeruson Temple
+10 Toiling Chemist
+10 Certhina Archivist
+10 Primordial Calling
+10 Moorlani Skywaker
+10 Revival Herald
+10 Righteous Herald
+10 Inquisitor of Kronos
+10 Battlerite Herald
+10 Shackle Herald
+10 Extradite Intent
+10 Truelight Priestess
+10 Trinity Phoenix
+10 Soul Reduction
+10 Time Coil
+10 Sweeping Siphon
+10 Enduring Herald
+10 Auriclious, the Halycon
+10 Idolization Catalys
+10 Bloodfire Archdemon
+10 Cloudshift Herald
+10 Razhiel, Sunmade Archangel
+10 The Corrupted Ideal
+10 Triumphant Assualt
+10 Certhina Armaments
+10 Enter the Maw
+10 Bounties Beauty
+10 Two Headed Boargesh
+10 Improvised Shelling
+10 Grasping for Hope
+10 Bloodfire Dragon
+10 Essence Mystic
+10 Coveted Gemstone
+10 Tome of Ideals
+10 Razorwind
+10 Ozin Onus
+10 Blazing Barrage
+10 Sunder the Ancients
+10 Master of Essence
+10 Moorlani Palace
+10 Divine Geyser
+10 Moorlani Ravager
+10 Coronation of Drakes
+10 Carqis, Avenger of Gothr
+10 An Alternate Age
+10 Willow King Phantom
+10 The Nine Gates
+10 Jagged Pursuit
+10 Cross the Fourth Gate
+10 Escaped Chimera
+10 Imp Swarm
+10 Gothrian Skullcapper
+10 Bloodfire Corruption
+10 Surviving the First Winter
+10 Zera's Disciple
+10 Gothrian Crusader
+10 Certhina Steppe Dragon
+10 Cult of the Exiles
+10 Essence Chroma
+10 Exiles Procession
+10 Seroalite Analyst
+10 Sustain Velocity
+10 Patroned Witch
+10 Vile Patron
+10 Xakuron, Patron of Plagues
+10 Seroalite Cityscape
+10 Glaring Death
+10 Distribute Plague
+10 Resonation Mystic
+10 Desperate Mending
+10 Scribe Squire
+10 Faeruson Lancer
+10 Natural Purge
+10 Exiled Reaper
+10 Seroalite Flux Mage
+10 Mind Eruption
+10 Faeruson Smokestacker
+10 Faerson Pheonix
+10 Faeruson Glutton
+10 Soulless Company
+10 Blizzard Rider
+10 Scavenge Cavalier
+10 Soul Eclipse
+10 Magmatic Compositing
+10 Sunspear
+10 Moorlani Skypropagator
+10 Beacon Horror
+10 Skingraft Rupture
+10 Emberstack Mage
+10 Soulless Spellbinder
+10 Flamebraced Slayer
+10 Cyrogenesis Chamber
+10 Moorlani Shrine
+10 Faeruson Hybrid
+10 Solar Wreath
+10 Wrong Page
+10 Soul Tome
+10 Dreadborn Demon
+10 Raining Death
+10 Radiant Lightning
+10 Enhance Understanding
+10 Unexpected Guests
+10 Radiant Pulse
+10 Radiant Staff
+10 Drake Summons
+10 Coalesce Machina
+10 Shadow Harvest
+10 Seed the Sands
+10 Faeruson Titan
+10 Peak into the Light
+10 Price of Souls
+10 Archaic Skyrazer
+10 Reality Check
+10 Escalating Heat
+10 Herald of Beauty
+10 Search Warrant
+10 Lumira, Diviner Polaris
+10 Moorlani Dragonslayer
+10 Certhina Dragon Master
+10 Lost Guardian
+10 Moorlani Druid
+10 Moorlani Overgrown
+10 Staticsphere
+10 Talltale Goliath
+10 Feast of Revival
+10 Lifewood Archer
+10 Moorlani Explorer
+10 Lifewood Matron
+10 Lifewood Blade
+10 Essence Bow
+10 Scalebane's Regret
+10 Awe Inspired Faith
+10 Life Cycle Hermit
+10 Wildlands Flamechainer
+10 The Lifewood Soul
+10 Latent Revival
+10 Survivor's Tale
+10 Horde of Bones
+10 Volley of Blackstone
+10 Seroalite Swiftblade
+10 Willow Preserver
+10 Gothrian Mercenary
+10 Certhina Biblioplex
+10 Beastmaster Herald
+10 Skydrop Griffin
+10 Protective Custody
+10 Challenger Golem
+10 Charged Surge
+10 Glass Shredder Spirit
+10 Soaring Dreams
+10 Moorlani Ambusher
+10 Envigorating Essence
+10 Giant Challenge
+10 Certhina War Captain
+10 Deserter's Drake
+10 Certhina Citadel
+10 Th'Grud, Primordial King
+10 Timeline Collider
+10 Assorted Keys
+10 Bloodfire Knight
+10 Conscript Cavalry
+10 Moorlani Resurgence
+10 Legacy Blade
+10 Endless Passage
+10 Passage Scholar
+10 Lifewood Ring
+10 Arcane Warding
+10 Obsidian Manticore
+10 Outdated Bounty
+10 Refurbished Compass
+10 Submission Chains
+10 Explorer's Tale
+10 Searoalite Refractor
+10 Combustion Ring
+10 Gothrian Chambers
+10 Steadfast Blade
+10 Crescent Shakedown
+10 Unearthed History
+10 Paradoxical Stairs
+10 Look's Better On Me
+10 Encompass Wilderness
+10 Diffuse Situation
+10 Forbidden Altar
+10 Instill Plague
+10 Shackled Gargoyle
+10 Fleeting Possesion
+10 Briar Dragon
+10 Demanding Durgal
+10 The World Expands
+10 Overgrown Tiger
+10 Stormchaser Banner
+10 Divination Storm
+10 Diviner's Monastery
+10 Disciple of Lumira
+10 Bubbling Tonic
+10 Zera's Mistculler
+10 Wrapping Warp
+10 Diviner's Antithesis
+10 Woodland Aggression
+10 Briarbulb
+10 Skyfall Brigade
+10 Autumn Willow
+10 Skycastle Solitude
+10 Secluded Bastion
+10 Bloodgem Mines
+10 Deserter's Holy Grounds
+10 Welcoming Homestead
+10 Unhallowed Wetlands
+10 Blazened Acres
+10 Scholars Retreat
+10 Outdated Mill
+10 Engraved Thicket
+10 Frostcutter
+10 Enscription Monolith
+10 Harversting Sickle
+10 Seashore Crab
+10 Coralcollage Ammonite
+10 Glowshroom Grub
+10 Fungalflurry Snail
+10 Bushgarden Tortoise
+10 Vial of Venom
+10 Old Age Guardian
+10 Moorlani Muse
+10 Volatile Statuette
+10 Illuminate Oddities
+10 Crusade of the Corpses
+10 Yawning Brushland
+10 Rivervalley Village
+10 Towering Utopia
+10 Desolate Chapel
+10 Hellfire Bridge
+10 Swallowing Woods
+10 Ingrown Drylands
+10 Encompassing Bog
+10 Collapsing Waterfall
+10 Inverting Volcano
+10 Jug Bug
+10 Defensive Matrix
+10 Dauntless Soulless
+10 Disruption Agent
+10 Crystalline Cohorts
+10 Mooncleave Axe
+10 Night Gaze
+10 Queen's Rally
+10 Slow Culling
+10 Coagulant Casting
+10 Shifting Essence
+10 Ripping Genesis
+10 Faeruson Charm
+10 Dreadhorror Golem
+10 Unleash the Masses
+10 Dawnreach Willow
+10 Moorlani Charm
+10 Gothrian Charm
+10 Terrorizing Racking
+10 Soulless Soldier
+10 Certhina Charm
+10 Disturbed Heir
+10 Awaken Moorlani
+10 Skyswipper Willow
+10 Long Lost Lesson
+10 Seroalite Charm
+10 Faerson Pod
+10 Flare Up
+10 Gothrian Spirit
+10 Soul Release
+10 Triangulate Defect
+10 Euphoric Ignition
+10 Sunmade Ending
+10 Halt Trangressions
+10 Aspiring Herald
+10 Forging Diagram
+10 Spilled Spirits
+10 Provisioned Rations
+10 Seroalite Renegades
+10 Lagoonbound Tiger
+10 Lose To Tale
+10 Lifewood Keeper
+10 Rootborn Growth
+10 Gothrian Informant
+10 Assorted Kunai
+10 Congealment
+10 Indoctrined Traditions
+10 Spiritbound Manuscript
+10 Unhallowed Beliefs
+10 Antagonize Essence
+10 Sunmade Champion
+[LandSlot(1)]
