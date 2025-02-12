@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="sets/OZN-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>OZN visual spoiler</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 3%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/OZN-files/logo.png" />
+	<img class="preload-hidden" src="/sets/JLA-files/icon.png" />
+		<img class="preload-hidden" src="/sets/OZN-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="JLA-spoiler"><img src="sets/JLA-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="OZN-spoiler"><img src="sets/OZN-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="sets/OZN-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="sets\OZN-files\img\9_Coronation of Drakes.png" id="9_Coronation of Drakes" data-flag="@X" onclick="openSidebar('9_Coronation of Drakes',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\44_Timeline Collider.png" id="44_Timeline Collider" data-flag="@X" onclick="openSidebar('44_Timeline Collider',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\46_Carqis, Avenger of Gothr.png" id="46_Carqis, Avenger of Gothr" data-flag="@X" onclick="openSidebar('46_Carqis, Avenger of Gothr',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\78_Faeruson Hybrid.png" id="78_Faeruson Hybrid" data-flag="@X" onclick="openSidebar('78_Faeruson Hybrid',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\96_The Lifewood Soul.png" id="96_The Lifewood Soul" data-flag="@X" onclick="openSidebar('96_The Lifewood Soul',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\2_Awe Inspired Faith.png" id="2_Awe Inspired Faith" data-flag="@X" onclick="openSidebar('2_Awe Inspired Faith',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\36_Searoalite Refractor.png" id="36_Searoalite Refractor" data-flag="@X" onclick="openSidebar('36_Searoalite Refractor',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\45_Avenging Dusklord.png" id="45_Avenging Dusklord" data-flag="@X" onclick="openSidebar('45_Avenging Dusklord',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\67_Antagonize Essence.png" id="67_Antagonize Essence" data-flag="@X" onclick="openSidebar('67_Antagonize Essence',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\89_Beastmaster Herald.png" id="89_Beastmaster Herald" data-flag="@X" onclick="openSidebar('89_Beastmaster Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\5_Certhina Biblioplex.png" id="5_Certhina Biblioplex" data-flag="@X" onclick="openSidebar('5_Certhina Biblioplex',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\38_Seroalite Flux Mage.png" id="38_Seroalite Flux Mage" data-flag="@X" onclick="openSidebar('38_Seroalite Flux Mage',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\49_Dreadborn Demon.png" id="49_Dreadborn Demon" data-flag="@X" onclick="openSidebar('49_Dreadborn Demon',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\72_Emberstack Mage.png" id="72_Emberstack Mage" data-flag="@X" onclick="openSidebar('72_Emberstack Mage',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\93_Indoctrined Traditions.png" id="93_Indoctrined Traditions" data-flag="@X" onclick="openSidebar('93_Indoctrined Traditions',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\6_Certhina Steppe Dragon.png" id="6_Certhina Steppe Dragon" data-flag="@X" onclick="openSidebar('6_Certhina Steppe Dragon',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\41_Spiritbound Manuscript.png" id="41_Spiritbound Manuscript" data-flag="@X" onclick="openSidebar('41_Spiritbound Manuscript',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\55_Hexspear Legionnaire.png" id="55_Hexspear Legionnaire" data-flag="@X" onclick="openSidebar('55_Hexspear Legionnaire',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\74_Faerson Pheonix.png" id="74_Faerson Pheonix" data-flag="@X" onclick="openSidebar('74_Faerson Pheonix',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\94_Life Cycle Hermit.png" id="94_Life Cycle Hermit" data-flag="@X" onclick="openSidebar('94_Life Cycle Hermit',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\19_Sunmade Champion.png" id="19_Sunmade Champion" data-flag="@X" onclick="openSidebar('19_Sunmade Champion',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\42_Submission Chains.png" id="42_Submission Chains" data-flag="@X" onclick="openSidebar('42_Submission Chains',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\65_Unhallowed Beliefs.png" id="65_Unhallowed Beliefs" data-flag="@X" onclick="openSidebar('65_Unhallowed Beliefs',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\83_The Nine Gates.png" id="83_The Nine Gates" data-flag="@X" onclick="openSidebar('83_The Nine Gates',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\104_Moorlani Skypropagator.png" id="104_Moorlani Skypropagator" data-flag="@X" onclick="openSidebar('104_Moorlani Skypropagator',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\3_Certhina Archivist.png" id="3_Certhina Archivist" data-flag="@X" onclick="openSidebar('3_Certhina Archivist',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\24_Coalesce Machina.png" id="24_Coalesce Machina" data-flag="@X" onclick="openSidebar('24_Coalesce Machina',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\48_Deserter's Drake.png" id="48_Deserters Drake" data-flag="@X" onclick="openSidebar('48_Deserters Drake',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\69_Blazing Barrage.png" id="69_Blazing Barrage" data-flag="@X" onclick="openSidebar('69_Blazing Barrage',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\90_Briar Dragon.png" id="90_Briar Dragon" data-flag="@X" onclick="openSidebar('90_Briar Dragon',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\12_Halt Trangressions.png" id="12_Halt Trangressions" data-flag="@X" onclick="openSidebar('12_Halt Trangressions',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\29_Diffuse Situation.png" id="29_Diffuse Situation" data-flag="@X" onclick="openSidebar('29_Diffuse Situation',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\51_Gothrian Informant.png" id="51_Gothrian Informant" data-flag="@X" onclick="openSidebar('51_Gothrian Informant',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\71_Cross the Fourth Gate.png" id="71_Cross the Fourth Gate" data-flag="@X" onclick="openSidebar('71_Cross the Fourth Gate',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\91_Crescent Shakedown.png" id="91_Crescent Shakedown" data-flag="@X" onclick="openSidebar('91_Crescent Shakedown',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\15_Righteous Herald.png" id="15_Righteous Herald" data-flag="@X" onclick="openSidebar('15_Righteous Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\34_Mooncleave Axe.png" id="34_Mooncleave Axe" data-flag="@X" onclick="openSidebar('34_Mooncleave Axe',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\58_Lost Guardian.png" id="58_Lost Guardian" data-flag="@X" onclick="openSidebar('58_Lost Guardian',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\73_Euphoric Ignition.png" id="73_Euphoric Ignition" data-flag="@X" onclick="openSidebar('73_Euphoric Ignition',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\97_Lose To Tale.png" id="97_Lose To Tale" data-flag="@X" onclick="openSidebar('97_Lose To Tale',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\17_Seed the Sands.png" id="17_Seed the Sands" data-flag="@X" onclick="openSidebar('17_Seed the Sands',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\35_Razorwind.png" id="35_Razorwind" data-flag="@X" onclick="openSidebar('35_Razorwind',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\59_Raining Death.png" id="59_Raining Death" data-flag="@X" onclick="openSidebar('59_Raining Death',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\77_Faeruson Hellwurm.png" id="77_Faeruson Hellwurm" data-flag="@X" onclick="openSidebar('77_Faeruson Hellwurm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\100_Moorlani Explorer.png" id="100_Moorlani Explorer" data-flag="@X" onclick="openSidebar('100_Moorlani Explorer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\18_Skydrop Griffin.png" id="18_Skydrop Griffin" data-flag="@X" onclick="openSidebar('18_Skydrop Griffin',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\39_Seroalite Renegades.png" id="39_Seroalite Renegades" data-flag="@X" onclick="openSidebar('39_Seroalite Renegades',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\60_Reality Check.png" id="60_Reality Check" data-flag="@X" onclick="openSidebar('60_Reality Check',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\85_Rever Knight.png" id="85_Rever Knight" data-flag="@X" onclick="openSidebar('85_Rever Knight',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\103_Moorlani Resurgence.png" id="103_Moorlani Resurgence" data-flag="@X" onclick="openSidebar('103_Moorlani Resurgence',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\21_Triumphant Assualt.png" id="21_Triumphant Assualt" data-flag="@X" onclick="openSidebar('21_Triumphant Assualt',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\40_Seroalite Swiftblade.png" id="40_Seroalite Swiftblade" data-flag="@X" onclick="openSidebar('40_Seroalite Swiftblade',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\62_Shadow Harvest.png" id="62_Shadow Harvest" data-flag="@X" onclick="openSidebar('62_Shadow Harvest',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\87_Unexpected Guests.png" id="87_Unexpected Guests" data-flag="@X" onclick="openSidebar('87_Unexpected Guests',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\109_Unearthed History.png" id="109_Unearthed History" data-flag="@X" onclick="openSidebar('109_Unearthed History',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\1_Aspiring Herald.png" id="1_Aspiring Herald" data-flag="@X" onclick="openSidebar('1_Aspiring Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\23_Assorted Kunai.png" id="23_Assorted Kunai" data-flag="@X" onclick="openSidebar('23_Assorted Kunai',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\47_Crusade of the Corpses.png" id="47_Crusade of the Corpses" data-flag="@X" onclick="openSidebar('47_Crusade of the Corpses',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\68_Archaic Skyrazer.png" id="68_Archaic Skyrazer" data-flag="@X" onclick="openSidebar('68_Archaic Skyrazer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\92_Giant Challenge.png" id="92_Giant Challenge" data-flag="@X" onclick="openSidebar('92_Giant Challenge',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\4_Certhina Armaments.png" id="4_Certhina Armaments" data-flag="@X" onclick="openSidebar('4_Certhina Armaments',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\25_Congealment.png" id="25_Congealment" data-flag="@X" onclick="openSidebar('25_Congealment',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\50_Gothrian Crusader.png" id="50_Gothrian Crusader" data-flag="@X" onclick="openSidebar('50_Gothrian Crusader',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\70_Bloodfire Knight.png" id="70_Bloodfire Knight" data-flag="@X" onclick="openSidebar('70_Bloodfire Knight',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\95_Lifewood Keeper.png" id="95_Lifewood Keeper" data-flag="@X" onclick="openSidebar('95_Lifewood Keeper',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\7_Certhina War Captain.png" id="7_Certhina War Captain" data-flag="@X" onclick="openSidebar('7_Certhina War Captain',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\26_Crystalline Cohorts.png" id="26_Crystalline Cohorts" data-flag="@X" onclick="openSidebar('26_Crystalline Cohorts',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\52_Gothrian Mercenary.png" id="52_Gothrian Mercenary" data-flag="@X" onclick="openSidebar('52_Gothrian Mercenary',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\75_Faerson Pod.png" id="75_Faerson Pod" data-flag="@X" onclick="openSidebar('75_Faerson Pod',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\98_Moorlani Ambusher.png" id="98_Moorlani Ambusher" data-flag="@X" onclick="openSidebar('98_Moorlani Ambusher',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\8_Conscript Cavalry.png" id="8_Conscript Cavalry" data-flag="@X" onclick="openSidebar('8_Conscript Cavalry',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\27_Dauntless Soulless.png" id="27_Dauntless Soulless" data-flag="@X" onclick="openSidebar('27_Dauntless Soulless',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\53_Gothrian Skullcapper.png" id="53_Gothrian Skullcapper" data-flag="@X" onclick="openSidebar('53_Gothrian Skullcapper',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\76_Faeruson Glutton.png" id="76_Faeruson Glutton" data-flag="@X" onclick="openSidebar('76_Faeruson Glutton',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\99_Moorlani Druid.png" id="99_Moorlani Druid" data-flag="@X" onclick="openSidebar('99_Moorlani Druid',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\10_Drake Summons.png" id="10_Drake Summons" data-flag="@X" onclick="openSidebar('10_Drake Summons',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\28_Defensive Matrix.png" id="28_Defensive Matrix" data-flag="@X" onclick="openSidebar('28_Defensive Matrix',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\54_Gothrian Spirit.png" id="54_Gothrian Spirit" data-flag="@X" onclick="openSidebar('54_Gothrian Spirit',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\79_Faeruson Lancer.png" id="79_Faeruson Lancer" data-flag="@X" onclick="openSidebar('79_Faeruson Lancer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\101_Moorlani Muse.png" id="101_Moorlani Muse" data-flag="@X" onclick="openSidebar('101_Moorlani Muse',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\11_Forging Diagram.png" id="11_Forging Diagram" data-flag="@X" onclick="openSidebar('11_Forging Diagram',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\30_Disruption Agent.png" id="30_Disruption Agent" data-flag="@X" onclick="openSidebar('30_Disruption Agent',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\56_Illuminate Oddities.png" id="56_Illuminate Oddities" data-flag="@X" onclick="openSidebar('56_Illuminate Oddities',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\80_Faeruson Smokestacker.png" id="80_Faeruson Smokestacker" data-flag="@X" onclick="openSidebar('80_Faeruson Smokestacker',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\102_Moorlani Overgrown.png" id="102_Moorlani Overgrown" data-flag="@X" onclick="openSidebar('102_Moorlani Overgrown',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\13_Jagged Pursuit.png" id="13_Jagged Pursuit" data-flag="@X" onclick="openSidebar('13_Jagged Pursuit',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\31_Enhance Understanding.png" id="31_Enhance Understanding" data-flag="@X" onclick="openSidebar('31_Enhance Understanding',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\57_Look's Better On Me.png" id="57_Looks Better On Me" data-flag="@X" onclick="openSidebar('57_Looks Better On Me',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\81_Flare Up.png" id="81_Flare Up" data-flag="@X" onclick="openSidebar('81_Flare Up',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\105_Moorlani Skywaker.png" id="105_Moorlani Skywaker" data-flag="@X" onclick="openSidebar('105_Moorlani Skywaker',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\14_Latent Revival.png" id="14_Latent Revival" data-flag="@X" onclick="openSidebar('14_Latent Revival',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\32_Jug Bug.png" id="32_Jug Bug" data-flag="@X" onclick="openSidebar('32_Jug Bug',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\61_Shackled Gargoyle.png" id="61_Shackled Gargoyle" data-flag="@X" onclick="openSidebar('61_Shackled Gargoyle',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\82_Mind Eruption.png" id="82_Mind Eruption" data-flag="@X" onclick="openSidebar('82_Mind Eruption',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\106_Old Age Guardian.png" id="106_Old Age Guardian" data-flag="@X" onclick="openSidebar('106_Old Age Guardian',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\16_Scribe Squire.png" id="16_Scribe Squire" data-flag="@X" onclick="openSidebar('16_Scribe Squire',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\33_Lagoonbound Tiger.png" id="33_Lagoonbound Tiger" data-flag="@X" onclick="openSidebar('33_Lagoonbound Tiger',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\63_Soul Release.png" id="63_Soul Release" data-flag="@X" onclick="openSidebar('63_Soul Release',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\84_Radiant Pulse.png" id="84_Radiant Pulse" data-flag="@X" onclick="openSidebar('84_Radiant Pulse',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\107_Provisioned Rations.png" id="107_Provisioned Rations" data-flag="@X" onclick="openSidebar('107_Provisioned Rations',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\20_Sunmade Ending.png" id="20_Sunmade Ending" data-flag="@X" onclick="openSidebar('20_Sunmade Ending',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\37_Seroalite Analyst.png" id="37_Seroalite Analyst" data-flag="@X" onclick="openSidebar('37_Seroalite Analyst',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\64_Spilled Spirits.png" id="64_Spilled Spirits" data-flag="@X" onclick="openSidebar('64_Spilled Spirits',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\86_Triangulate Defect.png" id="86_Triangulate Defect" data-flag="@X" onclick="openSidebar('86_Triangulate Defect',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\108_Rootborn Growth.png" id="108_Rootborn Growth" data-flag="@X" onclick="openSidebar('108_Rootborn Growth',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\22_Wrong Page.png" id="22_Wrong Page" data-flag="@X" onclick="openSidebar('22_Wrong Page',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\43_Sustain Velocity.png" id="43_Sustain Velocity" data-flag="@X" onclick="openSidebar('43_Sustain Velocity',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\66_Volatile Statuette.png" id="66_Volatile Statuette" data-flag="@X" onclick="openSidebar('66_Volatile Statuette',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\88_Wildlands Flamechainer.png" id="88_Wildlands Flamechainer" data-flag="@X" onclick="openSidebar('88_Wildlands Flamechainer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\110_Vial of Venom.png" id="110_Vial of Venom" data-flag="@X" onclick="openSidebar('110_Vial of Venom',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\114_Divine Geyser.png" id="114_Divine Geyser" data-flag="@X" onclick="openSidebar('114_Divine Geyser',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\127_Fleeting Possesion.png" id="127_Fleeting Possesion" data-flag="@X" onclick="openSidebar('127_Fleeting Possesion',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\137_Bloodfire Archdemon.png" id="137_Bloodfire Archdemon" data-flag="@X" onclick="openSidebar('137_Bloodfire Archdemon',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\148_Encompass Wilderness.png" id="148_Encompass Wilderness" data-flag="@X" onclick="openSidebar('148_Encompass Wilderness',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\157_Enduring Herald.png" id="157_Enduring Herald" data-flag="@X" onclick="openSidebar('157_Enduring Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\117_Lumira, Diviner Polaris.png" id="117_Lumira, Diviner Polaris" data-flag="@X" onclick="openSidebar('117_Lumira, Diviner Polaris',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\133_Zera, Crow Martyr.png" id="133_Zera, Crow Martyr" data-flag="@X" onclick="openSidebar('133_Zera, Crow Martyr',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\139_Bloodfire Dragon.png" id="139_Bloodfire Dragon" data-flag="@X" onclick="openSidebar('139_Bloodfire Dragon',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\153_Th'Grud, Primordial King.png" id="153_ThGrud, Primordial King" data-flag="@X" onclick="openSidebar('153_ThGrud, Primordial King',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\160_Glass Shredder Spirit.png" id="160_Glass Shredder Spirit" data-flag="@X" onclick="openSidebar('160_Glass Shredder Spirit',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\111_Cloudshift Herald.png" id="111_Cloudshift Herald" data-flag="@X" onclick="openSidebar('111_Cloudshift Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\129_Grasping for Hope.png" id="129_Grasping for Hope" data-flag="@X" onclick="openSidebar('129_Grasping for Hope',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\141_Escaped Chimera.png" id="141_Escaped Chimera" data-flag="@X" onclick="openSidebar('141_Escaped Chimera',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\150_Moorlani Shrine.png" id="150_Moorlani Shrine" data-flag="@X" onclick="openSidebar('150_Moorlani Shrine',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\162_Revival Herald.png" id="162_Revival Herald" data-flag="@X" onclick="openSidebar('162_Revival Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\122_Steelclade Herald.png" id="122_Steelclade Herald" data-flag="@X" onclick="openSidebar('122_Steelclade Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\135_Zera's Disciple.png" id="135_Zeras Disciple" data-flag="@X" onclick="openSidebar('135_Zeras Disciple',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\140_Bloodfire Soulless.png" id="140_Bloodfire Soulless" data-flag="@X" onclick="openSidebar('140_Bloodfire Soulless',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\151_Natural Purge.png" id="151_Natural Purge" data-flag="@X" onclick="openSidebar('151_Natural Purge',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\163_Scalebane's Regret.png" id="163_Scalebanes Regret" data-flag="@X" onclick="openSidebar('163_Scalebanes Regret',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\112_Desperate Mending.png" id="112_Desperate Mending" data-flag="@X" onclick="openSidebar('112_Desperate Mending',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\128_Forbidden Altar.png" id="128_Forbidden Altar" data-flag="@X" onclick="openSidebar('128_Forbidden Altar',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\142_Imp Swarm.png" id="142_Imp Swarm" data-flag="@X" onclick="openSidebar('142_Imp Swarm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\147_Demanding Durgal.png" id="147_Demanding Durgal" data-flag="@X" onclick="openSidebar('147_Demanding Durgal',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\164_Toiling Chemist.png" id="164_Toiling Chemist" data-flag="@X" onclick="openSidebar('164_Toiling Chemist',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\119_Protective Custody.png" id="119_Protective Custody" data-flag="@X" onclick="openSidebar('119_Protective Custody',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\131_Peak into the Light.png" id="131_Peak into the Light" data-flag="@X" onclick="openSidebar('131_Peak into the Light',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\138_Bloodfire Corruption.png" id="138_Bloodfire Corruption" data-flag="@X" onclick="openSidebar('138_Bloodfire Corruption',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\149_Moorlani Ravager.png" id="149_Moorlani Ravager" data-flag="@X" onclick="openSidebar('149_Moorlani Ravager',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\158_Envigorating Essence.png" id="158_Envigorating Essence" data-flag="@X" onclick="openSidebar('158_Envigorating Essence',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\120_Soaring Dreams.png" id="120_Soaring Dreams" data-flag="@X" onclick="openSidebar('120_Soaring Dreams',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\134_Zera's Cloaker.png" id="134_Zeras Cloaker" data-flag="@X" onclick="openSidebar('134_Zeras Cloaker',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\143_Improvised Shelling.png" id="143_Improvised Shelling" data-flag="@X" onclick="openSidebar('143_Improvised Shelling',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\156_The World Expands.png" id="156_The World Expands" data-flag="@X" onclick="openSidebar('156_The World Expands',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\159_Explorer's Tale.png" id="159_Explorers Tale" data-flag="@X" onclick="openSidebar('159_Explorers Tale',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\121_Staticsphere.png" id="121_Staticsphere" data-flag="@X" onclick="openSidebar('121_Staticsphere',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\125_Bubbling Tonic.png" id="125_Bubbling Tonic" data-flag="@X" onclick="openSidebar('125_Bubbling Tonic',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\144_Skingraft Rupture.png" id="144_Skingraft Rupture" data-flag="@X" onclick="openSidebar('144_Skingraft Rupture',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\145_Autumn Willow.png" id="145_Autumn Willow" data-flag="@X" onclick="openSidebar('145_Autumn Willow',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\161_Overgrown Tiger.png" id="161_Overgrown Tiger" data-flag="@X" onclick="openSidebar('161_Overgrown Tiger',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\124_Truelight Priestess.png" id="124_Truelight Priestess" data-flag="@X" onclick="openSidebar('124_Truelight Priestess',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\126_Diviner's Antithesis.png" id="126_Diviners Antithesis" data-flag="@X" onclick="openSidebar('126_Diviners Antithesis',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\146_Briarbulb.png" id="146_Briarbulb" data-flag="@X" onclick="openSidebar('146_Briarbulb',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\113_Disciple of Lumira.png" id="113_Disciple of Lumira" data-flag="@X" onclick="openSidebar('113_Disciple of Lumira',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\130_Instill Plague.png" id="130_Instill Plague" data-flag="@X" onclick="openSidebar('130_Instill Plague',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\152_Skyfall Brigade.png" id="152_Skyfall Brigade" data-flag="@X" onclick="openSidebar('152_Skyfall Brigade',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\115_Diviner's Monastery.png" id="115_Diviners Monastery" data-flag="@X" onclick="openSidebar('115_Diviners Monastery',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\132_Wrapping Warp.png" id="132_Wrapping Warp" data-flag="@X" onclick="openSidebar('132_Wrapping Warp',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\154_Two Headed Boargesh.png" id="154_Two Headed Boargesh" data-flag="@X" onclick="openSidebar('154_Two Headed Boargesh',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\116_Extradite Intent.png" id="116_Extradite Intent" data-flag="@X" onclick="openSidebar('116_Extradite Intent',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\136_Zera's Mistculler.png" id="136_Zeras Mistculler" data-flag="@X" onclick="openSidebar('136_Zeras Mistculler',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\155_Woodland Aggression.png" id="155_Woodland Aggression" data-flag="@X" onclick="openSidebar('155_Woodland Aggression',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\118_Passage Scholar.png" id="118_Passage Scholar" data-flag="@X" onclick="openSidebar('118_Passage Scholar',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\123_Survivor's Tale.png" id="123_Survivors Tale" data-flag="@X" onclick="openSidebar('123_Survivors Tale',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\166_The Corrupted Ideal.png" id="166_The Corrupted Ideal" data-flag="@X" onclick="openSidebar('166_The Corrupted Ideal',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\189_Volley of Blackstone.png" id="189_Volley of Blackstone" data-flag="@X" onclick="openSidebar('189_Volley of Blackstone',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\205_An Alternate Age.png" id="205_An Alternate Age" data-flag="@X" onclick="openSidebar('205_An Alternate Age',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\175_Inquisitor of Kronos.png" id="175_Inquisitor of Kronos" data-flag="@X" onclick="openSidebar('175_Inquisitor of Kronos',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\193_Ainsley, Radiant Hope.png" id="193_Ainsley, Radiant Hope" data-flag="@X" onclick="openSidebar('193_Ainsley, Radiant Hope',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\167_Cult of the Exiles.png" id="167_Cult of the Exiles" data-flag="@X" onclick="openSidebar('167_Cult of the Exiles',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\192_Xakuron, Patron of Plagues.png" id="192_Xakuron, Patron of Plagues" data-flag="@X" onclick="openSidebar('192_Xakuron, Patron of Plagues',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\207_Essence Chroma.png" id="207_Essence Chroma" data-flag="@X" onclick="openSidebar('207_Essence Chroma',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\176_Primordial Calling.png" id="176_Primordial Calling" data-flag="@X" onclick="openSidebar('176_Primordial Calling',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\201_Razhiel, Sunmade Archangel.png" id="201_Razhiel, Sunmade Archangel" data-flag="@X" onclick="openSidebar('201_Razhiel, Sunmade Archangel',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\172_Sweeping Siphon.png" id="172_Sweeping Siphon" data-flag="@X" onclick="openSidebar('172_Sweeping Siphon',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\182_Glaring Death.png" id="182_Glaring Death" data-flag="@X" onclick="openSidebar('182_Glaring Death',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\212_Master of Essence.png" id="212_Master of Essence" data-flag="@X" onclick="openSidebar('212_Master of Essence',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\180_Trinity Phoenix.png" id="180_Trinity Phoenix" data-flag="@X" onclick="openSidebar('180_Trinity Phoenix',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\198_Flamebraced Slayer.png" id="198_Flamebraced Slayer" data-flag="@X" onclick="openSidebar('198_Flamebraced Slayer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\170_Ringblade Deserter.png" id="170_Ringblade Deserter" data-flag="@X" onclick="openSidebar('170_Ringblade Deserter',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\190_Willow King Phantom.png" id="190_Willow King Phantom" data-flag="@X" onclick="openSidebar('190_Willow King Phantom',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\208_Feast of Revival.png" id="208_Feast of Revival" data-flag="@X" onclick="openSidebar('208_Feast of Revival',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\177_Soulless Spellbinder.png" id="177_Soulless Spellbinder" data-flag="@X" onclick="openSidebar('177_Soulless Spellbinder',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\202_Shackle Herald.png" id="202_Shackle Herald" data-flag="@X" onclick="openSidebar('202_Shackle Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\171_Surviving the First Winter.png" id="171_Surviving the First Winter" data-flag="@X" onclick="openSidebar('171_Surviving the First Winter',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\184_Patroned Witch.png" id="184_Patroned Witch" data-flag="@X" onclick="openSidebar('184_Patroned Witch',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\209_Lifewood Archer.png" id="209_Lifewood Archer" data-flag="@X" onclick="openSidebar('209_Lifewood Archer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\179_Time Coil.png" id="179_Time Coil" data-flag="@X" onclick="openSidebar('179_Time Coil',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\194_Battlerite Herald.png" id="194_Battlerite Herald" data-flag="@X" onclick="openSidebar('194_Battlerite Herald',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\165_Blizzard Rider.png" id="165_Blizzard Rider" data-flag="@X" onclick="openSidebar('165_Blizzard Rider',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\187_Soulless Company.png" id="187_Soulless Company" data-flag="@X" onclick="openSidebar('187_Soulless Company',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\213_Resonation Mystic.png" id="213_Resonation Mystic" data-flag="@X" onclick="openSidebar('213_Resonation Mystic',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\173_Cyrogenesis Chamber.png" id="173_Cyrogenesis Chamber" data-flag="@X" onclick="openSidebar('173_Cyrogenesis Chamber',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\199_Magmatic Compositing.png" id="199_Magmatic Compositing" data-flag="@X" onclick="openSidebar('199_Magmatic Compositing',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\168_Exiled Reaper.png" id="168_Exiled Reaper" data-flag="@X" onclick="openSidebar('168_Exiled Reaper',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\188_Vile Patron.png" id="188_Vile Patron" data-flag="@X" onclick="openSidebar('188_Vile Patron',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\214_Talltale Goliath.png" id="214_Talltale Goliath" data-flag="@X" onclick="openSidebar('214_Talltale Goliath',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\174_Divination Storm.png" id="174_Divination Storm" data-flag="@X" onclick="openSidebar('174_Divination Storm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\204_Sunspear.png" id="204_Sunspear" data-flag="@X" onclick="openSidebar('204_Sunspear',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\169_Exiles Procession.png" id="169_Exiles Procession" data-flag="@X" onclick="openSidebar('169_Exiles Procession',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\181_Distribute Plague.png" id="181_Distribute Plague" data-flag="@X" onclick="openSidebar('181_Distribute Plague',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\206_Essence Bow.png" id="206_Essence Bow" data-flag="@X" onclick="openSidebar('206_Essence Bow',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\178_Stormchaser Banner.png" id="178_Stormchaser Banner" data-flag="@X" onclick="openSidebar('178_Stormchaser Banner',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\195_Challenger Golem.png" id="195_Challenger Golem" data-flag="@X" onclick="openSidebar('195_Challenger Golem',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\183_Horde of Bones.png" id="183_Horde of Bones" data-flag="@X" onclick="openSidebar('183_Horde of Bones',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\210_Lifewood Blade.png" id="210_Lifewood Blade" data-flag="@X" onclick="openSidebar('210_Lifewood Blade',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\196_Charged Surge.png" id="196_Charged Surge" data-flag="@X" onclick="openSidebar('196_Charged Surge',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\185_Scavenge Cavalier.png" id="185_Scavenge Cavalier" data-flag="@X" onclick="openSidebar('185_Scavenge Cavalier',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\211_Lifewood Matron.png" id="211_Lifewood Matron" data-flag="@X" onclick="openSidebar('211_Lifewood Matron',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\197_Escalating Heat.png" id="197_Escalating Heat" data-flag="@X" onclick="openSidebar('197_Escalating Heat',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\186_Soul Eclipse.png" id="186_Soul Eclipse" data-flag="@X" onclick="openSidebar('186_Soul Eclipse',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\200_Radiant Staff.png" id="200_Radiant Staff" data-flag="@X" onclick="openSidebar('200_Radiant Staff',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\191_Willow Preserver.png" id="191_Willow Preserver" data-flag="@X" onclick="openSidebar('191_Willow Preserver',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\203_Solar Wreath.png" id="203_Solar Wreath" data-flag="@X" onclick="openSidebar('203_Solar Wreath',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\216_Bounties Beauty.png" id="216_Bounties Beauty" data-flag="@X" onclick="openSidebar('216_Bounties Beauty',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\226_Gothrian Manifestation.png" id="226_Gothrian Manifestation" data-flag="@X" onclick="openSidebar('226_Gothrian Manifestation',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\223_Faeruson Invasion.png" id="223_Faeruson Invasion" data-flag="@X" onclick="openSidebar('223_Faeruson Invasion',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\215_Awaken Moorlani.png" id="215_Awaken Moorlani" data-flag="@X" onclick="openSidebar('215_Awaken Moorlani',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\219_Certhina's Cultivation.png" id="219_Certhinas Cultivation" data-flag="@X" onclick="openSidebar('219_Certhinas Cultivation',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\228_Long Lost Lesson.png" id="228_Long Lost Lesson" data-flag="@X" onclick="openSidebar('228_Long Lost Lesson',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\241_Terrorizing Racking.png" id="241_Terrorizing Racking" data-flag="@X" onclick="openSidebar('241_Terrorizing Racking',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\235_Ripping Genesis.png" id="235_Ripping Genesis" data-flag="@X" onclick="openSidebar('235_Ripping Genesis',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\220_Enter the Maw.png" id="220_Enter the Maw" data-flag="@X" onclick="openSidebar('220_Enter the Maw',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\242_Unleash the Masses.png" id="242_Unleash the Masses" data-flag="@X" onclick="openSidebar('242_Unleash the Masses',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\221_Essence Mystic.png" id="221_Essence Mystic" data-flag="@X" onclick="openSidebar('221_Essence Mystic',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\225_Gothrian Charm.png" id="225_Gothrian Charm" data-flag="@X" onclick="openSidebar('225_Gothrian Charm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\222_Faeruson Charm.png" id="222_Faeruson Charm" data-flag="@X" onclick="openSidebar('222_Faeruson Charm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\229_Moorlani Charm.png" id="229_Moorlani Charm" data-flag="@X" onclick="openSidebar('229_Moorlani Charm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\217_Certhina Charm.png" id="217_Certhina Charm" data-flag="@X" onclick="openSidebar('217_Certhina Charm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\236_Seroalite Charm.png" id="236_Seroalite Charm" data-flag="@X" onclick="openSidebar('236_Seroalite Charm',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\239_Soul Reduction.png" id="239_Soul Reduction" data-flag="@X" onclick="openSidebar('239_Soul Reduction',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\224_Faeruson Titan.png" id="224_Faeruson Titan" data-flag="@X" onclick="openSidebar('224_Faeruson Titan',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\240_Sunder the Ancients.png" id="240_Sunder the Ancients" data-flag="@X" onclick="openSidebar('240_Sunder the Ancients',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\218_Certhina Dragon Master.png" id="218_Certhina Dragon Master" data-flag="@X" onclick="openSidebar('218_Certhina Dragon Master',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\227_Herald of Beauty.png" id="227_Herald of Beauty" data-flag="@X" onclick="openSidebar('227_Herald of Beauty',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\231_Night Gaze.png" id="231_Night Gaze" data-flag="@X" onclick="openSidebar('231_Night Gaze',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\243_Arcane Warding.png" id="243_Arcane Warding" data-flag="@X" onclick="openSidebar('243_Arcane Warding',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\230_Moorlani Dragonslayer.png" id="230_Moorlani Dragonslayer" data-flag="@X" onclick="openSidebar('230_Moorlani Dragonslayer',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\233_Queen's Rally.png" id="233_Queens Rally" data-flag="@X" onclick="openSidebar('233_Queens Rally',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\237_Shifting Essence.png" id="237_Shifting Essence" data-flag="@X" onclick="openSidebar('237_Shifting Essence',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\232_Price of Souls.png" id="232_Price of Souls" data-flag="@X" onclick="openSidebar('232_Price of Souls',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\244_Coagulant Casting.png" id="244_Coagulant Casting" data-flag="@X" onclick="openSidebar('244_Coagulant Casting',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\238_Slow Culling.png" id="238_Slow Culling" data-flag="@X" onclick="openSidebar('238_Slow Culling',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\234_Radiant Lightning.png" id="234_Radiant Lightning" data-flag="@X" onclick="openSidebar('234_Radiant Lightning',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\248_Skyswipper Willow.png" id="248_Skyswipper Willow" data-flag="@X" onclick="openSidebar('248_Skyswipper Willow',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\249_Soulless Soldier.png" id="249_Soulless Soldier" data-flag="@X" onclick="openSidebar('249_Soulless Soldier',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\247_Dreadhorror Golem.png" id="247_Dreadhorror Golem" data-flag="@X" onclick="openSidebar('247_Dreadhorror Golem',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\246_Disturbed Heir.png" id="246_Disturbed Heir" data-flag="@X" onclick="openSidebar('246_Disturbed Heir',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\245_Dawnreach Willow.png" id="245_Dawnreach Willow" data-flag="@X" onclick="openSidebar('245_Dawnreach Willow',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\251_Auriclious, the Halycon.png" id="251_Auriclious, the Halycon" data-flag="@X" onclick="openSidebar('251_Auriclious, the Halycon',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\268_Ozin Onus.png" id="268_Ozin Onus" data-flag="@X" onclick="openSidebar('268_Ozin Onus',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\256_Coveted Gemstone.png" id="256_Coveted Gemstone" data-flag="@X" onclick="openSidebar('256_Coveted Gemstone',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\257_Endless Passage.png" id="257_Endless Passage" data-flag="@X" onclick="openSidebar('257_Endless Passage',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\263_Idolization Catalys.png" id="263_Idolization Catalys" data-flag="@X" onclick="openSidebar('263_Idolization Catalys',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\264_Legacy Blade.png" id="264_Legacy Blade" data-flag="@X" onclick="openSidebar('264_Legacy Blade',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\271_Search Warrant.png" id="271_Search Warrant" data-flag="@X" onclick="openSidebar('271_Search Warrant',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\252_Beacon Horror.png" id="252_Beacon Horror" data-flag="@X" onclick="openSidebar('252_Beacon Horror',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\254_Combustion Ring.png" id="254_Combustion Ring" data-flag="@X" onclick="openSidebar('254_Combustion Ring',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\259_Frostcutter.png" id="259_Frostcutter" data-flag="@X" onclick="openSidebar('259_Frostcutter',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\266_Obsidian Manticore.png" id="266_Obsidian Manticore" data-flag="@X" onclick="openSidebar('266_Obsidian Manticore',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\267_Outdated Bounty.png" id="267_Outdated Bounty" data-flag="@X" onclick="openSidebar('267_Outdated Bounty',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\269_Paradoxical Stairs.png" id="269_Paradoxical Stairs" data-flag="@X" onclick="openSidebar('269_Paradoxical Stairs',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\275_Tome of Ideals.png" id="275_Tome of Ideals" data-flag="@X" onclick="openSidebar('275_Tome of Ideals',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\250_Assorted Keys.png" id="250_Assorted Keys" data-flag="@X" onclick="openSidebar('250_Assorted Keys',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\253_Bushgarden Tortoise.png" id="253_Bushgarden Tortoise" data-flag="@X" onclick="openSidebar('253_Bushgarden Tortoise',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\255_Coralcollage Ammonite.png" id="255_Coralcollage Ammonite" data-flag="@X" onclick="openSidebar('255_Coralcollage Ammonite',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\258_Enscription Monolith.png" id="258_Enscription Monolith" data-flag="@X" onclick="openSidebar('258_Enscription Monolith',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\260_Fungalflurry Snail.png" id="260_Fungalflurry Snail" data-flag="@X" onclick="openSidebar('260_Fungalflurry Snail',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\261_Glowshroom Grub.png" id="261_Glowshroom Grub" data-flag="@X" onclick="openSidebar('261_Glowshroom Grub',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\262_Harversting Sickle.png" id="262_Harversting Sickle" data-flag="@X" onclick="openSidebar('262_Harversting Sickle',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\265_Lifewood Ring.png" id="265_Lifewood Ring" data-flag="@X" onclick="openSidebar('265_Lifewood Ring',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\270_Refurbished Compass.png" id="270_Refurbished Compass" data-flag="@X" onclick="openSidebar('270_Refurbished Compass',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\272_Seashore Crab.png" id="272_Seashore Crab" data-flag="@X" onclick="openSidebar('272_Seashore Crab',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\273_Soul Tome.png" id="273_Soul Tome" data-flag="@X" onclick="openSidebar('273_Soul Tome',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\274_Steadfast Blade.png" id="274_Steadfast Blade" data-flag="@X" onclick="openSidebar('274_Steadfast Blade',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\296_Skycastle Solitude.png" id="296_Skycastle Solitude" data-flag="@X" onclick="openSidebar('296_Skycastle Solitude',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\299_Unhallowed Wetlands.png" id="299_Unhallowed Wetlands" data-flag="@X" onclick="openSidebar('299_Unhallowed Wetlands',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\277_Bloodgem Mines.png" id="277_Bloodgem Mines" data-flag="@X" onclick="openSidebar('277_Bloodgem Mines',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\276_Blazened Acres.png" id="276_Blazened Acres" data-flag="@X" onclick="openSidebar('276_Blazened Acres',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\300_Welcoming Homestead.png" id="300_Welcoming Homestead" data-flag="@X" onclick="openSidebar('300_Welcoming Homestead',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\280_Deserter's Holy Grounds.png" id="280_Deserters Holy Grounds" data-flag="@X" onclick="openSidebar('280_Deserters Holy Grounds',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\283_Engraved Thicket.png" id="283_Engraved Thicket" data-flag="@X" onclick="openSidebar('283_Engraved Thicket',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\291_Outdated Mill.png" id="291_Outdated Mill" data-flag="@X" onclick="openSidebar('291_Outdated Mill',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\293_Scholars Retreat.png" id="293_Scholars Retreat" data-flag="@X" onclick="openSidebar('293_Scholars Retreat',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\294_Secluded Bastion.png" id="294_Secluded Bastion" data-flag="@X" onclick="openSidebar('294_Secluded Bastion',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\295_Seroalite Cityscape.png" id="295_Seroalite Cityscape" data-flag="@X" onclick="openSidebar('295_Seroalite Cityscape',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\286_Gothrian Chambers.png" id="286_Gothrian Chambers" data-flag="@X" onclick="openSidebar('286_Gothrian Chambers',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\284_Faeruson Temple.png" id="284_Faeruson Temple" data-flag="@X" onclick="openSidebar('284_Faeruson Temple',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\290_Moorlani Palace.png" id="290_Moorlani Palace" data-flag="@X" onclick="openSidebar('290_Moorlani Palace',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\278_Certhina Citadel.png" id="278_Certhina Citadel" data-flag="@X" onclick="openSidebar('278_Certhina Citadel',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\292_Rivervalley Village.png" id="292_Rivervalley Village" data-flag="@X" onclick="openSidebar('292_Rivervalley Village',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\281_Desolate Chapel.png" id="281_Desolate Chapel" data-flag="@X" onclick="openSidebar('281_Desolate Chapel',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\287_Hellfire Bridge.png" id="287_Hellfire Bridge" data-flag="@X" onclick="openSidebar('287_Hellfire Bridge',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\301_Yawning Brushland.png" id="301_Yawning Brushland" data-flag="@X" onclick="openSidebar('301_Yawning Brushland',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\298_Towering Utopia.png" id="298_Towering Utopia" data-flag="@X" onclick="openSidebar('298_Towering Utopia',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\285_Forsaken Empire.png" id="285_Forsaken Empire" data-flag="@X" onclick="openSidebar('285_Forsaken Empire',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\279_Collapsing Waterfall.png" id="279_Collapsing Waterfall" data-flag="@X" onclick="openSidebar('279_Collapsing Waterfall',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\282_Encompassing Bog.png" id="282_Encompassing Bog" data-flag="@X" onclick="openSidebar('282_Encompassing Bog',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\288_Ingrown Drylands.png" id="288_Ingrown Drylands" data-flag="@X" onclick="openSidebar('288_Ingrown Drylands',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\289_Inverting Volcano.png" id="289_Inverting Volcano" data-flag="@X" onclick="openSidebar('289_Inverting Volcano',false)"></div>
+			<div class="container"><img alt="sets\OZN-files\img\297_Swallowing Woods.png" id="297_Swallowing Woods" data-flag="@X" onclick="openSidebar('297_Swallowing Woods',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = 'img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		if (horizontal && rotated_img.style.display == 'none')
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+	}
+
+	function openSidebar(id, h=false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+
+		if (horizontal)
+		{
+			rotated_img.src = document.getElementById(id).src;
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			window.location = ("/search?search=" + document.getElementById("search").value);
+		}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let card_name = card_list_arrayified[i].card_name;
+				for (const char of specialchars)
+				{
+					card_name = card_name.replaceAll(char, "");
+				}
+
+				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+			}
+	</script>
+</body>
+</html>
