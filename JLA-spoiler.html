@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="sets/JLA-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>JLA visual spoiler</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 3%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/JLA-files/logo.png" />
+	<img class="preload-hidden" src="/sets/JLA-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="JLA-spoiler"><img src="sets/JLA-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="sets/JLA-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="sets\JLA-files\img\6_Varyus, Progenitor of Certhin.png" id="6_Varyus, Progenitor of Certhin" data-flag="@X" onclick="openSidebar('6_Varyus, Progenitor of Certhin',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\3_Illith, Progenitor of Seroa.png" id="3_Illith, Progenitor of Seroa" data-flag="@X" onclick="openSidebar('3_Illith, Progenitor of Seroa',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\1_Ellorn, Progenitor of Gothr.png" id="1_Ellorn, Progenitor of Gothr" data-flag="@X" onclick="openSidebar('1_Ellorn, Progenitor of Gothr',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\4_Moltran, Progenitor of Faerus.png" id="4_Moltran, Progenitor of Faerus" data-flag="@X" onclick="openSidebar('4_Moltran, Progenitor of Faerus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\5_Ryhm, Progenitor of Moorla.png" id="5_Ryhm, Progenitor of Moorla" data-flag="@X" onclick="openSidebar('5_Ryhm, Progenitor of Moorla',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\29_Rulbel, Sunmade Tactician.png" id="29_Rulbel, Sunmade Tactician" data-flag="@X" onclick="openSidebar('29_Rulbel, Sunmade Tactician',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\60_Warrin of Sound Mind.png" id="60_Warrin of Sound Mind" data-flag="@X" onclick="openSidebar('60_Warrin of Sound Mind',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\69_Bogrunach, Unyielding.png" id="69_Bogrunach, Unyielding" data-flag="@X" onclick="openSidebar('69_Bogrunach, Unyielding',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\114_Irani, Emberstack Apprentice.png" id="114_Irani, Emberstack Apprentice" data-flag="@X" onclick="openSidebar('114_Irani, Emberstack Apprentice',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\151_Vorhtox, Xl'thar's Heir.png" id="151_Vorhtox, Xlthars Heir" data-flag="@X" onclick="openSidebar('151_Vorhtox, Xlthars Heir',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\9_Certhin Champion.png" id="9_Certhin Champion" data-flag="@X" onclick="openSidebar('9_Certhin Champion',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\41_Hector, Hero of Seroa.png" id="41_Hector, Hero of Seroa" data-flag="@X" onclick="openSidebar('41_Hector, Hero of Seroa',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\70_Carq, Hero of Gothr.png" id="70_Carq, Hero of Gothr" data-flag="@X" onclick="openSidebar('70_Carq, Hero of Gothr',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\101_Faerus Hellhound.png" id="101_Faerus Hellhound" data-flag="@X" onclick="openSidebar('101_Faerus Hellhound',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\123_Aegi, Hero of Moorla.png" id="123_Aegi, Hero of Moorla" data-flag="@X" onclick="openSidebar('123_Aegi, Hero of Moorla',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\12_Certhin Dragoon Roost.png" id="12_Certhin Dragoon Roost" data-flag="@X" onclick="openSidebar('12_Certhin Dragoon Roost',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\46_Seroa Arms Bearer.png" id="46_Seroa Arms Bearer" data-flag="@X" onclick="openSidebar('46_Seroa Arms Bearer',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\78_Gothr Cutthroat.png" id="78_Gothr Cutthroat" data-flag="@X" onclick="openSidebar('78_Gothr Cutthroat',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\102_Faerus Highborn.png" id="102_Faerus Highborn" data-flag="@X" onclick="openSidebar('102_Faerus Highborn',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\127_Bring Home the Beasts.png" id="127_Bring Home the Beasts" data-flag="@X" onclick="openSidebar('127_Bring Home the Beasts',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\16_Certhin Ranger.png" id="16_Certhin Ranger" data-flag="@X" onclick="openSidebar('16_Certhin Ranger',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\48_Seroa Interloper.png" id="48_Seroa Interloper" data-flag="@X" onclick="openSidebar('48_Seroa Interloper',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\83_Gothr Weaponmaster.png" id="83_Gothr Weaponmaster" data-flag="@X" onclick="openSidebar('83_Gothr Weaponmaster',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\109_Faerus Sunthrasher.png" id="109_Faerus Sunthrasher" data-flag="@X" onclick="openSidebar('109_Faerus Sunthrasher',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\132_Moorla Ancient Borderguard.png" id="132_Moorla Ancient Borderguard" data-flag="@X" onclick="openSidebar('132_Moorla Ancient Borderguard',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\17_Certhin Sand Dragon.png" id="17_Certhin Sand Dragon" data-flag="@X" onclick="openSidebar('17_Certhin Sand Dragon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\49_Seroa Market Guard.png" id="49_Seroa Market Guard" data-flag="@X" onclick="openSidebar('49_Seroa Market Guard',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\85_Hell from Above.png" id="85_Hell from Above" data-flag="@X" onclick="openSidebar('85_Hell from Above',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\116_Pyrr, Hero of Faerus.png" id="116_Pyrr, Hero of Faerus" data-flag="@X" onclick="openSidebar('116_Pyrr, Hero of Faerus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\139_Moorla Gate Warden.png" id="139_Moorla Gate Warden" data-flag="@X" onclick="openSidebar('139_Moorla Gate Warden',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\18_Certhin Slayer.png" id="18_Certhin Slayer" data-flag="@X" onclick="openSidebar('18_Certhin Slayer',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\52_Seroa Silver.png" id="52_Seroa Silver" data-flag="@X" onclick="openSidebar('52_Seroa Silver',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\91_Scared To Death.png" id="91_Scared To Death" data-flag="@X" onclick="openSidebar('91_Scared To Death',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\117_Razerstone Manticore.png" id="117_Razerstone Manticore" data-flag="@X" onclick="openSidebar('117_Razerstone Manticore',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\148_Thunderfoot Ancient.png" id="148_Thunderfoot Ancient" data-flag="@X" onclick="openSidebar('148_Thunderfoot Ancient',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\27_Paladrin, Hero of Certhin.png" id="27_Paladrin, Hero of Certhin" data-flag="@X" onclick="openSidebar('27_Paladrin, Hero of Certhin',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\57_Time Piper.png" id="57_Time Piper" data-flag="@X" onclick="openSidebar('57_Time Piper',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\92_Slain by Many.png" id="92_Slain by Many" data-flag="@X" onclick="openSidebar('92_Slain by Many',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\122_The Third Chamber of Faerus.png" id="122_The Third Chamber of Faerus" data-flag="@X" onclick="openSidebar('122_The Third Chamber of Faerus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\149_Titan of Bounty.png" id="149_Titan of Bounty" data-flag="@X" onclick="openSidebar('149_Titan of Bounty',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\7_Bold Maneuver.png" id="7_Bold Maneuver" data-flag="@X" onclick="openSidebar('7_Bold Maneuver',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\38_Cloudshifter Golem.png" id="38_Cloudshifter Golem" data-flag="@X" onclick="openSidebar('38_Cloudshifter Golem',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\67_Artificial Rebirth.png" id="67_Artificial Rebirth" data-flag="@X" onclick="openSidebar('67_Artificial Rebirth',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\97_Faerus Broodmother.png" id="97_Faerus Broodmother" data-flag="@X" onclick="openSidebar('97_Faerus Broodmother',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\126_Bounty of Moorla.png" id="126_Bounty of Moorla" data-flag="@X" onclick="openSidebar('126_Bounty of Moorla',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\13_Certhin Herdmaster.png" id="13_Certhin Herdmaster" data-flag="@X" onclick="openSidebar('13_Certhin Herdmaster',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\40_Haze Maze Golem.png" id="40_Haze Maze Golem" data-flag="@X" onclick="openSidebar('40_Haze Maze Golem',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\72_Construct Death.png" id="72_Construct Death" data-flag="@X" onclick="openSidebar('72_Construct Death',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\98_Faerus Centaur.png" id="98_Faerus Centaur" data-flag="@X" onclick="openSidebar('98_Faerus Centaur',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\128_Earthen Dragon.png" id="128_Earthen Dragon" data-flag="@X" onclick="openSidebar('128_Earthen Dragon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\15_Certhin Nomad.png" id="15_Certhin Nomad" data-flag="@X" onclick="openSidebar('15_Certhin Nomad',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\43_Relic Siphoner.png" id="43_Relic Siphoner" data-flag="@X" onclick="openSidebar('43_Relic Siphoner',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\74_Demonic Beastmaster.png" id="74_Demonic Beastmaster" data-flag="@X" onclick="openSidebar('74_Demonic Beastmaster',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\100_Faerus Crag Fiend.png" id="100_Faerus Crag Fiend" data-flag="@X" onclick="openSidebar('100_Faerus Crag Fiend',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\131_Hidden Hand of Moorla.png" id="131_Hidden Hand of Moorla" data-flag="@X" onclick="openSidebar('131_Hidden Hand of Moorla',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\20_Contest of Metal.png" id="20_Contest of Metal" data-flag="@X" onclick="openSidebar('20_Contest of Metal',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\47_Seroa Frost Knight.png" id="47_Seroa Frost Knight" data-flag="@X" onclick="openSidebar('47_Seroa Frost Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\75_Devourer of Rust.png" id="75_Devourer of Rust" data-flag="@X" onclick="openSidebar('75_Devourer of Rust',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\105_Faerus Reaver.png" id="105_Faerus Reaver" data-flag="@X" onclick="openSidebar('105_Faerus Reaver',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\133_Moorla Bond.png" id="133_Moorla Bond" data-flag="@X" onclick="openSidebar('133_Moorla Bond',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\24_Fall of the Fallen.png" id="24_Fall of the Fallen" data-flag="@X" onclick="openSidebar('24_Fall of the Fallen',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\50_Seroa Monitor.png" id="50_Seroa Monitor" data-flag="@X" onclick="openSidebar('50_Seroa Monitor',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\80_Gothr Paladin.png" id="80_Gothr Paladin" data-flag="@X" onclick="openSidebar('80_Gothr Paladin',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\110_Faerus Vatwasp.png" id="110_Faerus Vatwasp" data-flag="@X" onclick="openSidebar('110_Faerus Vatwasp',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\134_Moorla Constrictameleon.png" id="134_Moorla Constrictameleon" data-flag="@X" onclick="openSidebar('134_Moorla Constrictameleon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\28_Repel the Assault.png" id="28_Repel the Assault" data-flag="@X" onclick="openSidebar('28_Repel the Assault',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\53_Seroa Soulless.png" id="53_Seroa Soulless" data-flag="@X" onclick="openSidebar('53_Seroa Soulless',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\82_Gothr Soulstress.png" id="82_Gothr Soulstress" data-flag="@X" onclick="openSidebar('82_Gothr Soulstress',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\113_Hostile Territory.png" id="113_Hostile Territory" data-flag="@X" onclick="openSidebar('113_Hostile Territory',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\137_Moorla Elderboar.png" id="137_Moorla Elderboar" data-flag="@X" onclick="openSidebar('137_Moorla Elderboar',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\32_Timeless Scribe.png" id="32_Timeless Scribe" data-flag="@X" onclick="openSidebar('32_Timeless Scribe',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\55_Technological Awe.png" id="55_Technological Awe" data-flag="@X" onclick="openSidebar('55_Technological Awe',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\88_Planar Contract.png" id="88_Planar Contract" data-flag="@X" onclick="openSidebar('88_Planar Contract',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\115_Open the Fifth Gate.png" id="115_Open the Fifth Gate" data-flag="@X" onclick="openSidebar('115_Open the Fifth Gate',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\140_Moorla Golem.png" id="140_Moorla Golem" data-flag="@X" onclick="openSidebar('140_Moorla Golem',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\33_Timeless Texts.png" id="33_Timeless Texts" data-flag="@X" onclick="openSidebar('33_Timeless Texts',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\58_Timless Soul Wielder.png" id="58_Timless Soul Wielder" data-flag="@X" onclick="openSidebar('58_Timless Soul Wielder',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\90_The Restless Path.png" id="90_The Restless Path" data-flag="@X" onclick="openSidebar('90_The Restless Path',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\120_Siphon Blood.png" id="120_Siphon Blood" data-flag="@X" onclick="openSidebar('120_Siphon Blood',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\145_Resting Horn.png" id="145_Resting Horn" data-flag="@X" onclick="openSidebar('145_Resting Horn',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\35_Wordly Possesions.png" id="35_Wordly Possesions" data-flag="@X" onclick="openSidebar('35_Wordly Possesions',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\61_Weave Essence.png" id="61_Weave Essence" data-flag="@X" onclick="openSidebar('61_Weave Essence',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\93_Soulless Eclipse.png" id="93_Soulless Eclipse" data-flag="@X" onclick="openSidebar('93_Soulless Eclipse',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\121_Smother in Flames.png" id="121_Smother in Flames" data-flag="@X" onclick="openSidebar('121_Smother in Flames',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\147_Shamanic Circle.png" id="147_Shamanic Circle" data-flag="@X" onclick="openSidebar('147_Shamanic Circle',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\8_Certhin Boltcaster.png" id="8_Certhin Boltcaster" data-flag="@X" onclick="openSidebar('8_Certhin Boltcaster',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\36_Barron of Essence.png" id="36_Barron of Essence" data-flag="@X" onclick="openSidebar('36_Barron of Essence',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\65_Absorb Soul.png" id="65_Absorb Soul" data-flag="@X" onclick="openSidebar('65_Absorb Soul',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\94_Cover Fire.png" id="94_Cover Fire" data-flag="@X" onclick="openSidebar('94_Cover Fire',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\124_Alluring Den.png" id="124_Alluring Den" data-flag="@X" onclick="openSidebar('124_Alluring Den',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\10_Certhin Desert Golem.png" id="10_Certhin Desert Golem" data-flag="@X" onclick="openSidebar('10_Certhin Desert Golem',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\37_Cloak of Silver.png" id="37_Cloak of Silver" data-flag="@X" onclick="openSidebar('37_Cloak of Silver',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\66_Abyssal Catfish.png" id="66_Abyssal Catfish" data-flag="@X" onclick="openSidebar('66_Abyssal Catfish',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\95_Emberstack Knight.png" id="95_Emberstack Knight" data-flag="@X" onclick="openSidebar('95_Emberstack Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\125_Beam of Life.png" id="125_Beam of Life" data-flag="@X" onclick="openSidebar('125_Beam of Life',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\11_Certhin Discipline.png" id="11_Certhin Discipline" data-flag="@X" onclick="openSidebar('11_Certhin Discipline',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\39_Essence Diviner.png" id="39_Essence Diviner" data-flag="@X" onclick="openSidebar('39_Essence Diviner',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\68_Blind to Conflict.png" id="68_Blind to Conflict" data-flag="@X" onclick="openSidebar('68_Blind to Conflict',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\96_Faerus Ballista.png" id="96_Faerus Ballista" data-flag="@X" onclick="openSidebar('96_Faerus Ballista',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\129_Expedition to Moorla.png" id="129_Expedition to Moorla" data-flag="@X" onclick="openSidebar('129_Expedition to Moorla',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\14_Certhin Knight.png" id="14_Certhin Knight" data-flag="@X" onclick="openSidebar('14_Certhin Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\42_Introspective Abstraction.png" id="42_Introspective Abstraction" data-flag="@X" onclick="openSidebar('42_Introspective Abstraction',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\71_Conquerers Manifesto.png" id="71_Conquerers Manifesto" data-flag="@X" onclick="openSidebar('71_Conquerers Manifesto',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\99_Faerus Courier.png" id="99_Faerus Courier" data-flag="@X" onclick="openSidebar('99_Faerus Courier',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\130_Generous Giant.png" id="130_Generous Giant" data-flag="@X" onclick="openSidebar('130_Generous Giant',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\19_Certhin Wayfinder.png" id="19_Certhin Wayfinder" data-flag="@X" onclick="openSidebar('19_Certhin Wayfinder',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\44_Retain Momentum.png" id="44_Retain Momentum" data-flag="@X" onclick="openSidebar('44_Retain Momentum',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\73_Construct Reanimator.png" id="73_Construct Reanimator" data-flag="@X" onclick="openSidebar('73_Construct Reanimator',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\103_Faerus Moltiger.png" id="103_Faerus Moltiger" data-flag="@X" onclick="openSidebar('103_Faerus Moltiger',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\135_Moorla Counseling.png" id="135_Moorla Counseling" data-flag="@X" onclick="openSidebar('135_Moorla Counseling',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\21_Desert Guardians.png" id="21_Desert Guardians" data-flag="@X" onclick="openSidebar('21_Desert Guardians',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\45_Revoke Impulse.png" id="45_Revoke Impulse" data-flag="@X" onclick="openSidebar('45_Revoke Impulse',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\76_Expose the Hold.png" id="76_Expose the Hold" data-flag="@X" onclick="openSidebar('76_Expose the Hold',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\104_Faerus Obliterator.png" id="104_Faerus Obliterator" data-flag="@X" onclick="openSidebar('104_Faerus Obliterator',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\136_Moorla Countrysider.png" id="136_Moorla Countrysider" data-flag="@X" onclick="openSidebar('136_Moorla Countrysider',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\22_Enlighten.png" id="22_Enlighten" data-flag="@X" onclick="openSidebar('22_Enlighten',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\51_Seroa Sightseer.png" id="51_Seroa Sightseer" data-flag="@X" onclick="openSidebar('51_Seroa Sightseer',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\77_Gothr Border Giant.png" id="77_Gothr Border Giant" data-flag="@X" onclick="openSidebar('77_Gothr Border Giant',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\106_Faerus Shagbeast.png" id="106_Faerus Shagbeast" data-flag="@X" onclick="openSidebar('106_Faerus Shagbeast',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\138_Moorla Expeditioner.png" id="138_Moorla Expeditioner" data-flag="@X" onclick="openSidebar('138_Moorla Expeditioner',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\23_Eye On The Prize.png" id="23_Eye On The Prize" data-flag="@X" onclick="openSidebar('23_Eye On The Prize',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\54_Stormsplitter Serpent.png" id="54_Stormsplitter Serpent" data-flag="@X" onclick="openSidebar('54_Stormsplitter Serpent',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\79_Gothr Hexblade.png" id="79_Gothr Hexblade" data-flag="@X" onclick="openSidebar('79_Gothr Hexblade',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\107_Faerus Shrieker.png" id="107_Faerus Shrieker" data-flag="@X" onclick="openSidebar('107_Faerus Shrieker',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\141_Moorla Prowler.png" id="141_Moorla Prowler" data-flag="@X" onclick="openSidebar('141_Moorla Prowler',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\25_Glare of Hope.png" id="25_Glare of Hope" data-flag="@X" onclick="openSidebar('25_Glare of Hope',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\56_Thwart the Ambush.png" id="56_Thwart the Ambush" data-flag="@X" onclick="openSidebar('56_Thwart the Ambush',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\81_Gothr Prodder.png" id="81_Gothr Prodder" data-flag="@X" onclick="openSidebar('81_Gothr Prodder',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\108_Faerus Summoning.png" id="108_Faerus Summoning" data-flag="@X" onclick="openSidebar('108_Faerus Summoning',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\142_Moorla Spiked Anole.png" id="142_Moorla Spiked Anole" data-flag="@X" onclick="openSidebar('142_Moorla Spiked Anole',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\26_Kinetic Reversal.png" id="26_Kinetic Reversal" data-flag="@X" onclick="openSidebar('26_Kinetic Reversal',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\59_Traverse the Planes.png" id="59_Traverse the Planes" data-flag="@X" onclick="openSidebar('59_Traverse the Planes',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\84_Grip Enlightenment.png" id="84_Grip Enlightenment" data-flag="@X" onclick="openSidebar('84_Grip Enlightenment',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\111_Fire Funnel.png" id="111_Fire Funnel" data-flag="@X" onclick="openSidebar('111_Fire Funnel',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\143_Moorla Tritop.png" id="143_Moorla Tritop" data-flag="@X" onclick="openSidebar('143_Moorla Tritop',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\30_Sleeping Giant.png" id="30_Sleeping Giant" data-flag="@X" onclick="openSidebar('30_Sleeping Giant',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\62_Wielder of Frost.png" id="62_Wielder of Frost" data-flag="@X" onclick="openSidebar('62_Wielder of Frost',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\86_Ingrain Sickness.png" id="86_Ingrain Sickness" data-flag="@X" onclick="openSidebar('86_Ingrain Sickness',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\112_Harness Hatred.png" id="112_Harness Hatred" data-flag="@X" onclick="openSidebar('112_Harness Hatred',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\144_Respect for the Fallen.png" id="144_Respect for the Fallen" data-flag="@X" onclick="openSidebar('144_Respect for the Fallen',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\31_Spelunking For Relics.png" id="31_Spelunking For Relics" data-flag="@X" onclick="openSidebar('31_Spelunking For Relics',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\63_Will Won't Suffice.png" id="63_Will Wont Suffice" data-flag="@X" onclick="openSidebar('63_Will Wont Suffice',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\87_Peel the Reality.png" id="87_Peel the Reality" data-flag="@X" onclick="openSidebar('87_Peel the Reality',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\118_Rev Armor.png" id="118_Rev Armor" data-flag="@X" onclick="openSidebar('118_Rev Armor',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\146_Seek Bounty.png" id="146_Seek Bounty" data-flag="@X" onclick="openSidebar('146_Seek Bounty',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\34_Wandering Shieldbearer.png" id="34_Wandering Shieldbearer" data-flag="@X" onclick="openSidebar('34_Wandering Shieldbearer',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\64_Witness Brilliance.png" id="64_Witness Brilliance" data-flag="@X" onclick="openSidebar('64_Witness Brilliance',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\89_Reap Souls.png" id="89_Reap Souls" data-flag="@X" onclick="openSidebar('89_Reap Souls',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\119_Siege at Night.png" id="119_Siege at Night" data-flag="@X" onclick="openSidebar('119_Siege at Night',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\150_Tracker of Tusks.png" id="150_Tracker of Tusks" data-flag="@X" onclick="openSidebar('150_Tracker of Tusks',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\156_Remi, Spirit Tether.png" id="156_Remi, Spirit Tether" data-flag="@X" onclick="openSidebar('156_Remi, Spirit Tether',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\165_Soul Siphon Naga.png" id="165_Soul Siphon Naga" data-flag="@X" onclick="openSidebar('165_Soul Siphon Naga',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\170_Command Dominion.png" id="170_Command Dominion" data-flag="@X" onclick="openSidebar('170_Command Dominion',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\181_Faces From Before.png" id="181_Faces From Before" data-flag="@X" onclick="openSidebar('181_Faces From Before',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\190_General Wallace, Scalebane.png" id="190_General Wallace, Scalebane" data-flag="@X" onclick="openSidebar('190_General Wallace, Scalebane',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\159_Strix Knight Commander.png" id="159_Strix Knight Commander" data-flag="@X" onclick="openSidebar('159_Strix Knight Commander',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\166_Zera, the Crow Maiden.png" id="166_Zera, the Crow Maiden" data-flag="@X" onclick="openSidebar('166_Zera, the Crow Maiden',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\171_Conquest Demon.png" id="171_Conquest Demon" data-flag="@X" onclick="openSidebar('171_Conquest Demon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\186_Xl'thar, Viashino Hero.png" id="186_Xlthar, Viashino Hero" data-flag="@X" onclick="openSidebar('186_Xlthar, Viashino Hero',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\198_Steady Recruitments.png" id="198_Steady Recruitments" data-flag="@X" onclick="openSidebar('198_Steady Recruitments',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\152_Crush the Clock.png" id="152_Crush the Clock" data-flag="@X" onclick="openSidebar('152_Crush the Clock',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\161_Crow Conjurer.png" id="161_Crow Conjurer" data-flag="@X" onclick="openSidebar('161_Crow Conjurer',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\168_Bloodgem Dark Knight.png" id="168_Bloodgem Dark Knight" data-flag="@X" onclick="openSidebar('168_Bloodgem Dark Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\180_Banner of the Banished.png" id="180_Banner of the Banished" data-flag="@X" onclick="openSidebar('180_Banner of the Banished',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\194_Relinquisher of Blades.png" id="194_Relinquisher of Blades" data-flag="@X" onclick="openSidebar('194_Relinquisher of Blades',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\155_Prophesized by the Ruins.png" id="155_Prophesized by the Ruins" data-flag="@X" onclick="openSidebar('155_Prophesized by the Ruins',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\163_Invoke Perception.png" id="163_Invoke Perception" data-flag="@X" onclick="openSidebar('163_Invoke Perception',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\169_Bloodgem Dragon.png" id="169_Bloodgem Dragon" data-flag="@X" onclick="openSidebar('169_Bloodgem Dragon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\182_Inciter Shaman.png" id="182_Inciter Shaman" data-flag="@X" onclick="openSidebar('182_Inciter Shaman',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\195_Remember the Legends.png" id="195_Remember the Legends" data-flag="@X" onclick="openSidebar('195_Remember the Legends',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\157_Revoking Light.png" id="157_Revoking Light" data-flag="@X" onclick="openSidebar('157_Revoking Light',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\164_Necromantic Studies.png" id="164_Necromantic Studies" data-flag="@X" onclick="openSidebar('164_Necromantic Studies',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\172_Demonic Purge.png" id="172_Demonic Purge" data-flag="@X" onclick="openSidebar('172_Demonic Purge',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\185_Viashino Venomancer.png" id="185_Viashino Venomancer" data-flag="@X" onclick="openSidebar('185_Viashino Venomancer',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\187_Certhin Trading Grounds.png" id="187_Certhin Trading Grounds" data-flag="@X" onclick="openSidebar('187_Certhin Trading Grounds',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\153_Diviner's Essence.png" id="153_Diviners Essence" data-flag="@X" onclick="openSidebar('153_Diviners Essence',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\160_Access Revoked.png" id="160_Access Revoked" data-flag="@X" onclick="openSidebar('160_Access Revoked',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\173_Eldritch Scriptures.png" id="173_Eldritch Scriptures" data-flag="@X" onclick="openSidebar('173_Eldritch Scriptures',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\179_Altar of Dynasty.png" id="179_Altar of Dynasty" data-flag="@X" onclick="openSidebar('179_Altar of Dynasty',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\189_Disassembled Ancient.png" id="189_Disassembled Ancient" data-flag="@X" onclick="openSidebar('189_Disassembled Ancient',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\154_Diviner's Thopter.png" id="154_Diviners Thopter" data-flag="@X" onclick="openSidebar('154_Diviners Thopter',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\162_Crow Conspiracy.png" id="162_Crow Conspiracy" data-flag="@X" onclick="openSidebar('162_Crow Conspiracy',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\174_Lord of Fear.png" id="174_Lord of Fear" data-flag="@X" onclick="openSidebar('174_Lord of Fear',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\183_Temple of the Old Dynasty.png" id="183_Temple of the Old Dynasty" data-flag="@X" onclick="openSidebar('183_Temple of the Old Dynasty',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\193_Moorla Offerings.png" id="193_Moorla Offerings" data-flag="@X" onclick="openSidebar('193_Moorla Offerings',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\158_Runic Reader.png" id="158_Runic Reader" data-flag="@X" onclick="openSidebar('158_Runic Reader',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\167_Zera's Crow.png" id="167_Zeras Crow" data-flag="@X" onclick="openSidebar('167_Zeras Crow',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\175_Pathway Cutthroat.png" id="175_Pathway Cutthroat" data-flag="@X" onclick="openSidebar('175_Pathway Cutthroat',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\184_Toothy Viashino.png" id="184_Toothy Viashino" data-flag="@X" onclick="openSidebar('184_Toothy Viashino',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\196_Scalebane Plate.png" id="196_Scalebane Plate" data-flag="@X" onclick="openSidebar('196_Scalebane Plate',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\178_Treacherous Devil.png" id="178_Treacherous Devil" data-flag="@X" onclick="openSidebar('178_Treacherous Devil',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\197_Scout Ahead.png" id="197_Scout Ahead" data-flag="@X" onclick="openSidebar('197_Scout Ahead',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\176_Riler Demon.png" id="176_Riler Demon" data-flag="@X" onclick="openSidebar('176_Riler Demon',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\188_Desert Duelist.png" id="188_Desert Duelist" data-flag="@X" onclick="openSidebar('188_Desert Duelist',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\177_Spawn of Conquerors.png" id="177_Spawn of Conquerors" data-flag="@X" onclick="openSidebar('177_Spawn of Conquerors',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\191_Hands of Solidarity.png" id="191_Hands of Solidarity" data-flag="@X" onclick="openSidebar('191_Hands of Solidarity',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\255_Conquesting Rider.png" id="255_Conquesting Rider" data-flag="@X" onclick="openSidebar('255_Conquesting Rider',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\192_Herd the Hollows.png" id="192_Herd the Hollows" data-flag="@X" onclick="openSidebar('192_Herd the Hollows',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\256_Forge of Conquerors.png" id="256_Forge of Conquerors" data-flag="@X" onclick="openSidebar('256_Forge of Conquerors',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\202_Auxious, Traitor of Certhin.png" id="202_Auxious, Traitor of Certhin" data-flag="@X" onclick="openSidebar('202_Auxious, Traitor of Certhin',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\226_Obaku, Hex Weaver.png" id="226_Obaku, Hex Weaver" data-flag="@X" onclick="openSidebar('226_Obaku, Hex Weaver',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\248_Lifewood Manipulation.png" id="248_Lifewood Manipulation" data-flag="@X" onclick="openSidebar('248_Lifewood Manipulation',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\212_Chaos of War.png" id="212_Chaos of War" data-flag="@X" onclick="openSidebar('212_Chaos of War',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\238_Riaz, Progenitor Knight.png" id="238_Riaz, Progenitor Knight" data-flag="@X" onclick="openSidebar('238_Riaz, Progenitor Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\206_Everlasting Time Scale.png" id="206_Everlasting Time Scale" data-flag="@X" onclick="openSidebar('206_Everlasting Time Scale',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\231_Willow Hexblade.png" id="231_Willow Hexblade" data-flag="@X" onclick="openSidebar('231_Willow Hexblade',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\252_Thalias, Imbuer of Life.png" id="252_Thalias, Imbuer of Life" data-flag="@X" onclick="openSidebar('252_Thalias, Imbuer of Life',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\219_Kronos, Time Paradox.png" id="219_Kronos, Time Paradox" data-flag="@X" onclick="openSidebar('219_Kronos, Time Paradox',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\239_Spark Amber.png" id="239_Spark Amber" data-flag="@X" onclick="openSidebar('239_Spark Amber',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\199_Absolute Oblivion.png" id="199_Absolute Oblivion" data-flag="@X" onclick="openSidebar('199_Absolute Oblivion',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\227_Revoke the Scriptures.png" id="227_Revoke the Scriptures" data-flag="@X" onclick="openSidebar('227_Revoke the Scriptures',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\241_Essence Elemental.png" id="241_Essence Elemental" data-flag="@X" onclick="openSidebar('241_Essence Elemental',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\215_Herald of Kronos.png" id="215_Herald of Kronos" data-flag="@X" onclick="openSidebar('215_Herald of Kronos',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\233_Assembly Required.png" id="233_Assembly Required" data-flag="@X" onclick="openSidebar('233_Assembly Required',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\201_Auxious' Dragoon.png" id="201_Auxious Dragoon" data-flag="@X" onclick="openSidebar('201_Auxious Dragoon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\229_Underrock Ogre.png" id="229_Underrock Ogre" data-flag="@X" onclick="openSidebar('229_Underrock Ogre',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\251_Resonant Golem.png" id="251_Resonant Golem" data-flag="@X" onclick="openSidebar('251_Resonant Golem',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\222_Rupturing Vortex.png" id="222_Rupturing Vortex" data-flag="@X" onclick="openSidebar('222_Rupturing Vortex',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\234_Cleanse Machina.png" id="234_Cleanse Machina" data-flag="@X" onclick="openSidebar('234_Cleanse Machina',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\200_Auxious' Devotee.png" id="200_Auxious Devotee" data-flag="@X" onclick="openSidebar('200_Auxious Devotee',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\232_Willow Warden.png" id="232_Willow Warden" data-flag="@X" onclick="openSidebar('232_Willow Warden',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\243_Essence Guardian.png" id="243_Essence Guardian" data-flag="@X" onclick="openSidebar('243_Essence Guardian',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\214_Herald of Enervation.png" id="214_Herald of Enervation" data-flag="@X" onclick="openSidebar('214_Herald of Enervation',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\240_Sunmade Knight.png" id="240_Sunmade Knight" data-flag="@X" onclick="openSidebar('240_Sunmade Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\203_Certhin Exile.png" id="203_Certhin Exile" data-flag="@X" onclick="openSidebar('203_Certhin Exile',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\225_Deathchanter.png" id="225_Deathchanter" data-flag="@X" onclick="openSidebar('225_Deathchanter',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\245_Essence Pool.png" id="245_Essence Pool" data-flag="@X" onclick="openSidebar('245_Essence Pool',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\218_Ionic Warp.png" id="218_Ionic Warp" data-flag="@X" onclick="openSidebar('218_Ionic Warp',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\235_Despite the Odds.png" id="235_Despite the Odds" data-flag="@X" onclick="openSidebar('235_Despite the Odds',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\204_Decide Fate.png" id="204_Decide Fate" data-flag="@X" onclick="openSidebar('204_Decide Fate',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\228_Slumber in the Glades.png" id="228_Slumber in the Glades" data-flag="@X" onclick="openSidebar('228_Slumber in the Glades',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\247_Infuse the Constructs.png" id="247_Infuse the Constructs" data-flag="@X" onclick="openSidebar('247_Infuse the Constructs',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\220_Pyre Bolt.png" id="220_Pyre Bolt" data-flag="@X" onclick="openSidebar('220_Pyre Bolt',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\236_Ignite the Core.png" id="236_Ignite the Core" data-flag="@X" onclick="openSidebar('236_Ignite the Core',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\210_Pursue Glory.png" id="210_Pursue Glory" data-flag="@X" onclick="openSidebar('210_Pursue Glory',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\230_Willow Beast.png" id="230_Willow Beast" data-flag="@X" onclick="openSidebar('230_Willow Beast',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\249_Lifewood Opening.png" id="249_Lifewood Opening" data-flag="@X" onclick="openSidebar('249_Lifewood Opening',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\221_Reimergent Seas.png" id="221_Reimergent Seas" data-flag="@X" onclick="openSidebar('221_Reimergent Seas',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\237_Pyre Knight.png" id="237_Pyre Knight" data-flag="@X" onclick="openSidebar('237_Pyre Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\211_Traitor's Torch.png" id="211_Traitors Torch" data-flag="@X" onclick="openSidebar('211_Traitors Torch',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\253_Wield Essence.png" id="253_Wield Essence" data-flag="@X" onclick="openSidebar('253_Wield Essence',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\223_Sigiled Executioner.png" id="223_Sigiled Executioner" data-flag="@X" onclick="openSidebar('223_Sigiled Executioner',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\205_Empowering Stone.png" id="205_Empowering Stone" data-flag="@X" onclick="openSidebar('205_Empowering Stone',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\242_Essence Forager.png" id="242_Essence Forager" data-flag="@X" onclick="openSidebar('242_Essence Forager',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\213_Enervation Crystal.png" id="213_Enervation Crystal" data-flag="@X" onclick="openSidebar('213_Enervation Crystal',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\207_Herald of Heresy.png" id="207_Herald of Heresy" data-flag="@X" onclick="openSidebar('207_Herald of Heresy',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\244_Essence Knight.png" id="244_Essence Knight" data-flag="@X" onclick="openSidebar('244_Essence Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\216_Herald of Stasis.png" id="216_Herald of Stasis" data-flag="@X" onclick="openSidebar('216_Herald of Stasis',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\208_Judicial Smite.png" id="208_Judicial Smite" data-flag="@X" onclick="openSidebar('208_Judicial Smite',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\246_Essence Spirits.png" id="246_Essence Spirits" data-flag="@X" onclick="openSidebar('246_Essence Spirits',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\217_Ionic Halberdier.png" id="217_Ionic Halberdier" data-flag="@X" onclick="openSidebar('217_Ionic Halberdier',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\209_Knight of Auxious.png" id="209_Knight of Auxious" data-flag="@X" onclick="openSidebar('209_Knight of Auxious',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\250_Lifewood Portal.png" id="250_Lifewood Portal" data-flag="@X" onclick="openSidebar('250_Lifewood Portal',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\224_Trinity Bolt.png" id="224_Trinity Bolt" data-flag="@X" onclick="openSidebar('224_Trinity Bolt',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\254_Wander Space and Time.png" id="254_Wander Space and Time" data-flag="@X" onclick="openSidebar('254_Wander Space and Time',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\276_Saber of Bounty.png" id="276_Saber of Bounty" data-flag="@X" onclick="openSidebar('276_Saber of Bounty',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\277_Saber of Desire.png" id="277_Saber of Desire" data-flag="@X" onclick="openSidebar('277_Saber of Desire',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\278_Saber of Duality.png" id="278_Saber of Duality" data-flag="@X" onclick="openSidebar('278_Saber of Duality',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\279_Saber of Hope.png" id="279_Saber of Hope" data-flag="@X" onclick="openSidebar('279_Saber of Hope',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\280_Saber of Wrath.png" id="280_Saber of Wrath" data-flag="@X" onclick="openSidebar('280_Saber of Wrath',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\261_Contraption Schematics.png" id="261_Contraption Schematics" data-flag="@X" onclick="openSidebar('261_Contraption Schematics',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\269_Luminant Engine.png" id="269_Luminant Engine" data-flag="@X" onclick="openSidebar('269_Luminant Engine',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\270_Mitotic Propagator.png" id="270_Mitotic Propagator" data-flag="@X" onclick="openSidebar('270_Mitotic Propagator',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\257_Augmentor Servo.png" id="257_Augmentor Servo" data-flag="@X" onclick="openSidebar('257_Augmentor Servo',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\262_Forging Grounds.png" id="262_Forging Grounds" data-flag="@X" onclick="openSidebar('262_Forging Grounds',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\271_Orbis of Chaos.png" id="271_Orbis of Chaos" data-flag="@X" onclick="openSidebar('271_Orbis of Chaos',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\272_Precipice of Power.png" id="272_Precipice of Power" data-flag="@X" onclick="openSidebar('272_Precipice of Power',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\273_Rest in Stone.png" id="273_Rest in Stone" data-flag="@X" onclick="openSidebar('273_Rest in Stone',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\274_Rev Beast.png" id="274_Rev Beast" data-flag="@X" onclick="openSidebar('274_Rev Beast',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\281_Siphoner Drone.png" id="281_Siphoner Drone" data-flag="@X" onclick="openSidebar('281_Siphoner Drone',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\2_Gilded Hatchling.png" id="2_Gilded Hatchling" data-flag="@X" onclick="openSidebar('2_Gilded Hatchling',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\258_Bastion of Progress.png" id="258_Bastion of Progress" data-flag="@X" onclick="openSidebar('258_Bastion of Progress',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\259_Conscripted Mercenary.png" id="259_Conscripted Mercenary" data-flag="@X" onclick="openSidebar('259_Conscripted Mercenary',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\260_Consulate Gateway.png" id="260_Consulate Gateway" data-flag="@X" onclick="openSidebar('260_Consulate Gateway',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\263_Forgotten Kappa.png" id="263_Forgotten Kappa" data-flag="@X" onclick="openSidebar('263_Forgotten Kappa',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\264_Gilded Amulet.png" id="264_Gilded Amulet" data-flag="@X" onclick="openSidebar('264_Gilded Amulet',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\265_Ik-Clan Shieldmate.png" id="265_Ik-Clan Shieldmate" data-flag="@X" onclick="openSidebar('265_Ik-Clan Shieldmate',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\266_Ik-Clan Vanguard.png" id="266_Ik-Clan Vanguard" data-flag="@X" onclick="openSidebar('266_Ik-Clan Vanguard',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\267_Impulse Dynamo.png" id="267_Impulse Dynamo" data-flag="@X" onclick="openSidebar('267_Impulse Dynamo',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\268_Lost Horror.png" id="268_Lost Horror" data-flag="@X" onclick="openSidebar('268_Lost Horror',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\275_Rogue Deathcoil.png" id="275_Rogue Deathcoil" data-flag="@X" onclick="openSidebar('275_Rogue Deathcoil',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\282_Spell Defuser.png" id="282_Spell Defuser" data-flag="@X" onclick="openSidebar('282_Spell Defuser',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\293_Pakinx, Certhin Stronghold.png" id="293_Pakinx, Certhin Stronghold" data-flag="@X" onclick="openSidebar('293_Pakinx, Certhin Stronghold',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\292_Nelphine, Seroa Stronghold.png" id="292_Nelphine, Seroa Stronghold" data-flag="@X" onclick="openSidebar('292_Nelphine, Seroa Stronghold',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\306_Uma, Gothr Stronghold.png" id="306_Uma, Gothr Stronghold" data-flag="@X" onclick="openSidebar('306_Uma, Gothr Stronghold',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\285_Frulmir, Faerus Stronghold.png" id="285_Frulmir, Faerus Stronghold" data-flag="@X" onclick="openSidebar('285_Frulmir, Faerus Stronghold',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\294_Palu, Moorla Stronghold.png" id="294_Palu, Moorla Stronghold" data-flag="@X" onclick="openSidebar('294_Palu, Moorla Stronghold',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\302_Ruins of Luxury.png" id="302_Ruins of Luxury" data-flag="@X" onclick="openSidebar('302_Ruins of Luxury',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\301_Ruins of Knowledge.png" id="301_Ruins of Knowledge" data-flag="@X" onclick="openSidebar('301_Ruins of Knowledge',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\300_Ruins of Despair.png" id="300_Ruins of Despair" data-flag="@X" onclick="openSidebar('300_Ruins of Despair',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\303_Ruins of Progress.png" id="303_Ruins of Progress" data-flag="@X" onclick="openSidebar('303_Ruins of Progress',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\299_Ruins of Abundance.png" id="299_Ruins of Abundance" data-flag="@X" onclick="openSidebar('299_Ruins of Abundance',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\297_Resonant Shrine.png" id="297_Resonant Shrine" data-flag="@X" onclick="openSidebar('297_Resonant Shrine',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\296_Remote Town.png" id="296_Remote Town" data-flag="@X" onclick="openSidebar('296_Remote Town',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\288_Hellfire Fortress.png" id="288_Hellfire Fortress" data-flag="@X" onclick="openSidebar('288_Hellfire Fortress',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\298_Risen Farmland.png" id="298_Risen Farmland" data-flag="@X" onclick="openSidebar('298_Risen Farmland',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\304_Sanctioned Haven.png" id="304_Sanctioned Haven" data-flag="@X" onclick="openSidebar('304_Sanctioned Haven',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\295_Quiet Cathedral.png" id="295_Quiet Cathedral" data-flag="@X" onclick="openSidebar('295_Quiet Cathedral',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\287_Grumbling Backwoods.png" id="287_Grumbling Backwoods" data-flag="@X" onclick="openSidebar('287_Grumbling Backwoods',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\307_Vibrant Keep.png" id="307_Vibrant Keep" data-flag="@X" onclick="openSidebar('307_Vibrant Keep',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\289_Isolating Researchfront.png" id="289_Isolating Researchfront" data-flag="@X" onclick="openSidebar('289_Isolating Researchfront',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\290_Mason Grounds.png" id="290_Mason Grounds" data-flag="@X" onclick="openSidebar('290_Mason Grounds',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\305_Seroa Skystone Nexus.png" id="305_Seroa Skystone Nexus" data-flag="@X" onclick="openSidebar('305_Seroa Skystone Nexus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\286_Gothr Coastal Nexus.png" id="286_Gothr Coastal Nexus" data-flag="@X" onclick="openSidebar('286_Gothr Coastal Nexus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\284_Faerus Emberstack Nexus.png" id="284_Faerus Emberstack Nexus" data-flag="@X" onclick="openSidebar('284_Faerus Emberstack Nexus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\291_Moorla Conifer Nexus.png" id="291_Moorla Conifer Nexus" data-flag="@X" onclick="openSidebar('291_Moorla Conifer Nexus',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\283_Certhin Spine Nexus.png" id="283_Certhin Spine Nexus" data-flag="@X" onclick="openSidebar('283_Certhin Spine Nexus',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\308_Plains.png" id="308_Plains" data-flag="@X" onclick="openSidebar('308_Plains',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\310_Island.png" id="310_Island" data-flag="@X" onclick="openSidebar('310_Island',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\312_Swamp.png" id="312_Swamp" data-flag="@X" onclick="openSidebar('312_Swamp',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\314_Mountain.png" id="314_Mountain" data-flag="@X" onclick="openSidebar('314_Mountain',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\316_Forest.png" id="316_Forest" data-flag="@X" onclick="openSidebar('316_Forest',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\309_Plains.png" id="309_Plains" data-flag="@X" onclick="openSidebar('309_Plains',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\311_Island.png" id="311_Island" data-flag="@X" onclick="openSidebar('311_Island',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\313_Swamp.png" id="313_Swamp" data-flag="@X" onclick="openSidebar('313_Swamp',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\315_Mountain.png" id="315_Mountain" data-flag="@X" onclick="openSidebar('315_Mountain',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\317_Forest.png" id="317_Forest" data-flag="@X" onclick="openSidebar('317_Forest',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\1t_Copy.png" id="1t_Copy" data-flag="@X" onclick="openSidebar('1t_Copy',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\2t_Copy.png" id="2t_Copy" data-flag="@X" onclick="openSidebar('2t_Copy',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\3t_Drake.png" id="3t_Drake" data-flag="@X" onclick="openSidebar('3t_Drake',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\4t_Knight.png" id="4t_Knight" data-flag="@X" onclick="openSidebar('4t_Knight',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\5t_Soldier.png" id="5t_Soldier" data-flag="@X" onclick="openSidebar('5t_Soldier',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\6t_Bird.png" id="6t_Bird" data-flag="@X" onclick="openSidebar('6t_Bird',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\7t_Bat.png" id="7t_Bat" data-flag="@X" onclick="openSidebar('7t_Bat',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\8t_Demon.png" id="8t_Demon" data-flag="@X" onclick="openSidebar('8t_Demon',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\9t_Demon Beast.png" id="9t_Demon Beast" data-flag="@X" onclick="openSidebar('9t_Demon Beast',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\10t_Elemental.png" id="10t_Elemental" data-flag="@X" onclick="openSidebar('10t_Elemental',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\11t_Beast.png" id="11t_Beast" data-flag="@X" onclick="openSidebar('11t_Beast',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\12t_Druid.png" id="12t_Druid" data-flag="@X" onclick="openSidebar('12t_Druid',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\13t_Beast.png" id="13t_Beast" data-flag="@X" onclick="openSidebar('13t_Beast',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\14t_Viashino.png" id="14t_Viashino" data-flag="@X" onclick="openSidebar('14t_Viashino',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\15t_Blood.png" id="15t_Blood" data-flag="@X" onclick="openSidebar('15t_Blood',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\16t_Construct.png" id="16t_Construct" data-flag="@X" onclick="openSidebar('16t_Construct',false)"></div>
+			<div class="container"><img alt="sets\JLA-files\img\17t_Construct Knight.png" id="17t_Construct Knight" data-flag="@X" onclick="openSidebar('17t_Construct Knight',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+			<div class="container"><img alt="img\e.png" id="e" data-flag="@E" onclick="openSidebar('e',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = 'img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		if (horizontal && rotated_img.style.display == 'none')
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+	}
+
+	function openSidebar(id, h=false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+
+		if (horizontal)
+		{
+			rotated_img.src = document.getElementById(id).src;
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			window.location = ("/search?search=" + document.getElementById("search").value);
+		}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let card_name = card_list_arrayified[i].card_name;
+				for (const char of specialchars)
+				{
+					card_name = card_name.replaceAll(char, "");
+				}
+
+				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+			}
+	</script>
+</body>
+</html>
