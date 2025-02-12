@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="sets/JLC-files/icon.png"/>
+	<link rel="stylesheet" href="/resources/header.css">
+	<title>JLC visual spoiler</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			display: none;
+			transform: rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		.close-btn {
+			background: url('img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 3%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+		}
+		.flip-btn {
+			background: url('img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.icon-bar {
+			display: grid;
+			grid-template-columns: repeat(10, 3fr 2fr) 3fr;
+			gap: 1px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-top: 2%;
+			padding-bottom: 1%;
+			justify-items: center;
+			align-items: center;
+		}
+		.icon-bar .icon img {
+			width: 90%;
+			max-width: 80px;
+			height: auto;
+			display: block;
+			padding: 5%;
+			margin: auto;
+			text-align: center;
+		}
+		.icon-bar .dot img {
+			width: 50%;
+			max-width: 65px;
+			height: auto;
+			display: block;
+			margin: auto;
+			text-align: center;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="/img/dot.png" />
+	<img class="preload-hidden" src="/sets/JLC-files/logo.png" />
+	<img class="preload-hidden" src="/sets/ASR-files/icon.png" />
+		<img class="preload-hidden" src="/sets/BMD-files/icon.png" />
+		<img class="preload-hidden" src="/sets/CMD-files/icon.png" />
+		<img class="preload-hidden" src="/sets/JLA-files/icon.png" />
+		<img class="preload-hidden" src="/sets/JLC-files/icon.png" />
+		<img class="preload-hidden" src="/sets/OZN-files/icon.png" />
+		<img class="preload-hidden" src="/sets/YMD-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
+			<img class="sg-icon" src="/img/search.png">
+			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
+			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+		</div>
+	</div>
+
+	<div class="icon-bar">
+			<div class="icon"><a href="ASR-spoiler"><img src="sets/ASR-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="BMD-spoiler"><img src="sets/BMD-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="CMD-spoiler"><img src="sets/CMD-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="JLA-spoiler"><img src="sets/JLA-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="JLC-spoiler"><img src="sets/JLC-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="OZN-spoiler"><img src="sets/OZN-files/icon.png"></img></a></div>
+		 <div class="dot"><img src="img/dot.png"></img></div>
+		<div class="icon"><a href="YMD-spoiler"><img src="sets/YMD-files/icon.png"></img></a></div>
+
+		</div>
+		<div class="banner">
+		<img class="logo" src="sets/JLC-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+				<div class="container"><img alt="sets\JLC-files\img\2_Rally Storm.png" id="2_Rally Storm" data-flag="@X" onclick="openSidebar('2_Rally Storm',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\3_Dilligent Storm.png" id="3_Dilligent Storm" data-flag="@X" onclick="openSidebar('3_Dilligent Storm',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\6_Soul Storm.png" id="6_Soul Storm" data-flag="@X" onclick="openSidebar('6_Soul Storm',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\8_Spiteful Storm.png" id="8_Spiteful Storm" data-flag="@X" onclick="openSidebar('8_Spiteful Storm',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\9_Enduring Storm.png" id="9_Enduring Storm" data-flag="@X" onclick="openSidebar('9_Enduring Storm',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\1_Loyal Cartographer.png" id="1_Loyal Cartographer" data-flag="@X" onclick="openSidebar('1_Loyal Cartographer',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\4_Loyal Historian.png" id="4_Loyal Historian" data-flag="@X" onclick="openSidebar('4_Loyal Historian',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\5_Loyal Colony.png" id="5_Loyal Colony" data-flag="@X" onclick="openSidebar('5_Loyal Colony',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\7_Loyal Tormentor.png" id="7_Loyal Tormentor" data-flag="@X" onclick="openSidebar('7_Loyal Tormentor',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\10_Loyal Hydra.png" id="10_Loyal Hydra" data-flag="@X" onclick="openSidebar('10_Loyal Hydra',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\11_Angelic Ascension.png" id="11_Angelic Ascension" data-flag="@X" onclick="openSidebar('11_Angelic Ascension',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\13_Mind Canvas.png" id="13_Mind Canvas" data-flag="@X" onclick="openSidebar('13_Mind Canvas',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\15_Magnificent Flame.png" id="15_Magnificent Flame" data-flag="@X" onclick="openSidebar('15_Magnificent Flame',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\17_Imminent Devastation.png" id="17_Imminent Devastation" data-flag="@X" onclick="openSidebar('17_Imminent Devastation',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\19_Dauntless Recruiter.png" id="19_Dauntless Recruiter" data-flag="@X" onclick="openSidebar('19_Dauntless Recruiter',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\12_Brilliant Diviner.png" id="12_Brilliant Diviner" data-flag="@X" onclick="openSidebar('12_Brilliant Diviner',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\14_Villianous Consult.png" id="14_Villianous Consult" data-flag="@X" onclick="openSidebar('14_Villianous Consult',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\16_Thunderous Skyrazer.png" id="16_Thunderous Skyrazer" data-flag="@X" onclick="openSidebar('16_Thunderous Skyrazer',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\18_Inescapaple Hunt.png" id="18_Inescapaple Hunt" data-flag="@X" onclick="openSidebar('18_Inescapaple Hunt',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\20_Herald of Bounty.png" id="20_Herald of Bounty" data-flag="@X" onclick="openSidebar('20_Herald of Bounty',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\21_Death Harbinger.png" id="21_Death Harbinger" data-flag="@X" onclick="openSidebar('21_Death Harbinger',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\25_Essence Hunter.png" id="25_Essence Hunter" data-flag="@X" onclick="openSidebar('25_Essence Hunter',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\29_Essence Wingshaper.png" id="29_Essence Wingshaper" data-flag="@X" onclick="openSidebar('29_Essence Wingshaper',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\23_Herald of Essence.png" id="23_Herald of Essence" data-flag="@X" onclick="openSidebar('23_Herald of Essence',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\27_Contested Skies.png" id="27_Contested Skies" data-flag="@X" onclick="openSidebar('27_Contested Skies',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\22_Rescue Detachment.png" id="22_Rescue Detachment" data-flag="@X" onclick="openSidebar('22_Rescue Detachment',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\26_Hexing Branch-Brawler.png" id="26_Hexing Branch-Brawler" data-flag="@X" onclick="openSidebar('26_Hexing Branch-Brawler',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\30_Infuse with Essence.png" id="30_Infuse with Essence" data-flag="@X" onclick="openSidebar('30_Infuse with Essence',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\24_Prowler Animator.png" id="24_Prowler Animator" data-flag="@X" onclick="openSidebar('24_Prowler Animator',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\28_Skybreaker's Gear.png" id="28_Skybreakers Gear" data-flag="@X" onclick="openSidebar('28_Skybreakers Gear',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\32_Avaril, Renowned Tactician.png" id="32_Avaril, Renowned Tactician" data-flag="@X" onclick="openSidebar('32_Avaril, Renowned Tactician',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\35_Colth, Awakened Blade.png" id="35_Colth, Awakened Blade" data-flag="@X" onclick="openSidebar('35_Colth, Awakened Blade',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\39_Inxalor, Piercer of Souls.png" id="39_Inxalor, Piercer of Souls" data-flag="@X" onclick="openSidebar('39_Inxalor, Piercer of Souls',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\38_Emilia, Game Breaker.png" id="38_Emilia, Game Breaker" data-flag="@X" onclick="openSidebar('38_Emilia, Game Breaker',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\31_Arnold, The Unrighteous.png" id="31_Arnold, The Unrighteous" data-flag="@X" onclick="openSidebar('31_Arnold, The Unrighteous',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\34_Chama, Knowledge Reservoir.png" id="34_Chama, Knowledge Reservoir" data-flag="@X" onclick="openSidebar('34_Chama, Knowledge Reservoir',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\37_Elise, Invoker of Truth.png" id="37_Elise, Invoker of Truth" data-flag="@X" onclick="openSidebar('37_Elise, Invoker of Truth',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\41_Kagiko, Dragon's Breath.png" id="41_Kagiko, Dragons Breath" data-flag="@X" onclick="openSidebar('41_Kagiko, Dragons Breath',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\42_Keit, Brimstone Rider.png" id="42_Keit, Brimstone Rider" data-flag="@X" onclick="openSidebar('42_Keit, Brimstone Rider',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\33_Briana, Dune Temptress.png" id="33_Briana, Dune Temptress" data-flag="@X" onclick="openSidebar('33_Briana, Dune Temptress',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\51_Siab, Essence Cleric.png" id="51_Siab, Essence Cleric" data-flag="@X" onclick="openSidebar('51_Siab, Essence Cleric',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\40_Ixillith, The Eclipse.png" id="40_Ixillith, The Eclipse" data-flag="@X" onclick="openSidebar('40_Ixillith, The Eclipse',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\44_Kuvirra, Vexing Song.png" id="44_Kuvirra, Vexing Song" data-flag="@X" onclick="openSidebar('44_Kuvirra, Vexing Song',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\43_Khar, The Conqueror.png" id="43_Khar, The Conqueror" data-flag="@X" onclick="openSidebar('43_Khar, The Conqueror',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\36_Domi, Vengeful Pal.png" id="36_Domi, Vengeful Pal" data-flag="@X" onclick="openSidebar('36_Domi, Vengeful Pal',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\53_Ulfra, The Avalanche.png" id="53_Ulfra, The Avalanche" data-flag="@X" onclick="openSidebar('53_Ulfra, The Avalanche',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\49_Poltis, Lich of Judgement.png" id="49_Poltis, Lich of Judgement" data-flag="@X" onclick="openSidebar('49_Poltis, Lich of Judgement',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\48_Pallin, Soul Gatekeeper.png" id="48_Pallin, Soul Gatekeeper" data-flag="@X" onclick="openSidebar('48_Pallin, Soul Gatekeeper',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\46_Lu, Demon Knight.png" id="46_Lu, Demon Knight" data-flag="@X" onclick="openSidebar('46_Lu, Demon Knight',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\45_Legiaria, Radiant Hydra.png" id="45_Legiaria, Radiant Hydra" data-flag="@X" onclick="openSidebar('45_Legiaria, Radiant Hydra',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\55_Zilassth, Soul Shifter.png" id="55_Zilassth, Soul Shifter" data-flag="@X" onclick="openSidebar('55_Zilassth, Soul Shifter',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\50_Rylex, Shaper Savant.png" id="50_Rylex, Shaper Savant" data-flag="@X" onclick="openSidebar('50_Rylex, Shaper Savant',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\54_Vrocax, Essence Lich.png" id="54_Vrocax, Essence Lich" data-flag="@X" onclick="openSidebar('54_Vrocax, Essence Lich',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\47_Ocras, Essence Devourer.png" id="47_Ocras, Essence Devourer" data-flag="@X" onclick="openSidebar('47_Ocras, Essence Devourer',false)"></div>
+			<div class="container"><img alt="sets\JLC-files\img\52_Thorne, Fiery Genesis.png" id="52_Thorne, Fiery Genesis" data-flag="@X" onclick="openSidebar('52_Thorne, Fiery Genesis',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+			<div class="container"><img alt="img\er.png" id="er" data-flag="@E" onclick="openSidebar('er',false)"></div>
+	</div>
+</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img" src="img/er.png">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch('/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch('/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+		
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = 'img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = img.alt;
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		tmp = document.getElementById(num).src;
+		document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+		document.getElementById(num).dataset.alt_src = tmp;
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		if (horizontal && rotated_img.style.display == 'none')
+		{
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+	}
+
+	function openSidebar(id, h=false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+		
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.src = document.getElementById(id).src;
+
+		if (horizontal)
+		{
+			rotated_img.src = document.getElementById(id).src;
+			rotated_img.style.display = "block";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.display = "none";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+		
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+		
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+			if (event.key === "Enter") {
+				event.preventDefault();
+				search();
+			}
+		});
+
+		function search() {
+			window.location = ("/search?search=" + document.getElementById("search").value);
+		}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let card_name = card_list_arrayified[i].card_name;
+				for (const char of specialchars)
+				{
+					card_name = card_name.replaceAll(char, "");
+				}
+
+				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+			}
+	</script>
+</body>
+</html>
