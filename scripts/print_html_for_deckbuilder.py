@@ -8,15 +8,18 @@ def generateHTML(codes):
 	html_content = '''<html>
 <head>
 	<title>Deckbuilder</title>
-	<link rel="icon" type="image/x-icon" href="/img/deck.png">
-	<link rel="stylesheet" href="resources/mana.css">
-	<link rel="stylesheet" href="/resources/header.css">
-	<link rel="stylesheet" href="/resources/card-text.css">
+	<link rel="icon" type="image/x-icon" href="./img/deck.png">
+	<link rel="stylesheet" href="./resources/mana.css">
+	<link rel="stylesheet" href="./resources/header.css">
+	<link rel="stylesheet" href="./resources/card-text.css">
 </head>
+<script title="root">
+	const rootPath = ".";
+</script>
 <style>
 	@font-face {
 		font-family: Beleren;
-		src: url('/resources/beleren.ttf');
+		src: url('./resources/beleren.ttf');
 	}
 	body {
 		font-family: 'Helvetica', 'Arial', sans-serif;
@@ -107,7 +110,7 @@ def generateHTML(codes):
 		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 		outline: 0;
 	}
-	button:disabled {
+	button:disabled, select:disabled {
 		cursor: auto;
 		background-color: #f7fafa;
 		font-style: italic;
@@ -138,16 +141,15 @@ def generateHTML(codes):
 	}
 	.search-image-grid-container {
 		overflow-y: scroll;
-		scrollbar-width: none;
 	}
 	.search-image-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		width: 98%;
-		height: fit-content;
+		overflow-y: scroll;
 		gap: 3px;
 		justify-items: center;
-		padding: 8px 1%;
+		padding: 1%;
 	}
 	@media ( max-width: 750px ) {
 		.image-grid {
@@ -188,9 +190,10 @@ def generateHTML(codes):
 	.img-container img {
 		width: 100%;
 		height: auto;
+		border-radius: 3.733% / 2.677%;
 	}
 	.img-container .btn {
-		background: url('img/flip.png') no-repeat;
+		background: url('./img/flip.png') no-repeat;
 		background-size: contain;
 		background-position: center;
 		width: 15%;
@@ -205,7 +208,7 @@ def generateHTML(codes):
 		box-shadow: none;
 	}
 	.img-container .btn:hover {
-		background: url('img/flip-hover.png') no-repeat;
+		background: url('./img/flip-hover.png') no-repeat;
 		background-size: contain;
 		background-position: center;
 	}
@@ -247,6 +250,7 @@ def generateHTML(codes):
 		max-height: 100%;
 		display: block;
 		margin: auto;
+		border-radius: 3.733% / 2.677%;
 	}
 	.card-grid-container .btn {
 		left: 50%;
@@ -348,6 +352,7 @@ def generateHTML(codes):
 	}
 	.card-img-container img {
 		width: 100%;
+		border-radius: 3.733% / 2.677%;
 	}
 	.card-fx {
 		display: grid;
@@ -362,6 +367,7 @@ def generateHTML(codes):
 	.img-container .h-img {
 		transform: rotateY(0deg) rotate(90deg);
 		width: 85%;
+		border-radius: 3.733% / 2.677%;
 	}
 	.rc-menu {
 		display: none;
@@ -392,33 +398,26 @@ def generateHTML(codes):
 	.sg-icon {
 		cursor: pointer;
 	}
-
-	/* layout fixes for smaller devices */
-	@media (max-device-width: 800px) {
-		.page-container {
-			grid-template-rows: 3fr 2fr;
-			grid-template-columns: auto;
-		}
-
-		.card-img-container {
-			height: 50px;
-		}
-
-		.image-grid {
-			grid-template-columns: 1fr 1fr;
-		}
-	}
 </style>
 <body>
 	<div class="header">
 		<div class="search-grid">
-			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/search.png" onclick="goToSearch()">
-			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
-			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
 		</div>
 	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
+	</script>
 	<div id="myContextMenu" class="rc-menu">
 		<ul>
 			<li id="add-to-deck">Add to Deck</li>
@@ -464,13 +463,15 @@ def generateHTML(codes):
 				<select name="display-select" class="display-select" id="display-select">
 					<option value="text">Text</option>
 					<option value="images">Images</option>
-					<option value="stats">Stats</option>
 				</select>
 				<div></div> <!-- empty div for spacing -->
 				<select name="file-menu" class="file-menu" id="file-menu">
 					<option value="default">Actions ...</option>
 					<option value="new">New deck</option>
 					<option value="import">Import deck</option>
+					<option value="import-clipboard">Load from clipboard</option>
+					<option value="clipboard">Copy to clipboard</option>
+					<option value="save">Save deck</option>
 					<option value="export-dek">Export .dek</option>
 					<option value="export-txt">Export .txt</option>
 					<option value="export-cod">Export .cod</option>
@@ -479,14 +480,59 @@ def generateHTML(codes):
 			</div>
 			<div class="static-deck-container">
 				<div class="deck-cards-container">
-					<!-- This element's innerhtml is assigned via a string found a bit below in `deck_cards_html` Html editing for this element should be done there -->
+					<div class="deck-col" id="col1">
+						<div class="deck-section" id="deck-creature">
+							<span id="deck-creature-title">Creatures (0)</span>
+							<div class="deck-inner-section" id="deck-creature-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-planeswalker">
+							<span id="deck-planeswalker-title">Planeswalkers (0)</span>
+							<div class="deck-inner-section" id="deck-planeswalker-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-artifact">
+							<span id="deck-artifact-title">Artifacts (0)</span>
+							<div class="deck-inner-section" id="deck-artifact-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-enchantment">
+							<span id="deck-enchantment-title">Enchantments (0)</span>
+							<div class="deck-inner-section" id="deck-enchantment-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-battle">
+							<span id="deck-battle-title">Battles (0)</span>
+							<div class="deck-inner-section" id="deck-battle-cards">
+							</div>
+						</div>
+					</div>
+					<div class="deck-col" id="col2">
+						<div class="deck-section" id="deck-instant">
+							<span id="deck-instant-title">Instants (0)</span>
+							<div class="deck-inner-section" id="deck-instant-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-sorcery">
+							<span id="deck-sorcery-title">Sorceries (0)</span>
+							<div class="deck-inner-section" id="deck-sorcery-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-land">
+							<span id="deck-land-title">Lands (0)</span>
+							<div class="deck-inner-section" id="deck-land-cards">
+							</div>
+						</div>
+						<div class="deck-section" id="deck-sideboard">
+							<span id="deck-sideboard-title">Sideboard (0)</span>
+							<div class="deck-inner-section" id="deck-sideboard-cards">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
 
 	<script>
 		let search_results = [];
@@ -497,61 +543,6 @@ def generateHTML(codes):
 		let active_card = [];
 		let sets_json = {};
 
-		const deck_cards_html = `<div class="deck-col" id="col1">
-					<div class="deck-section" id="deck-creature">
-						<span id="deck-creature-title">Creatures (0)</span>
-						<div class="deck-inner-section" id="deck-creature-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-planeswalker">
-						<span id="deck-planeswalker-title">Planeswalkers (0)</span>
-						<div class="deck-inner-section" id="deck-planeswalker-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-artifact">
-						<span id="deck-artifact-title">Artifacts (0)</span>
-						<div class="deck-inner-section" id="deck-artifact-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-enchantment">
-						<span id="deck-enchantment-title">Enchantments (0)</span>
-						<div class="deck-inner-section" id="deck-enchantment-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-battle">
-						<span id="deck-battle-title">Battles (0)</span>
-						<div class="deck-inner-section" id="deck-battle-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-other">
-						<span id="deck-other-title">Other (0)</span>
-						<div class="deck-inner-section" id="deck-other-cards">
-						</div>
-					</div>
-				</div>
-				<div class="deck-col" id="col2">
-					<div class="deck-section" id="deck-instant">
-						<span id="deck-instant-title">Instants (0)</span>
-						<div class="deck-inner-section" id="deck-instant-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sorcery">
-						<span id="deck-sorcery-title">Sorceries (0)</span>
-						<div class="deck-inner-section" id="deck-sorcery-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-land">
-						<span id="deck-land-title">Lands (0)</span>
-						<div class="deck-inner-section" id="deck-land-cards">
-						</div>
-					</div>
-					<div class="deck-section" id="deck-sideboard">
-						<span id="deck-sideboard-title">Sideboard (0)</span>
-						<div class="deck-inner-section" id="deck-sideboard-cards">
-						</div>
-					</div>
-				</div>`
-
 		document.addEventListener("DOMContentLoaded", async function () {
 			'''
 
@@ -561,7 +552,7 @@ def generateHTML(codes):
 
 	html_content += '''
 
-			await fetch('/lists/all-sets.json')
+			await fetch(rootPath + '/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -570,12 +561,10 @@ def generateHTML(codes):
 			cardGrid = document.getElementById("imagesOnlyGrid");
 			card_list_arrayified.sort(compareFunction);
 
-			gridified_card = gridifyCard(card_list_arrayified[0], true, true);
+			gridified_card = gridifyCard(card_list_arrayified[0], true);
 			gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 			gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 			document.getElementById("card-grid-container").appendChild(gridified_card);
-
-			document.getElementById("display-select").value = "text"; // Aanginer: initalize display style as text to prevent funkiness with browsers saving data and initializing on the stats tab
 
 			// initial search on load
 			preSearch();
@@ -602,7 +591,15 @@ def generateHTML(codes):
 			{
 				document.getElementById("import-file").click();
 			}
-			else if (option.startsWith("export"))
+			else if (option == "import-clipboard")
+			{
+				importFromClipboard();
+			}
+			else if (option == "save")
+			{
+				saveDeck();
+			}
+			else if (option == "clipboard" || option.startsWith("export"))
 			{
 				exportFile(option);
 			}
@@ -751,6 +748,49 @@ def generateHTML(codes):
 	html_content += '''
 
 		function preSearch() {
+			const searchTerms = document.getElementById("search").value.toLowerCase();
+			const tokens = tokenizeTerms(searchTerms) || [];
+			const sortBySelect = document.getElementById("sort-by");
+			const sortOrderSelect = document.getElementById("sort-order");
+
+			sortBySelect.disabled = false;
+			sortOrderSelect.disabled = false;
+
+			tokens.forEach(token => {
+				if (token.startsWith("sort:")) {
+					const val = token.substring(5);
+					const map = {
+						"name": "name",
+						"set": "set-code",
+						"mv": "mv",
+						"color": "color",
+						"rarity": "rarity",
+						"cube": "cube"
+					};
+					if (map[val]) {
+						const option = Array.from(sortBySelect.options).find(opt => opt.value === map[val]);
+						if (option) {
+							sortBySelect.value = map[val];
+							sortBySelect.disabled = true;
+						}
+					}
+				}
+				if (token.startsWith("direction:")) {
+					const val = token.substring(10);
+					const map = {
+						"asc": "ascending",
+						"desc": "descending"
+					};
+					if (map[val]) {
+						const option = Array.from(sortOrderSelect.options).find(opt => opt.value === map[val]);
+						if (option) {
+							sortOrderSelect.value = map[val];
+							sortOrderSelect.disabled = true;
+						}
+					}
+				}
+			});
+
 			card_list_arrayified.sort(compareFunction);
 			if (document.getElementById("sort-order").value == "descending")
 			{
@@ -787,19 +827,19 @@ def generateHTML(codes):
 				const card_stats = search_results[i];
 				const id = card_stats.set + "-" + card_stats.number + "-" + document.getElementById("display").value;
 				imgContainer.className = "img-container";
-				const card_sr_grid = gridifyCard(search_results[i]);
+				const card_sr_grid = gridifyCard(search_results[i], true, true);
 				const card_sr = card_sr_grid.getElementsByTagName("img")[0];
 
 				card_sr.onmouseover = function() {
 					cgc = document.getElementById("card-grid-container");
 					cgc.innerHTML = "";
-					const gridified_card = gridifyCard(card_stats, true, true);
+					const gridified_card = gridifyCard(card_stats, true);
 					gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 					gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 					if (card_stats.shape.includes("double"))
 					{
 						gridified_card.getElementsByTagName("button")[0].onclick = function() {
-							imgFlip("image-grid-card", card_stats.type.includes("Battle"));
+							imgFlip("image-grid-card", card_stats.rotated);
 						}
 					}
 					cgc.appendChild(gridified_card);
@@ -838,8 +878,9 @@ def generateHTML(codes):
 
 	html_content += '''
 
-		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
+		function gridifyCard(card_stats, card_text = false, small = false, designer_notes = false) {
 			const card_name = card_stats.card_name;
+			rotate_card = !small && card_stats.rotated;
 
 			if (!card_text)
 			{
@@ -959,42 +1000,36 @@ def generateHTML(codes):
 				}
 			}
 
-			const display_style = document.getElementById("display-select").value;
-			document.getElementsByClassName("deck-cards-container")[0].innerHTML = deck_cards_html;
-
-
 			for (const [key, map] of deck_cards)
 			{
 				dsec_id = "deck-" + key;
 				outer_ele = document.getElementById(dsec_id);
 
-				if (map.size == 0 && outer_ele)
+				if (map.size == 0)
 				{
 					outer_ele.style.display = "none";
 				}
 				else
-				{	
-					if (outer_ele) {
-						outer_ele.style.display = "grid";
-						dsec_c_id = dsec_id + "-cards";
-						
-						dsec_t_id = dsec_id + "-title";
-						title_ele = document.getElementById(dsec_t_id);
-						let count = 0;
-						for (const val of Array.from(map.values()))
-						{
-							count += val;
-						}
-						const numregex = /[0-9]+/;
-						title_ele.innerText = title_ele.innerText.replace(numregex, count);
-
-						cards_ele = document.getElementById(dsec_c_id);
-						cards_ele.innerHTML = "";
+				{
+					outer_ele.style.display = "grid";
+					dsec_c_id = dsec_id + "-cards";
+					
+					dsec_t_id = dsec_id + "-title";
+					title_ele = document.getElementById(dsec_t_id);
+					let count = 0;
+					for (const val of Array.from(map.values()))
+					{
+						count += val;
 					}
+					const numregex = /[0-9]+/;
+					title_ele.innerText = title_ele.innerText.replace(numregex, count);
 
+					cards_ele = document.getElementById(dsec_c_id);
+					cards_ele.innerHTML = "";
 					const cards_list = Array.from(map.keys()).sort();				
 					for (const card of cards_list)
 					{
+						const display_style = document.getElementById("display-select").value;
 						const card_stats = JSON.parse(card);
 						const card_name = card_stats.card_name;
 
@@ -1009,13 +1044,13 @@ def generateHTML(codes):
 							card_in_deck.onmouseover = function() {
 								cgc = document.getElementById("card-grid-container");
 								cgc.innerHTML = "";
-								const gridified_card = gridifyCard(card_stats, true, true);
+								const gridified_card = gridifyCard(card_stats, true);
 								gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 								gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 								if (card_stats.shape.includes("double"))
 								{
 									gridified_card.getElementsByTagName("button")[0].onclick = function() {
-										imgFlip("image-grid-card", card_stats.type.includes("Battle"));
+										imgFlip("image-grid-card", card_stats.rotated);
 									}
 								}
 								cgc.appendChild(gridified_card);
@@ -1031,13 +1066,13 @@ def generateHTML(codes):
 
 							if (key == "sideboard")
 							{
-								del_btn.src = "/img/sb-delete.png";
+								del_btn.src = rootPath + "/img/sb-delete.png";
 								del_btn.onclick = function() {
 									sideboard.splice(sideboard.indexOf(card), 1);
 									processDeck();
 								}
 
-								add_btn.src = "/img/sb-add.png";
+								add_btn.src = rootPath + "/img/sb-add.png";
 								add_btn.onclick = function() {
 									sideboard.push(card);
 									processDeck();
@@ -1050,13 +1085,13 @@ def generateHTML(codes):
 							}
 							else
 							{
-								del_btn.src = "/img/delete.png";
+								del_btn.src = rootPath + "/img/delete.png";
 								del_btn.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
 									processDeck();
 								}
 
-								add_btn.src = "/img/add.png";
+								add_btn.src = rootPath + "/img/add.png";
 								add_btn.onclick = function() {
 									deck.push(card);
 									processDeck();
@@ -1081,7 +1116,7 @@ def generateHTML(codes):
 							card_row.appendChild(card_in_deck);
 							cards_ele.appendChild(card_row);
 						}
-						else if (display_style == "images")
+						else
 						{
 							card_img_container = document.createElement("div");
 							card_img_container.className = "card-img-container";
@@ -1092,18 +1127,24 @@ def generateHTML(codes):
 							}
 
 							card_img = document.createElement("img");
-							card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + "_" + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+							card_img.loading = "lazy";
+							if ("position" in card_stats) {
+								card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+							}
+							else {
+								card_img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+							}
 							card_img.style.cursor = "pointer";
 							card_img.onmouseover = function() {
 								cgc = document.getElementById("card-grid-container");
 								cgc.innerHTML = "";
-								const gridified_card = gridifyCard(card_stats, true, true);
+								const gridified_card = gridifyCard(card_stats, true);
 								gridified_card.getElementsByTagName("img")[0].id = "image-grid-card";
 								gridified_card.getElementsByTagName("a")[0].removeAttribute("href");
 								if (card_stats.shape.includes("double"))
 								{
 									gridified_card.getElementsByTagName("button")[0].onclick = function() {
-										imgFlip("image-grid-card", card_stats.type.includes("Battle"));
+										imgFlip("image-grid-card", card_stats.rotated);
 									}
 								}
 								cgc.appendChild(gridified_card);
@@ -1122,13 +1163,13 @@ def generateHTML(codes):
 
 							if (key == "sideboard")
 							{
-								del_btn.src = "/img/sb-delete.png";
+								del_btn.src = rootPath + "/img/sb-delete.png";
 								del_btn.onclick = function() {
 									sideboard.splice(sideboard.indexOf(card), 1);
 									processDeck();
 								}
 
-								add_btn.src = "/img/sb-add.png";
+								add_btn.src = rootPath + "/img/sb-add.png";
 								add_btn.onclick = function() {
 									sideboard.push(card);
 									processDeck();
@@ -1141,13 +1182,13 @@ def generateHTML(codes):
 							}
 							else
 							{
-								del_btn.src = "/img/delete.png";
+								del_btn.src = rootPath + "/img/delete.png";
 								del_btn.onclick = function() {
 									deck.splice(deck.indexOf(card), 1);
 									processDeck();
 								}
 
-								add_btn.src = "/img/add.png";
+								add_btn.src = rootPath + "/img/add.png";
 								add_btn.onclick = function() {
 									deck.push(card);
 									processDeck();
@@ -1174,196 +1215,38 @@ def generateHTML(codes):
 							card_img_container.appendChild(card_img);
 							cards_ele.appendChild(card_img_container);
 						}
-						else {
-							// stats view
-							document.getElementsByClassName("deck-cards-container")[0].innerHTML = "";
-							makeStatsTab(deck_cards);
-						}
 					}
 				}
 			}
 		}
 
-		function makeStatsTab(deck_cards) {
-			const stats_tab_1 = document.createElement("div");
-			stats_tab_1.className = "stats-tab-container";
-			const stats_tab_2 = document.createElement("div");
-			stats_tab_2.className = "stats-tab-container";
+		function saveDeck() {
+			const deckName = document.getElementById("deck-name").value;
+			let mainParts = [];
+			let sideParts = [];
 
-			let mana_values = [0, 0, 0, 0, 0, 0, 0, 0];
-			let color_cards = { "W": 0, "U": 0, "B": 0, "R": 0, "G": 0, "I": 0, "M": 0, "C": 0 };
-			let card_types = {};
-			const mv_labels = ["0", "1", "2", "3", "4", "5", "6+"];
-			const total_length = deck.length + sideboard.length;
-			let total_nonlands = 0;
-
-			const mana_curve_chart = document.createElement("canvas");
-			mana_curve_chart.id = "mana-curve-chart";
-			mana_curve_chart.className = "mana-curve-chart";
-
-			const colors_chart = document.createElement("canvas");
-			colors_chart.id = "deck-colors-chart";
-			colors_chart.className = "deck-colors-chart";
-
-			const types_chart = document.createElement("canvas");
-			types_chart.id = "deck-types-chart";
-			types_chart.className = "deck-types-chart";
-
-			for (const card of deck) {
-				const card_stats = JSON.parse(card);
-				let card_mv = convertToMV(card_stats.cost);
-				const color = card_stats.color;
-				if (!card_stats.type.includes("Land")) {
-					card_mv = Math.min(6, card_mv);
-					mana_values[card_mv] += 1;
-					if (color_cards[color] != null) {
-						color_cards[color] += 1;
-					} else if (color == "") {
-						color_cards["C"] += 1;
-					} else {
-						color_cards["M"] += 1;
-					}
-					total_nonlands++;
-				}
-
-			}
-
-			for (const card of sideboard) {
-				const card_stats = JSON.parse(card);
-				let card_mv = convertToMV(card_stats.cost);
-				const color = card_stats.color;
-				if (!card_stats.type.includes("Land")) {
-					card_mv = Math.min(6, card_mv);
-					mana_values[card_mv] += 1;
-					if (color_cards[color] != null) {
-						color_cards[color] += 1;
-					} else if (color == "") {
-						color_cards["C"] += 1;
-					} else {
-						color_cards["M"] += 1;
-					}
-					total_nonlands++;
-				}
-			}
-
-			for (const [key, map] of deck_cards) {
-				if (key == "sideboard")
-					continue;
-				for (const card of map.keys()) {
-					let num = map.get(card);
-					if (card_types[key] == null) {
-						card_types[key] = num;
-					} else {
-						card_types[key] += num;
-					}
-				}
-			}
-
-			stats_tab_1.appendChild(mana_curve_chart);
-			stats_tab_1.appendChild(types_chart);
-			stats_tab_2.appendChild(colors_chart);
-
-			document.getElementsByClassName("deck-cards-container")[0].appendChild(stats_tab_1);
-			document.getElementsByClassName("deck-cards-container")[0].appendChild(stats_tab_2);
-			const background_colors = "rgba(0,0,0,0.6) ".repeat(mana_values.length).split(" ");
-
-			new Chart("mana-curve-chart", {
-				type: "bar",
-				data: {
-					labels: mv_labels,
-					datasets: [{
-						data: mana_values,
-						backgroundColor: background_colors
-					}]
-				}, options: {
-					legend: { display: false },
-					title: {
-						display: true,
-						text: `       Mana Curve       (Average: ${mv_average(mana_values, total_nonlands).toFixed(2)})`
-					},
-					plugins: {
-						labels: {
-							render: "value"
-						}
-					},
-					scales: {
-						yAxes: [{
-							display: true,
-							ticks: {
-								beginAtZero: true,
-							}
-						}]
-					}
-				}
+			const mainMap = new Map();
+			deck.forEach(cardStr => {
+				mainMap.set(cardStr, (mainMap.get(cardStr) || 0) + 1);
+			});
+			mainMap.forEach((count, cardStr) => {
+				const card = JSON.parse(cardStr);
+				mainParts.push(`${card.set}.${card.number}.${count}`);
 			});
 
-			const color_bgs = ["#F0F2C0", "#B5CDE3", "#ACA29A", "#DB8664", "#93B483", "#9B91B2", "#ebd567", "#BEB9B2"]
-
-			new Chart("deck-colors-chart", {
-				type: "pie",
-				data: {
-					labels: ["White", "Blue", "Black", "Red", "Green", "Silver", "Multicolor", "Colorless"],
-					datasets: [{
-						data: Object.values(color_cards),
-						backgroundColor: color_bgs
-					}]
-				}, options: {
-					legend: { display: false },
-					title: {
-						display: true,
-						text: "Card Colors"
-					},
-					plugins: {
-						labels: {
-							render: "value",
-							position: "border"
-						}
-					}
-				}
+			const sideMap = new Map();
+			sideboard.forEach(cardStr => {
+				sideMap.set(cardStr, (sideMap.get(cardStr) || 0) + 1);
+			});
+			sideMap.forEach((count, cardStr) => {
+				const card = JSON.parse(cardStr);
+				sideParts.push(`${card.set}.${card.number}.${count}`);
 			});
 
-			new Chart("deck-types-chart", {
-				type: "bar",
-				data: {
-					labels: Object.keys(card_types),
-					datasets: [{
-						data: Object.values(card_types),
-						backgroundColor: background_colors
-					}]
-				}, options: {
-					legend: { display: false },
-					title: {
-						display: true,
-						text: "Card Types"
-					},
-					plugins: {
-						labels: {
-							render: "value",
-							position: "outside"
-						}
-					},
-					scales: {
-						yAxes: [{
-							display: true,
-							ticks: {
-								beginAtZero: true,
-							}
-						}]
-					}
-				}
-			});
-		}
-
-		function mv_average(l, total_length) {
-			let total_mv = 0;
-			let current_mv = 0;
-
-			for (const i of l) {
-				total_mv += current_mv * i;
-				current_mv++;
-			}
-
-			return total_mv / total_length;
+			const compactString = `${deckName}|${mainParts.join(',')}|${sideParts.join(',')}`;
+			const hash = btoa(compactString);
+			window.open(rootPath + "/deck#" + hash, "_blank");
+			document.getElementById("file-menu").value = "default";
 		}
 
 		async function exportFile(export_as) {
@@ -1426,18 +1309,99 @@ def generateHTML(codes):
 				deck_text += "\\t</zone>\\n</cockatrice_deck>";
 			}
 
-			let downloadableLink = document.createElement('a');
-			downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(deck_text));
-			downloadableLink.download = deck_name + ("." + export_as.split("-")[1]);
-			document.body.appendChild(downloadableLink);
-			downloadableLink.click();
-			document.body.removeChild(downloadableLink);
+			if (export_as != "clipboard")
+			{
+				let downloadableLink = document.createElement('a');
+				downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(deck_text));
+				downloadableLink.download = deck_name + ("." + export_as.split("-")[1]);
+				document.body.appendChild(downloadableLink);
+				downloadableLink.click();
+				document.body.removeChild(downloadableLink);
+			}
+			else
+			{
+				navigator.clipboard.writeText(deck_text);
+			}
 
 			document.getElementById("file-menu").value = "default";
 		}
 
+		async function importFromClipboard() {
+			try {
+				const deckText = await navigator.clipboard.readText();
+
+				deck = [];
+				sideboard = [];
+
+				let deck_map = new Map();
+				let sb_map = new Map();
+				let sb_cards = false;
+
+				for (let line of deckText.split('\\n'))
+				{
+					line = line.trim();
+
+					if (line == 'sideboard' || line == '') // '' for Draftmancer files
+					{
+						sb_cards = true;
+					}
+					else if (!sb_cards)
+					{
+						count = parseInt(line.substring(0, line.indexOf(' ')));
+						card_name = line.substring(line.indexOf(' ') + 1);
+
+						if (deck_map.has(card_name))
+						{
+							deck_map.set(card_name, deck_map.get(card_name) + count);
+						}
+						else
+						{
+							deck_map.set(card_name, count);
+						}
+					}
+					else
+					{
+						count = parseInt(line.substring(0, line.indexOf(' ')));
+						card_name = line.substring(line.indexOf(' ') + 1);
+
+						if (sb_map.has(card_name))
+						{
+							sb_map.set(card_name, sb_map.get(card_name) + count);
+						}
+						else
+						{
+							sb_map.set(card_name, count);
+						}
+					}
+				}
+				for (const card of card_list_arrayified)
+				{
+					if (deck_map.has(card.card_name))
+					{
+						for (let i = 0; i < deck_map.get(card.card_name); i++)
+						{
+							addCardToDeck(JSON.stringify(card));
+						}
+						deck_map.delete(card.card_name);
+					}
+
+					if (sb_map.has(card.card_name))
+					{
+						for (let i = 0; i < sb_map.get(card.card_name); i++)
+						{
+							addCardToSideboard(JSON.stringify(card));
+						}
+						sb_map.delete(card.card_name);
+					}
+				}
+			} catch (err) {
+				console.error('Failed to read clipboard:', err);
+			}
+			document.getElementById("file-menu").value = "default";
+		}
+
 		function goToSearch() {
-			window.location = ("/search");
+			window.location = (rootPath + "/search");
 		}
 
 		document.getElementById("search").addEventListener("keypress", function(event) {
