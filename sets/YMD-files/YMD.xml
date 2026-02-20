@@ -1,0 +1,1380 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cockatrice_carddatabase version='4'>
+	<sets>
+		<set>
+			<name>YMD</name>
+			<longname>Bobby&apos;s Merfolk CMD</longname>
+			<settype>Custom</settype>
+			<releasedate>2026-02-20</releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>Zion, Uniter of Seas</name>
+			<text>Vigilance
+Lowtide — As long as you control three or less untapped Islands, during each of your turns, you may play an additional land each turn.
+Hightide — As long as you control five or more untapped Islands, Zion can&apos;t be blocked.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/58_Zion, Uniter of Seas.png" num="58">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Merfolk Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>1GWU</manacost>
+				<cmc>4</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Zander, Wavecaller Magi</name>
+			<text>When Zander enters the battlefield, create X 1/1 blue Merfolk Wizard creature tokens where X is the number of Islands on the battlefield.
+You have no maximum hand size.
+Whenever you tap one or more Merfolk you control to activate an ability, draw a card.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/57_Zander, Wavecaller Magi.png" num="57">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Merfolk Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>5GWU</manacost>
+				<cmc>8</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>4/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Viviane, Blood Sea Shaper</name>
+			<text>Other Merfolk you control get +1/+1.
+Hightide — As long as you control five or more untapped Islands, non-legendary nontoken Merfolk you control have myriad. (Whenever this creature attacks, for each opponent other than defending player, you may create a token that&apos;s a copy of this creature that&apos;s tapped and attacking that player or a planeswalker they control. Exile the tokens at end of combat.)
+Partnered with Aeces, Azure Sea Crafter. (When this creature enters, target player may put Aeces into their hand from their library, then shuffle.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/52_Viviane, Blood Sea Shaper.png" num="52">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2WU</manacost>
+				<cmc>4</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Aeces, Azure Sea Crafter</name>
+			<text>Other Merfolk you control get +1/+1.
+Lowtide — As long as you control three or less untapped Islands, whenever a Merfolk you control deals combat damage to a player, that player mills cards equal to the damage dealt to them.
+Partnered with Viviane, Blood Sea Shaper. (When this creature enters, target player may put Viviane into their hand from their library, then shuffle.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/19_Aeces, Azure Sea Crafter.png" num="19">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Merfolk Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>GU</manacost>
+				<cmc>2</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Crash on the Rocks</name>
+			<text>When Crash on the Rocks enters the battlefield, for each opponent, exile up to one target nonland permanent that player controls until Crash on the Rocks leaves the battlefield.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/1_Crash on the Rocks.png" num="1">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WW</manacost>
+				<cmc>4</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Leering in the Water</name>
+			<text>Lowtide — As long as you control three or less untapped Islands, Merfolk you control get +0/+2.
+Hightide — As long as you control five or more untapped Islands, Merfolk you control get +2/+0.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/8_Leering in the Water.png" num="8">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3U</manacost>
+				<cmc>4</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Harmonic Cultivation</name>
+			<text>Search your library for an Island, Forest or Plains card, put that card onto the battlefield, then shuffle.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/17_Harmonic Cultivation.png" num="17">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1G</manacost>
+				<cmc>2</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Deep Sea Tritons</name>
+			<text>Trample
+Whenever you cast a Merfolk spell, choose one —
+• Target creature you control explores.
+• Create a 1/1 green Merfolk Warrior creature token.
+• Deep Sea Tritons fights target creature you don&apos;t control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/28_Deep Sea Tritons.png" num="28">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>3GU</manacost>
+				<cmc>5</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Mistifying Trickster</name>
+			<text>Flying
+Whenever you cast a Merfolk spell, choose one —
+• Tap or untap target creature.
+• Create a 1/1 blue Merfolk Rogue creature token.
+• Target player mills two cards.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/9_Mistifying Trickster.png" num="9">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>2UU</manacost>
+				<cmc>4</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Cove Maiden</name>
+			<text>Lifelink
+Whenever you cast a Merfolk spell, choose one —
+• Prevent all damage that would be dealt to target creature you control this turn.
+• Create a 1/1 white Merfolk Cleric creature token.
+• Gain 3 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/24_Cove Maiden.png" num="24">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>1WU</manacost>
+				<cmc>3</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Jade Shaper</name>
+			<text>Whenever you cast a Merfolk spell, choose one —
+• Put a flood counter onto target land. (A land with a flood counter on it is an Island in addition to its other types.)
+• Create a 1/1 blue Merfolk Wizard creature token.
+• Return target artifact or enchantment you control to its owner&apos;s hand.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/34_Jade Shaper.png" num="34">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Disdainful Swirl</name>
+			<text>Counter target spell. 
+Put a flood counter onto target land. (A land with a flood counter on it is an Island in addition to its other types.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/7_Disdainful Swirl.png" num="7">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2U</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Bask on a Rock</name>
+			<text>Untap each creature you control. Merfolk you control gain Islandwalk until end of turn. (That creature can&apos;t be blocked as long as defending player controls a Merfolk you control gain Island.)
+Draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/21_Bask on a Rock.png" num="21">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>1WUU</manacost>
+				<cmc>4</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Viviane&apos;s Tsunami</name>
+			<text>Each player returns each nontoken creature to its owner&apos;s hand. Draw a card for each nontoken creature returned to your hand this way.
+Exile Viviane&apos;s Tsunami.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/53_Viviane&apos;s Tsunami.png" num="53">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>3GUU</manacost>
+				<cmc>6</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Seacaller&apos;s Command</name>
+			<text>Choose two — 
+• Target creature you control gets +1/+1 and gains flying until end of turn.
+• Draw two cards, then discard a card.
+• Exile target artifact or enchantment.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/43_Seacaller&apos;s Command.png" num="43">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1GWU</manacost>
+				<cmc>4</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Deep Blue Confluence</name>
+			<text>Choose three. You may choose the same mode more than once.
+• Creatures you control get +1/+0 until end of turn.
+• Target creature can&apos;t be blocked this turn.
+• Target opponent mills four cards.
+• Put target permanent on top of its owner&apos;s library.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/27_Deep Blue Confluence.png" num="27">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>3GWU</manacost>
+				<cmc>6</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Sunseeker Merfolk</name>
+			<text>When Sunseeker Merfolk deals combat damage to a player, it explores, then draw a card. (To explore, reveal the top card of your library. Put that card into your hand if it&apos;s a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/47_Sunseeker Merfolk.png" num="47">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Rogue Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>1WU</manacost>
+				<cmc>3</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Swirling Recollection</name>
+			<text>Each player shuffles their hand and graveyard into their library, then draws seven cards. You may cast a creature card from your hand with mana value X or less without paying its mana cost, where X is the number of Islands you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/49_Swirling Recollection.png" num="49">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1GGUU</manacost>
+				<cmc>5</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Wavebreaker Priestess</name>
+			<text>Lowtide — At the beginning of your end step, as long as you control three or less untapped Islands, target creature you control explores.
+Hightide — At the beginning of your end step, as long as you control five or more untapped Islands, put a flying counter onto target creature you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/54_Wavebreaker Priestess.png" num="54">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>WU</manacost>
+				<cmc>2</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>1/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Jade Champion</name>
+			<text>Lowtide — At the beginning of your combat step, if you control three or less untapped Islands, target creature you control explores.
+Hightide — At the beginning of your combat step, if you control five or more untapped Islands, target creature you control gets +X/+X, where X is the number of untapped Islands you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/33_Jade Champion.png" num="33">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2GU</manacost>
+				<cmc>4</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Unite the Seas</name>
+			<text>Put a flood counter on up to two target lands. (A land with a flood counter on it is an Island in addition to its other types.)
+Draw cards equal the number of tapped Islands you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/14_Unite the Seas.png" num="14">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>4U</manacost>
+				<cmc>5</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Tigershark Merfolk</name>
+			<text>Whenever one or more Merfolk you control deals combat damage to a player, draw a card.
+Tap four untapped Merfolk you control: Create two tapped treasure tokens.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/13_Tigershark Merfolk.png" num="13">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>2UU</manacost>
+				<cmc>4</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Angler Mystic</name>
+			<text>You may cast Merfolk spells as though they have flash.
+Tap five untapped Merfolk you control: Each opponent mills ten cards.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/6_Angler Mystic.png" num="6">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>1UU</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Reflection Merfolk</name>
+			<text>You may have Reflection Merfolk enter the battlefield as another creature you control, except its name is Reflection Merfolk.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/41_Reflection Merfolk.png" num="41">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>GU</manacost>
+				<cmc>2</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Wavecrosser Merfolk</name>
+			<text>Other Merfolk you control have Islandwalk.
+Tap four untapped Merfolk you control: Put a flood counter onto target land. (A land with a flood counter on it is an Island in addition to its other types.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/55_Wavecrosser Merfolk.png" num="55">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>WU</manacost>
+				<cmc>2</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Surrond the Ship</name>
+			<text>Destroy each creature with power less than the number of Islands you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/48_Surrond the Ship.png" num="48">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>1WWUU</manacost>
+				<cmc>5</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Manaray Sprawling</name>
+			<text>Whenever a nontoken creature enters the battlefield under your control, it explores.
+Whenever you tap a land for mana, add one mana to your mana pool of any type that land produced.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/37_Manaray Sprawling.png" num="37">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3GW</manacost>
+				<cmc>5</cmc>
+				<colors>WG</colors>
+				<coloridentity>WG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Diversion Mystic</name>
+			<text>Ward {1} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Whenever Diversion Mystic attacks, tap target creature defending player controls until Diversion Mystic leaves the battlefield.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/29_Diversion Mystic.png" num="29">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Cleric Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2GU</manacost>
+				<cmc>4</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Floodgate Takeover</name>
+			<text>Whenever you cast a Merfolk spell, you may pay {1}. If you do, tap target land you don&apos;t control and put a flood counter on it. (A land with a flood counter on it is an Island in addition to its other types.)
+Tap three untapped Merfolk you control: Each opponent mills three cards.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/32_Floodgate Takeover.png" num="32">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WU</manacost>
+				<cmc>4</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Kraken Grasping</name>
+			<text>Lowtide — At the beginning of your end step, if you control three or less untapped Islands, create a tapped treasure token.
+Hightide — At the beginning of your end step, if you control five or more untapped Islands, each opponent mills five cards.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/35_Kraken Grasping.png" num="35">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1GU</manacost>
+				<cmc>3</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Coral Druid</name>
+			<text>Defender
+Tap an untapped Merfolk you control: Add one mana of any color.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/23_Coral Druid.png" num="23">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Cleric Druid</type>
+				<maintype>Creature</maintype>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Luminant Merfolk</name>
+			<text>{T}: Tap or untap target permanent.
+{1}, {T}: Target player mills five cards.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/36_Luminant Merfolk.png" num="36">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>GU</manacost>
+				<cmc>2</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>1/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Swordfish Triton</name>
+			<text>Vigilance
+Other Merfolk you control get +1/+1 and have vigilance.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/50_Swordfish Triton.png" num="50">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1WU</manacost>
+				<cmc>3</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Exchange of Tales</name>
+			<text>Search your library for a creature card and reveal it. If that card is legendary, untap up to two target creatures you control. Put that card into your hand, then shuffle.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/30_Exchange of Tales.png" num="30">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>GW</manacost>
+				<cmc>2</cmc>
+				<colors>WG</colors>
+				<coloridentity>WG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Sunken Suit</name>
+			<text>{T}: Add one mana of any color in your commander&apos;s color identity.
+{2}, {T}, Sacrifice Sunken Suit: Target creature explores. (Reveal the top card of your library. Put that card into your hand if it&apos;s a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/65_Sunken Suit.png" num="65">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Coralcrab Statue</name>
+			<text>Lowtide — When Coralcrab Statue enters the battlefield, if you control three or less untapped Islands, draw a card.
+{1}, {T}: Add {W}{U}.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/61_Coralcrab Statue.png" num="61">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>River Spirit Shrine</name>
+			<text>Lowtide — When River Spirit Shrine enters the battlefield, if you control three or less untapped Islands, draw a card.
+{1}, {T}: Add {G}{U}.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/63_River Spirit Shrine.png" num="63">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Reach the Beach</name>
+			<text>Search your library for two basic Island cards, reveal them, put one of them onto the battlefield tapped and the other into your hand.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/18_Reach the Beach.png" num="18">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2G</manacost>
+				<cmc>3</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Spelunking Spectacle</name>
+			<text>Draw two cards.
+You may put a land card from your hand onto the battlefield tapped.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/46_Spelunking Spectacle.png" num="46">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1GU</manacost>
+				<cmc>3</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Riverbred Bounty</name>
+			<text>Creatures you control get +1/+1.
+Whenever you tap an Island for mana, add {G} or {W} to your mana pool.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/42_Riverbred Bounty.png" num="42">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2GWU</manacost>
+				<cmc>5</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Reel in the Catch</name>
+			<text>Look at the top eight cards of your library, reveal any number of creature cards with power 2 or less from among them. Put all revealed cards into your hand, put the rest on the bottom of your library in a random order.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/3_Reel in the Catch.png" num="3">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2W</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Blubber Escort</name>
+			<text>Creatures you control gain hexproof and indestructible until end of turn.
+Draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/16_Blubber Escort.png" num="16">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2G</manacost>
+				<cmc>3</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Submerging Shells</name>
+			<text>Put a flood counter on up to two target lands. (A land with a flood counter on it is an Island in addition to its other types.)
+Draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/11_Submerging Shells.png" num="11">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>U</manacost>
+				<cmc>1</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Algae Druid</name>
+			<text>{T}: Add {G}.
+Tap four untapped Merfolk you control: Algae Druid explores. (Reveal the top card of your library. Put that card into your hand if it&apos;s a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/15_Algae Druid.png" num="15">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Druid</type>
+				<maintype>Creature</maintype>
+				<manacost>G</manacost>
+				<cmc>1</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<pt>0/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Pikehunter Triton</name>
+			<text>Islandwalk (This creature can&apos;t be blocked as long as defending player controls an Island.)
+Whenever Pikehunter Triton deals combat damage to a player, create a Food token.
+Sacrifice two Food tokens: Pikehunter Triton explores. (Reveal the top card of your library. Put that card into your hand if it&apos;s a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/10_Pikehunter Triton.png" num="10">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>U</manacost>
+				<cmc>1</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>1/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Seaside Seclusion</name>
+			<text>Exile target creature with toughness 4 or less.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/4_Seaside Seclusion.png" num="4">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>W</manacost>
+				<cmc>1</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Sink into Coral</name>
+			<text>Choose one —
+• Destroy target artifact.
+• Destroy target enchantment.
+• Exile target card from a graveyard.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/5_Sink into Coral.png" num="5">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Charmbreaker Merfolk</name>
+			<text>Whenever Charmbreaker Merfolk deals combat damage to a player, destroy up to one artifact or enchantment that player controls. If you destroy a permanent this way, its controller creates a tapped treasure token.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/22_Charmbreaker Merfolk.png" num="22">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1GU</manacost>
+				<cmc>3</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Psion of Solaris</name>
+			<text>Flying
+You have no maximum hand size.
+Tap ten untapped Merfolk you control: Untap each land you control. Activate only once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/39_Psion of Solaris.png" num="39">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>5WU</manacost>
+				<cmc>7</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Captured Ship</name>
+			<text>Lowtide — When Captured Ship enters the battlefield, if you control three or less untapped Islands, draw a card.
+{T}: Add {C}{C}
+{6}, {T}, Sacrifice Captured Ship: Create a 6/6 blue Kraken creature token with ward {2}.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/60_Captured Ship.png" num="60">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>4</manacost>
+				<cmc>4</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Seacrystal Compass</name>
+			<text>{T}: Add {G}, {W}, or {U}.
+{G}{W}{U}, Sacrifice Seacrystal Compass: Draw three cards.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/64_Seacrystal Compass.png" num="64">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>3</manacost>
+				<cmc>3</cmc>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Angler Gang</name>
+			<text>Lowtide — At the beginning of your combat step, if you control three or less untapped Islands, untap target creature you control.
+Hightide — At the beginning of your combat step, if you control five or more untapped Islands, create two 1/1 blue Merfolk Rogue creature tokens, those tokens gain haste until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/20_Angler Gang.png" num="20">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>3GU</manacost>
+				<cmc>5</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Konch of the Deep</name>
+			<text>Equipped creature has Islandwalk. (That creature can&apos;t be blocked as long as defending player controls an Equipped creature has Island.)
+Whenever equipped creature deals combat damage to a player, you may put a land card from your hand onto the battlefield tapped, then that player mills a card for each Island you control.
+Equip Merfolk {2}</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/62_Konch of the Deep.png" num="62">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact — Equipment</type>
+				<maintype>Artifact</maintype>
+				<manacost>3</manacost>
+				<cmc>3</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Captain&apos;s Coin</name>
+			<text>{T}: Add {C}{C}.
+Hightide — {T}: Add two mana of any one color. Activate this ability only if you control five or more untapped Islands. (As long as you control five or more untapped Islands, do X.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/59_Captain&apos;s Coin.png" num="59">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>1</manacost>
+				<cmc>1</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Pyretic Merfolk</name>
+			<text>Lifelink
+Whenever Pyretic Merfolk untaps, exile up to three target cards from among graveyards. For each land card exiled this way, create a tapped treasure token.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/40_Pyretic Merfolk.png" num="40">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>4WU</manacost>
+				<cmc>6</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Triton Warrior</name>
+			<text>Whenever Triton Warrior becomes untapped, you may have it fight target creature you don&apos;t control. (Each deals damage equal to its power to the other.)</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/51_Triton Warrior.png" num="51">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Merfolk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>4GU</manacost>
+				<cmc>6</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>4/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Diving Treasure</name>
+			<text>Lowtide — Whenever two or more creatures attack you and you control three or less untapped Islands, create two tapped treasure tokens.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/2_Diving Treasure.png" num="2">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3W</manacost>
+				<cmc>4</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Sunken Thoughts</name>
+			<text>Counter target spell unless its controller pays {X}, where X is the number of Islands you control.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/12_Sunken Thoughts.png" num="12">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2U</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Extract from the Ruins</name>
+			<text>Hightide — As long as you control five or more untapped Islands, you may cast artifact cards from your opponents graveyards.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/31_Extract from the Ruins.png" num="31">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>4GWU</manacost>
+				<cmc>7</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Sky Kraken Blessing</name>
+			<text>Creatures you control get +3/+3 and gain flying and vigilance until end of turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/45_Sky Kraken Blessing.png" num="45">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2GGWWUU</manacost>
+				<cmc>8</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Whirl with the Waves</name>
+			<text>Exile target nonland permanent. You and that permanents controller creates a tapped treasure token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/56_Whirl with the Waves.png" num="56">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Dark Tide Rising</name>
+			<text>Create a 8/8 blue Kraken creature token with Islandwalk. (That creature can&apos;t be blocked as long as defending player controls a Create a 8/8 blue Kraken creature token with Island.)
+Prevent all combat damage that would be dealt this turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/26_Dark Tide Rising.png" num="26">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>3GWU</manacost>
+				<cmc>6</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Sirens Guile</name>
+			<text>As an additional cost to cast this spell, tap any number of untapped Merfolk you control.
+Gain control of target permanent with mana value X or less, where X is the number of Merfolk you tapped to cast this spell.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/44_Sirens Guile.png" num="44">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Marius, the Jade Wave</name>
+			<text>Whenever a land enters the battlefield under your control, draw a card. 
+Hightide — As long as you control five or more untapped Islands, whenever you draw a card, each opponent mills two cards. (As long as you control five or more untapped Islands, do X.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/38_Marius, the Jade Wave.png" num="38">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Merfolk Shaman</type>
+				<maintype>Creature</maintype>
+				<manacost>3GU</manacost>
+				<cmc>5</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Command Tower</name>
+			<text>{T}: Add one mana of any color in your commander&apos;s color identity.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/67_Command Tower.png" num="67">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Paradise Grove</name>
+			<text>Paradise Grove enters the battlefield tapped.
+{T}: Add {G}, {W}, or {U}.
+Tap three untapped Merfolk you control: Untap Paradise Grove.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/86_Paradise Grove.png" num="86">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WUG</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Refreshing Palageo</name>
+			<text>({T}: Add {U}.)
+{1}, {T}: Add one mana of any color.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/96_Refreshing Palageo.png" num="96">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land — Island</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Refreshing Cliff</name>
+			<text>({T}: Add {W}.)
+{1}, {T}: Add one mana of any color.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/94_Refreshing Cliff.png" num="94">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land — Plains</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Refreshing Glade</name>
+			<text>({T}: Add {G}.)
+{1}, {T}: Add one mana of any color.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/YMD-files/img/95_Refreshing Glade.png" num="95">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land — Forest</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>G</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Washed Up Ruins</name>
+			<text>{T}: Add one mana of any color that a permanent an opponent controls could produce.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/100_Washed Up Ruins.png" num="100">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Reefline Shipwreck</name>
+			<text>Reefline Shipwreck enters the battlefield tapped.
+({T}: Add {U}.)
+{T}: Add {G}.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/93_Reefline Shipwreck.png" num="93">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land — Island</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>GU</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Breathtaking View</name>
+			<text>Breathtaking View enters the battlefield tapped.
+({T}: Add {U}.)
+{T}: Add {W}.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/66_Breathtaking View.png" num="66">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land — Island</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Diamond, Azure Sea Capital</name>
+			<text>({T}: Add {U}.)
+Hightide — {T}: Add {U}{U}. Activate this ability only if you control five or more untapped Islands.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/68_Diamond, Azure Sea Capital.png" num="68">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land — Island</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Sparkling River</name>
+			<text>When Sparkling River enters the battlefield, target opponent creates a tapped treasure token.
+{T}: Add {G} or {U}.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/YMD-files/img/99_Sparkling River.png" num="99">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Sparkling Garden</name>
+			<text>When Sparkling River enters the battlefield, target opponent creatures a tapped treasure token.
+{T}: Add {G} or {W}.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/97_Sparkling Garden.png" num="97">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WG</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Sparkling Park</name>
+			<text>When Sparkling River enters the battlefield, target opponent creatures a tapped treasure token.
+{T}: Add {W} or {U}.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/98_Sparkling Park.png" num="98">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Island</name>
+			<text>({T}: Add {U}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/77_Island.png" num="77">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Island</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Plains</name>
+			<text>({T}: Add {W}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/87_Plains.png" num="87">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Plains</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Forest</name>
+			<text>({T}: Add {G}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/YMD-files/img/75_Forest.png" num="75">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Forest</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>G</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Cyamiede, Siren of the Seven Seas</name>
+			<text>Lowtide — As long as you control three or less untapped Islands, Cyamiede, Siren of the Seven Seas can&apos;t be blocked. (As long as you control three or less untapped Islands, do X.)
+Whenever Cyamiede deals combat damage to a player, exile target card from their graveyard and put a booty counter on it. Then until end of turn, you may play cards you exiled with booty counters on them.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/YMD-files/img/25_Cyamiede, Siren of the Seven Seas.png" num="25">YMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Merfolk Pirate</type>
+				<maintype>Creature</maintype>
+				<manacost>2WU</manacost>
+				<cmc>4</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+	</cards>
+</cockatrice_carddatabase>

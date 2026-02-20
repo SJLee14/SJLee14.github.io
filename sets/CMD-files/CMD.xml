@@ -1,0 +1,1587 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cockatrice_carddatabase version='4'>
+	<sets>
+		<set>
+			<name>CMD</name>
+			<longname>Christian&apos;s Demon CMD</longname>
+			<settype>Custom</settype>
+			<releasedate>2026-02-20</releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>Heimdallr, Heir of Crime</name>
+			<text>Deathtouch
+Whenever Heimdallr deals combat damage to a player that isn&apos;t its owner, strike a deal.
+Soul Contract — At the beginning of each players upkeep, they may pay 4 life and gain control of Heimdallr. If they do, untap Heimdallr and it gains haste and flying until end of turn. If you own Heimdallr, gain control of it and it gains haste until end of turn.
+Heimdallr can&apos;t be sacrificed.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/42_Heimdallr, Heir of Crime.png" num="42">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Demon Mercenary</type>
+				<maintype>Creature</maintype>
+				<manacost>WUB</manacost>
+				<cmc>3</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Dezimophl, Naktuk Disciple</name>
+			<text>Flying, ward {5}
+When you cast Dezimophl, choose two opponents. When one of those players is dealt damage, the other chosen player loses life equal to the damage dealt.
+Soul Contract — At the beginning of each players upkeep, they may pay 3 life. If they do, they draw two cards. If you own Dezimophl, you draw a card and scry 2.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/38_Dezimophl, Naktuk Disciple.png" num="38">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Sphinx Demon</type>
+				<maintype>Creature</maintype>
+				<manacost>4WUB</manacost>
+				<cmc>7</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Atheis, Bearer of Thesis</name>
+			<text>Vigilance
+Whenever you make a deal, each opponent loses 2 life, you gain life equal to the amount of life lost this way.
+Whenever a deal ends, create a 3/3 white and black Angel Demon creature token with flying.
+Partner with Capitalis, the Fine Print (When this creature enters, target player may put Capitalis into their hand from their library, then shuffle.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/26_Atheis, Bearer of Thesis.png" num="26">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Angel Demon Advisor</type>
+				<maintype>Creature</maintype>
+				<manacost>2WB</manacost>
+				<cmc>4</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Capitalis, the Fine Print</name>
+			<text>Flying
+Soul Contract — At the beginning of each players upkeep, that player may discard a card. If they do, they strike a deal. If you own Capitalis and have no ongoing deal, strike a deal.
+Partner with Atheis, Bearer of Thesis (When this creature enters, target player may put Atheis into their hand from their library, then shuffle.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/29_Capitalis, the Fine Print.png" num="29">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Demon Dragon</type>
+				<maintype>Creature</maintype>
+				<manacost>3UB</manacost>
+				<cmc>5</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Round Em Up</name>
+			<text>Each player chooses a creature they control. Exile each creature that wasn&apos;t chosen this way. End all deals.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/3_Round Em Up.png" num="3">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>4WW</manacost>
+				<cmc>6</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Stick Em Up</name>
+			<text>You and target opponent clash. The player that wins strikes a deal. If you lose, return Stick Em Up to your hand as it resolves. (Each clashing player reveals the top card of their library, then puts that card on the top or bottom. A player wins if their card had a higher mana value.)
+Each player draws a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/23_Stick Em Up.png" num="23">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2BB</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Enticing Offer</name>
+			<text>Each player discards their hand, then draws cards equal to the greatest number of cards a player discarded this way.
+Strike a deal.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/11_Enticing Offer.png" num="11">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2UU</manacost>
+				<cmc>4</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Jaded Endings</name>
+			<text>At the beginning of your end step, you may end an ongoing deal you control.
+Whenever you end a deal, gain 2 life and draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/44_Jaded Endings.png" num="44">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1UB</manacost>
+				<cmc>3</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Intercept Hit</name>
+			<text>Counter target noncreature spell. If you have an ongoing deal, create a treasure token unless an opponent pays {2}.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/43_Intercept Hit.png" num="43">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>WU</manacost>
+				<cmc>2</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Double the Pleasure</name>
+			<text>If you would create one or more tokens, create twice that many instead.
+At the beginning of your end step, lose 3 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/39_Double the Pleasure.png" num="39">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WB</manacost>
+				<cmc>4</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Rich Lich Walrus</name>
+			<text>Ward {1} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Soul Contract — At the beginning of each players upkeep, they may pay 4 life. If they do, they create a two treasure tokens. If you own Rich Lich Walrus, create two treasure tokens.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/13_Rich Lich Walrus.png" num="13">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Walrus Demon Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>3U</manacost>
+				<cmc>4</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Skullcap Mob Boss</name>
+			<text>Whenever an opponent draws their second card each turn, you and that player create a tapped treasure token. If you have an ongoing deal, draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/5_Skullcap Mob Boss.png" num="5">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Advisor</type>
+				<maintype>Creature</maintype>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Sly Negotiator</name>
+			<text>When Sly Negotiator enters the battlefield, end a deal. (Target deals controller sacrifices it.)
+Whenever a deal ends, its controller loses 3 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/22_Sly Negotiator.png" num="22">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2B</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>5/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Deal Broker Sphinx</name>
+			<text>Flying, ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+When Deal Broker Sphinx enters the battlefield, each player who has no ongoing deal, strikes a deal.
+Whenever a player strikes a deal, they scry 2.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/36_Deal Broker Sphinx.png" num="36">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Sphinx Demon</type>
+				<maintype>Creature</maintype>
+				<manacost>2WUB</manacost>
+				<cmc>5</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Contract Binder</name>
+			<text>If a deal would be ended, its controller may pay 4 life instead of sacrificing it.
+Whenever an opponent strikes a deal, they lose 4 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/32_Contract Binder.png" num="32">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Dragon Demon Advisor</type>
+				<maintype>Creature</maintype>
+				<manacost>5UB</manacost>
+				<cmc>7</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<pt>8/8</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Nightclub Bouncer</name>
+			<text>Flying
+At the beginning of each players end step, if they have an ongoing deal, they draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/49_Nightclub Bouncer.png" num="49">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Bird Demon Mercenary</type>
+				<maintype>Creature</maintype>
+				<manacost>WU</manacost>
+				<cmc>2</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Deal Breaker Overseer</name>
+			<text>Other Demons you control get +1/+1 and have &quot;When this creature deals combat damage to a player, end a deal that player controls.&quot;</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/35_Deal Breaker Overseer.png" num="35">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Mercenary Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>2WB</manacost>
+				<cmc>4</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>4/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Hush Crime</name>
+			<text>Exile target creature. Its controller strikes a deal.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/1_Hush Crime.png" num="1">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>W</manacost>
+				<cmc>1</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Jig is Up</name>
+			<text>End a deal. (Target deals controller sacrifices it.)
+Draw a card.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/21_Jig is Up.png" num="21">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>B</manacost>
+				<cmc>1</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Spectral Spying</name>
+			<text>Enchant creature
+Enchanted creature gets +1/+1 and has &quot;Whenever this creature deals combat damage to a player, draw a card. Draw an additional card if you have an ongoing deal.&quot;</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/15_Spectral Spying.png" num="15">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Aura</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1U</manacost>
+				<cmc>2</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Meet Up Spot</name>
+			<text>{3}, {T}, Sacrifice Meet Up Spot: Search your library for up to two land cards and reveal them. Put both of them onto the battlefield tapped if you have an ongoing deal, if not, put one onto the battlefield tapped and the other into your hand, then shuffle.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/62_Meet Up Spot.png" num="62">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>3</manacost>
+				<cmc>3</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Crime Scene</name>
+			<text>Whenever a deal ends, its controller investigates.
+{4}: Target player investigates. Any player may activate this ability. This ability costs {2} less to activate if you own Crime Scene.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/59_Crime Scene.png" num="59">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Frontal Lobe</name>
+			<text>You may look at the top card of your library at any time.
+At the beginning of your upkeep, if you have an ongoing deal, you may surveil 1. (Look at the top card of your library. You may put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/58_Frontal Lobe.png" num="58">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>1</manacost>
+				<cmc>1</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Undercover Opperative</name>
+			<text>Vigilance
+Soul Contract — At the beginning of each players upkeep, that player may pay 2 life. If they do, they scry 3. If you own Undercover Opperative, you may shuffle your library.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/57_Undercover Opperative.png" num="57">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Soldier Spy</type>
+				<maintype>Creature</maintype>
+				<manacost>WU</manacost>
+				<cmc>2</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Grizzly Bodyguard</name>
+			<text>Lifelink
+Whenever an attacking creature you control dies, Grizzly Bodyguard deals 1 damage to each opponent.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/41_Grizzly Bodyguard.png" num="41">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Bear Demon Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>3WB</manacost>
+				<cmc>5</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Danger Angler</name>
+			<text>Trample
+Whenever a deal ends, Danger Angler connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/34_Danger Angler.png" num="34">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Fish Demon Spy</type>
+				<maintype>Creature</maintype>
+				<manacost>1UB</manacost>
+				<cmc>3</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<pt>1/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Criminal Charm</name>
+			<text>Choose one —
+• Destroy target creature with power 4 or less.
+• Each opponent loses 4 life.
+• Strike a deal, then strike another deal.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/33_Criminal Charm.png" num="33">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>WUB</manacost>
+				<cmc>3</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Draw Blood</name>
+			<text>When Draw Blood enters the battlefield, sacrifice it unless you sacrifice two creatures.
+Pay 2 life: Draw a card. Activate this only once during your turn and only as a sorcery.
+At the beginning of each end step, if you have half your starting life total or less, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/4_Draw Blood.png" num="4">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Weapon Trafficking</name>
+			<text>When Weapon Trafficking enters the battlefield, sacrifice it unless you exile a card from your hand.
+At the beginning of your end step, put a +1/+1 counter onto a creature you control. If you cannot, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/10_Weapon Trafficking.png" num="10">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Hiring Goons</name>
+			<text>When Hiring Goons enters the battlefield, sacrifice it unless you discard a card.
+Sacrifice an artifact: Create a 2/2 black Demon creature token. Activate this only once each turn, and only as a sorcery.
+At the beginning of your end step, if you control five or more creatures, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/5_Hiring Goons.png" num="5">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Body Laundering</name>
+			<text>When Body Laundering enters the battlefield, mill eight cards or sacrifice it.
+Sacrifice a creature you control: Create a treasure token. Activate this only once each turn, and only as sorcery.
+At the beginning of your end step, if you have ten or more creature cards in your graveyard, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/2_Body Laundering.png" num="2">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Bubbles, Gulp Blaster</name>
+			<text>When Bubbles, Gulp Blaster enters the battlefield, destroy target creature with mana value less than or equal to the number of cards in your graveyard.
+Discard a card: Return Bubbles to its owners hand. Activate this ability only if you have an ongoing deal.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/27_Bubbles, Gulp Blaster.png" num="27">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Fish Demon Mercenary</type>
+				<maintype>Creature</maintype>
+				<manacost>UB</manacost>
+				<cmc>2</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Calihan, Swarm Boss</name>
+			<text>Calihan gets +1/+1 for each Rat you control.
+Whenever an opponent discards a creature card, create a 1/1 black Rat Demon creature token with deathtouch.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/28_Calihan, Swarm Boss.png" num="28">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Rat Demon Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>3WB</manacost>
+				<cmc>5</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Megiara, Ideal Dealer</name>
+			<text>At the beginning of your upkeep, surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)
+Whenever an opponent strikes a deal, you may make a copy of the deal they choose.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/48_Megiara, Ideal Dealer.png" num="48">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Sphinx Demon</type>
+				<maintype>Creature</maintype>
+				<manacost>2WWUU</manacost>
+				<cmc>6</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>5/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Sphinx of the Dark Tower</name>
+			<text>Flying
+Whenever an enchantment enters the battlefield under your control, Sphinx of the Dark Tower connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)
+Whenever Sphinx of the Dark Tower leaves the battlefield, create a treasure token for each +1/+1 counter it had on it.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/53_Sphinx of the Dark Tower.png" num="53">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Sphinx Demon</type>
+				<maintype>Creature</maintype>
+				<manacost>4WUB</manacost>
+				<cmc>7</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>5/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Skeletal Drug Lord</name>
+			<text>Whenever an enchantment enters the battlefield under your control, gain 2 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/4_Skeletal Drug Lord.png" num="4">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Skeleton Demon Citizen</type>
+				<maintype>Creature</maintype>
+				<manacost>1WW</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>1/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Wrap Glove Brawler</name>
+			<text>Wrap Glove Brawler can&apos;t be blocked by creatures with lesser power.
+Sacrifice an enchantment: Wrap Glove Brawler fights another target creature.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/25_Wrap Glove Brawler.png" num="25">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Ogre Demon Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2BB</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>4/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Scheming Crime Lord</name>
+			<text>When Scheming Crime Lord enters the battlefield, strike a deal.
+{3}{U}{U}: Exile Scheming Crime Lord, then return it to the battlefield at the beginning of the next end step.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/14_Scheming Crime Lord.png" num="14">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Goblin Demon Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>3UU</manacost>
+				<cmc>5</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Click Clack Ratta Tat</name>
+			<text>Deathtouch
+Whenever Click Clack Ratta Tat attacks, it deals 1 damage to up to X target creatures, where X is its power.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/30_Click Clack Ratta Tat.png" num="30">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Rat Demon Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>WB</manacost>
+				<cmc>2</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Sting Operative</name>
+			<text>When Sting Operative enters the battlefield, each player exiles the top card of their library and put a sting counter on it.
+Whenever a creature deals combat damage to a player, that player may play a card in exile with a sting counter on it until end of turn.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/54_Sting Operative.png" num="54">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Advisor Spy</type>
+				<maintype>Creature</maintype>
+				<manacost>4UB</manacost>
+				<cmc>6</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Loyal Space Gangster</name>
+			<text>Trample
+Lieutenant — Whenever you attack, as long as you control your commander, create a treasure token for each ongoing deal you have.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/47_Loyal Space Gangster.png" num="47">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Alien Demon Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>2WUB</manacost>
+				<cmc>5</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>6/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Grizzly Blockrunner</name>
+			<text>When Grizzly Blockrunner enters the battlefield, draw a card, then discard a card.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/12_Grizzly Blockrunner.png" num="12">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Bear Demon Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1U</manacost>
+				<cmc>2</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Unrighetous Secretary</name>
+			<text>{T}: Create a treasure token. Activate this ability only if an opponent struck a deal this turn.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/6_Unrighetous Secretary.png" num="6">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Advisor</type>
+				<maintype>Creature</maintype>
+				<manacost>2W</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>1/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Nightclub Crackdown</name>
+			<text></text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/50_Nightclub Crackdown.png" num="50">CMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WU</manacost>
+				<cmc>4</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Koi Gang Crocodiles</name>
+			<text></text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/45_Koi Gang Crocodiles.png" num="45">CMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1WU</manacost>
+				<cmc>3</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Purple Swag</name>
+			<text></text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/51_Purple Swag.png" num="51">CMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>UB</manacost>
+				<cmc>2</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Cold Hard Coin</name>
+			<text></text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/31_Cold Hard Coin.png" num="31">CMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>4UB</manacost>
+				<cmc>6</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Feline Felony</name>
+			<text></text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/40_Feline Felony.png" num="40">CMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>WB</manacost>
+				<cmc>2</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Tango Takedown</name>
+			<text></text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/56_Tango Takedown.png" num="56">CMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WB</manacost>
+				<cmc>4</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Stuck In Tradition</name>
+			<text>Demons you control get +1/+1.
+Whenever Stuck In Tradition or another enchantment you control leaves the battlefield, each opponent loses 1 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/55_Stuck In Tradition.png" num="55">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3WB</manacost>
+				<cmc>5</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Sanctified Pacts</name>
+			<text>At the beginning of your upkeep, each player who has an ongoing deal draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/52_Sanctified Pacts.png" num="52">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WU</manacost>
+				<cmc>4</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Demonic Interogation</name>
+			<text>When Demonic Interogation enters the battlefield, each player surveils 3, then each player reveals the top card of their library. Each player who reveals a nonland card loses 2 life and creates two treasure tokens.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/37_Demonic Interogation.png" num="37">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2UB</manacost>
+				<cmc>4</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Collective Crime</name>
+			<text>Whenever you strike a deal, you may have another target player may pay {3}. If they do, they create a token copy of your deal.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/8_Collective Crime.png" num="8">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2U</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Behind the Chair</name>
+			<text>If you would mill one or more cards, surveil that many cards instead.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/17_Behind the Chair.png" num="17">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3B</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Moonlight Operative</name>
+			<text>Enchantments you control have ward {1}. (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {1}.)
+Whenever you end a deal, you may sacrifice Moonlight Operative. If you do, you may return target enchantment card from your graveyard to the battlefield.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/2_Moonlight Operative.png" num="2">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>4W</manacost>
+				<cmc>5</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Kuzenbo, Father of Crime</name>
+			<text>When Kuzenbo, Father of Crime enters the battlefield, create X 1/1 blue Turtle Demon creature tokens where X is the number of artifacts and enchantments you control. (Targeting opponents, anything they control, and/or cards in their graveyards is a crime.)
+Whenever a nontoken creature an opponent controls dies, create a tapped treasure token.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/46_Kuzenbo, Father of Crime.png" num="46">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Turtle Demon</type>
+				<maintype>Creature</maintype>
+				<manacost>3WUB</manacost>
+				<cmc>6</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>3/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Go For Broke</name>
+			<text>End all deals. For each deal ended this turn, create a 2/2 Black Demon creature token. (Each player sacrifices each deal you control.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/20_Go For Broke.png" num="20">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>5B</manacost>
+				<cmc>6</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Beamtown Blow Up</name>
+			<text>As an additional cost to cast Beamtown Blow Up, you may end a deal you control.
+All creatures get -2/-2 until end of turn. If a deal ended this turn, creatures get -5/-5 instead.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/16_Beamtown Blow Up.png" num="16">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1BB</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Drill Bit Blunder</name>
+			<text>Each opponent sacrifices a creature or enchantment.
+If you have an ongoing deal, create a treasure token.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/19_Drill Bit Blunder.png" num="19">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2B</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>City Chemistry</name>
+			<text>Exile target creature you control. Then return it to the battlefield at the beginning of the next end step.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/7_City Chemistry.png" num="7">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>U</manacost>
+				<cmc>1</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Dark Copy</name>
+			<text>Create a copy of target nonland permanent you control. If that permanent was a deal, create a 2/2 Black Demon creature token as well.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/9_Dark Copy.png" num="9">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>1UU</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Unlocking the Clues</name>
+			<text>As an additional cost to cast Unlocking the Clues, you may sacrifice any number of Clues.
+Draw a card, then draw an additional card for each Clue you sacrificed this turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/24_Unlocking the Clues.png" num="24">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2B</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Distilled Painting</name>
+			<text>{1}, {T}: Add {W}{B}.
+{2}, Sacrifice Distilled Painting: Draw a card.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/60_Distilled Painting.png" num="60">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact — Clue</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Mayor&apos;s Compass</name>
+			<text>{1}, {T}: Add {U}{B}.
+{2}, Sacrifice Mayor&apos;s Compass: Draw a card.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/61_Mayor&apos;s Compass.png" num="61">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact — Clue</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Temporal Oddity</name>
+			<text>{1}, {T}: Add {W}{U}.
+{2}, Sacrifice Temporal Oddity: Draw a card.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/63_Temporal Oddity.png" num="63">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact — Clue</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Clean Cut</name>
+			<text>Destroy target creature.
+If you have an ongoing deal, create a treasure token.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/18_Clean Cut.png" num="18">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1B</manacost>
+				<cmc>2</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Detective&apos;s Lab</name>
+			<text>At the beginning of your end step, investigate. If you have an ongoing deal, investigate an additional time. (To investigate, create a Clue token. It&apos;s an artifact with &quot;{2}, Sacrifice this artifact: Draw a card.&quot;)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/10_Detective&apos;s Lab.png" num="10">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>U</manacost>
+				<cmc>1</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Cut Off the Top</name>
+			<text>When Cut Off enters the battlefield, sacrifice it unless you pay {2}.
+The first noncreature spell you cast during your turn cost {1} less to cast.
+At the beginning of your end step, if you cast two or more creature spells this turn, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/3_Cut Off the Top.png" num="3">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Protect The Merchandise</name>
+			<text>When Protect The Merchandise enters the battlefield, sacrifice it unless you mill four cards.
+Whenever you attack, put a shield counter on an attacking creature you control. (If it would be dealt damage or destroyed, remove a shield counter from it instead.)
+At the beginning of your end step, if you two or more creatures you control died this turn, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/6_Protect The Merchandise.png" num="6">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Spike The Punch</name>
+			<text>When Spike The Punch enters the battlefield, sacrifice it unless you pay 4 life.
+Tap two untapped creatures you control: Target creature gets -2/-2 until end of turn. Activate only once each turn and only as a sorcery.
+At the beginning of your end step, if you control no untapped creatures, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/8_Spike The Punch.png" num="8">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Unpack The Loot</name>
+			<text>When Unpack The Loot enters the battlefield, sacrifice it unless sacrifice a creature and discard a card.
+Whenever a creature enters the battlefield under your control, draw a card.
+At the beginning of your end step, if you have drawn three or more cards this turn, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/9_Unpack The Loot.png" num="9">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Return To Base</name>
+			<text>When Return To Base enters the battlefield, sacrifice it unless have each opponent create a treasure token.
+{2}: Return target creature you control to your hand. Activate only once each turn and only as a sorcery.
+At the beginning of your end step, if you control no creatures, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/7_Return To Base.png" num="7">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Blood For Blood</name>
+			<text>When Blood For Blood enters the battlefield, sacrifice it unless you end a deal you control.
+Whenever a creature you control dies, each opponent loses 1 life. Then if you control no creatures, end this deal.</text>
+			<set rarity="masterpiece" picurl="https://SJLee14.github.io/sets/CMD-files/img/1_Blood For Blood.png" num="1">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment — Deal</type>
+				<maintype>Enchantment</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Booze Strip</name>
+			<text>Booze Strip enters the battlefield tapped.
+{T}: Add {W} or {B}.
+{1}{W}{B}, {T}: Gain 2 life.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/64_Booze Strip.png" num="64">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Motel 12</name>
+			<text>Motel 12 enters the battlefield tapped.
+{T}: Add {U} or {B}.
+{1}{U}{B}, {T}: Tap target creature.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/78_Motel 12.png" num="78">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Smogg Station</name>
+			<text>Smogg Station enters the battlefield tapped.
+{T}: Add {W}.
+{2}{W}{W}, {T}, Sacrifice Smogg Station: Create a copy of target enchantment you control.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/90_Smogg Station.png" num="90">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Phobos, Neon Square</name>
+			<text>Phobos, Neon Square enters the battlefield tapped.
+{T}: Add one mana of any color.
+{5}, {T}: Target player strikes a deal.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/81_Phobos, Neon Square.png" num="81">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Orbital Observatory</name>
+			<text>{T}: Add one mana of any color.
+Creatures you control with flying get +1/+1.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/CMD-files/img/80_Orbital Observatory.png" num="80">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Telegram Station</name>
+			<text>{T}: Add {C}
+{2}, {T}: Investigate. (To investigate, create a Clue token. It&apos;s an artifact with &quot;{2}, Sacrifice this artifact: Draw a card.&quot;)
+{1}, Sacrifice a Clue: Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/99_Telegram Station.png" num="99">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Distinct Street</name>
+			<text>Distinct Street enters the battlefield tapped.
+{T}: Add {C}{C}.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/69_Distinct Street.png" num="69">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Westward Community College</name>
+			<text>Westward Community College enters the battlefield tapped.
+{T}: Add {U}.
+{1}{U}{U}, {T}, Sacrifice Westward Community College: Counter target spell unless its controller pay {2} for each Demon you control.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/100_Westward Community College.png" num="100">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Corner Store</name>
+			<text>Corner Store enters the battlefield tapped unless you have an ongoing deal.
+{T}: Add {U} or {B}.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/66_Corner Store.png" num="66">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Office Warehouse</name>
+			<text>Office Warehouse enters the battlefield tapped unless you have an ongoing deal.
+{T}: Add {W} or {B}.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/79_Office Warehouse.png" num="79">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Corporate Lounge</name>
+			<text>Corporate Lounge enters the battlefield tapped unless you have an ongoing deal.
+{T}: Add {W} or {U}.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/67_Corporate Lounge.png" num="67">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Demonic Watchtower</name>
+			<text>Demonic Watchtower enters the battlefield tapped unless you have an ongoing deal.
+{T}: Add {B}.
+{2}{B}{B}, {T}, Sacrifice Demonic Watchtower: Demons you control get +2/+2 until end of turn.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/CMD-files/img/68_Demonic Watchtower.png" num="68">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Secure Safehouse</name>
+			<text>Pay 1 life, {T}: Add {C}.
+{T}: Add one mana of any color of a creature you control.
+{3}, {T}, Sacrifice Secure Safehouse: Creatures you control gain hexproof and indestructible until end of turn.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/89_Secure Safehouse.png" num="89">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Library Locker</name>
+			<text>Library Locker enters the battlefield tapped.
+{T}: Add {W}, {U}, or {B}.
+{3}: Investigate. (Create a Clue token. It&apos;s an artifact with &quot;{2}, Sacrifice this artifact: Draw a card.&quot;)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/77_Library Locker.png" num="77">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>The Hideout</name>
+			<text>{T}: Add {W}, {U}, or {B}.
+Whenever you strike a deal, untap The Hideout.
+Sacrifice two treasures: Exile the top card of your library. You may play that card until end of turn. Activate this ability only if you have an ongoing deal.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/CMD-files/img/70_The Hideout.png" num="70">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WUB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Reliquary Tower</name>
+			<text>You have no maximum hand size.
+{T}: Add {C}.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/88_Reliquary Tower.png" num="88">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Island</name>
+			<text>({T}: Add {U}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/71_Island.png" num="71">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Island</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Swamp</name>
+			<text>({T}: Add {B})</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/91_Swamp.png" num="91">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Swamp</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Plains</name>
+			<text>({T}: Add {W}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/82_Plains.png" num="82">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Plains</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Command Tower</name>
+			<text>{T}: Add one mana of any color in your commander&apos;s color identity.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/CMD-files/img/65_Command Tower.png" num="65">CMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+	</cards>
+</cockatrice_carddatabase>

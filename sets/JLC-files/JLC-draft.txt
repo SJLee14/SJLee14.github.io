@@ -1,0 +1,725 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Rylex, Shaper Savant",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{U}{B}",
+			"type": "Legendary Artifact Creature — Construct Knight",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/0.jpg"
+			}
+		},
+		{
+			"name": "Pallin, Soul Gatekeeper",
+			"rarity": "mythic",
+			"mana_cost": "{U}{B}{R}",
+			"type": "Legendary Creature — Human Warlock",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/1.jpg"
+			}
+		},
+		{
+			"name": "Thorne, Fiery Genesis",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{G}{W}",
+			"type": "Legendary Artifact Creature — Construct Knight",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/2.jpg"
+			}
+		},
+		{
+			"name": "Avaril, Renowned Tactician",
+			"rarity": "mythic",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Legendary Creature — Human Ranger",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/3.jpg"
+			}
+		},
+		{
+			"name": "Emilia, Game Breaker",
+			"rarity": "mythic",
+			"mana_cost": "{B}{R}{G}",
+			"type": "Legendary Creature — Human Warrior",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/4.jpg"
+			}
+		},
+		{
+			"name": "Briana, Dune Temptress",
+			"rarity": "mythic",
+			"mana_cost": "{R}{G}{W}",
+			"type": "Legendary Creature — Human Shaman",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/5.jpg"
+			}
+		},
+		{
+			"name": "Colth, Awakened Blade",
+			"rarity": "mythic",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Legendary Creature — Human Soldier",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/6.jpg"
+			}
+		},
+		{
+			"name": "Inxalor, Piercer of Souls",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{B}{R}",
+			"type": "Legendary Artifact Creature — Construct Knight",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/7.jpg"
+			}
+		},
+		{
+			"name": "Ulfra, The Avalanche",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}{U}",
+			"type": "Legendary Artifact Creature — Construct Knight",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/8.jpg"
+			}
+		},
+		{
+			"name": "Lu, Demon Knight",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}{R}{G}",
+			"type": "Legendary Artifact Creature — Construct Knight",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/9.jpg"
+			}
+		},
+		{
+			"name": "Chama, Knowledge Reservoir",
+			"rarity": "mythic",
+			"mana_cost": "{X}{G}{W}{U}{U}",
+			"type": "Legendary Creature — Hydra",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/10.jpg"
+			}
+		},
+		{
+			"name": "Ocras, Essence Devourer",
+			"rarity": "mythic",
+			"mana_cost": "{X}{B}{R}{G}{G}",
+			"type": "Legendary Creature — Nightmare Hydra",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/11.jpg"
+			}
+		},
+		{
+			"name": "Poltis, Lich of Judgement",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{U}{B}{B}",
+			"type": "Legendary Artifact Creature — Skeleton Warlock",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/12.jpg"
+			}
+		},
+		{
+			"name": "Kagiko, Dragon's Breath",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{B}{B}{R}{R}{R}",
+			"type": "Legendary Artifact Creature — Construct Wizard",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/13.jpg"
+			}
+		},
+		{
+			"name": "Arnold, The Unrighteous",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{G}{G}{W}{W}{W}",
+			"type": "Legendary Creature — Human Noble",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/14.jpg"
+			}
+		},
+		{
+			"name": "Legiaria, Radiant Hydra",
+			"rarity": "mythic",
+			"mana_cost": "{R}{G}{W}{W}",
+			"type": "Legendary Creature — Hydra",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/15.jpg"
+			}
+		},
+		{
+			"name": "Kuvirra, Vexing Song",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{B}{R}{R}",
+			"type": "Legendary Creature — Angel Warlock",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/16.jpg"
+			}
+		},
+		{
+			"name": "Elise, Invoker of Truth",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{U}{B}",
+			"type": "Legendary Creature — Angel Warrior Wizard",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/17.jpg"
+			}
+		},
+		{
+			"name": "Keit, Brimstone Rider",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{R}{G}",
+			"type": "Legendary Creature — Human Knight",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/18.jpg"
+			}
+		},
+		{
+			"name": "Zilassth, Soul Shifter",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{W}{W}{U}{U}{U}",
+			"type": "Legendary Creature — Viashino Wizard",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/19.jpg"
+			}
+		},
+		{
+			"name": "Siab, Essence Cleric",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{W}{U}",
+			"type": "Legendary Creature — Human Cleric",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/20.jpg"
+			}
+		},
+		{
+			"name": "Khar, The Conqueror",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{R}{R}{G}{G}{G}",
+			"type": "Legendary Creature — Manticore",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/21.jpg"
+			}
+		},
+		{
+			"name": "Ixillith, The Eclipse",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{U}{U}{B}{B}{B}",
+			"type": "Legendary Creature — Spirit Avatar",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/22.jpg"
+			}
+		},
+		{
+			"name": "Vrocax, Essence Lich",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}{B}{R}",
+			"type": "Legendary Artifact Creature — Skeleton Warlock",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/23.jpg"
+			}
+		},
+		{
+			"name": "Domi, Vengeful Pal",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{G}{W}",
+			"type": "Legendary Creature — Snake Dog",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/24.jpg"
+			}
+		},
+		{
+			"name": "Herald of Essence",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}{R}",
+			"type": "Creature — Angel Wizard",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/25.jpg"
+			}
+		},
+		{
+			"name": "Magnificent Flame",
+			"rarity": "rare",
+			"mana_cost": "{5}{B}{R}{R}",
+			"type": "Instant",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/26.jpg"
+			}
+		},
+		{
+			"name": "Infuse with Essence",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}{U}",
+			"type": "Sorcery",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/27.jpg"
+			}
+		},
+		{
+			"name": "Skybreaker's Gear",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}{W}",
+			"type": "Artifact — Equipment",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/28.jpg"
+			}
+		},
+		{
+			"name": "Essence Hunter",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}{B}{G}",
+			"type": "Creature — Human Ranger",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/29.jpg"
+			}
+		},
+		{
+			"name": "Dauntless Recruiter",
+			"rarity": "rare",
+			"mana_cost": "{G}{G}{W}",
+			"type": "Creature — Human Knight",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/30.jpg"
+			}
+		},
+		{
+			"name": "Death Harbinger",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{B}{B}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/31.jpg"
+			}
+		},
+		{
+			"name": "Angelic Ascension",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/32.jpg"
+			}
+		},
+		{
+			"name": "Villianous Consult",
+			"rarity": "rare",
+			"mana_cost": "{U}{B}{B}",
+			"type": "Creature — Human Warlock",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/33.jpg"
+			}
+		},
+		{
+			"name": "Inescapaple Hunt",
+			"rarity": "rare",
+			"mana_cost": "{X}{R}{G}{G}",
+			"type": "Instant",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/34.jpg"
+			}
+		},
+		{
+			"name": "Mind Canvas",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/35.jpg"
+			}
+		},
+		{
+			"name": "Imminent Devastation",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{R}{G}",
+			"type": "Enchantment",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/36.jpg"
+			}
+		},
+		{
+			"name": "Thunderous Skyrazer",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}{R}",
+			"type": "Creature — Demon Warlock Warrior",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/37.jpg"
+			}
+		},
+		{
+			"name": "Hexing Branch-Brawler",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{G}{G}",
+			"type": "Creature — Treefolk Warlock Warrior",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/38.jpg"
+			}
+		},
+		{
+			"name": "Rescue Detachment",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/39.jpg"
+			}
+		},
+		{
+			"name": "Contested Skies",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/40.jpg"
+			}
+		},
+		{
+			"name": "Prowler Animator",
+			"rarity": "rare",
+			"mana_cost": "{U}{R}{R}",
+			"type": "Artifact Creature — Construct Wizard",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/41.jpg"
+			}
+		},
+		{
+			"name": "Brilliant Diviner",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}{U}",
+			"type": "Artifact Creature — Construct Wizard",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/42.jpg"
+			}
+		},
+		{
+			"name": "Essence Wingshaper",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{U}{U}",
+			"type": "Creature — Elf Druid",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/43.jpg"
+			}
+		},
+		{
+			"name": "Herald of Bounty",
+			"rarity": "rare",
+			"mana_cost": "{5}{G}{W}{W}",
+			"type": "Creature — Angel Warrior",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/44.jpg"
+			}
+		},
+		{
+			"name": "Rally Storm",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Instant",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/45.jpg"
+			}
+		},
+		{
+			"name": "Spiteful Storm",
+			"rarity": "rare",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Instant",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/46.jpg"
+			}
+		},
+		{
+			"name": "Soul Storm",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Instant",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/47.jpg"
+			}
+		},
+		{
+			"name": "Dilligent Storm",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Instant",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/48.jpg"
+			}
+		},
+		{
+			"name": "Enduring Storm",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Instant",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/49.jpg"
+			}
+		},
+		{
+			"name": "Loyal Cartographer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Ranger Scout",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/50.jpg"
+			}
+		},
+		{
+			"name": "Loyal Colony",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Bat",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/51.jpg"
+			}
+		},
+		{
+			"name": "Loyal Hydra",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{1}{G}",
+			"type": "Creature — Hydra",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/52.jpg"
+			}
+		},
+		{
+			"name": "Loyal Tormentor",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}",
+			"type": "Artifact Creature — Construct Warlock",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/53.jpg"
+			}
+		},
+		{
+			"name": "Loyal Historian",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Artifact Creature — Construct Wizard",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/JLC-files/img/54.jpg"
+			}
+		}
+	]
+
+[rare(1)]
+	1 Rylex, Shaper Savant
+	1 Pallin, Soul Gatekeeper
+	1 Thorne, Fiery Genesis
+	1 Avaril, Renowned Tactician
+	1 Emilia, Game Breaker
+	1 Briana, Dune Temptress
+	1 Colth, Awakened Blade
+	1 Inxalor, Piercer of Souls
+	1 Ulfra, The Avalanche
+	1 Lu, Demon Knight
+	1 Chama, Knowledge Reservoir
+	1 Ocras, Essence Devourer
+	1 Poltis, Lich of Judgement
+	1 Kagiko, Dragon's Breath
+	1 Arnold, The Unrighteous
+	1 Legiaria, Radiant Hydra
+	1 Kuvirra, Vexing Song
+	1 Elise, Invoker of Truth
+	1 Keit, Brimstone Rider
+	1 Zilassth, Soul Shifter
+	1 Siab, Essence Cleric
+	1 Khar, The Conqueror
+	1 Ixillith, The Eclipse
+	1 Vrocax, Essence Lich
+	1 Domi, Vengeful Pal
+	2 Herald of Essence
+	2 Magnificent Flame
+	2 Infuse with Essence
+	2 Skybreaker's Gear
+	2 Essence Hunter
+	2 Dauntless Recruiter
+	2 Death Harbinger
+	2 Angelic Ascension
+	2 Villianous Consult
+	2 Inescapaple Hunt
+	2 Mind Canvas
+	2 Imminent Devastation
+	2 Thunderous Skyrazer
+	2 Hexing Branch-Brawler
+	2 Rescue Detachment
+	2 Contested Skies
+	2 Prowler Animator
+	2 Brilliant Diviner
+	2 Essence Wingshaper
+	2 Herald of Bounty
+	2 Rally Storm
+	2 Spiteful Storm
+	2 Soul Storm
+	2 Dilligent Storm
+	2 Enduring Storm
+[uncommon(3)]
+	4 Loyal Cartographer
+	4 Loyal Colony
+	4 Loyal Hydra
+	4 Loyal Tormentor
+	4 Loyal Historian
+[common(6)]
+[common | masterpiece(1)]
+[foil(1)]
+	1 Rylex, Shaper Savant
+	1 Pallin, Soul Gatekeeper
+	1 Thorne, Fiery Genesis
+	1 Avaril, Renowned Tactician
+	1 Emilia, Game Breaker
+	1 Briana, Dune Temptress
+	1 Colth, Awakened Blade
+	1 Inxalor, Piercer of Souls
+	1 Ulfra, The Avalanche
+	1 Lu, Demon Knight
+	1 Chama, Knowledge Reservoir
+	1 Ocras, Essence Devourer
+	1 Poltis, Lich of Judgement
+	1 Kagiko, Dragon's Breath
+	1 Arnold, The Unrighteous
+	1 Legiaria, Radiant Hydra
+	1 Kuvirra, Vexing Song
+	1 Elise, Invoker of Truth
+	1 Keit, Brimstone Rider
+	1 Zilassth, Soul Shifter
+	1 Siab, Essence Cleric
+	1 Khar, The Conqueror
+	1 Ixillith, The Eclipse
+	1 Vrocax, Essence Lich
+	1 Domi, Vengeful Pal
+	2 Herald of Essence
+	2 Magnificent Flame
+	2 Infuse with Essence
+	2 Skybreaker's Gear
+	2 Essence Hunter
+	2 Dauntless Recruiter
+	2 Death Harbinger
+	2 Angelic Ascension
+	2 Villianous Consult
+	2 Inescapaple Hunt
+	2 Mind Canvas
+	2 Imminent Devastation
+	2 Thunderous Skyrazer
+	2 Hexing Branch-Brawler
+	2 Rescue Detachment
+	2 Contested Skies
+	2 Prowler Animator
+	2 Brilliant Diviner
+	2 Essence Wingshaper
+	2 Herald of Bounty
+	2 Rally Storm
+	2 Spiteful Storm
+	2 Soul Storm
+	2 Dilligent Storm
+	2 Enduring Storm
+	6 Loyal Cartographer
+	6 Loyal Colony
+	6 Loyal Hydra
+	6 Loyal Tormentor
+	6 Loyal Historian
+[wildcard(1)]
+	4 Rylex, Shaper Savant
+	4 Pallin, Soul Gatekeeper
+	4 Thorne, Fiery Genesis
+	4 Avaril, Renowned Tactician
+	4 Emilia, Game Breaker
+	4 Briana, Dune Temptress
+	4 Colth, Awakened Blade
+	4 Inxalor, Piercer of Souls
+	4 Ulfra, The Avalanche
+	4 Lu, Demon Knight
+	4 Chama, Knowledge Reservoir
+	4 Ocras, Essence Devourer
+	4 Poltis, Lich of Judgement
+	4 Kagiko, Dragon's Breath
+	4 Arnold, The Unrighteous
+	4 Legiaria, Radiant Hydra
+	4 Kuvirra, Vexing Song
+	4 Elise, Invoker of Truth
+	4 Keit, Brimstone Rider
+	4 Zilassth, Soul Shifter
+	4 Siab, Essence Cleric
+	4 Khar, The Conqueror
+	4 Ixillith, The Eclipse
+	4 Vrocax, Essence Lich
+	4 Domi, Vengeful Pal
+	7 Herald of Essence
+	7 Magnificent Flame
+	7 Infuse with Essence
+	7 Skybreaker's Gear
+	7 Essence Hunter
+	7 Dauntless Recruiter
+	7 Death Harbinger
+	7 Angelic Ascension
+	7 Villianous Consult
+	7 Inescapaple Hunt
+	7 Mind Canvas
+	7 Imminent Devastation
+	7 Thunderous Skyrazer
+	7 Hexing Branch-Brawler
+	7 Rescue Detachment
+	7 Contested Skies
+	7 Prowler Animator
+	7 Brilliant Diviner
+	7 Essence Wingshaper
+	7 Herald of Bounty
+	7 Rally Storm
+	7 Spiteful Storm
+	7 Soul Storm
+	7 Dilligent Storm
+	7 Enduring Storm
+	15 Loyal Cartographer
+	15 Loyal Colony
+	15 Loyal Hydra
+	15 Loyal Tormentor
+	15 Loyal Historian

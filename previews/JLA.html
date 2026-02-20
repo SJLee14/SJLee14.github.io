@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="../sets/JLA-files/icon.png"/>
+	<link rel="stylesheet" href="../resources/header.css">
+	<title>JLA visual preview</title>
+	<script title="root">
+		const rootPath = "..";
+	</script>
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('../resources/beleren.ttf');
+		}
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			opacity: 0;
+			transform: rotateY(0deg) rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+			border-radius: 3.733% / 2.677%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+			border-radius: 3.733% / 2.677%;
+		}
+		.close-btn {
+			background: url('../img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('../img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+			border-radius: 3.733% / 2.677%;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+			border-radius: 3.733% / 2.677%;
+		}
+		.flip-btn {
+			background: url('../img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('../img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 5%;
+			width: fit-content;
+			max-width: 90%;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
+		}
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
+		}
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="../img/dot.png" />
+	<img class="preload-hidden" src="../sets/JLA-files/logo.png" />
+	<img class="preload-hidden" src="../sets/ASR-files/icon.png" />
+		<img class="preload-hidden" src="../sets/BMD-files/icon.png" />
+		<img class="preload-hidden" src="../sets/CMD-files/icon.png" />
+		<img class="preload-hidden" src="../sets/FECM-files/icon.png" />
+		<img class="preload-hidden" src="../sets/JLA-files/icon.png" />
+		<img class="preload-hidden" src="../sets/JLC-files/icon.png" />
+		<img class="preload-hidden" src="../sets/OZN-files/icon.png" />
+		<img class="preload-hidden" src="../sets/YMD-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
+
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
+
+	<div class="dropdown" id="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="../previews/JLA"><img src="../sets/JLA-files/icon.png">Jaelicia</a>
+	
+		<a class="set-bar inactive" href="../previews/ASR"><img src="../sets/ASR-files/icon.png">Anshin Revi</a>
+	
+		<a class="set-bar inactive" href="../previews/BMD"><img src="../sets/BMD-files/icon.png">Baylee’s Minotaur CMD</a>
+	
+		<a class="set-bar inactive" href="../previews/CMD"><img src="../sets/CMD-files/icon.png">Christian’s Demon CMD</a>
+	
+		<a class="set-bar inactive" href="../previews/FECM"><img src="../sets/FECM-files/icon.png">Fire Emblem: Commanding Magic</a>
+	
+		<a class="set-bar inactive" href="../previews/JLC"><img src="../sets/JLC-files/icon.png">Jaelicia Commander</a>
+	
+		<a class="set-bar inactive" href="../previews/OZN"><img src="../sets/OZN-files/icon.png">Ozin Onus</a>
+	
+		<a class="set-bar inactive" href="../previews/YMD"><img src="../sets/YMD-files/icon.png">Bobby’s Merfolk CMD</a>
+	
+		</div>
+		<div class="banner">
+		<img class="logo" src="../sets/JLA-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+					<div class="container"><img loading="lazy" alt="sets\JLA-files\img\333.jpg" id="JLA_333" data-flag="@X" onclick="openSidebar('JLA_333',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\5.jpg" id="JLA_5" data-flag="@X" onclick="openSidebar('JLA_5',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\329.jpg" id="JLA_329" data-flag="@X" onclick="openSidebar('JLA_329',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\328.jpg" id="JLA_328" data-flag="@X" onclick="openSidebar('JLA_328',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\4.jpg" id="JLA_4" data-flag="@X" onclick="openSidebar('JLA_4',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\3.jpg" id="JLA_3" data-flag="@X" onclick="openSidebar('JLA_3',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\332.jpg" id="JLA_332" data-flag="@X" onclick="openSidebar('JLA_332',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\0.jpg" id="JLA_0" data-flag="@X" onclick="openSidebar('JLA_0',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\2.jpg" id="JLA_2" data-flag="@X" onclick="openSidebar('JLA_2',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\331.jpg" id="JLA_331" data-flag="@X" onclick="openSidebar('JLA_331',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\61.jpg" id="JLA_61" data-flag="@X" onclick="openSidebar('JLA_61',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\24.jpg" id="JLA_24" data-flag="@X" onclick="openSidebar('JLA_24',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\1.jpg" id="JLA_1" data-flag="@X" onclick="openSidebar('JLA_1',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\54.jpg" id="JLA_54" data-flag="@X" onclick="openSidebar('JLA_54',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\23.jpg" id="JLA_23" data-flag="@X" onclick="openSidebar('JLA_23',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\58.jpg" id="JLA_58" data-flag="@X" onclick="openSidebar('JLA_58',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\68.jpg" id="JLA_68" data-flag="@X" onclick="openSidebar('JLA_68',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\30.jpg" id="JLA_30" data-flag="@X" onclick="openSidebar('JLA_30',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\31.jpg" id="JLA_31" data-flag="@X" onclick="openSidebar('JLA_31',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\64.jpg" id="JLA_64" data-flag="@X" onclick="openSidebar('JLA_64',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\32.jpg" id="JLA_32" data-flag="@X" onclick="openSidebar('JLA_32',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\34.jpg" id="JLA_34" data-flag="@X" onclick="openSidebar('JLA_34',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\50.jpg" id="JLA_50" data-flag="@X" onclick="openSidebar('JLA_50',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\55.jpg" id="JLA_55" data-flag="@X" onclick="openSidebar('JLA_55',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\63.jpg" id="JLA_63" data-flag="@X" onclick="openSidebar('JLA_63',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\60.jpg" id="JLA_60" data-flag="@X" onclick="openSidebar('JLA_60',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\69.jpg" id="JLA_69" data-flag="@X" onclick="openSidebar('JLA_69',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\51.jpg" id="JLA_51" data-flag="@X" onclick="openSidebar('JLA_51',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\21.jpg" id="JLA_21" data-flag="@X" onclick="openSidebar('JLA_21',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\33.jpg" id="JLA_33" data-flag="@X" onclick="openSidebar('JLA_33',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\59.jpg" id="JLA_59" data-flag="@X" onclick="openSidebar('JLA_59',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\67.jpg" id="JLA_67" data-flag="@X" onclick="openSidebar('JLA_67',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\53.jpg" id="JLA_53" data-flag="@X" onclick="openSidebar('JLA_53',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\57.jpg" id="JLA_57" data-flag="@X" onclick="openSidebar('JLA_57',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\65.jpg" id="JLA_65" data-flag="@X" onclick="openSidebar('JLA_65',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\22.jpg" id="JLA_22" data-flag="@X" onclick="openSidebar('JLA_22',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\66.jpg" id="JLA_66" data-flag="@X" onclick="openSidebar('JLA_66',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\52.jpg" id="JLA_52" data-flag="@X" onclick="openSidebar('JLA_52',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\56.jpg" id="JLA_56" data-flag="@X" onclick="openSidebar('JLA_56',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\62.jpg" id="JLA_62" data-flag="@X" onclick="openSidebar('JLA_62',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\283.jpg" id="JLA_283" data-flag="@X" onclick="openSidebar('JLA_283',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\152.jpg" id="JLA_152" data-flag="@X" onclick="openSidebar('JLA_152',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\114.jpg" id="JLA_114" data-flag="@X" onclick="openSidebar('JLA_114',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\128.jpg" id="JLA_128" data-flag="@X" onclick="openSidebar('JLA_128',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\143.jpg" id="JLA_143" data-flag="@X" onclick="openSidebar('JLA_143',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\135.jpg" id="JLA_135" data-flag="@X" onclick="openSidebar('JLA_135',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\148.jpg" id="JLA_148" data-flag="@X" onclick="openSidebar('JLA_148',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\115.jpg" id="JLA_115" data-flag="@X" onclick="openSidebar('JLA_115',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\127.jpg" id="JLA_127" data-flag="@X" onclick="openSidebar('JLA_127',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\284.jpg" id="JLA_284" data-flag="@X" onclick="openSidebar('JLA_284',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\129.jpg" id="JLA_129" data-flag="@X" onclick="openSidebar('JLA_129',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\146.jpg" id="JLA_146" data-flag="@X" onclick="openSidebar('JLA_146',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\119.jpg" id="JLA_119" data-flag="@X" onclick="openSidebar('JLA_119',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\125.jpg" id="JLA_125" data-flag="@X" onclick="openSidebar('JLA_125',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\137.jpg" id="JLA_137" data-flag="@X" onclick="openSidebar('JLA_137',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\134.jpg" id="JLA_134" data-flag="@X" onclick="openSidebar('JLA_134',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\285.jpg" id="JLA_285" data-flag="@X" onclick="openSidebar('JLA_285',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\120.jpg" id="JLA_120" data-flag="@X" onclick="openSidebar('JLA_120',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\121.jpg" id="JLA_121" data-flag="@X" onclick="openSidebar('JLA_121',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\144.jpg" id="JLA_144" data-flag="@X" onclick="openSidebar('JLA_144',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\132.jpg" id="JLA_132" data-flag="@X" onclick="openSidebar('JLA_132',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\149.jpg" id="JLA_149" data-flag="@X" onclick="openSidebar('JLA_149',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\281.jpg" id="JLA_281" data-flag="@X" onclick="openSidebar('JLA_281',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\124.jpg" id="JLA_124" data-flag="@X" onclick="openSidebar('JLA_124',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\140.jpg" id="JLA_140" data-flag="@X" onclick="openSidebar('JLA_140',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\136.jpg" id="JLA_136" data-flag="@X" onclick="openSidebar('JLA_136',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\145.jpg" id="JLA_145" data-flag="@X" onclick="openSidebar('JLA_145',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\116.jpg" id="JLA_116" data-flag="@X" onclick="openSidebar('JLA_116',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\126.jpg" id="JLA_126" data-flag="@X" onclick="openSidebar('JLA_126',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\141.jpg" id="JLA_141" data-flag="@X" onclick="openSidebar('JLA_141',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\131.jpg" id="JLA_131" data-flag="@X" onclick="openSidebar('JLA_131',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\150.jpg" id="JLA_150" data-flag="@X" onclick="openSidebar('JLA_150',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\118.jpg" id="JLA_118" data-flag="@X" onclick="openSidebar('JLA_118',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\282.jpg" id="JLA_282" data-flag="@X" onclick="openSidebar('JLA_282',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\138.jpg" id="JLA_138" data-flag="@X" onclick="openSidebar('JLA_138',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\133.jpg" id="JLA_133" data-flag="@X" onclick="openSidebar('JLA_133',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\151.jpg" id="JLA_151" data-flag="@X" onclick="openSidebar('JLA_151',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\113.jpg" id="JLA_113" data-flag="@X" onclick="openSidebar('JLA_113',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\123.jpg" id="JLA_123" data-flag="@X" onclick="openSidebar('JLA_123',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\139.jpg" id="JLA_139" data-flag="@X" onclick="openSidebar('JLA_139',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\130.jpg" id="JLA_130" data-flag="@X" onclick="openSidebar('JLA_130',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\147.jpg" id="JLA_147" data-flag="@X" onclick="openSidebar('JLA_147',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\117.jpg" id="JLA_117" data-flag="@X" onclick="openSidebar('JLA_117',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\122.jpg" id="JLA_122" data-flag="@X" onclick="openSidebar('JLA_122',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\142.jpg" id="JLA_142" data-flag="@X" onclick="openSidebar('JLA_142',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\218.jpg" id="JLA_218" data-flag="@X" onclick="openSidebar('JLA_218',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\241.jpg" id="JLA_241" data-flag="@X" onclick="openSidebar('JLA_241',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\286.jpg" id="JLA_286" data-flag="@X" onclick="openSidebar('JLA_286',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\202.jpg" id="JLA_202" data-flag="@X" onclick="openSidebar('JLA_202',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\229.jpg" id="JLA_229" data-flag="@X" onclick="openSidebar('JLA_229',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\224.jpg" id="JLA_224" data-flag="@X" onclick="openSidebar('JLA_224',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\243.jpg" id="JLA_243" data-flag="@X" onclick="openSidebar('JLA_243',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\191.jpg" id="JLA_191" data-flag="@X" onclick="openSidebar('JLA_191',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\208.jpg" id="JLA_208" data-flag="@X" onclick="openSidebar('JLA_208',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\227.jpg" id="JLA_227" data-flag="@X" onclick="openSidebar('JLA_227',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\215.jpg" id="JLA_215" data-flag="@X" onclick="openSidebar('JLA_215',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\239.jpg" id="JLA_239" data-flag="@X" onclick="openSidebar('JLA_239',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\197.jpg" id="JLA_197" data-flag="@X" onclick="openSidebar('JLA_197',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\210.jpg" id="JLA_210" data-flag="@X" onclick="openSidebar('JLA_210',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\236.jpg" id="JLA_236" data-flag="@X" onclick="openSidebar('JLA_236',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\217.jpg" id="JLA_217" data-flag="@X" onclick="openSidebar('JLA_217',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\248.jpg" id="JLA_248" data-flag="@X" onclick="openSidebar('JLA_248',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\199.jpg" id="JLA_199" data-flag="@X" onclick="openSidebar('JLA_199',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\201.jpg" id="JLA_201" data-flag="@X" onclick="openSidebar('JLA_201',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\233.jpg" id="JLA_233" data-flag="@X" onclick="openSidebar('JLA_233',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\213.jpg" id="JLA_213" data-flag="@X" onclick="openSidebar('JLA_213',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\238.jpg" id="JLA_238" data-flag="@X" onclick="openSidebar('JLA_238',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\198.jpg" id="JLA_198" data-flag="@X" onclick="openSidebar('JLA_198',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\203.jpg" id="JLA_203" data-flag="@X" onclick="openSidebar('JLA_203',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\232.jpg" id="JLA_232" data-flag="@X" onclick="openSidebar('JLA_232',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\219.jpg" id="JLA_219" data-flag="@X" onclick="openSidebar('JLA_219',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\240.jpg" id="JLA_240" data-flag="@X" onclick="openSidebar('JLA_240',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\193.jpg" id="JLA_193" data-flag="@X" onclick="openSidebar('JLA_193',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\212.jpg" id="JLA_212" data-flag="@X" onclick="openSidebar('JLA_212',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\225.jpg" id="JLA_225" data-flag="@X" onclick="openSidebar('JLA_225',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\220.jpg" id="JLA_220" data-flag="@X" onclick="openSidebar('JLA_220',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\237.jpg" id="JLA_237" data-flag="@X" onclick="openSidebar('JLA_237',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\200.jpg" id="JLA_200" data-flag="@X" onclick="openSidebar('JLA_200',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\209.jpg" id="JLA_209" data-flag="@X" onclick="openSidebar('JLA_209',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\231.jpg" id="JLA_231" data-flag="@X" onclick="openSidebar('JLA_231',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\222.jpg" id="JLA_222" data-flag="@X" onclick="openSidebar('JLA_222',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\242.jpg" id="JLA_242" data-flag="@X" onclick="openSidebar('JLA_242',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\195.jpg" id="JLA_195" data-flag="@X" onclick="openSidebar('JLA_195',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\204.jpg" id="JLA_204" data-flag="@X" onclick="openSidebar('JLA_204',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\288.jpg" id="JLA_288" data-flag="@X" onclick="openSidebar('JLA_288',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\214.jpg" id="JLA_214" data-flag="@X" onclick="openSidebar('JLA_214',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\287.jpg" id="JLA_287" data-flag="@X" onclick="openSidebar('JLA_287',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\189.jpg" id="JLA_189" data-flag="@X" onclick="openSidebar('JLA_189',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\205.jpg" id="JLA_205" data-flag="@X" onclick="openSidebar('JLA_205',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\234.jpg" id="JLA_234" data-flag="@X" onclick="openSidebar('JLA_234',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\290.jpg" id="JLA_290" data-flag="@X" onclick="openSidebar('JLA_290',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\247.jpg" id="JLA_247" data-flag="@X" onclick="openSidebar('JLA_247',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\194.jpg" id="JLA_194" data-flag="@X" onclick="openSidebar('JLA_194',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\211.jpg" id="JLA_211" data-flag="@X" onclick="openSidebar('JLA_211',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\230.jpg" id="JLA_230" data-flag="@X" onclick="openSidebar('JLA_230',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\221.jpg" id="JLA_221" data-flag="@X" onclick="openSidebar('JLA_221',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\245.jpg" id="JLA_245" data-flag="@X" onclick="openSidebar('JLA_245',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\190.jpg" id="JLA_190" data-flag="@X" onclick="openSidebar('JLA_190',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\289.jpg" id="JLA_289" data-flag="@X" onclick="openSidebar('JLA_289',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\235.jpg" id="JLA_235" data-flag="@X" onclick="openSidebar('JLA_235',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\223.jpg" id="JLA_223" data-flag="@X" onclick="openSidebar('JLA_223',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\246.jpg" id="JLA_246" data-flag="@X" onclick="openSidebar('JLA_246',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\196.jpg" id="JLA_196" data-flag="@X" onclick="openSidebar('JLA_196',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\206.jpg" id="JLA_206" data-flag="@X" onclick="openSidebar('JLA_206',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\226.jpg" id="JLA_226" data-flag="@X" onclick="openSidebar('JLA_226',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\216.jpg" id="JLA_216" data-flag="@X" onclick="openSidebar('JLA_216',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\244.jpg" id="JLA_244" data-flag="@X" onclick="openSidebar('JLA_244',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\192.jpg" id="JLA_192" data-flag="@X" onclick="openSidebar('JLA_192',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\207.jpg" id="JLA_207" data-flag="@X" onclick="openSidebar('JLA_207',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\228.jpg" id="JLA_228" data-flag="@X" onclick="openSidebar('JLA_228',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\27.jpg" id="JLA_27" data-flag="@X" onclick="openSidebar('JLA_27',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\48.jpg" id="JLA_48" data-flag="@X" onclick="openSidebar('JLA_48',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\9.jpg" id="JLA_9" data-flag="@X" onclick="openSidebar('JLA_9',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\45.jpg" id="JLA_45" data-flag="@X" onclick="openSidebar('JLA_45',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\13.jpg" id="JLA_13" data-flag="@X" onclick="openSidebar('JLA_13',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\47.jpg" id="JLA_47" data-flag="@X" onclick="openSidebar('JLA_47',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\28.jpg" id="JLA_28" data-flag="@X" onclick="openSidebar('JLA_28',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\8.jpg" id="JLA_8" data-flag="@X" onclick="openSidebar('JLA_8',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\25.jpg" id="JLA_25" data-flag="@X" onclick="openSidebar('JLA_25',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\14.jpg" id="JLA_14" data-flag="@X" onclick="openSidebar('JLA_14',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\105.jpg" id="JLA_105" data-flag="@X" onclick="openSidebar('JLA_105',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\109.jpg" id="JLA_109" data-flag="@X" onclick="openSidebar('JLA_109',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\37.jpg" id="JLA_37" data-flag="@X" onclick="openSidebar('JLA_37',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\99.jpg" id="JLA_99" data-flag="@X" onclick="openSidebar('JLA_99',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\43.jpg" id="JLA_43" data-flag="@X" onclick="openSidebar('JLA_43',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\106.jpg" id="JLA_106" data-flag="@X" onclick="openSidebar('JLA_106',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\107.jpg" id="JLA_107" data-flag="@X" onclick="openSidebar('JLA_107',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\38.jpg" id="JLA_38" data-flag="@X" onclick="openSidebar('JLA_38',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\100.jpg" id="JLA_100" data-flag="@X" onclick="openSidebar('JLA_100',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\44.jpg" id="JLA_44" data-flag="@X" onclick="openSidebar('JLA_44',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\104.jpg" id="JLA_104" data-flag="@X" onclick="openSidebar('JLA_104',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\108.jpg" id="JLA_108" data-flag="@X" onclick="openSidebar('JLA_108',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\78.jpg" id="JLA_78" data-flag="@X" onclick="openSidebar('JLA_78',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\98.jpg" id="JLA_98" data-flag="@X" onclick="openSidebar('JLA_98',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\96.jpg" id="JLA_96" data-flag="@X" onclick="openSidebar('JLA_96',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\180.jpg" id="JLA_180" data-flag="@X" onclick="openSidebar('JLA_180',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\185.jpg" id="JLA_185" data-flag="@X" onclick="openSidebar('JLA_185',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\82.jpg" id="JLA_82" data-flag="@X" onclick="openSidebar('JLA_82',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\174.jpg" id="JLA_174" data-flag="@X" onclick="openSidebar('JLA_174',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\97.jpg" id="JLA_97" data-flag="@X" onclick="openSidebar('JLA_97',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\182.jpg" id="JLA_182" data-flag="@X" onclick="openSidebar('JLA_182',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\184.jpg" id="JLA_184" data-flag="@X" onclick="openSidebar('JLA_184',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\81.jpg" id="JLA_81" data-flag="@X" onclick="openSidebar('JLA_81',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\176.jpg" id="JLA_176" data-flag="@X" onclick="openSidebar('JLA_176',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\95.jpg" id="JLA_95" data-flag="@X" onclick="openSidebar('JLA_95',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\181.jpg" id="JLA_181" data-flag="@X" onclick="openSidebar('JLA_181',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\183.jpg" id="JLA_183" data-flag="@X" onclick="openSidebar('JLA_183',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\79.jpg" id="JLA_79" data-flag="@X" onclick="openSidebar('JLA_79',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\175.jpg" id="JLA_175" data-flag="@X" onclick="openSidebar('JLA_175',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\94.jpg" id="JLA_94" data-flag="@X" onclick="openSidebar('JLA_94',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\80.jpg" id="JLA_80" data-flag="@X" onclick="openSidebar('JLA_80',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\93.jpg" id="JLA_93" data-flag="@X" onclick="openSidebar('JLA_93',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\163.jpg" id="JLA_163" data-flag="@X" onclick="openSidebar('JLA_163',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\280.jpg" id="JLA_280" data-flag="@X" onclick="openSidebar('JLA_280',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\165.jpg" id="JLA_165" data-flag="@X" onclick="openSidebar('JLA_165',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\173.jpg" id="JLA_173" data-flag="@X" onclick="openSidebar('JLA_173',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\279.jpg" id="JLA_279" data-flag="@X" onclick="openSidebar('JLA_279',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\172.jpg" id="JLA_172" data-flag="@X" onclick="openSidebar('JLA_172',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\164.jpg" id="JLA_164" data-flag="@X" onclick="openSidebar('JLA_164',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\6.jpg" id="JLA_6" data-flag="@X" onclick="openSidebar('JLA_6',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\10.jpg" id="JLA_10" data-flag="@X" onclick="openSidebar('JLA_10',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\29.jpg" id="JLA_29" data-flag="@X" onclick="openSidebar('JLA_29',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\26.jpg" id="JLA_26" data-flag="@X" onclick="openSidebar('JLA_26',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\12.jpg" id="JLA_12" data-flag="@X" onclick="openSidebar('JLA_12',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\7.jpg" id="JLA_7" data-flag="@X" onclick="openSidebar('JLA_7',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\330.jpg" id="JLA_330" data-flag="@X" onclick="openSidebar('JLA_330',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\49.jpg" id="JLA_49" data-flag="@X" onclick="openSidebar('JLA_49',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\46.jpg" id="JLA_46" data-flag="@X" onclick="openSidebar('JLA_46',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\11.jpg" id="JLA_11" data-flag="@X" onclick="openSidebar('JLA_11',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\36.jpg" id="JLA_36" data-flag="@X" onclick="openSidebar('JLA_36',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\40.jpg" id="JLA_40" data-flag="@X" onclick="openSidebar('JLA_40',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\112.jpg" id="JLA_112" data-flag="@X" onclick="openSidebar('JLA_112',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\102.jpg" id="JLA_102" data-flag="@X" onclick="openSidebar('JLA_102',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\41.jpg" id="JLA_41" data-flag="@X" onclick="openSidebar('JLA_41',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\35.jpg" id="JLA_35" data-flag="@X" onclick="openSidebar('JLA_35',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\39.jpg" id="JLA_39" data-flag="@X" onclick="openSidebar('JLA_39',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\111.jpg" id="JLA_111" data-flag="@X" onclick="openSidebar('JLA_111',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\101.jpg" id="JLA_101" data-flag="@X" onclick="openSidebar('JLA_101',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\42.jpg" id="JLA_42" data-flag="@X" onclick="openSidebar('JLA_42',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\73.jpg" id="JLA_73" data-flag="@X" onclick="openSidebar('JLA_73',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\87.jpg" id="JLA_87" data-flag="@X" onclick="openSidebar('JLA_87',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\110.jpg" id="JLA_110" data-flag="@X" onclick="openSidebar('JLA_110',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\103.jpg" id="JLA_103" data-flag="@X" onclick="openSidebar('JLA_103',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\91.jpg" id="JLA_91" data-flag="@X" onclick="openSidebar('JLA_91',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\76.jpg" id="JLA_76" data-flag="@X" onclick="openSidebar('JLA_76',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\85.jpg" id="JLA_85" data-flag="@X" onclick="openSidebar('JLA_85',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\187.jpg" id="JLA_187" data-flag="@X" onclick="openSidebar('JLA_187',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\179.jpg" id="JLA_179" data-flag="@X" onclick="openSidebar('JLA_179',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\88.jpg" id="JLA_88" data-flag="@X" onclick="openSidebar('JLA_88',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\75.jpg" id="JLA_75" data-flag="@X" onclick="openSidebar('JLA_75',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\83.jpg" id="JLA_83" data-flag="@X" onclick="openSidebar('JLA_83',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\186.jpg" id="JLA_186" data-flag="@X" onclick="openSidebar('JLA_186',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\177.jpg" id="JLA_177" data-flag="@X" onclick="openSidebar('JLA_177',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\92.jpg" id="JLA_92" data-flag="@X" onclick="openSidebar('JLA_92',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\74.jpg" id="JLA_74" data-flag="@X" onclick="openSidebar('JLA_74',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\86.jpg" id="JLA_86" data-flag="@X" onclick="openSidebar('JLA_86',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\188.jpg" id="JLA_188" data-flag="@X" onclick="openSidebar('JLA_188',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\178.jpg" id="JLA_178" data-flag="@X" onclick="openSidebar('JLA_178',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\90.jpg" id="JLA_90" data-flag="@X" onclick="openSidebar('JLA_90',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\77.jpg" id="JLA_77" data-flag="@X" onclick="openSidebar('JLA_77',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\84.jpg" id="JLA_84" data-flag="@X" onclick="openSidebar('JLA_84',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\89.jpg" id="JLA_89" data-flag="@X" onclick="openSidebar('JLA_89',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\160.jpg" id="JLA_160" data-flag="@X" onclick="openSidebar('JLA_160',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\276.jpg" id="JLA_276" data-flag="@X" onclick="openSidebar('JLA_276',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\277.jpg" id="JLA_277" data-flag="@X" onclick="openSidebar('JLA_277',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\278.jpg" id="JLA_278" data-flag="@X" onclick="openSidebar('JLA_278',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\168.jpg" id="JLA_168" data-flag="@X" onclick="openSidebar('JLA_168',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\170.jpg" id="JLA_170" data-flag="@X" onclick="openSidebar('JLA_170',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\162.jpg" id="JLA_162" data-flag="@X" onclick="openSidebar('JLA_162',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\166.jpg" id="JLA_166" data-flag="@X" onclick="openSidebar('JLA_166',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\169.jpg" id="JLA_169" data-flag="@X" onclick="openSidebar('JLA_169',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\161.jpg" id="JLA_161" data-flag="@X" onclick="openSidebar('JLA_161',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\167.jpg" id="JLA_167" data-flag="@X" onclick="openSidebar('JLA_167',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\171.jpg" id="JLA_171" data-flag="@X" onclick="openSidebar('JLA_171',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\15.jpg" id="JLA_15" data-flag="@X" onclick="openSidebar('JLA_15',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\20.jpg" id="JLA_20" data-flag="@X" onclick="openSidebar('JLA_20',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\19.jpg" id="JLA_19" data-flag="@X" onclick="openSidebar('JLA_19',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\17.jpg" id="JLA_17" data-flag="@X" onclick="openSidebar('JLA_17',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\18.jpg" id="JLA_18" data-flag="@X" onclick="openSidebar('JLA_18',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\16.jpg" id="JLA_16" data-flag="@X" onclick="openSidebar('JLA_16',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\71.jpg" id="JLA_71" data-flag="@X" onclick="openSidebar('JLA_71',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\70.jpg" id="JLA_70" data-flag="@X" onclick="openSidebar('JLA_70',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\72.jpg" id="JLA_72" data-flag="@X" onclick="openSidebar('JLA_72',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\156.jpg" id="JLA_156" data-flag="@X" onclick="openSidebar('JLA_156',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\155.jpg" id="JLA_155" data-flag="@X" onclick="openSidebar('JLA_155',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\158.jpg" id="JLA_158" data-flag="@X" onclick="openSidebar('JLA_158',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\159.jpg" id="JLA_159" data-flag="@X" onclick="openSidebar('JLA_159',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\154.jpg" id="JLA_154" data-flag="@X" onclick="openSidebar('JLA_154',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\157.jpg" id="JLA_157" data-flag="@X" onclick="openSidebar('JLA_157',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\153.jpg" id="JLA_153" data-flag="@X" onclick="openSidebar('JLA_153',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\249.jpg" id="JLA_249" data-flag="@X" onclick="openSidebar('JLA_249',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\254.jpg" id="JLA_254" data-flag="@X" onclick="openSidebar('JLA_254',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\257.jpg" id="JLA_257" data-flag="@X" onclick="openSidebar('JLA_257',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\258.jpg" id="JLA_258" data-flag="@X" onclick="openSidebar('JLA_258',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\251.jpg" id="JLA_251" data-flag="@X" onclick="openSidebar('JLA_251',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\253.jpg" id="JLA_253" data-flag="@X" onclick="openSidebar('JLA_253',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\255.jpg" id="JLA_255" data-flag="@X" onclick="openSidebar('JLA_255',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\256.jpg" id="JLA_256" data-flag="@X" onclick="openSidebar('JLA_256',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\252.jpg" id="JLA_252" data-flag="@X" onclick="openSidebar('JLA_252',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\259.jpg" id="JLA_259" data-flag="@X" onclick="openSidebar('JLA_259',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\260.jpg" id="JLA_260" data-flag="@X" onclick="openSidebar('JLA_260',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\250.jpg" id="JLA_250" data-flag="@X" onclick="openSidebar('JLA_250',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div id="land" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\263.jpg" id="JLA_263" data-flag="@X" onclick="openSidebar('JLA_263',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\265.jpg" id="JLA_265" data-flag="@X" onclick="openSidebar('JLA_265',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\261.jpg" id="JLA_261" data-flag="@X" onclick="openSidebar('JLA_261',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\262.jpg" id="JLA_262" data-flag="@X" onclick="openSidebar('JLA_262',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\264.jpg" id="JLA_264" data-flag="@X" onclick="openSidebar('JLA_264',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\273.jpg" id="JLA_273" data-flag="@X" onclick="openSidebar('JLA_273',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\275.jpg" id="JLA_275" data-flag="@X" onclick="openSidebar('JLA_275',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\271.jpg" id="JLA_271" data-flag="@X" onclick="openSidebar('JLA_271',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\272.jpg" id="JLA_272" data-flag="@X" onclick="openSidebar('JLA_272',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\274.jpg" id="JLA_274" data-flag="@X" onclick="openSidebar('JLA_274',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\324.jpg" id="JLA_324" data-flag="@X" onclick="openSidebar('JLA_324',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\320.jpg" id="JLA_320" data-flag="@X" onclick="openSidebar('JLA_320',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\325.jpg" id="JLA_325" data-flag="@X" onclick="openSidebar('JLA_325',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\321.jpg" id="JLA_321" data-flag="@X" onclick="openSidebar('JLA_321',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\322.jpg" id="JLA_322" data-flag="@X" onclick="openSidebar('JLA_322',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\319.jpg" id="JLA_319" data-flag="@X" onclick="openSidebar('JLA_319',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\326.jpg" id="JLA_326" data-flag="@X" onclick="openSidebar('JLA_326',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\317.jpg" id="JLA_317" data-flag="@X" onclick="openSidebar('JLA_317',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\323.jpg" id="JLA_323" data-flag="@X" onclick="openSidebar('JLA_323',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\318.jpg" id="JLA_318" data-flag="@X" onclick="openSidebar('JLA_318',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\268.jpg" id="JLA_268" data-flag="@X" onclick="openSidebar('JLA_268',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\267.jpg" id="JLA_267" data-flag="@X" onclick="openSidebar('JLA_267',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\266.jpg" id="JLA_266" data-flag="@X" onclick="openSidebar('JLA_266',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\269.jpg" id="JLA_269" data-flag="@X" onclick="openSidebar('JLA_269',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\270.jpg" id="JLA_270" data-flag="@X" onclick="openSidebar('JLA_270',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\307.jpg" id="JLA_307" data-flag="@X" onclick="openSidebar('JLA_307',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\308.jpg" id="JLA_308" data-flag="@X" onclick="openSidebar('JLA_308',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\309.jpg" id="JLA_309" data-flag="@X" onclick="openSidebar('JLA_309',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\310.jpg" id="JLA_310" data-flag="@X" onclick="openSidebar('JLA_310',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\311.jpg" id="JLA_311" data-flag="@X" onclick="openSidebar('JLA_311',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\312.jpg" id="JLA_312" data-flag="@X" onclick="openSidebar('JLA_312',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\313.jpg" id="JLA_313" data-flag="@X" onclick="openSidebar('JLA_313',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\314.jpg" id="JLA_314" data-flag="@X" onclick="openSidebar('JLA_314',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\315.jpg" id="JLA_315" data-flag="@X" onclick="openSidebar('JLA_315',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\316.jpg" id="JLA_316" data-flag="@X" onclick="openSidebar('JLA_316',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div id="token" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\299.jpg" id="JLA_299" data-flag="@X" onclick="openSidebar('JLA_299',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\301.jpg" id="JLA_301" data-flag="@X" onclick="openSidebar('JLA_301',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\327.jpg" id="JLA_327" data-flag="@X" onclick="openSidebar('JLA_327',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\305.jpg" id="JLA_305" data-flag="@X" onclick="openSidebar('JLA_305',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\296.jpg" id="JLA_296" data-flag="@X" onclick="openSidebar('JLA_296',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\293.jpg" id="JLA_293" data-flag="@X" onclick="openSidebar('JLA_293',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\295.jpg" id="JLA_295" data-flag="@X" onclick="openSidebar('JLA_295',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\306.jpg" id="JLA_306" data-flag="@X" onclick="openSidebar('JLA_306',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\297.jpg" id="JLA_297" data-flag="@X" onclick="openSidebar('JLA_297',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\302.jpg" id="JLA_302" data-flag="@X" onclick="openSidebar('JLA_302',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\303.jpg" id="JLA_303" data-flag="@X" onclick="openSidebar('JLA_303',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\298.jpg" id="JLA_298" data-flag="@X" onclick="openSidebar('JLA_298',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\300.jpg" id="JLA_300" data-flag="@X" onclick="openSidebar('JLA_300',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\292.jpg" id="JLA_292" data-flag="@X" onclick="openSidebar('JLA_292',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\304.jpg" id="JLA_304" data-flag="@X" onclick="openSidebar('JLA_304',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\294.jpg" id="JLA_294" data-flag="@X" onclick="openSidebar('JLA_294',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\JLA-files\img\291.jpg" id="JLA_291" data-flag="@X" onclick="openSidebar('JLA_291',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="JLA_e" data-flag="@E" onclick="openSidebar('JLA_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="JLA_er" data-flag="@E" onclick="openSidebar('JLA_er',false)"></div>
+	</div>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch(rootPath + '/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch(rootPath + '/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1]);
+						}
+					}
+				});
+
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = rootPath + '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = rootPath + '/' + img.alt;
+				if (img.dataset.alt_src) {
+					img.dataset.alt_src = rootPath + '/' + img.dataset.alt_src;
+				}
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		const img = document.getElementById(num);
+		const seconds = 0.2;
+		const rotated_img = document.getElementById('sidebar_h_img');
+
+        img.style.transition = seconds.toString() + "s";
+        img.style.transform = "rotateY(90deg)";
+
+        if (num == 'sidebar_img')
+		{
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
+
+           		if (rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		                img.style.filter = "none";
+		            }, (seconds / 2) * 1000);
+		        }
+		        else {
+		        	setTimeout(() => {
+		                rotated_img.style.opacity = "1";
+		                img.style.filter = "blur(2px) brightness(0.7)";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
+		}
+
+         setTimeout(function() {
+            tmp = document.getElementById(num).src;
+			document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+			document.getElementById(num).dataset.alt_src = tmp;
+
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(0deg)";
+
+            if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+            }
+        }, seconds * 1000);
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.style.transition = "none";
+		rotated_img.style.transition = "none";
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.opacity = "1";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.opacity = "0";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		dropdown.style.gridTemplateColumns = "repeat(3, 1fr)";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		dropdown.style.gridTemplateColumns = "1fr";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL(rootPath + '/search', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url.pathname + url.search;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url.pathname + url.search;
+			}
+	</script>
+</body>
+</html>

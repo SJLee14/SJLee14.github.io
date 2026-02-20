@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="../sets/ASR-files/icon.png"/>
+	<link rel="stylesheet" href="../resources/header.css">
+	<title>ASR visual preview</title>
+	<script title="root">
+		const rootPath = "..";
+	</script>
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('../resources/beleren.ttf');
+		}
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			opacity: 0;
+			transform: rotateY(0deg) rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+			border-radius: 3.733% / 2.677%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+			border-radius: 3.733% / 2.677%;
+		}
+		.close-btn {
+			background: url('../img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('../img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+			border-radius: 3.733% / 2.677%;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+			border-radius: 3.733% / 2.677%;
+		}
+		.flip-btn {
+			background: url('../img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('../img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 5%;
+			width: fit-content;
+			max-width: 90%;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
+		}
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
+		}
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="../img/dot.png" />
+	<img class="preload-hidden" src="../sets/ASR-files/logo.png" />
+	<img class="preload-hidden" src="../sets/ASR-files/icon.png" />
+		<img class="preload-hidden" src="../sets/BMD-files/icon.png" />
+		<img class="preload-hidden" src="../sets/CMD-files/icon.png" />
+		<img class="preload-hidden" src="../sets/FECM-files/icon.png" />
+		<img class="preload-hidden" src="../sets/JLA-files/icon.png" />
+		<img class="preload-hidden" src="../sets/JLC-files/icon.png" />
+		<img class="preload-hidden" src="../sets/OZN-files/icon.png" />
+		<img class="preload-hidden" src="../sets/YMD-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
+
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
+
+	<div class="dropdown" id="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="../previews/ASR"><img src="../sets/ASR-files/icon.png">Anshin Revi</a>
+	
+		<a class="set-bar inactive" href="../previews/BMD"><img src="../sets/BMD-files/icon.png">Baylee’s Minotaur CMD</a>
+	
+		<a class="set-bar inactive" href="../previews/CMD"><img src="../sets/CMD-files/icon.png">Christian’s Demon CMD</a>
+	
+		<a class="set-bar inactive" href="../previews/FECM"><img src="../sets/FECM-files/icon.png">Fire Emblem: Commanding Magic</a>
+	
+		<a class="set-bar inactive" href="../previews/JLA"><img src="../sets/JLA-files/icon.png">Jaelicia</a>
+	
+		<a class="set-bar inactive" href="../previews/JLC"><img src="../sets/JLC-files/icon.png">Jaelicia Commander</a>
+	
+		<a class="set-bar inactive" href="../previews/OZN"><img src="../sets/OZN-files/icon.png">Ozin Onus</a>
+	
+		<a class="set-bar inactive" href="../previews/YMD"><img src="../sets/YMD-files/icon.png">Bobby’s Merfolk CMD</a>
+	
+		</div>
+		<div class="banner">
+		<img class="logo" src="../sets/ASR-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+					<div class="container"><img loading="lazy" alt="sets\ASR-files\img\169.jpg" id="ASR_169" data-flag="@X" onclick="openSidebar('ASR_169',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\170.jpg" id="ASR_170" data-flag="@X" onclick="openSidebar('ASR_170',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\171.jpg" id="ASR_171" data-flag="@X" onclick="openSidebar('ASR_171',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\172.jpg" id="ASR_172" data-flag="@X" onclick="openSidebar('ASR_172',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\173.jpg" id="ASR_173" data-flag="@X" onclick="openSidebar('ASR_173',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\341.jpg" id="ASR_341" data-flag="@X" onclick="openSidebar('ASR_341',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\338.jpg" id="ASR_338" data-flag="@X" onclick="openSidebar('ASR_338',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\336.jpg" id="ASR_336" data-flag="@X" onclick="openSidebar('ASR_336',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\556.jpg" id="ASR_556" data-flag="@X" onclick="openSidebar('ASR_556',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\339.jpg" id="ASR_339" data-flag="@X" onclick="openSidebar('ASR_339',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\555.jpg" id="ASR_555" data-flag="@X" onclick="openSidebar('ASR_555',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\345.jpg" id="ASR_345" data-flag="@X" onclick="openSidebar('ASR_345',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\344.jpg" id="ASR_344" data-flag="@X" onclick="openSidebar('ASR_344',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\342.jpg" id="ASR_342" data-flag="@X" onclick="openSidebar('ASR_342',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\554.jpg" id="ASR_554" data-flag="@X" onclick="openSidebar('ASR_554',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\340.jpg" id="ASR_340" data-flag="@X" onclick="openSidebar('ASR_340',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\552.jpg" id="ASR_552" data-flag="@X" onclick="openSidebar('ASR_552',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\553.jpg" id="ASR_553" data-flag="@X" onclick="openSidebar('ASR_553',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\337.jpg" id="ASR_337" data-flag="@X" onclick="openSidebar('ASR_337',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\343.jpg" id="ASR_343" data-flag="@X" onclick="openSidebar('ASR_343',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\549.jpg" id="ASR_549" data-flag="@X" onclick="openSidebar('ASR_549',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\535.jpg" id="ASR_535" data-flag="@X" onclick="openSidebar('ASR_535',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\538.jpg" id="ASR_538" data-flag="@X" onclick="openSidebar('ASR_538',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\530.jpg" id="ASR_530" data-flag="@X" onclick="openSidebar('ASR_530',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\550.jpg" id="ASR_550" data-flag="@X" onclick="openSidebar('ASR_550',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\266.jpg" id="ASR_266" data-flag="@X" onclick="openSidebar('ASR_266',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\548.jpg" id="ASR_548" data-flag="@X" onclick="openSidebar('ASR_548',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\528.jpg" id="ASR_528" data-flag="@X" onclick="openSidebar('ASR_528',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\250.jpg" id="ASR_250" data-flag="@X" onclick="openSidebar('ASR_250',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\534.jpg" id="ASR_534" data-flag="@X" onclick="openSidebar('ASR_534',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\243.jpg" id="ASR_243" data-flag="@X" onclick="openSidebar('ASR_243',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\254.jpg" id="ASR_254" data-flag="@X" onclick="openSidebar('ASR_254',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\529.jpg" id="ASR_529" data-flag="@X" onclick="openSidebar('ASR_529',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\235.jpg" id="ASR_235" data-flag="@X" onclick="openSidebar('ASR_235',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\272_back.jpg" alt="sets\ASR-files\img\272_front.jpg" id="ASR_272" data-flag="@XD" onclick="openSidebar('ASR_272',false)"><button class="flip-btn" onclick="imgFlip('ASR_272')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\237.jpg" id="ASR_237" data-flag="@X" onclick="openSidebar('ASR_237',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\541.jpg" id="ASR_541" data-flag="@X" onclick="openSidebar('ASR_541',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\246.jpg" id="ASR_246" data-flag="@X" onclick="openSidebar('ASR_246',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\537.jpg" id="ASR_537" data-flag="@X" onclick="openSidebar('ASR_537',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\265.jpg" id="ASR_265" data-flag="@X" onclick="openSidebar('ASR_265',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\546.jpg" id="ASR_546" data-flag="@X" onclick="openSidebar('ASR_546',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\406.jpg" id="ASR_406" data-flag="@X" onclick="openSidebar('ASR_406',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\278_back.jpg" alt="sets\ASR-files\img\278_front.jpg" id="ASR_278" data-flag="@XD" onclick="openSidebar('ASR_278',false)"><button class="flip-btn" onclick="imgFlip('ASR_278')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\531.jpg" id="ASR_531" data-flag="@X" onclick="openSidebar('ASR_531',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\545.jpg" id="ASR_545" data-flag="@X" onclick="openSidebar('ASR_545',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\273_back.jpg" alt="sets\ASR-files\img\273_front.jpg" id="ASR_273" data-flag="@XD" onclick="openSidebar('ASR_273',false)"><button class="flip-btn" onclick="imgFlip('ASR_273')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\551.jpg" id="ASR_551" data-flag="@X" onclick="openSidebar('ASR_551',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\252.jpg" id="ASR_252" data-flag="@X" onclick="openSidebar('ASR_252',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\244.jpg" id="ASR_244" data-flag="@X" onclick="openSidebar('ASR_244',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\405.jpg" id="ASR_405" data-flag="@X" onclick="openSidebar('ASR_405',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\542.jpg" id="ASR_542" data-flag="@X" onclick="openSidebar('ASR_542',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\275_back.jpg" alt="sets\ASR-files\img\275_front.jpg" id="ASR_275" data-flag="@XD" onclick="openSidebar('ASR_275',false)"><button class="flip-btn" onclick="imgFlip('ASR_275')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\539.jpg" id="ASR_539" data-flag="@X" onclick="openSidebar('ASR_539',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\532.jpg" id="ASR_532" data-flag="@X" onclick="openSidebar('ASR_532',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\547.jpg" id="ASR_547" data-flag="@X" onclick="openSidebar('ASR_547',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\404.jpg" id="ASR_404" data-flag="@X" onclick="openSidebar('ASR_404',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\540.jpg" id="ASR_540" data-flag="@X" onclick="openSidebar('ASR_540',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\239.jpg" id="ASR_239" data-flag="@X" onclick="openSidebar('ASR_239',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\276_back.jpg" alt="sets\ASR-files\img\276_front.jpg" id="ASR_276" data-flag="@XD" onclick="openSidebar('ASR_276',false)"><button class="flip-btn" onclick="imgFlip('ASR_276')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\236.jpg" id="ASR_236" data-flag="@X" onclick="openSidebar('ASR_236',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\533.jpg" id="ASR_533" data-flag="@X" onclick="openSidebar('ASR_533',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\240.jpg" id="ASR_240" data-flag="@X" onclick="openSidebar('ASR_240',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\372.jpg" id="ASR_372" data-flag="@X" onclick="openSidebar('ASR_372',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\403.jpg" id="ASR_403" data-flag="@X" onclick="openSidebar('ASR_403',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\242.jpg" id="ASR_242" data-flag="@X" onclick="openSidebar('ASR_242',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\543.jpg" id="ASR_543" data-flag="@X" onclick="openSidebar('ASR_543',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\245.jpg" id="ASR_245" data-flag="@X" onclick="openSidebar('ASR_245',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\527.jpg" id="ASR_527" data-flag="@X" onclick="openSidebar('ASR_527',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\536.jpg" id="ASR_536" data-flag="@X" onclick="openSidebar('ASR_536',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\544.jpg" id="ASR_544" data-flag="@X" onclick="openSidebar('ASR_544',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\593_back.jpg" alt="sets\ASR-files\img\593_front.jpg" id="ASR_593" data-flag="@XD" onclick="openSidebar('ASR_593',false)"><button class="flip-btn" onclick="imgFlip('ASR_593')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\568.jpg" id="ASR_568" data-flag="@X" onclick="openSidebar('ASR_568',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\652.jpg" id="ASR_652" data-flag="@X" onclick="openSidebar('ASR_652',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\328.jpg" id="ASR_328" data-flag="@X" onclick="openSidebar('ASR_328',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\334.jpg" id="ASR_334" data-flag="@X" onclick="openSidebar('ASR_334',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\659.jpg" id="ASR_659" data-flag="@X" onclick="openSidebar('ASR_659',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\233.jpg" id="ASR_233" data-flag="@X" onclick="openSidebar('ASR_233',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\643.jpg" id="ASR_643" data-flag="@X" onclick="openSidebar('ASR_643',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\590.jpg" id="ASR_590" data-flag="@X" onclick="openSidebar('ASR_590',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\565.jpg" id="ASR_565" data-flag="@X" onclick="openSidebar('ASR_565',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\592.jpg" id="ASR_592" data-flag="@X" onclick="openSidebar('ASR_592',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\569.jpg" id="ASR_569" data-flag="@X" onclick="openSidebar('ASR_569',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\312.jpg" id="ASR_312" data-flag="@X" onclick="openSidebar('ASR_312',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\589.jpg" id="ASR_589" data-flag="@X" onclick="openSidebar('ASR_589',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\370.jpg" id="ASR_370" data-flag="@X" onclick="openSidebar('ASR_370',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\333.jpg" id="ASR_333" data-flag="@X" onclick="openSidebar('ASR_333',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\606.jpg" id="ASR_606" data-flag="@X" onclick="openSidebar('ASR_606',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\584.jpg" id="ASR_584" data-flag="@X" onclick="openSidebar('ASR_584',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\316.jpg" id="ASR_316" data-flag="@X" onclick="openSidebar('ASR_316',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\597.jpg" id="ASR_597" data-flag="@X" onclick="openSidebar('ASR_597',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\596.jpg" id="ASR_596" data-flag="@X" onclick="openSidebar('ASR_596',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\374.jpg" id="ASR_374" data-flag="@X" onclick="openSidebar('ASR_374',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\614.jpg" id="ASR_614" data-flag="@X" onclick="openSidebar('ASR_614',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\588.jpg" id="ASR_588" data-flag="@X" onclick="openSidebar('ASR_588',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\331.jpg" id="ASR_331" data-flag="@X" onclick="openSidebar('ASR_331',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\347.jpg" id="ASR_347" data-flag="@X" onclick="openSidebar('ASR_347',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\364.jpg" id="ASR_364" data-flag="@X" onclick="openSidebar('ASR_364',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\231.jpg" id="ASR_231" data-flag="@X" onclick="openSidebar('ASR_231',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\234.jpg" id="ASR_234" data-flag="@X" onclick="openSidebar('ASR_234',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\228.jpg" id="ASR_228" data-flag="@X" onclick="openSidebar('ASR_228',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\376.jpg" id="ASR_376" data-flag="@X" onclick="openSidebar('ASR_376',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\567_back.jpg" alt="sets\ASR-files\img\567_front.jpg" id="ASR_567" data-flag="@XD" onclick="openSidebar('ASR_567',false)"><button class="flip-btn" onclick="imgFlip('ASR_567')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\585.jpg" id="ASR_585" data-flag="@X" onclick="openSidebar('ASR_585',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\165.jpg" id="ASR_165" data-flag="@X" onclick="openSidebar('ASR_165',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\601.jpg" id="ASR_601" data-flag="@X" onclick="openSidebar('ASR_601',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\594.jpg" id="ASR_594" data-flag="@X" onclick="openSidebar('ASR_594',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\335.jpg" id="ASR_335" data-flag="@X" onclick="openSidebar('ASR_335',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\580.jpg" id="ASR_580" data-flag="@X" onclick="openSidebar('ASR_580',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\576.jpg" id="ASR_576" data-flag="@X" onclick="openSidebar('ASR_576',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\348.jpg" id="ASR_348" data-flag="@X" onclick="openSidebar('ASR_348',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\381.jpg" id="ASR_381" data-flag="@X" onclick="openSidebar('ASR_381',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\605.jpg" id="ASR_605" data-flag="@X" onclick="openSidebar('ASR_605',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\309.jpg" id="ASR_309" data-flag="@X" onclick="openSidebar('ASR_309',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\625.jpg" id="ASR_625" data-flag="@X" onclick="openSidebar('ASR_625',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\563_back.jpg" alt="sets\ASR-files\img\563_front.jpg" id="ASR_563" data-flag="@XD" onclick="openSidebar('ASR_563',false)"><button class="flip-btn" onclick="imgFlip('ASR_563')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\575.jpg" id="ASR_575" data-flag="@X" onclick="openSidebar('ASR_575',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\329.jpg" id="ASR_329" data-flag="@X" onclick="openSidebar('ASR_329',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\164.jpg" id="ASR_164" data-flag="@X" onclick="openSidebar('ASR_164',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\636.jpg" id="ASR_636" data-flag="@X" onclick="openSidebar('ASR_636',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\377.jpg" id="ASR_377" data-flag="@X" onclick="openSidebar('ASR_377',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\230.jpg" id="ASR_230" data-flag="@X" onclick="openSidebar('ASR_230',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\566.jpg" id="ASR_566" data-flag="@X" onclick="openSidebar('ASR_566',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\308.jpg" id="ASR_308" data-flag="@X" onclick="openSidebar('ASR_308',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\225.jpg" id="ASR_225" data-flag="@X" onclick="openSidebar('ASR_225',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\227.jpg" id="ASR_227" data-flag="@X" onclick="openSidebar('ASR_227',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\595.jpg" id="ASR_595" data-flag="@X" onclick="openSidebar('ASR_595',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\560.jpg" id="ASR_560" data-flag="@X" onclick="openSidebar('ASR_560',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\313.jpg" id="ASR_313" data-flag="@X" onclick="openSidebar('ASR_313',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\558.jpg" id="ASR_558" data-flag="@X" onclick="openSidebar('ASR_558',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\368.jpg" id="ASR_368" data-flag="@X" onclick="openSidebar('ASR_368',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\168.jpg" id="ASR_168" data-flag="@X" onclick="openSidebar('ASR_168',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\602_back.jpg" alt="sets\ASR-files\img\602_front.jpg" id="ASR_602" data-flag="@XD" onclick="openSidebar('ASR_602',false)"><button class="flip-btn" onclick="imgFlip('ASR_602')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\310.jpg" id="ASR_310" data-flag="@X" onclick="openSidebar('ASR_310',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\577.jpg" id="ASR_577" data-flag="@X" onclick="openSidebar('ASR_577',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\166.jpg" id="ASR_166" data-flag="@X" onclick="openSidebar('ASR_166',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\367.jpg" id="ASR_367" data-flag="@X" onclick="openSidebar('ASR_367',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\661.jpg" id="ASR_661" data-flag="@X" onclick="openSidebar('ASR_661',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\307.jpg" id="ASR_307" data-flag="@X" onclick="openSidebar('ASR_307',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\326.jpg" id="ASR_326" data-flag="@X" onclick="openSidebar('ASR_326',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\378.jpg" id="ASR_378" data-flag="@X" onclick="openSidebar('ASR_378',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\564.jpg" id="ASR_564" data-flag="@X" onclick="openSidebar('ASR_564',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\624.jpg" id="ASR_624" data-flag="@X" onclick="openSidebar('ASR_624',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\232.jpg" id="ASR_232" data-flag="@X" onclick="openSidebar('ASR_232',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\315.jpg" id="ASR_315" data-flag="@X" onclick="openSidebar('ASR_315',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\633.jpg" id="ASR_633" data-flag="@X" onclick="openSidebar('ASR_633',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\646.jpg" id="ASR_646" data-flag="@X" onclick="openSidebar('ASR_646',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\657.jpg" id="ASR_657" data-flag="@X" onclick="openSidebar('ASR_657',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\582.jpg" id="ASR_582" data-flag="@X" onclick="openSidebar('ASR_582',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\627.jpg" id="ASR_627" data-flag="@X" onclick="openSidebar('ASR_627',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\599.jpg" id="ASR_599" data-flag="@X" onclick="openSidebar('ASR_599',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\573.jpg" id="ASR_573" data-flag="@X" onclick="openSidebar('ASR_573',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\373.jpg" id="ASR_373" data-flag="@X" onclick="openSidebar('ASR_373',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\586.jpg" id="ASR_586" data-flag="@X" onclick="openSidebar('ASR_586',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\320.jpg" id="ASR_320" data-flag="@X" onclick="openSidebar('ASR_320',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\571.jpg" id="ASR_571" data-flag="@X" onclick="openSidebar('ASR_571',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\658.jpg" id="ASR_658" data-flag="@X" onclick="openSidebar('ASR_658',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\351.jpg" id="ASR_351" data-flag="@X" onclick="openSidebar('ASR_351',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\645.jpg" id="ASR_645" data-flag="@X" onclick="openSidebar('ASR_645',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\327.jpg" id="ASR_327" data-flag="@X" onclick="openSidebar('ASR_327',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\349.jpg" id="ASR_349" data-flag="@X" onclick="openSidebar('ASR_349',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\559_back.jpg" alt="sets\ASR-files\img\559_front.jpg" id="ASR_559" data-flag="@XD" onclick="openSidebar('ASR_559',false)"><button class="flip-btn" onclick="imgFlip('ASR_559')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\604.jpg" id="ASR_604" data-flag="@X" onclick="openSidebar('ASR_604',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\317.jpg" id="ASR_317" data-flag="@X" onclick="openSidebar('ASR_317',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\578.jpg" id="ASR_578" data-flag="@X" onclick="openSidebar('ASR_578',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\598.jpg" id="ASR_598" data-flag="@X" onclick="openSidebar('ASR_598',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\346.jpg" id="ASR_346" data-flag="@X" onclick="openSidebar('ASR_346',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\366.jpg" id="ASR_366" data-flag="@X" onclick="openSidebar('ASR_366',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\311.jpg" id="ASR_311" data-flag="@X" onclick="openSidebar('ASR_311',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\324.jpg" id="ASR_324" data-flag="@X" onclick="openSidebar('ASR_324',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\642.jpg" id="ASR_642" data-flag="@X" onclick="openSidebar('ASR_642',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\330.jpg" id="ASR_330" data-flag="@X" onclick="openSidebar('ASR_330',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\365.jpg" id="ASR_365" data-flag="@X" onclick="openSidebar('ASR_365',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\581.jpg" id="ASR_581" data-flag="@X" onclick="openSidebar('ASR_581',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\587_back.jpg" alt="sets\ASR-files\img\587_front.jpg" id="ASR_587" data-flag="@XD" onclick="openSidebar('ASR_587',false)"><button class="flip-btn" onclick="imgFlip('ASR_587')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\380.jpg" id="ASR_380" data-flag="@X" onclick="openSidebar('ASR_380',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\363.jpg" id="ASR_363" data-flag="@X" onclick="openSidebar('ASR_363',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\350.jpg" id="ASR_350" data-flag="@X" onclick="openSidebar('ASR_350',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\557_back.jpg" alt="sets\ASR-files\img\557_front.jpg" id="ASR_557" data-flag="@XD" onclick="openSidebar('ASR_557',false)"><button class="flip-btn" onclick="imgFlip('ASR_557')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\591.jpg" id="ASR_591" data-flag="@X" onclick="openSidebar('ASR_591',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\660.jpg" id="ASR_660" data-flag="@X" onclick="openSidebar('ASR_660',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\362.jpg" id="ASR_362" data-flag="@X" onclick="openSidebar('ASR_362',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\603.jpg" id="ASR_603" data-flag="@X" onclick="openSidebar('ASR_603',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\579.jpg" id="ASR_579" data-flag="@X" onclick="openSidebar('ASR_579',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\562_back.jpg" alt="sets\ASR-files\img\562_front.jpg" id="ASR_562" data-flag="@XD" onclick="openSidebar('ASR_562',false)"><button class="flip-btn" onclick="imgFlip('ASR_562')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\572.jpg" id="ASR_572" data-flag="@X" onclick="openSidebar('ASR_572',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\626.jpg" id="ASR_626" data-flag="@X" onclick="openSidebar('ASR_626',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\651.jpg" id="ASR_651" data-flag="@X" onclick="openSidebar('ASR_651',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\561.jpg" id="ASR_561" data-flag="@X" onclick="openSidebar('ASR_561',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\325.jpg" id="ASR_325" data-flag="@X" onclick="openSidebar('ASR_325',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\369.jpg" id="ASR_369" data-flag="@X" onclick="openSidebar('ASR_369',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\229.jpg" id="ASR_229" data-flag="@X" onclick="openSidebar('ASR_229',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\383.jpg" id="ASR_383" data-flag="@X" onclick="openSidebar('ASR_383',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\314.jpg" id="ASR_314" data-flag="@X" onclick="openSidebar('ASR_314',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\323.jpg" id="ASR_323" data-flag="@X" onclick="openSidebar('ASR_323',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\662.jpg" id="ASR_662" data-flag="@X" onclick="openSidebar('ASR_662',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\574.jpg" id="ASR_574" data-flag="@X" onclick="openSidebar('ASR_574',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\167.jpg" id="ASR_167" data-flag="@X" onclick="openSidebar('ASR_167',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\319.jpg" id="ASR_319" data-flag="@X" onclick="openSidebar('ASR_319',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\321.jpg" id="ASR_321" data-flag="@X" onclick="openSidebar('ASR_321',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\600_back.jpg" alt="sets\ASR-files\img\600_front.jpg" id="ASR_600" data-flag="@XD" onclick="openSidebar('ASR_600',false)"><button class="flip-btn" onclick="imgFlip('ASR_600')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\375.jpg" id="ASR_375" data-flag="@X" onclick="openSidebar('ASR_375',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\332.jpg" id="ASR_332" data-flag="@X" onclick="openSidebar('ASR_332',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\318.jpg" id="ASR_318" data-flag="@X" onclick="openSidebar('ASR_318',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\610.jpg" id="ASR_610" data-flag="@X" onclick="openSidebar('ASR_610',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\570.jpg" id="ASR_570" data-flag="@X" onclick="openSidebar('ASR_570',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\382.jpg" id="ASR_382" data-flag="@X" onclick="openSidebar('ASR_382',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\226.jpg" id="ASR_226" data-flag="@X" onclick="openSidebar('ASR_226',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\583_back.jpg" alt="sets\ASR-files\img\583_front.jpg" id="ASR_583" data-flag="@XD" onclick="openSidebar('ASR_583',false)"><button class="flip-btn" onclick="imgFlip('ASR_583')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\322.jpg" id="ASR_322" data-flag="@X" onclick="openSidebar('ASR_322',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\379.jpg" id="ASR_379" data-flag="@X" onclick="openSidebar('ASR_379',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\719.jpg" id="ASR_719" data-flag="@X" onclick="openSidebar('ASR_719',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\427.jpg" id="ASR_427" data-flag="@X" onclick="openSidebar('ASR_427',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\723.jpg" id="ASR_723" data-flag="@X" onclick="openSidebar('ASR_723',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\420.jpg" id="ASR_420" data-flag="@X" onclick="openSidebar('ASR_420',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\720.jpg" id="ASR_720" data-flag="@X" onclick="openSidebar('ASR_720',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\424.jpg" id="ASR_424" data-flag="@X" onclick="openSidebar('ASR_424',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\715.jpg" id="ASR_715" data-flag="@X" onclick="openSidebar('ASR_715',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\417.jpg" id="ASR_417" data-flag="@X" onclick="openSidebar('ASR_417',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\716.jpg" id="ASR_716" data-flag="@X" onclick="openSidebar('ASR_716',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\426.jpg" id="ASR_426" data-flag="@X" onclick="openSidebar('ASR_426',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\139_back.jpg" alt="sets\ASR-files\img\139_front.jpg" id="ASR_139" data-flag="@XD" onclick="openSidebar('ASR_139',false)"><button class="flip-btn" onclick="imgFlip('ASR_139')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\222.jpg" id="ASR_222" data-flag="@X" onclick="openSidebar('ASR_222',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\114_back.jpg" alt="sets\ASR-files\img\114_front.jpg" id="ASR_114" data-flag="@XD" onclick="openSidebar('ASR_114',false)"><button class="flip-btn" onclick="imgFlip('ASR_114')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\219.jpg" id="ASR_219" data-flag="@X" onclick="openSidebar('ASR_219',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\106_back.jpg" alt="sets\ASR-files\img\106_front.jpg" id="ASR_106" data-flag="@XD" onclick="openSidebar('ASR_106',false)"><button class="flip-btn" onclick="imgFlip('ASR_106')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\223.jpg" id="ASR_223" data-flag="@X" onclick="openSidebar('ASR_223',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\141_back.jpg" alt="sets\ASR-files\img\141_front.jpg" id="ASR_141" data-flag="@XD" onclick="openSidebar('ASR_141',false)"><button class="flip-btn" onclick="imgFlip('ASR_141')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\207.jpg" id="ASR_207" data-flag="@X" onclick="openSidebar('ASR_207',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\107_back.jpg" alt="sets\ASR-files\img\107_front.jpg" id="ASR_107" data-flag="@XD" onclick="openSidebar('ASR_107',false)"><button class="flip-btn" onclick="imgFlip('ASR_107')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\54_back.jpg" alt="sets\ASR-files\img\54_front.jpg" id="ASR_54" data-flag="@XD" onclick="openSidebar('ASR_54',false)"><button class="flip-btn" onclick="imgFlip('ASR_54')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\442.jpg" id="ASR_442" data-flag="@X" onclick="openSidebar('ASR_442',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\441.jpg" id="ASR_441" data-flag="@X" onclick="openSidebar('ASR_441',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\14_back.jpg" alt="sets\ASR-files\img\14_front.jpg" id="ASR_14" data-flag="@XD" onclick="openSidebar('ASR_14',false)"><button class="flip-btn" onclick="imgFlip('ASR_14')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\75_back.jpg" alt="sets\ASR-files\img\75_front.jpg" id="ASR_75" data-flag="@XD" onclick="openSidebar('ASR_75',false)"><button class="flip-btn" onclick="imgFlip('ASR_75')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\155_back.jpg" alt="sets\ASR-files\img\155_front.jpg" id="ASR_155" data-flag="@XD" onclick="openSidebar('ASR_155',false)"><button class="flip-btn" onclick="imgFlip('ASR_155')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\201.jpg" id="ASR_201" data-flag="@X" onclick="openSidebar('ASR_201',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\33_back.jpg" alt="sets\ASR-files\img\33_front.jpg" id="ASR_33" data-flag="@XD" onclick="openSidebar('ASR_33',false)"><button class="flip-btn" onclick="imgFlip('ASR_33')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\126_back.jpg" alt="sets\ASR-files\img\126_front.jpg" id="ASR_126" data-flag="@XD" onclick="openSidebar('ASR_126',false)"><button class="flip-btn" onclick="imgFlip('ASR_126')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\217.jpg" id="ASR_217" data-flag="@X" onclick="openSidebar('ASR_217',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\445.jpg" id="ASR_445" data-flag="@X" onclick="openSidebar('ASR_445',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\443.jpg" id="ASR_443" data-flag="@X" onclick="openSidebar('ASR_443',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\212.jpg" id="ASR_212" data-flag="@X" onclick="openSidebar('ASR_212',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\214.jpg" id="ASR_214" data-flag="@X" onclick="openSidebar('ASR_214',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\112_back.jpg" alt="sets\ASR-files\img\112_front.jpg" id="ASR_112" data-flag="@XD" onclick="openSidebar('ASR_112',false)"><button class="flip-btn" onclick="imgFlip('ASR_112')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\221.jpg" id="ASR_221" data-flag="@X" onclick="openSidebar('ASR_221',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\154_back.jpg" alt="sets\ASR-files\img\154_front.jpg" id="ASR_154" data-flag="@XD" onclick="openSidebar('ASR_154',false)"><button class="flip-btn" onclick="imgFlip('ASR_154')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\423.jpg" id="ASR_423" data-flag="@X" onclick="openSidebar('ASR_423',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\430.jpg" id="ASR_430" data-flag="@X" onclick="openSidebar('ASR_430',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\436.jpg" id="ASR_436" data-flag="@X" onclick="openSidebar('ASR_436',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\444.jpg" id="ASR_444" data-flag="@X" onclick="openSidebar('ASR_444',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\62_back.jpg" alt="sets\ASR-files\img\62_front.jpg" id="ASR_62" data-flag="@XD" onclick="openSidebar('ASR_62',false)"><button class="flip-btn" onclick="imgFlip('ASR_62')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\127_back.jpg" alt="sets\ASR-files\img\127_front.jpg" id="ASR_127" data-flag="@XD" onclick="openSidebar('ASR_127',false)"><button class="flip-btn" onclick="imgFlip('ASR_127')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\429.jpg" id="ASR_429" data-flag="@X" onclick="openSidebar('ASR_429',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\435.jpg" id="ASR_435" data-flag="@X" onclick="openSidebar('ASR_435',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\215.jpg" id="ASR_215" data-flag="@X" onclick="openSidebar('ASR_215',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\502.jpg" id="ASR_502" data-flag="@X" onclick="openSidebar('ASR_502',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\486.jpg" id="ASR_486" data-flag="@X" onclick="openSidebar('ASR_486',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\411.jpg" id="ASR_411" data-flag="@X" onclick="openSidebar('ASR_411',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\520.jpg" id="ASR_520" data-flag="@X" onclick="openSidebar('ASR_520',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\515.jpg" id="ASR_515" data-flag="@X" onclick="openSidebar('ASR_515',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\526.jpg" id="ASR_526" data-flag="@X" onclick="openSidebar('ASR_526',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\259.jpg" id="ASR_259" data-flag="@X" onclick="openSidebar('ASR_259',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\410.jpg" id="ASR_410" data-flag="@X" onclick="openSidebar('ASR_410',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\464.jpg" id="ASR_464" data-flag="@X" onclick="openSidebar('ASR_464',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\269.jpg" id="ASR_269" data-flag="@X" onclick="openSidebar('ASR_269',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\491.jpg" id="ASR_491" data-flag="@X" onclick="openSidebar('ASR_491',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\487.jpg" id="ASR_487" data-flag="@X" onclick="openSidebar('ASR_487',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\413_back.jpg" alt="sets\ASR-files\img\413_front.jpg" id="ASR_413" data-flag="@XD" onclick="openSidebar('ASR_413',false)"><button class="flip-btn" onclick="imgFlip('ASR_413')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\461.jpg" id="ASR_461" data-flag="@X" onclick="openSidebar('ASR_461',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\495.jpg" id="ASR_495" data-flag="@X" onclick="openSidebar('ASR_495',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\514.jpg" id="ASR_514" data-flag="@X" onclick="openSidebar('ASR_514',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\485.jpg" id="ASR_485" data-flag="@X" onclick="openSidebar('ASR_485',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\507.jpg" id="ASR_507" data-flag="@X" onclick="openSidebar('ASR_507',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\261.jpg" id="ASR_261" data-flag="@X" onclick="openSidebar('ASR_261',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\494.jpg" id="ASR_494" data-flag="@X" onclick="openSidebar('ASR_494',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\262.jpg" id="ASR_262" data-flag="@X" onclick="openSidebar('ASR_262',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\488.jpg" id="ASR_488" data-flag="@X" onclick="openSidebar('ASR_488',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\256.jpg" id="ASR_256" data-flag="@X" onclick="openSidebar('ASR_256',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\460.jpg" id="ASR_460" data-flag="@X" onclick="openSidebar('ASR_460',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\503.jpg" id="ASR_503" data-flag="@X" onclick="openSidebar('ASR_503',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\501.jpg" id="ASR_501" data-flag="@X" onclick="openSidebar('ASR_501',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\480_back.jpg" alt="sets\ASR-files\img\480_front.jpg" id="ASR_480" data-flag="@XD" onclick="openSidebar('ASR_480',false)"><button class="flip-btn" onclick="imgFlip('ASR_480')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\412.jpg" id="ASR_412" data-flag="@X" onclick="openSidebar('ASR_412',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\462.jpg" id="ASR_462" data-flag="@X" onclick="openSidebar('ASR_462',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\504.jpg" id="ASR_504" data-flag="@X" onclick="openSidebar('ASR_504',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\490.jpg" id="ASR_490" data-flag="@X" onclick="openSidebar('ASR_490',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\523.jpg" id="ASR_523" data-flag="@X" onclick="openSidebar('ASR_523',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\415.jpg" id="ASR_415" data-flag="@X" onclick="openSidebar('ASR_415',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\450_back.jpg" alt="sets\ASR-files\img\450_front.jpg" id="ASR_450" data-flag="@XD" onclick="openSidebar('ASR_450',false)"><button class="flip-btn" onclick="imgFlip('ASR_450')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\493.jpg" id="ASR_493" data-flag="@X" onclick="openSidebar('ASR_493',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\489.jpg" id="ASR_489" data-flag="@X" onclick="openSidebar('ASR_489',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\513.jpg" id="ASR_513" data-flag="@X" onclick="openSidebar('ASR_513',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\517.jpg" id="ASR_517" data-flag="@X" onclick="openSidebar('ASR_517',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\465.jpg" id="ASR_465" data-flag="@X" onclick="openSidebar('ASR_465',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\481_back.jpg" alt="sets\ASR-files\img\481_front.jpg" id="ASR_481" data-flag="@XD" onclick="openSidebar('ASR_481',false)"><button class="flip-btn" onclick="imgFlip('ASR_481')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\492.jpg" id="ASR_492" data-flag="@X" onclick="openSidebar('ASR_492',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\483.jpg" id="ASR_483" data-flag="@X" onclick="openSidebar('ASR_483',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\416.jpg" id="ASR_416" data-flag="@X" onclick="openSidebar('ASR_416',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\510.jpg" id="ASR_510" data-flag="@X" onclick="openSidebar('ASR_510',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\496.jpg" id="ASR_496" data-flag="@X" onclick="openSidebar('ASR_496',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\479_back.jpg" alt="sets\ASR-files\img\479_front.jpg" id="ASR_479" data-flag="@XD" onclick="openSidebar('ASR_479',false)"><button class="flip-btn" onclick="imgFlip('ASR_479')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\484.jpg" id="ASR_484" data-flag="@X" onclick="openSidebar('ASR_484',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\414.jpg" id="ASR_414" data-flag="@X" onclick="openSidebar('ASR_414',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\463.jpg" id="ASR_463" data-flag="@X" onclick="openSidebar('ASR_463',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\524.jpg" id="ASR_524" data-flag="@X" onclick="openSidebar('ASR_524',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\183.jpg" id="ASR_183" data-flag="@X" onclick="openSidebar('ASR_183',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\182.jpg" id="ASR_182" data-flag="@X" onclick="openSidebar('ASR_182',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\177.jpg" id="ASR_177" data-flag="@X" onclick="openSidebar('ASR_177',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\180.jpg" id="ASR_180" data-flag="@X" onclick="openSidebar('ASR_180',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\175.jpg" id="ASR_175" data-flag="@X" onclick="openSidebar('ASR_175',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\664.jpg" id="ASR_664" data-flag="@X" onclick="openSidebar('ASR_664',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\649.jpg" id="ASR_649" data-flag="@X" onclick="openSidebar('ASR_649',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\609.jpg" id="ASR_609" data-flag="@X" onclick="openSidebar('ASR_609',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\634.jpg" id="ASR_634" data-flag="@X" onclick="openSidebar('ASR_634',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\655.jpg" id="ASR_655" data-flag="@X" onclick="openSidebar('ASR_655',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\663.jpg" id="ASR_663" data-flag="@X" onclick="openSidebar('ASR_663',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\648.jpg" id="ASR_648" data-flag="@X" onclick="openSidebar('ASR_648',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\611.jpg" id="ASR_611" data-flag="@X" onclick="openSidebar('ASR_611',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\638.jpg" id="ASR_638" data-flag="@X" onclick="openSidebar('ASR_638',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\666.jpg" id="ASR_666" data-flag="@X" onclick="openSidebar('ASR_666',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\665.jpg" id="ASR_665" data-flag="@X" onclick="openSidebar('ASR_665',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\653.jpg" id="ASR_653" data-flag="@X" onclick="openSidebar('ASR_653',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\613.jpg" id="ASR_613" data-flag="@X" onclick="openSidebar('ASR_613',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\635.jpg" id="ASR_635" data-flag="@X" onclick="openSidebar('ASR_635',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\667.jpg" id="ASR_667" data-flag="@X" onclick="openSidebar('ASR_667',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\654.jpg" id="ASR_654" data-flag="@X" onclick="openSidebar('ASR_654',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\650.jpg" id="ASR_650" data-flag="@X" onclick="openSidebar('ASR_650',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\612.jpg" id="ASR_612" data-flag="@X" onclick="openSidebar('ASR_612',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\637.jpg" id="ASR_637" data-flag="@X" onclick="openSidebar('ASR_637',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\668.jpg" id="ASR_668" data-flag="@X" onclick="openSidebar('ASR_668',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\422.jpg" id="ASR_422" data-flag="@X" onclick="openSidebar('ASR_422',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\721.jpg" id="ASR_721" data-flag="@X" onclick="openSidebar('ASR_721',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\718.jpg" id="ASR_718" data-flag="@X" onclick="openSidebar('ASR_718',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\724.jpg" id="ASR_724" data-flag="@X" onclick="openSidebar('ASR_724',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\722.jpg" id="ASR_722" data-flag="@X" onclick="openSidebar('ASR_722',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\717.jpg" id="ASR_717" data-flag="@X" onclick="openSidebar('ASR_717',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\418.jpg" id="ASR_418" data-flag="@X" onclick="openSidebar('ASR_418',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\421.jpg" id="ASR_421" data-flag="@X" onclick="openSidebar('ASR_421',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\419.jpg" id="ASR_419" data-flag="@X" onclick="openSidebar('ASR_419',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\425.jpg" id="ASR_425" data-flag="@X" onclick="openSidebar('ASR_425',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\12_back.jpg" alt="sets\ASR-files\img\12_front.jpg" id="ASR_12" data-flag="@XD" onclick="openSidebar('ASR_12',false)"><button class="flip-btn" onclick="imgFlip('ASR_12')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\432.jpg" id="ASR_432" data-flag="@X" onclick="openSidebar('ASR_432',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\213.jpg" id="ASR_213" data-flag="@X" onclick="openSidebar('ASR_213',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\206.jpg" id="ASR_206" data-flag="@X" onclick="openSidebar('ASR_206',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\428.jpg" id="ASR_428" data-flag="@X" onclick="openSidebar('ASR_428',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\55_back.jpg" alt="sets\ASR-files\img\55_front.jpg" id="ASR_55" data-flag="@XD" onclick="openSidebar('ASR_55',false)"><button class="flip-btn" onclick="imgFlip('ASR_55')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\76_back.jpg" alt="sets\ASR-files\img\76_front.jpg" id="ASR_76" data-flag="@XD" onclick="openSidebar('ASR_76',false)"><button class="flip-btn" onclick="imgFlip('ASR_76')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\56_back.jpg" alt="sets\ASR-files\img\56_front.jpg" id="ASR_56" data-flag="@XD" onclick="openSidebar('ASR_56',false)"><button class="flip-btn" onclick="imgFlip('ASR_56')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\434.jpg" id="ASR_434" data-flag="@X" onclick="openSidebar('ASR_434',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\156_back.jpg" alt="sets\ASR-files\img\156_front.jpg" id="ASR_156" data-flag="@XD" onclick="openSidebar('ASR_156',false)"><button class="flip-btn" onclick="imgFlip('ASR_156')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\224.jpg" id="ASR_224" data-flag="@X" onclick="openSidebar('ASR_224',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\211.jpg" id="ASR_211" data-flag="@X" onclick="openSidebar('ASR_211',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\220.jpg" id="ASR_220" data-flag="@X" onclick="openSidebar('ASR_220',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\61_back.jpg" alt="sets\ASR-files\img\61_front.jpg" id="ASR_61" data-flag="@XD" onclick="openSidebar('ASR_61',false)"><button class="flip-btn" onclick="imgFlip('ASR_61')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\32_back.jpg" alt="sets\ASR-files\img\32_front.jpg" id="ASR_32" data-flag="@XD" onclick="openSidebar('ASR_32',false)"><button class="flip-btn" onclick="imgFlip('ASR_32')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\140_back.jpg" alt="sets\ASR-files\img\140_front.jpg" id="ASR_140" data-flag="@XD" onclick="openSidebar('ASR_140',false)"><button class="flip-btn" onclick="imgFlip('ASR_140')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\431.jpg" id="ASR_431" data-flag="@X" onclick="openSidebar('ASR_431',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\438.jpg" id="ASR_438" data-flag="@X" onclick="openSidebar('ASR_438',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\433.jpg" id="ASR_433" data-flag="@X" onclick="openSidebar('ASR_433',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\77_back.jpg" alt="sets\ASR-files\img\77_front.jpg" id="ASR_77" data-flag="@XD" onclick="openSidebar('ASR_77',false)"><button class="flip-btn" onclick="imgFlip('ASR_77')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\439.jpg" id="ASR_439" data-flag="@X" onclick="openSidebar('ASR_439',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\205.jpg" id="ASR_205" data-flag="@X" onclick="openSidebar('ASR_205',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\113_back.jpg" alt="sets\ASR-files\img\113_front.jpg" id="ASR_113" data-flag="@XD" onclick="openSidebar('ASR_113',false)"><button class="flip-btn" onclick="imgFlip('ASR_113')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\216.jpg" id="ASR_216" data-flag="@X" onclick="openSidebar('ASR_216',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\218.jpg" id="ASR_218" data-flag="@X" onclick="openSidebar('ASR_218',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\190.jpg" id="ASR_190" data-flag="@X" onclick="openSidebar('ASR_190',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\60_back.jpg" alt="sets\ASR-files\img\60_front.jpg" id="ASR_60" data-flag="@XD" onclick="openSidebar('ASR_60',false)"><button class="flip-btn" onclick="imgFlip('ASR_60')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\34_back.jpg" alt="sets\ASR-files\img\34_front.jpg" id="ASR_34" data-flag="@XD" onclick="openSidebar('ASR_34',false)"><button class="flip-btn" onclick="imgFlip('ASR_34')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\13_back.jpg" alt="sets\ASR-files\img\13_front.jpg" id="ASR_13" data-flag="@XD" onclick="openSidebar('ASR_13',false)"><button class="flip-btn" onclick="imgFlip('ASR_13')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\446.jpg" id="ASR_446" data-flag="@X" onclick="openSidebar('ASR_446',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\440.jpg" id="ASR_440" data-flag="@X" onclick="openSidebar('ASR_440',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\125_back.jpg" alt="sets\ASR-files\img\125_front.jpg" id="ASR_125" data-flag="@XD" onclick="openSidebar('ASR_125',false)"><button class="flip-btn" onclick="imgFlip('ASR_125')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\437.jpg" id="ASR_437" data-flag="@X" onclick="openSidebar('ASR_437',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\105_back.jpg" alt="sets\ASR-files\img\105_front.jpg" id="ASR_105" data-flag="@XD" onclick="openSidebar('ASR_105',false)"><button class="flip-btn" onclick="imgFlip('ASR_105')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\204.jpg" id="ASR_204" data-flag="@X" onclick="openSidebar('ASR_204',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\512.jpg" id="ASR_512" data-flag="@X" onclick="openSidebar('ASR_512',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\454.jpg" id="ASR_454" data-flag="@X" onclick="openSidebar('ASR_454',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\466.jpg" id="ASR_466" data-flag="@X" onclick="openSidebar('ASR_466',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\447.jpg" id="ASR_447" data-flag="@X" onclick="openSidebar('ASR_447',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\525.jpg" id="ASR_525" data-flag="@X" onclick="openSidebar('ASR_525',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\473.jpg" id="ASR_473" data-flag="@X" onclick="openSidebar('ASR_473',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\449_back.jpg" alt="sets\ASR-files\img\449_front.jpg" id="ASR_449" data-flag="@XD" onclick="openSidebar('ASR_449',false)"><button class="flip-btn" onclick="imgFlip('ASR_449')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\470.jpg" id="ASR_470" data-flag="@X" onclick="openSidebar('ASR_470',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\509.jpg" id="ASR_509" data-flag="@X" onclick="openSidebar('ASR_509',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\516.jpg" id="ASR_516" data-flag="@X" onclick="openSidebar('ASR_516',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\247.jpg" id="ASR_247" data-flag="@X" onclick="openSidebar('ASR_247',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\459.jpg" id="ASR_459" data-flag="@X" onclick="openSidebar('ASR_459',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\469.jpg" id="ASR_469" data-flag="@X" onclick="openSidebar('ASR_469',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\407.jpg" id="ASR_407" data-flag="@X" onclick="openSidebar('ASR_407',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\499.jpg" id="ASR_499" data-flag="@X" onclick="openSidebar('ASR_499',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\474.jpg" id="ASR_474" data-flag="@X" onclick="openSidebar('ASR_474',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\458.jpg" id="ASR_458" data-flag="@X" onclick="openSidebar('ASR_458',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\467.jpg" id="ASR_467" data-flag="@X" onclick="openSidebar('ASR_467',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\453.jpg" id="ASR_453" data-flag="@X" onclick="openSidebar('ASR_453',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\482_back.jpg" alt="sets\ASR-files\img\482_front.jpg" id="ASR_482" data-flag="@XD" onclick="openSidebar('ASR_482',false)"><button class="flip-btn" onclick="imgFlip('ASR_482')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\475.jpg" id="ASR_475" data-flag="@X" onclick="openSidebar('ASR_475',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\457.jpg" id="ASR_457" data-flag="@X" onclick="openSidebar('ASR_457',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\468.jpg" id="ASR_468" data-flag="@X" onclick="openSidebar('ASR_468',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\409.jpg" id="ASR_409" data-flag="@X" onclick="openSidebar('ASR_409',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\270.jpg" id="ASR_270" data-flag="@X" onclick="openSidebar('ASR_270',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\477.jpg" id="ASR_477" data-flag="@X" onclick="openSidebar('ASR_477',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\248.jpg" id="ASR_248" data-flag="@X" onclick="openSidebar('ASR_248',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\471.jpg" id="ASR_471" data-flag="@X" onclick="openSidebar('ASR_471',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\452.jpg" id="ASR_452" data-flag="@X" onclick="openSidebar('ASR_452',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\506.jpg" id="ASR_506" data-flag="@X" onclick="openSidebar('ASR_506',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\522.jpg" id="ASR_522" data-flag="@X" onclick="openSidebar('ASR_522',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\456.jpg" id="ASR_456" data-flag="@X" onclick="openSidebar('ASR_456',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\260.jpg" id="ASR_260" data-flag="@X" onclick="openSidebar('ASR_260',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\249.jpg" id="ASR_249" data-flag="@X" onclick="openSidebar('ASR_249',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\500.jpg" id="ASR_500" data-flag="@X" onclick="openSidebar('ASR_500',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\476.jpg" id="ASR_476" data-flag="@X" onclick="openSidebar('ASR_476',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\518.jpg" id="ASR_518" data-flag="@X" onclick="openSidebar('ASR_518',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\451_back.jpg" alt="sets\ASR-files\img\451_front.jpg" id="ASR_451" data-flag="@XD" onclick="openSidebar('ASR_451',false)"><button class="flip-btn" onclick="imgFlip('ASR_451')"></button></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\448_back.jpg" alt="sets\ASR-files\img\448_front.jpg" id="ASR_448" data-flag="@XD" onclick="openSidebar('ASR_448',false)"><button class="flip-btn" onclick="imgFlip('ASR_448')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\497.jpg" id="ASR_497" data-flag="@X" onclick="openSidebar('ASR_497',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\478.jpg" id="ASR_478" data-flag="@X" onclick="openSidebar('ASR_478',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\455.jpg" id="ASR_455" data-flag="@X" onclick="openSidebar('ASR_455',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\521.jpg" id="ASR_521" data-flag="@X" onclick="openSidebar('ASR_521',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\408.jpg" id="ASR_408" data-flag="@X" onclick="openSidebar('ASR_408',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\505.jpg" id="ASR_505" data-flag="@X" onclick="openSidebar('ASR_505',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\472_back.jpg" alt="sets\ASR-files\img\472_front.jpg" id="ASR_472" data-flag="@XD" onclick="openSidebar('ASR_472',false)"><button class="flip-btn" onclick="imgFlip('ASR_472')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\508.jpg" id="ASR_508" data-flag="@X" onclick="openSidebar('ASR_508',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\511.jpg" id="ASR_511" data-flag="@X" onclick="openSidebar('ASR_511',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\519.jpg" id="ASR_519" data-flag="@X" onclick="openSidebar('ASR_519',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\498.jpg" id="ASR_498" data-flag="@X" onclick="openSidebar('ASR_498',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\179.jpg" id="ASR_179" data-flag="@X" onclick="openSidebar('ASR_179',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\176.jpg" id="ASR_176" data-flag="@X" onclick="openSidebar('ASR_176',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\181.jpg" id="ASR_181" data-flag="@X" onclick="openSidebar('ASR_181',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\184.jpg" id="ASR_184" data-flag="@X" onclick="openSidebar('ASR_184',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\178.jpg" id="ASR_178" data-flag="@X" onclick="openSidebar('ASR_178',true)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\607.jpg" id="ASR_607" data-flag="@X" onclick="openSidebar('ASR_607',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\618.jpg" id="ASR_618" data-flag="@X" onclick="openSidebar('ASR_618',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\640.jpg" id="ASR_640" data-flag="@X" onclick="openSidebar('ASR_640',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\623.jpg" id="ASR_623" data-flag="@X" onclick="openSidebar('ASR_623',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\670.jpg" id="ASR_670" data-flag="@X" onclick="openSidebar('ASR_670',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\647.jpg" id="ASR_647" data-flag="@X" onclick="openSidebar('ASR_647',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\619.jpg" id="ASR_619" data-flag="@X" onclick="openSidebar('ASR_619',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\641.jpg" id="ASR_641" data-flag="@X" onclick="openSidebar('ASR_641',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\620.jpg" id="ASR_620" data-flag="@X" onclick="openSidebar('ASR_620',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\669.jpg" id="ASR_669" data-flag="@X" onclick="openSidebar('ASR_669',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\615.jpg" id="ASR_615" data-flag="@X" onclick="openSidebar('ASR_615',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\617.jpg" id="ASR_617" data-flag="@X" onclick="openSidebar('ASR_617',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\639.jpg" id="ASR_639" data-flag="@X" onclick="openSidebar('ASR_639',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\622.jpg" id="ASR_622" data-flag="@X" onclick="openSidebar('ASR_622',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\671.jpg" id="ASR_671" data-flag="@X" onclick="openSidebar('ASR_671',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\644.jpg" id="ASR_644" data-flag="@X" onclick="openSidebar('ASR_644',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\616.jpg" id="ASR_616" data-flag="@X" onclick="openSidebar('ASR_616',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\608.jpg" id="ASR_608" data-flag="@X" onclick="openSidebar('ASR_608',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\621.jpg" id="ASR_621" data-flag="@X" onclick="openSidebar('ASR_621',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\656.jpg" id="ASR_656" data-flag="@X" onclick="openSidebar('ASR_656',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\138.jpg" id="ASR_138" data-flag="@X" onclick="openSidebar('ASR_138',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\44.jpg" id="ASR_44" data-flag="@X" onclick="openSidebar('ASR_44',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\109.jpg" id="ASR_109" data-flag="@X" onclick="openSidebar('ASR_109',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\100.jpg" id="ASR_100" data-flag="@X" onclick="openSidebar('ASR_100',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\150.jpg" id="ASR_150" data-flag="@X" onclick="openSidebar('ASR_150',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\299.jpg" id="ASR_299" data-flag="@X" onclick="openSidebar('ASR_299',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\298.jpg" id="ASR_298" data-flag="@X" onclick="openSidebar('ASR_298',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\111.jpg" id="ASR_111" data-flag="@X" onclick="openSidebar('ASR_111',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\295.jpg" id="ASR_295" data-flag="@X" onclick="openSidebar('ASR_295',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\152.jpg" id="ASR_152" data-flag="@X" onclick="openSidebar('ASR_152',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\136.jpg" id="ASR_136" data-flag="@X" onclick="openSidebar('ASR_136',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\124.jpg" id="ASR_124" data-flag="@X" onclick="openSidebar('ASR_124',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\301.jpg" id="ASR_301" data-flag="@X" onclick="openSidebar('ASR_301',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\99.jpg" id="ASR_99" data-flag="@X" onclick="openSidebar('ASR_99',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\303.jpg" id="ASR_303" data-flag="@X" onclick="openSidebar('ASR_303',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\137.jpg" id="ASR_137" data-flag="@X" onclick="openSidebar('ASR_137',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\123.jpg" id="ASR_123" data-flag="@X" onclick="openSidebar('ASR_123',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\110.jpg" id="ASR_110" data-flag="@X" onclick="openSidebar('ASR_110',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\98.jpg" id="ASR_98" data-flag="@X" onclick="openSidebar('ASR_98',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\151.jpg" id="ASR_151" data-flag="@X" onclick="openSidebar('ASR_151',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\142_back.jpg" alt="sets\ASR-files\img\142_front.jpg" id="ASR_142" data-flag="@XD" onclick="openSidebar('ASR_142',false)"><button class="flip-btn" onclick="imgFlip('ASR_142')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\8.jpg" id="ASR_8" data-flag="@X" onclick="openSidebar('ASR_8',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\91.jpg" id="ASR_91" data-flag="@X" onclick="openSidebar('ASR_91',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\6.jpg" id="ASR_6" data-flag="@X" onclick="openSidebar('ASR_6',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\153_back.jpg" alt="sets\ASR-files\img\153_front.jpg" id="ASR_153" data-flag="@XD" onclick="openSidebar('ASR_153',false)"><button class="flip-btn" onclick="imgFlip('ASR_153')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\5.jpg" id="ASR_5" data-flag="@X" onclick="openSidebar('ASR_5',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\128_back.jpg" alt="sets\ASR-files\img\128_front.jpg" id="ASR_128" data-flag="@XD" onclick="openSidebar('ASR_128',false)"><button class="flip-btn" onclick="imgFlip('ASR_128')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\9.jpg" id="ASR_9" data-flag="@X" onclick="openSidebar('ASR_9',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\108_back.jpg" alt="sets\ASR-files\img\108_front.jpg" id="ASR_108" data-flag="@XD" onclick="openSidebar('ASR_108',false)"><button class="flip-btn" onclick="imgFlip('ASR_108')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\94.jpg" id="ASR_94" data-flag="@X" onclick="openSidebar('ASR_94',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\93.jpg" id="ASR_93" data-flag="@X" onclick="openSidebar('ASR_93',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\92.jpg" id="ASR_92" data-flag="@X" onclick="openSidebar('ASR_92',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\115_back.jpg" alt="sets\ASR-files\img\115_front.jpg" id="ASR_115" data-flag="@XD" onclick="openSidebar('ASR_115',false)"><button class="flip-btn" onclick="imgFlip('ASR_115')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\90.jpg" id="ASR_90" data-flag="@X" onclick="openSidebar('ASR_90',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\7.jpg" id="ASR_7" data-flag="@X" onclick="openSidebar('ASR_7',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\196.jpg" id="ASR_196" data-flag="@X" onclick="openSidebar('ASR_196',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\192.jpg" id="ASR_192" data-flag="@X" onclick="openSidebar('ASR_192',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\197.jpg" id="ASR_197" data-flag="@X" onclick="openSidebar('ASR_197',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\191.jpg" id="ASR_191" data-flag="@X" onclick="openSidebar('ASR_191',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\210.jpg" id="ASR_210" data-flag="@X" onclick="openSidebar('ASR_210',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\189.jpg" id="ASR_189" data-flag="@X" onclick="openSidebar('ASR_189',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\198.jpg" id="ASR_198" data-flag="@X" onclick="openSidebar('ASR_198',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\202.jpg" id="ASR_202" data-flag="@X" onclick="openSidebar('ASR_202',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\187.jpg" id="ASR_187" data-flag="@X" onclick="openSidebar('ASR_187',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\185.jpg" id="ASR_185" data-flag="@X" onclick="openSidebar('ASR_185',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\145.jpg" id="ASR_145" data-flag="@X" onclick="openSidebar('ASR_145',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\129.jpg" id="ASR_129" data-flag="@X" onclick="openSidebar('ASR_129',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\119.jpg" id="ASR_119" data-flag="@X" onclick="openSidebar('ASR_119',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\710.jpg" id="ASR_710" data-flag="@X" onclick="openSidebar('ASR_710',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\157.jpg" id="ASR_157" data-flag="@X" onclick="openSidebar('ASR_157',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\255.jpg" id="ASR_255" data-flag="@X" onclick="openSidebar('ASR_255',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\711.jpg" id="ASR_711" data-flag="@X" onclick="openSidebar('ASR_711',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\267.jpg" id="ASR_267" data-flag="@X" onclick="openSidebar('ASR_267',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\96.jpg" id="ASR_96" data-flag="@X" onclick="openSidebar('ASR_96',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\159.jpg" id="ASR_159" data-flag="@X" onclick="openSidebar('ASR_159',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\712.jpg" id="ASR_712" data-flag="@X" onclick="openSidebar('ASR_712',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\251.jpg" id="ASR_251" data-flag="@X" onclick="openSidebar('ASR_251',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\713.jpg" id="ASR_713" data-flag="@X" onclick="openSidebar('ASR_713',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\264.jpg" id="ASR_264" data-flag="@X" onclick="openSidebar('ASR_264',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\241.jpg" id="ASR_241" data-flag="@X" onclick="openSidebar('ASR_241',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\144.jpg" id="ASR_144" data-flag="@X" onclick="openSidebar('ASR_144',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\131.jpg" id="ASR_131" data-flag="@X" onclick="openSidebar('ASR_131',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\116.jpg" id="ASR_116" data-flag="@X" onclick="openSidebar('ASR_116',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\101.jpg" id="ASR_101" data-flag="@X" onclick="openSidebar('ASR_101',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\160.jpg" id="ASR_160" data-flag="@X" onclick="openSidebar('ASR_160',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\143.jpg" id="ASR_143" data-flag="@X" onclick="openSidebar('ASR_143',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\130.jpg" id="ASR_130" data-flag="@X" onclick="openSidebar('ASR_130',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\117.jpg" id="ASR_117" data-flag="@X" onclick="openSidebar('ASR_117',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\97.jpg" id="ASR_97" data-flag="@X" onclick="openSidebar('ASR_97',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\714.jpg" id="ASR_714" data-flag="@X" onclick="openSidebar('ASR_714',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\146.jpg" id="ASR_146" data-flag="@X" onclick="openSidebar('ASR_146',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\132.jpg" id="ASR_132" data-flag="@X" onclick="openSidebar('ASR_132',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\118.jpg" id="ASR_118" data-flag="@X" onclick="openSidebar('ASR_118',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\95.jpg" id="ASR_95" data-flag="@X" onclick="openSidebar('ASR_95',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\158.jpg" id="ASR_158" data-flag="@X" onclick="openSidebar('ASR_158',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\294.jpg" id="ASR_294" data-flag="@X" onclick="openSidebar('ASR_294',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\134.jpg" id="ASR_134" data-flag="@X" onclick="openSidebar('ASR_134',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\121.jpg" id="ASR_121" data-flag="@X" onclick="openSidebar('ASR_121',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\287.jpg" id="ASR_287" data-flag="@X" onclick="openSidebar('ASR_287',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\163.jpg" id="ASR_163" data-flag="@X" onclick="openSidebar('ASR_163',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\148.jpg" id="ASR_148" data-flag="@X" onclick="openSidebar('ASR_148',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\135.jpg" id="ASR_135" data-flag="@X" onclick="openSidebar('ASR_135',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\291.jpg" id="ASR_291" data-flag="@X" onclick="openSidebar('ASR_291',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\102.jpg" id="ASR_102" data-flag="@X" onclick="openSidebar('ASR_102',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\161.jpg" id="ASR_161" data-flag="@X" onclick="openSidebar('ASR_161',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\149.jpg" id="ASR_149" data-flag="@X" onclick="openSidebar('ASR_149',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\289.jpg" id="ASR_289" data-flag="@X" onclick="openSidebar('ASR_289',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\122.jpg" id="ASR_122" data-flag="@X" onclick="openSidebar('ASR_122',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\103.jpg" id="ASR_103" data-flag="@X" onclick="openSidebar('ASR_103',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\271.jpg" id="ASR_271" data-flag="@X" onclick="openSidebar('ASR_271',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\147.jpg" id="ASR_147" data-flag="@X" onclick="openSidebar('ASR_147',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\133.jpg" id="ASR_133" data-flag="@X" onclick="openSidebar('ASR_133',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\120.jpg" id="ASR_120" data-flag="@X" onclick="openSidebar('ASR_120',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\104.jpg" id="ASR_104" data-flag="@X" onclick="openSidebar('ASR_104',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\162.jpg" id="ASR_162" data-flag="@X" onclick="openSidebar('ASR_162',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\277.jpg" id="ASR_277" data-flag="@X" onclick="openSidebar('ASR_277',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\283.jpg" id="ASR_283" data-flag="@X" onclick="openSidebar('ASR_283',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\284.jpg" id="ASR_284" data-flag="@X" onclick="openSidebar('ASR_284',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\280.jpg" id="ASR_280" data-flag="@X" onclick="openSidebar('ASR_280',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\279.jpg" id="ASR_279" data-flag="@X" onclick="openSidebar('ASR_279',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\18.jpg" id="ASR_18" data-flag="@X" onclick="openSidebar('ASR_18',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\86.jpg" id="ASR_86" data-flag="@X" onclick="openSidebar('ASR_86',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\59.jpg" id="ASR_59" data-flag="@X" onclick="openSidebar('ASR_59',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\64.jpg" id="ASR_64" data-flag="@X" onclick="openSidebar('ASR_64',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\63.jpg" id="ASR_63" data-flag="@X" onclick="openSidebar('ASR_63',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\296.jpg" id="ASR_296" data-flag="@X" onclick="openSidebar('ASR_296',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\297.jpg" id="ASR_297" data-flag="@X" onclick="openSidebar('ASR_297',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\58.jpg" id="ASR_58" data-flag="@X" onclick="openSidebar('ASR_58',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\304.jpg" id="ASR_304" data-flag="@X" onclick="openSidebar('ASR_304',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\41.jpg" id="ASR_41" data-flag="@X" onclick="openSidebar('ASR_41',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\21.jpg" id="ASR_21" data-flag="@X" onclick="openSidebar('ASR_21',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\84.jpg" id="ASR_84" data-flag="@X" onclick="openSidebar('ASR_84',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\300.jpg" id="ASR_300" data-flag="@X" onclick="openSidebar('ASR_300',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\66.jpg" id="ASR_66" data-flag="@X" onclick="openSidebar('ASR_66',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\302.jpg" id="ASR_302" data-flag="@X" onclick="openSidebar('ASR_302',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\20.jpg" id="ASR_20" data-flag="@X" onclick="openSidebar('ASR_20',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\78.jpg" id="ASR_78" data-flag="@X" onclick="openSidebar('ASR_78',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\57.jpg" id="ASR_57" data-flag="@X" onclick="openSidebar('ASR_57',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\43.jpg" id="ASR_43" data-flag="@X" onclick="openSidebar('ASR_43',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\42.jpg" id="ASR_42" data-flag="@X" onclick="openSidebar('ASR_42',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\19.jpg" id="ASR_19" data-flag="@X" onclick="openSidebar('ASR_19',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\3.jpg" id="ASR_3" data-flag="@X" onclick="openSidebar('ASR_3',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\52_back.jpg" alt="sets\ASR-files\img\52_front.jpg" id="ASR_52" data-flag="@XD" onclick="openSidebar('ASR_52',false)"><button class="flip-btn" onclick="imgFlip('ASR_52')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\0.jpg" id="ASR_0" data-flag="@X" onclick="openSidebar('ASR_0',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\2.jpg" id="ASR_2" data-flag="@X" onclick="openSidebar('ASR_2',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\1.jpg" id="ASR_1" data-flag="@X" onclick="openSidebar('ASR_1',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\85_back.jpg" alt="sets\ASR-files\img\85_front.jpg" id="ASR_85" data-flag="@XD" onclick="openSidebar('ASR_85',false)"><button class="flip-btn" onclick="imgFlip('ASR_85')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\4.jpg" id="ASR_4" data-flag="@X" onclick="openSidebar('ASR_4',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\68_back.jpg" alt="sets\ASR-files\img\68_front.jpg" id="ASR_68" data-flag="@XD" onclick="openSidebar('ASR_68',false)"><button class="flip-btn" onclick="imgFlip('ASR_68')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\67.jpg" id="ASR_67" data-flag="@X" onclick="openSidebar('ASR_67',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\10_back.jpg" alt="sets\ASR-files\img\10_front.jpg" id="ASR_10" data-flag="@XD" onclick="openSidebar('ASR_10',false)"><button class="flip-btn" onclick="imgFlip('ASR_10')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\89.jpg" id="ASR_89" data-flag="@X" onclick="openSidebar('ASR_89',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\53.jpg" id="ASR_53" data-flag="@X" onclick="openSidebar('ASR_53',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\38.jpg" id="ASR_38" data-flag="@X" onclick="openSidebar('ASR_38',false)"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\35_back.jpg" alt="sets\ASR-files\img\35_front.jpg" id="ASR_35" data-flag="@XD" onclick="openSidebar('ASR_35',false)"><button class="flip-btn" onclick="imgFlip('ASR_35')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\200.jpg" id="ASR_200" data-flag="@X" onclick="openSidebar('ASR_200',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\186.jpg" id="ASR_186" data-flag="@X" onclick="openSidebar('ASR_186',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\188.jpg" id="ASR_188" data-flag="@X" onclick="openSidebar('ASR_188',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\209.jpg" id="ASR_209" data-flag="@X" onclick="openSidebar('ASR_209',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\208.jpg" id="ASR_208" data-flag="@X" onclick="openSidebar('ASR_208',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\193.jpg" id="ASR_193" data-flag="@X" onclick="openSidebar('ASR_193',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\203.jpg" id="ASR_203" data-flag="@X" onclick="openSidebar('ASR_203',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\195.jpg" id="ASR_195" data-flag="@X" onclick="openSidebar('ASR_195',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\199.jpg" id="ASR_199" data-flag="@X" onclick="openSidebar('ASR_199',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\194.jpg" id="ASR_194" data-flag="@X" onclick="openSidebar('ASR_194',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\253.jpg" id="ASR_253" data-flag="@X" onclick="openSidebar('ASR_253',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\629.jpg" id="ASR_629" data-flag="@X" onclick="openSidebar('ASR_629',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\50.jpg" id="ASR_50" data-flag="@X" onclick="openSidebar('ASR_50',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\70.jpg" id="ASR_70" data-flag="@X" onclick="openSidebar('ASR_70',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\630.jpg" id="ASR_630" data-flag="@X" onclick="openSidebar('ASR_630',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\16.jpg" id="ASR_16" data-flag="@X" onclick="openSidebar('ASR_16',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\88.jpg" id="ASR_88" data-flag="@X" onclick="openSidebar('ASR_88',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\49.jpg" id="ASR_49" data-flag="@X" onclick="openSidebar('ASR_49',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\69.jpg" id="ASR_69" data-flag="@X" onclick="openSidebar('ASR_69',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\258.jpg" id="ASR_258" data-flag="@X" onclick="openSidebar('ASR_258',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\628.jpg" id="ASR_628" data-flag="@X" onclick="openSidebar('ASR_628',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\263.jpg" id="ASR_263" data-flag="@X" onclick="openSidebar('ASR_263',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\632.jpg" id="ASR_632" data-flag="@X" onclick="openSidebar('ASR_632',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\71.jpg" id="ASR_71" data-flag="@X" onclick="openSidebar('ASR_71',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\39.jpg" id="ASR_39" data-flag="@X" onclick="openSidebar('ASR_39',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\17.jpg" id="ASR_17" data-flag="@X" onclick="openSidebar('ASR_17',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\80.jpg" id="ASR_80" data-flag="@X" onclick="openSidebar('ASR_80',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\257.jpg" id="ASR_257" data-flag="@X" onclick="openSidebar('ASR_257',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\238.jpg" id="ASR_238" data-flag="@X" onclick="openSidebar('ASR_238',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\36.jpg" id="ASR_36" data-flag="@X" onclick="openSidebar('ASR_36',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\24.jpg" id="ASR_24" data-flag="@X" onclick="openSidebar('ASR_24',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\87.jpg" id="ASR_87" data-flag="@X" onclick="openSidebar('ASR_87',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\51.jpg" id="ASR_51" data-flag="@X" onclick="openSidebar('ASR_51',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\72.jpg" id="ASR_72" data-flag="@X" onclick="openSidebar('ASR_72',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\40.jpg" id="ASR_40" data-flag="@X" onclick="openSidebar('ASR_40',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\15.jpg" id="ASR_15" data-flag="@X" onclick="openSidebar('ASR_15',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\81.jpg" id="ASR_81" data-flag="@X" onclick="openSidebar('ASR_81',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\48.jpg" id="ASR_48" data-flag="@X" onclick="openSidebar('ASR_48',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\631.jpg" id="ASR_631" data-flag="@X" onclick="openSidebar('ASR_631',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\37.jpg" id="ASR_37" data-flag="@X" onclick="openSidebar('ASR_37',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\22.jpg" id="ASR_22" data-flag="@X" onclick="openSidebar('ASR_22',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\290.jpg" id="ASR_290" data-flag="@X" onclick="openSidebar('ASR_290',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\293.jpg" id="ASR_293" data-flag="@X" onclick="openSidebar('ASR_293',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\65.jpg" id="ASR_65" data-flag="@X" onclick="openSidebar('ASR_65',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\29.jpg" id="ASR_29" data-flag="@X" onclick="openSidebar('ASR_29',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\288.jpg" id="ASR_288" data-flag="@X" onclick="openSidebar('ASR_288',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\79.jpg" id="ASR_79" data-flag="@X" onclick="openSidebar('ASR_79',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\45.jpg" id="ASR_45" data-flag="@X" onclick="openSidebar('ASR_45',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\74.jpg" id="ASR_74" data-flag="@X" onclick="openSidebar('ASR_74',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\292.jpg" id="ASR_292" data-flag="@X" onclick="openSidebar('ASR_292',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\23.jpg" id="ASR_23" data-flag="@X" onclick="openSidebar('ASR_23',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\83.jpg" id="ASR_83" data-flag="@X" onclick="openSidebar('ASR_83',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\46.jpg" id="ASR_46" data-flag="@X" onclick="openSidebar('ASR_46',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\73.jpg" id="ASR_73" data-flag="@X" onclick="openSidebar('ASR_73',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\31.jpg" id="ASR_31" data-flag="@X" onclick="openSidebar('ASR_31',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\25.jpg" id="ASR_25" data-flag="@X" onclick="openSidebar('ASR_25',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\82.jpg" id="ASR_82" data-flag="@X" onclick="openSidebar('ASR_82',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\47.jpg" id="ASR_47" data-flag="@X" onclick="openSidebar('ASR_47',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\268.jpg" id="ASR_268" data-flag="@X" onclick="openSidebar('ASR_268',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\30.jpg" id="ASR_30" data-flag="@X" onclick="openSidebar('ASR_30',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\274.jpg" id="ASR_274" data-flag="@X" onclick="openSidebar('ASR_274',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\282.jpg" id="ASR_282" data-flag="@X" onclick="openSidebar('ASR_282',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\285.jpg" id="ASR_285" data-flag="@X" onclick="openSidebar('ASR_285',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\286.jpg" id="ASR_286" data-flag="@X" onclick="openSidebar('ASR_286',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\281.jpg" id="ASR_281" data-flag="@X" onclick="openSidebar('ASR_281',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\28.jpg" id="ASR_28" data-flag="@X" onclick="openSidebar('ASR_28',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\11.jpg" id="ASR_11" data-flag="@X" onclick="openSidebar('ASR_11',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\26.jpg" id="ASR_26" data-flag="@X" onclick="openSidebar('ASR_26',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\27.jpg" id="ASR_27" data-flag="@X" onclick="openSidebar('ASR_27',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="ASR_e" data-flag="@E" onclick="openSidebar('ASR_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img loading="lazy" data-alt_src="sets\ASR-files\img\174_back.jpg" alt="sets\ASR-files\img\174_front.jpg" id="ASR_174" data-flag="@XD" onclick="openSidebar('ASR_174',false)"><button class="flip-btn" onclick="imgFlip('ASR_174')"></button></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\704.jpg" id="ASR_704" data-flag="@X" onclick="openSidebar('ASR_704',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\694.jpg" id="ASR_694" data-flag="@X" onclick="openSidebar('ASR_694',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\705.jpg" id="ASR_705" data-flag="@X" onclick="openSidebar('ASR_705',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\693.jpg" id="ASR_693" data-flag="@X" onclick="openSidebar('ASR_693',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\706.jpg" id="ASR_706" data-flag="@X" onclick="openSidebar('ASR_706',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\692.jpg" id="ASR_692" data-flag="@X" onclick="openSidebar('ASR_692',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\675.jpg" id="ASR_675" data-flag="@X" onclick="openSidebar('ASR_675',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\674.jpg" id="ASR_674" data-flag="@X" onclick="openSidebar('ASR_674',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\673.jpg" id="ASR_673" data-flag="@X" onclick="openSidebar('ASR_673',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\672.jpg" id="ASR_672" data-flag="@X" onclick="openSidebar('ASR_672',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\696.jpg" id="ASR_696" data-flag="@X" onclick="openSidebar('ASR_696',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\676.jpg" id="ASR_676" data-flag="@X" onclick="openSidebar('ASR_676',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\677.jpg" id="ASR_677" data-flag="@X" onclick="openSidebar('ASR_677',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\697.jpg" id="ASR_697" data-flag="@X" onclick="openSidebar('ASR_697',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\680.jpg" id="ASR_680" data-flag="@X" onclick="openSidebar('ASR_680',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\681.jpg" id="ASR_681" data-flag="@X" onclick="openSidebar('ASR_681',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\679.jpg" id="ASR_679" data-flag="@X" onclick="openSidebar('ASR_679',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\678.jpg" id="ASR_678" data-flag="@X" onclick="openSidebar('ASR_678',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\695.jpg" id="ASR_695" data-flag="@X" onclick="openSidebar('ASR_695',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\691.jpg" id="ASR_691" data-flag="@X" onclick="openSidebar('ASR_691',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\708.jpg" id="ASR_708" data-flag="@X" onclick="openSidebar('ASR_708',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\686.jpg" id="ASR_686" data-flag="@X" onclick="openSidebar('ASR_686',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\700.jpg" id="ASR_700" data-flag="@X" onclick="openSidebar('ASR_700',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\683.jpg" id="ASR_683" data-flag="@X" onclick="openSidebar('ASR_683',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\689.jpg" id="ASR_689" data-flag="@X" onclick="openSidebar('ASR_689',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\699.jpg" id="ASR_699" data-flag="@X" onclick="openSidebar('ASR_699',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\688.jpg" id="ASR_688" data-flag="@X" onclick="openSidebar('ASR_688',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\690.jpg" id="ASR_690" data-flag="@X" onclick="openSidebar('ASR_690',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\684.jpg" id="ASR_684" data-flag="@X" onclick="openSidebar('ASR_684',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\682.jpg" id="ASR_682" data-flag="@X" onclick="openSidebar('ASR_682',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\709.jpg" id="ASR_709" data-flag="@X" onclick="openSidebar('ASR_709',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\707.jpg" id="ASR_707" data-flag="@X" onclick="openSidebar('ASR_707',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\702.jpg" id="ASR_702" data-flag="@X" onclick="openSidebar('ASR_702',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\685.jpg" id="ASR_685" data-flag="@X" onclick="openSidebar('ASR_685',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\698.jpg" id="ASR_698" data-flag="@X" onclick="openSidebar('ASR_698',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\687.jpg" id="ASR_687" data-flag="@X" onclick="openSidebar('ASR_687',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\703.jpg" id="ASR_703" data-flag="@X" onclick="openSidebar('ASR_703',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\701.jpg" id="ASR_701" data-flag="@X" onclick="openSidebar('ASR_701',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="ASR_e" data-flag="@E" onclick="openSidebar('ASR_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\388.jpg" id="ASR_388" data-flag="@X" onclick="openSidebar('ASR_388',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\392.jpg" id="ASR_392" data-flag="@X" onclick="openSidebar('ASR_392',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\390.jpg" id="ASR_390" data-flag="@X" onclick="openSidebar('ASR_390',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\385.jpg" id="ASR_385" data-flag="@X" onclick="openSidebar('ASR_385',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\387.jpg" id="ASR_387" data-flag="@X" onclick="openSidebar('ASR_387',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\371.jpg" id="ASR_371" data-flag="@X" onclick="openSidebar('ASR_371',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\386.jpg" id="ASR_386" data-flag="@X" onclick="openSidebar('ASR_386',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\389.jpg" id="ASR_389" data-flag="@X" onclick="openSidebar('ASR_389',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\391.jpg" id="ASR_391" data-flag="@X" onclick="openSidebar('ASR_391',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\384.jpg" id="ASR_384" data-flag="@X" onclick="openSidebar('ASR_384',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\305.jpg" id="ASR_305" data-flag="@X" onclick="openSidebar('ASR_305',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\306.jpg" id="ASR_306" data-flag="@X" onclick="openSidebar('ASR_306',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\402.jpg" id="ASR_402" data-flag="@X" onclick="openSidebar('ASR_402',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\401.jpg" id="ASR_401" data-flag="@X" onclick="openSidebar('ASR_401',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\400.jpg" id="ASR_400" data-flag="@X" onclick="openSidebar('ASR_400',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\394.jpg" id="ASR_394" data-flag="@X" onclick="openSidebar('ASR_394',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\396.jpg" id="ASR_396" data-flag="@X" onclick="openSidebar('ASR_396',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\399.jpg" id="ASR_399" data-flag="@X" onclick="openSidebar('ASR_399',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\397.jpg" id="ASR_397" data-flag="@X" onclick="openSidebar('ASR_397',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\393.jpg" id="ASR_393" data-flag="@X" onclick="openSidebar('ASR_393',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\395.jpg" id="ASR_395" data-flag="@X" onclick="openSidebar('ASR_395',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\398.jpg" id="ASR_398" data-flag="@X" onclick="openSidebar('ASR_398',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\360.jpg" id="ASR_360" data-flag="@X" onclick="openSidebar('ASR_360',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\353.jpg" id="ASR_353" data-flag="@X" onclick="openSidebar('ASR_353',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\355.jpg" id="ASR_355" data-flag="@X" onclick="openSidebar('ASR_355',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\359.jpg" id="ASR_359" data-flag="@X" onclick="openSidebar('ASR_359',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\357.jpg" id="ASR_357" data-flag="@X" onclick="openSidebar('ASR_357',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\354.jpg" id="ASR_354" data-flag="@X" onclick="openSidebar('ASR_354',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\358.jpg" id="ASR_358" data-flag="@X" onclick="openSidebar('ASR_358',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\356.jpg" id="ASR_356" data-flag="@X" onclick="openSidebar('ASR_356',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\352.jpg" id="ASR_352" data-flag="@X" onclick="openSidebar('ASR_352',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\ASR-files\img\361.jpg" id="ASR_361" data-flag="@X" onclick="openSidebar('ASR_361',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="ASR_e" data-flag="@E" onclick="openSidebar('ASR_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="ASR_e" data-flag="@E" onclick="openSidebar('ASR_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="ASR_e" data-flag="@E" onclick="openSidebar('ASR_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="ASR_er" data-flag="@E" onclick="openSidebar('ASR_er',false)"></div>
+	</div>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch(rootPath + '/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch(rootPath + '/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1]);
+						}
+					}
+				});
+
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = rootPath + '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = rootPath + '/' + img.alt;
+				if (img.dataset.alt_src) {
+					img.dataset.alt_src = rootPath + '/' + img.dataset.alt_src;
+				}
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		const img = document.getElementById(num);
+		const seconds = 0.2;
+		const rotated_img = document.getElementById('sidebar_h_img');
+
+        img.style.transition = seconds.toString() + "s";
+        img.style.transform = "rotateY(90deg)";
+
+        if (num == 'sidebar_img')
+		{
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
+
+           		if (rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		                img.style.filter = "none";
+		            }, (seconds / 2) * 1000);
+		        }
+		        else {
+		        	setTimeout(() => {
+		                rotated_img.style.opacity = "1";
+		                img.style.filter = "blur(2px) brightness(0.7)";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
+		}
+
+         setTimeout(function() {
+            tmp = document.getElementById(num).src;
+			document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+			document.getElementById(num).dataset.alt_src = tmp;
+
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(0deg)";
+
+            if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+            }
+        }, seconds * 1000);
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.style.transition = "none";
+		rotated_img.style.transition = "none";
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.opacity = "1";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.opacity = "0";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		dropdown.style.gridTemplateColumns = "repeat(3, 1fr)";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		dropdown.style.gridTemplateColumns = "1fr";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL(rootPath + '/search', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url.pathname + url.search;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url.pathname + url.search;
+			}
+	</script>
+</body>
+</html>

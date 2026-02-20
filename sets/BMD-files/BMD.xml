@@ -1,0 +1,1384 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cockatrice_carddatabase version='4'>
+	<sets>
+		<set>
+			<name>BMD</name>
+			<longname>Baylee&apos;s Minotaur CMD</longname>
+			<settype>Custom</settype>
+			<releasedate>2026-02-20</releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>Bradius, Hell Carver</name>
+			<text>Eminence — Whenever you sacrifice a creature, if Bradius, Hell Carver is in the command zone or on the battlefield, you may exile it from your graveyard and put a skull counter on it.
+When Bradius enters the battlefield, you may sacrifice another creature. If you do, Bradius deals damage equal to that creatures power to each opponent.
+Skullkeeping — Minotaur you control have double strike as long as you own four or more cards in exile with skull counters on them.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/30_Bradius, Hell Carver.png" num="30">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>1RWB</manacost>
+				<cmc>4</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>3/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Gruvak, God of Horns</name>
+			<text>When you cast Gruvak, God of Horns, search your library for up to two Minotaur creature cards with different names, and put them onto the battlefield.
+Skullkeeping — Whenever one or more creatures you control attack a player, you may exile a card from your graveyard and put a skull counter on it. If you do, the defending player discards a card.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/40_Gruvak, God of Horns.png" num="40">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur God</type>
+				<maintype>Creature</maintype>
+				<manacost>4RWB</manacost>
+				<cmc>7</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>5/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Syseus, Dungeon Clearer</name>
+			<text>Haste
+Whenever Syseus attacks, you may sacrifice an artifact or another creature. If you do, put a +1/+1 counter on Syseus.
+Whenever you sacrifice a permanent, target creature you control gets +1/+0 until end of turn.
+Partner with Kaltagar, Dungeon Keeper (When this creature enters, target player may put Kaltagar into their hand from their library, then shuffle.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/54_Syseus, Dungeon Clearer.png" num="54">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>BR</manacost>
+				<cmc>2</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Kaltagar, Dungeon Keeper</name>
+			<text>First strike
+{2}, {T}, Discard a card: You may cast an artifact or creature card from your graveyard until end of turn.
+Whenever you cast a spell from anywhere other than your hand, Kaltagar deals 2 damage to any target.
+Partner with Syseus, Dungeon Clearer (When this creature enters, target player may put Syseus into their hand from their library, then shuffle.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/42_Kaltagar, Dungeon Keeper.png" num="42">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>1RW</manacost>
+				<cmc>3</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+				<pt>1/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Skullkeeper&apos;s Culling</name>
+			<text>Skullkeeping — Destroy each creature with power less than the number of cards you own in exile with skull counters on them.
+Madness {2}{B}{B} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/16_Skullkeeper&apos;s Culling.png" num="16">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>3BB</manacost>
+				<cmc>5</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Upon This Rock</name>
+			<text>Attacking creatures you control get +2/+0.
+{1}{R}, Discard a card: Create a 2/3 red Minotaur Warrior creature token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/27_Upon This Rock.png" num="27">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2R</manacost>
+				<cmc>3</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Astral Release</name>
+			<text>Exile target card from your graveyard and put a skull counter on it. Gain life equal to its mana value.
+Skullkeeping — If you own two or more cards in exile with skull counters on them, prevent all combat damage that would be dealt this turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/2_Astral Release.png" num="2">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Deathcaller Warlock</name>
+			<text>Minotaur spells you cast cost {2} less to cast.
+Discard a card: Creatures you control gain haste until end of turn.
+Madness {B}{R} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/34_Deathcaller Warlock.png" num="34">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>2BR</manacost>
+				<cmc>4</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Fury Captain</name>
+			<text>First strike
+When Fury Captain enters the battlefield, create two 2/3 red Minotaur Warrior creature tokens.
+Other Minotaur you control get +1/+1 and have first strike.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/38_Fury Captain.png" num="38">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>5RW</manacost>
+				<cmc>7</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>A Second Breath</name>
+			<text>Whenever you discard a creature or enchantment card, you may exile it. If you do, you may cast it. If you don&apos;t cast the exiled card, put a skull counter on it and each opponent loses 1 life.
+Cycling {W}{B} ({W}{B}, Discard this card: Draw a card.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/51_A Second Breath.png" num="51">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1WB</manacost>
+				<cmc>3</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Captured Minotaur</name>
+			<text>Trample
+Sacrifice Captured Minotaur: Add {R}{R}.
+Madness {R} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/20_Captured Minotaur.png" num="20">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur</type>
+				<maintype>Creature</maintype>
+				<manacost>1R</manacost>
+				<cmc>2</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>1/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Gorclan Reaper</name>
+			<text>Other Minotaur you control have deathtouch.
+Whenever one or more creature cards are put into a players graveyard from anywhere, draw a card. This ability only triggers once per turn per player.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/10_Gorclan Reaper.png" num="10">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>2BB</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>One Horned Trainee</name>
+			<text>Training (Whenever this creature attacks with another creature with greater power, put a +1/+1 counter on this creature.)
+When One Horned Trainee dies, exile target creature you don&apos;t control with lesser power than One Horned Trainee.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/5_One Horned Trainee.png" num="5">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>W</manacost>
+				<cmc>1</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>1/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Bloodsoaked Berserker</name>
+			<text>Menace
+When Bloodsoaked Berserker deals combat damage to a player, untap it and each other attacking creature. After this phase, there is an additional combat phase.
+Bloodsoaked Berserker can&apos;t attack players it dealt combat damage to this turn.
+Skullkeeping — As long as you own four or more cards in exile with skull counter it, attacking creatures you control have lifelink.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/28_Bloodsoaked Berserker.png" num="28">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>1RWB</manacost>
+				<cmc>4</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Bull Intervention</name>
+			<text>As an additional cost to cast this spell, you may sacrifice a creature.
+Exile target permanent. Its controller creates two Treasure tokens. If you sacrificed a creature to cast this spell, your opponents can&apos;t cast spells this turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/32_Bull Intervention.png" num="32">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1RW</manacost>
+				<cmc>3</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Horned Totem</name>
+			<text>Whenever you discard a card, you may exile it from your graveyard and put a skull counter on it.
+{1}, {T}, Discard a card: Draw a card.
+Skullkeeping — {3}{B}{R}, Sacrifice Horned Totem: Discard your hand and draw X cards, where X is the number of cards you own in exile with a skull counter on it.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/41_Horned Totem.png" num="41">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>BR</manacost>
+				<cmc>2</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Oathbound Cleaver</name>
+			<text>Mentor (Whenever this creature attacks, put a +1/+1 counter on target attacking creature with lesser power.)
+Whenever a nontoken creature you control with a counter on it dies, create a 2/3 red Minotaur Warrior creature token.
+Skullkeeping — Oathbound Cleaver can&apos;t be blocked by creatures with power less than the number of cards you own in exile with a skull counter on it. (Cares about how many cards you own in exile with skull counters on them.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/45_Oathbound Cleaver.png" num="45">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>WB</manacost>
+				<cmc>2</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Gore Shield</name>
+			<text>Pay 1 life, {T}: Add {R}, {W}, or {B}.
+Madness {1} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/59_Gore Shield.png" num="59">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>WBR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Bullrush Boulevard</name>
+			<text></text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/19_Bullrush Boulevard.png" num="19">BMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2RR</manacost>
+				<cmc>4</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Bovine Transformation</name>
+			<text></text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/8_Bovine Transformation.png" num="8">BMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3BB</manacost>
+				<cmc>5</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Tenacity of Thius</name>
+			<text></text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/6_Tenacity of Thius.png" num="6">BMD</set>
+			<prop>
+				<layout>saga</layout>
+				<side>front</side>
+				<type>Enchantment — Saga</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1WW</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Longhorn Override</name>
+			<text>Each player discards their hands and draws seven cards.
+Skullkeeping — If you own ten or more cards in exile with a skull counter on it, you may return target creature card discarded this way to the battlefield under you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/26_Longhorn Override.png" num="26">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>3R</manacost>
+				<cmc>4</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Abyssal Transition</name>
+			<text>Exile target attacking or blocking creature. Its controller creates a Treasure token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/1_Abyssal Transition.png" num="1">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>W</manacost>
+				<cmc>1</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Skullkeeper&apos;s Axe</name>
+			<text>Skullkeeping — Equipped creature gets +X/+0, where X is the number of cards you own in exile with a skull counter on it. (Cares about how many cards you own in exile with skull counters on them.)
+Equip Minotaur {1}
+Equip {4}</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/14_Skullkeeper&apos;s Axe.png" num="14">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact — Equipment</type>
+				<maintype>Artifact</maintype>
+				<manacost>1B</manacost>
+				<cmc>2</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Outerrealm Minotaur</name>
+			<text>Whenever you cast a spell from anywhere other than your hand, create a 2/3 red Minotaur Warrior creature token.
+Madness {2}{R}{W} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/47_Outerrealm Minotaur.png" num="47">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Shaman</type>
+				<maintype>Creature</maintype>
+				<manacost>5RW</manacost>
+				<cmc>7</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+				<pt>3/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Stormhoof Charger</name>
+			<text>At the beginning combat on your turn, target creature you control gets +2/+0 and gains haste until end of turn.
+Madness {1}{B}{R} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/52_Stormhoof Charger.png" num="52">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>3BR</manacost>
+				<cmc>5</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Festival of Gruvak</name>
+			<text>As an additional cost to cast this spell, discard your hand.
+Put each permanent card you own in exile with a skull counter on it onto the battlefield under your control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/37_Festival of Gruvak.png" num="37">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>RRRWWBB</manacost>
+				<cmc>7</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Brutal Shaman</name>
+			<text>Trample
+Whenever Brutal Shaman deals combat damage to a player, that player discards a card.
+Skullkeeping — As long as you own five or more cards in exile with a skull counter on it, whenever an opponent discards a card, create a 2/3 red Minotaur Warrior creature token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/31_Brutal Shaman.png" num="31">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Shaman</type>
+				<maintype>Creature</maintype>
+				<manacost>4BR</manacost>
+				<cmc>6</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Clear the Floor</name>
+			<text>As an additional cost to cast this spell, sacrifice a creature you control.
+Clear the Floor deals damage to each creature and each player equal to the sacrificed creatures power.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/33_Clear the Floor.png" num="33">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2BR</manacost>
+				<cmc>4</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Goring Charm</name>
+			<text>Creatures can&apos;t attack you unless their controller pays {2}.
+Skullkeeping — As long as you own seven or more cards in exile with a skull counter on it, creatures you don&apos;t control must attack each combat if able.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/39_Goring Charm.png" num="39">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3RW</manacost>
+				<cmc>5</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Thundering Captain</name>
+			<text>Whenever Thundering Captain attacks, create a tapped and attacking 2/3 red Minotaur Warrior creature token.
+Skullkeeping — {3}{R}{W}, Exile Thundering Captain from your graveyard: Create two 2/3 red Minotaur Warrior creature tokens. Activate this ability if you own two or more cards in exile with a skull counter on it.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/55_Thundering Captain.png" num="55">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1RW</manacost>
+				<cmc>3</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Neck Snap</name>
+			<text>Destroy target creature. Its controller loses 2 life.
+Madness {1}{B} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/13_Neck Snap.png" num="13">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>3B</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Bring on the Bulls</name>
+			<text>Create two 2/3 red Minotaur Warrior creature tokens.
+Madness {3}{R} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/18_Bring on the Bulls.png" num="18">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>4R</manacost>
+				<cmc>5</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Unruly Removement</name>
+			<text>Exile target artifact or enchantment. Scry 2.
+Madness {W} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/7_Unruly Removement.png" num="7">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2W</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Onslaught Sculpture</name>
+			<text>{T}: Add one mana of color in your commander&apos;s color identity.
+Madness {1} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/61_Onslaught Sculpture.png" num="61">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Guardian Tithe</name>
+			<text>At the beginning of your upkeep, you lose 2 life and create a Treasure token.
+{3}{B}, Discard a card: Each opponent discards a card. Activate this only as a sorcery.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/11_Guardian Tithe.png" num="11">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2B</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Bullrush Sculpture</name>
+			<text>{1}, {T}: Add {B}{R}.
+Madness {0} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/58_Bullrush Sculpture.png" num="58">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Bold-Bronze Sculpture</name>
+			<text>{1}, {T}: Add {R}{W}.
+Madness {0} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/57_Bold-Bronze Sculpture.png" num="57">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Marbled Sculpture</name>
+			<text>{1}, {T}: Add {W}{B}.
+Madness {0} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/60_Marbled Sculpture.png" num="60">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact</type>
+				<maintype>Artifact</maintype>
+				<manacost>2</manacost>
+				<cmc>2</cmc>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Plundering Hooves</name>
+			<text>Whenever a creature you control deals combat damage to a player, if that player controls more lands than you, create a tapped Treasure token.
+Cycling {R}{W} ({R}{W}, Discard this card: Draw a card.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/50_Plundering Hooves.png" num="50">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>RW</manacost>
+				<cmc>2</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Labyrinth Keeper</name>
+			<text>Menace
+Whenever a creature card leaves your graveyard, create a Treasure token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/12_Labyrinth Keeper.png" num="12">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>4B</manacost>
+				<cmc>5</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Minotaur Bludgeoner</name>
+			<text>Equipped creature gets +2/+0.
+{1}, {T}: Minotaur Bludgeoner deals 2 damage to target creature. If that creature would die this turn, draw a card and create a tapped Treasure token.
+Equip {2}</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/44_Minotaur Bludgeoner.png" num="44">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact — Equipment</type>
+				<maintype>Artifact</maintype>
+				<manacost>RW</manacost>
+				<cmc>2</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Pincushion</name>
+			<text>Destroy target artifact or creature.
+Cycling {2} ({2}, Discard this card: Draw a card.)</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/49_Pincushion.png" num="49">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>1BR</manacost>
+				<cmc>3</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Cleave Through</name>
+			<text>Target creature you control gets +3/+3 and gains trample until end of turn. Whenever that creature deals combat damage a player this turn, exile that many cards from the top of your library. You may play those cards until the end of your next turn. Put a skull counter on each card exiled this way.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/21_Cleave Through.png" num="21">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2R</manacost>
+				<cmc>3</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Grave Breaker Minotaur</name>
+			<text>Skullkeeping — {R}, {T}, Discard a card: Exile target creature card from your graveyard. Put a skull counter on it. Until end of turn, you may cast creature cards you own in exile with skull counters on them.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/24_Grave Breaker Minotaur.png" num="24">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>3R</manacost>
+				<cmc>4</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>2/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Unchained Pummeler</name>
+			<text>When Unchained Pummeler attacks, creatures you control get +1/+0 and gain trample until end of turn.
+Cycling {2} ({2}, Discard this card: Draw a card.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/17_Unchained Pummeler.png" num="17">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>1B</manacost>
+				<cmc>2</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Suncleaver Minotaur</name>
+			<text>When Suncleaver Minotaur enters the battlefield, each opponent sacrifices a nontoken creature or enchantment.
+Skullkeeping — Whenever Suncleaver Minotaur attacks, exile a creature card from your graveyard and put a skull counter on it. Then if you own five or more cards in exile with skull counters on them, each opponent sacrifices a nontoken creature or enchantment.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/53_Suncleaver Minotaur.png" num="53">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>4BR</manacost>
+				<cmc>6</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>3/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Doom-Horn Reaver</name>
+			<text>Skullkeeping — When Doom-Horn Reaver enters the battlefield, each opponent loses life for each card you own in exile with a skull counter on it.
+Cycling {3}{W}{B}
+Whenever you cycle Doom-Horn Reaver, each opponent loses 3 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/35_Doom-Horn Reaver.png" num="35">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Minotaur</type>
+				<maintype>Creature</maintype>
+				<manacost>6WB</manacost>
+				<cmc>8</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>7/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Grand Slam</name>
+			<text>Target creature you control gets +X/+0 and gains trample until end of turn. You may have that creature fight another target creature. If that creature would be dealt excess damage, create that many tapped Treasure tokens. (Each deals damage equal to its power to the other.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/23_Grand Slam.png" num="23">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>XR</manacost>
+				<cmc>1</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Warhorn Bellow</name>
+			<text>Search your library for a Minotaur card, reveal it and put it into your hand, then shuffle.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/56_Warhorn Bellow.png" num="56">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>RW</manacost>
+				<cmc>2</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Skullkeeper&apos;s Channeling</name>
+			<text>Minotaur you control get +1/+1.
+Once during each of your turns, you may cast cards you own in exile with skull counters on them.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/15_Skullkeeper&apos;s Channeling.png" num="15">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3BB</manacost>
+				<cmc>5</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Bradius Calls the Slaughter</name>
+			<text>Each player sacrifices each non-commander creature they control. Gain 1 life for each creature put into a graveyard this way.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/29_Bradius Calls the Slaughter.png" num="29">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2RWB</manacost>
+				<cmc>5</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Felmunt, Igneous Inciter</name>
+			<text>Skullkeeping — As long as you own five or more cards in exile with skull counters on them, creatures your opponents control with lesser power than Felmunt are goaded.
+Whenever one or more creatures attack one of your opponents, that creatures controller exiles the top card of their library. They may play the exiled card until end of turn. Put a skull counter on each card you exile this way.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/36_Felmunt, Igneous Inciter.png" num="36">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur Wizard Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>2RW</manacost>
+				<cmc>4</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Lil Horn, Brawny Babe</name>
+			<text>When Lil Horn enters the battlefield, return it to your hand unless you discard a card.
+Cycling {R} ({R}, Discard this card: Draw a card.)
+Whenever you cycle Lil Horn, it deals 3 damage to any target.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/25_Lil Horn, Brawny Babe.png" num="25">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur</type>
+				<maintype>Creature</maintype>
+				<manacost>R</manacost>
+				<cmc>1</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Oli, Taurus Farmhand</name>
+			<text>At the beginning of your end step, you may discard a card.
+Whenever you discard a card, if it was a land card, create a tapped Treasure token. If it was a creature card, each opponent loses 2 life. If it was a noncreature nonland card, draw a card. This ability only triggers twice each turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/46_Oli, Taurus Farmhand.png" num="46">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur Peasant</type>
+				<maintype>Creature</maintype>
+				<manacost>WB</manacost>
+				<cmc>2</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Kultir, Terror of Ivenfel</name>
+			<text>Trample
+Other creatures you control with trample get +2/+2.
+{1}{B}{R}: Destroy target blocking creature. If a creature was destroyed this way, draw a card.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/43_Kultir, Terror of Ivenfel.png" num="43">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>4BR</manacost>
+				<cmc>6</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>6/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Grim Shadow</name>
+			<text>Put target creature card you own in exile with a skull counter on it onto the battlefield.
+Cycling {3} ({3}, Discard this card: Draw a card.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/4_Grim Shadow.png" num="4">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2WW</manacost>
+				<cmc>4</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Zarineb, Red Maze</name>
+			<text>{T}: Add {R}, {W}, or {B}.
+{R}{W}{B}, {T}: Reselect which player or planeswalker target attacking creature is attacking. Activate only during the declare attackers step.
+Cycling {2} ({2}, Discard this card: Draw a card.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/100_Zarineb, Red Maze.png" num="100">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WBR</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Desert Teeth</name>
+			<text>Desert Teeth enters the battlefield tapped.
+{T}: Add {R} or {W}.
+Cycling {2} ({2}, Discard this card: Draw a card.)</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/67_Desert Teeth.png" num="67">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Estin, Sunken Captial</name>
+			<text>{T}: Add {W}.
+{3}{W}: Exile target creature you control. Return that creature to the battlefield at the beginning of your next upkeep. Activate this ability only as a sorcery and only once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/68_Estin, Sunken Captial.png" num="68">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Chasm Bridge</name>
+			<text>Chasm Bridge enters the battlefield tapped.
+{T}: Add {W} or {B}.
+Cycling {2} ({2}, Discard this card: Draw a card.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/64_Chasm Bridge.png" num="64">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Ramert, City of Blood</name>
+			<text>{T}: Add {R}
+{2}{R}: Target creature you control gets +2/+0. Activate only once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/89_Ramert, City of Blood.png" num="89">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Graceful Valley</name>
+			<text>Whenever you tap Graceful Valley, each opponent gains 1 life.
+{T}: Add one mana of any color.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/70_Graceful Valley.png" num="70">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Delvak, The Hollow Gate</name>
+			<text>{T}: Add {B}.
+{1}{B}: Exile target card from a graveyard. If you own that card, put a skull counter on it. Activate this only once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/66_Delvak, The Hollow Gate.png" num="66">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Sunsoaked Fort</name>
+			<text>Sunsoaked Fort enters the battlefield tapped unless you own a card in exile with a skull counter on it.
+{T}: Add {R} or {W}.
+{1}{R}{W}, {T}, Discard a card: Draw a card.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/90_Sunsoaked Fort.png" num="90">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Abstract Labyrinth</name>
+			<text>Abstract Labyrinth enters the battlefield tapped unless you own a card in exile with a skull counter on it.
+{T}: Add {B} or {R}.
+{3}{B}{R}, {T}: Target creature gains menace until end of turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/62_Abstract Labyrinth.png" num="62">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Tarnished Keep</name>
+			<text>Tarnished Keep enters the battlefield tapped.
+{T}: Add {B} or {R}
+Cycling {2} ({2}, Discard this card: Draw a card.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/98_Tarnished Keep.png" num="98">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Fellheight Hold</name>
+			<text>Fellheight Hold enters the battlefield tapped unless you own a card in exile with a skull counter on it.
+{T}: Add {W} or {B}.
+{2}{W}{B}, {T}, Pay 2 life: Put a -1/-1 counter onto target creature.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/69_Fellheight Hold.png" num="69">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Command Tower</name>
+			<text>{T}: Add one mana of any color in your commander&apos;s color identity.</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/65_Command Tower.png" num="65">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Vibrant Pasture</name>
+			<text>{T}: Add {C}.
+{T}: Add one mana of any color a permanent you control could produce.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/99_Vibrant Pasture.png" num="99">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Prison Mines</name>
+			<text>{T}, Sacrifice a creature: Creature two Treasure tokens.
+{2}, {T}: Create a 1/1 black Prisoner creature token with &quot;This creature can&apos;t attack or block.&quot;</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/88_Prison Mines.png" num="88">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Grazing Field</name>
+			<text>Grazing Field enters the battlefield tapped.
+{T}: Add {C}{C}.
+{1}, {T}: Create a Food token.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/71_Grazing Field.png" num="71">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Swamp</name>
+			<text>({T}: Add {B}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/96_Swamp.png" num="96">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Swamp</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Mountain</name>
+			<text>({T}: Add {R}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/78_Mountain.png" num="78">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Mountain</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Plains</name>
+			<text>({T}: Add {W}.)</text>
+			<set rarity="common" picurl="https://SJLee14.github.io/sets/BMD-files/img/84_Plains.png" num="84">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Basic Land — Plains</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Ashtop, Frozen Labryinth</name>
+			<text>{T}: Add one mana of any color.
+Skullkeeping — {2}, {T}: Add X mana of any one color to your mana pool, where X is the number of cards you own in exile with skull counters on them.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/BMD-files/img/63_Ashtop, Frozen Labryinth.png" num="63">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Land</type>
+				<maintype>Land</maintype>
+				<manacost></manacost>
+				<cmc>0</cmc>
+			</prop>
+			<tablerow>0</tablerow>
+		</card>
+		<card>
+			<name>Overcharged Gorger</name>
+			<text>Trample
+Madness {4}{R}{W}{B} (If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.)
+When Overcharged Gorger enters the battlefield, if its madness cost was paid, creatures you control get +2/+2 and gain trample and haste until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/48_Overcharged Gorger.png" num="48">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>2RWB</manacost>
+				<cmc>5</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Chasm Raid Captain</name>
+			<text>Other Minotaur you control get +1/+1.
+Lieutenant — At the beginning of each of your combat steps, if you control your commander, create a 2/3 red Minotaur Warrior creature token. That token gains haste until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/BMD-files/img/9_Chasm Raid Captain.png" num="9">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Berserker Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>4BB</manacost>
+				<cmc>6</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>4/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Goldenhide Minotaur</name>
+			<text>Lifelink
+Prevent all noncombat damage that would be dealt to commander creatures you control.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/3_Goldenhide Minotaur.png" num="3">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>2W</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Gatecrasher Minotaur</name>
+			<text>Haste
+Lieutenant — As long as you control your commander, creatures you control have haste.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/BMD-files/img/22_Gatecrasher Minotaur.png" num="22">BMD</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Minotaur Berserker</type>
+				<maintype>Creature</maintype>
+				<manacost>1R</manacost>
+				<cmc>2</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+	</cards>
+</cockatrice_carddatabase>

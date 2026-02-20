@@ -1,0 +1,1004 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cockatrice_carddatabase version='4'>
+	<sets>
+		<set>
+			<name>JLC</name>
+			<longname>Jaelicia Commander</longname>
+			<settype>Custom</settype>
+			<releasedate>2026-02-20</releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>Rylex, Shaper Savant</name>
+			<text>When Rylex, Shaper Savant enters the battlefield, exile the top five cards of your library face down with a tether counter.
+You may look at and play cards in exile with tether counters on it if they were exiled by an ability you controlled.
+Sacrifice a nonland permanent: Add one mana of any color.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/0.jpg" num="50">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>2WUB</manacost>
+				<cmc>5</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Pallin, Soul Gatekeeper</name>
+			<text>Whenever a nontoken noncreature artifact you control is put into your graveyard, exile it. If you do, create a token that&apos;s a copy of that artifact except it&apos;s a creature Skeleton in addition to its other types and it has &quot;This creatures power and toughness is equal to the exiled cards mana value.&quot; and &quot;When this creature leaves the battlefield, return the exiled card to your graveyard.&quot;</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/1.jpg" num="48">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>UBR</manacost>
+				<cmc>3</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Thorne, Fiery Genesis</name>
+			<text>Haste, trample
+Whenever Thorne, Fiery Genesis attacks, put a token onto the battlefield tapped and attacking that&apos;s a copy of another target attacking creature, except it isn&apos;t legendary.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/2.jpg" num="52">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>2RGW</manacost>
+				<cmc>5</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>3/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Avaril, Renowned Tactician</name>
+			<text>Reach
+Whenever you cast a artifact or enchantment spell, draw a card.
+Whenever you attack, gain 1 life for each artifact and enchantment you control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/3.jpg" num="32">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Ranger</type>
+				<maintype>Creature</maintype>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Emilia, Game Breaker</name>
+			<text>Trample
+Whenever a creature enters the battlefield under your control from a graveyard, it gets +2/+0 and gains haste until end of turn.
+Whenever you attack, you may cast a creature card from your graveyard until end of turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/4.jpg" num="38">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>BRG</manacost>
+				<cmc>3</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Briana, Dune Temptress</name>
+			<text>Whenever a token enters the battlefield under you control, Briana, Dune Temptress deals 1 damage to any target.
+At the beginning of each player&apos;s end step, if a opponent was dealt 3 or more damage this turn, you and that player each draws a card.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/5.jpg" num="33">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Shaman</type>
+				<maintype>Creature</maintype>
+				<manacost>RGW</manacost>
+				<cmc>3</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>1/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Colth, Awakened Blade</name>
+			<text>First strike
+Whenever Colth, Awakened Blade attacks, exile up to one target creature. Return that creature to the battlefield under its owners control tapped.
+Whenever one or more cards are put into exile from anywhere, put a +1/+1 counter on Colth, the Awakened Blade.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/6.jpg" num="35">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>WUB</manacost>
+				<cmc>3</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Inxalor, Piercer of Souls</name>
+			<text>Haste, conquest (As this permanent enters the battlefield, gain control of up to one target artifact or creature until end of turn, untap it, it gains haste until end of turn.)
+Inxalor gets +1/+1 for each artifact you control and each artifact card in your graveyard.
+Whenever Inxalor attacks, gain control of target artifact defending player controls. Untap it.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/7.jpg" num="39">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>2UBR</manacost>
+				<cmc>5</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Ulfra, The Avalanche</name>
+			<text>Trample, vigilance
+Whenever you cast an artifact or enchantment spell, put a +1/+1 counter on Ulfra, The Avalanche.
+Whenever Ulfra attacks, put a +1/+1 counter on each other nonland permanent you control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/8.jpg" num="53">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>2GWU</manacost>
+				<cmc>5</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Lu, Demon Knight</name>
+			<text>As a additional cost to cast Lu, Demon Knight, you may sacrifice a nonland permanent.
+When Lu, Demon Knight enters the battlefield, if you sacrificed a permanent this turn, put target creature card from a graveyard onto the battlefield under your control. That creature gains haste until end of turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/9.jpg" num="46">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>2BRG</manacost>
+				<cmc>5</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Chama, Knowledge Reservoir</name>
+			<text>Vigilance
+When Chama, Knowledge Reservoir enters the battlefield, put X +1/+1 counters on target nonland permanent you control, draw half X cards rounded up, and gain twice X life.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/10.jpg" num="34">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Hydra</type>
+				<maintype>Creature</maintype>
+				<manacost>XGWUU</manacost>
+				<cmc>4</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Ocras, Essence Devourer</name>
+			<text>Menace, hexproof
+When Ocras, Essence Devourer enters the battlefield, exile up to X target creature cards from graveyards.
+When Ocras leaves the battlefield, put each card exiled with Ocras onto the battlefield under your control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/11.jpg" num="47">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Nightmare Hydra</type>
+				<maintype>Creature</maintype>
+				<manacost>XBRGG</manacost>
+				<cmc>4</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>5/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Poltis, Lich of Judgement</name>
+			<text>Players don&apos;t lose the game for having 0 or less life.
+Pay X Life: Put target creature card from a graveyard or in exile onto the battlefield under your control, where its mana value is equal to X. Activate only once each turn and only as a sorcery.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/12.jpg" num="49">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Skeleton Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>3WUBB</manacost>
+				<cmc>7</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>4/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Kagiko, Dragon&apos;s Breath</name>
+			<text>Whenever Kagiko, Dragon Mage enters the battlefield or attacks, it deals damage equal to the number of artifacts you control to target creature you don&apos;t control.
+Whenever a creature you don&apos;t control is dealt excess damage, draw a card and create a treasure token.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/13.jpg" num="41">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>1UBBRRR</manacost>
+				<cmc>7</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Arnold, The Unrighteous</name>
+			<text>Whenever Arnold, the Unrighteous enters the battlefield, you become the monarch.
+Modified creatures you control can&apos;t be blocked as long as another player is the monarch.
+At the beginning of your end step, if you are the monarch, create a token copy of target aura or equipment you control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/14.jpg" num="31">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Noble</type>
+				<maintype>Creature</maintype>
+				<manacost>1RGGWWW</manacost>
+				<cmc>7</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>4/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Legiaria, Radiant Hydra</name>
+			<text>Trample
+Whenever a token enters the battlefield under your control, put a +1/+1 counter on Legiaria, Radiant Hydra.
+{R}{G}{W}{W}: Create a token copy of target token you control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/15.jpg" num="45">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Hydra</type>
+				<maintype>Creature</maintype>
+				<manacost>RGWW</manacost>
+				<cmc>4</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Kuvirra, Vexing Song</name>
+			<text>Flying
+Whenever a player casts a spell, create a 1/1 blue Bird creature token with flying.
+At the beginning of your end step, each player draws X cards and loses X life where X is the number of creatures you control with flying.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/16.jpg" num="44">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Angel Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>1UBRR</manacost>
+				<cmc>5</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Elise, Invoker of Truth</name>
+			<text>Flying, vigilance
+When Elise, Invoker of Truth attacks or blocks, you may exile target instant or sorcery card from a graveyard. Copy that card, and you may cast the copy until the end of your next turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/17.jpg" num="37">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Angel Warrior Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>1WUB</manacost>
+				<cmc>4</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>4/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Keit, Brimstone Rider</name>
+			<text>Flying, haste
+{1}{R}: Keit, Brimstone Rider gets +1/+0 until end of turn.
+Whenever Keit attacks, you may search your library for a creature card with mana value less than Keit&apos;s power. Reveal that card and put it into your graveyard, then shuffle.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/18.jpg" num="42">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>1BRG</manacost>
+				<cmc>4</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Zilassth, Soul Shifter</name>
+			<text>Artifacts and enchantments you control have hexproof.
+At the beginning of combat on your turn, you may exile target creature card from a graveyard. Any number of artifacts and/or enchantments become copies of that card until end of turn.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/19.jpg" num="55">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Viashino Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>1GWWUUU</manacost>
+				<cmc>7</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>3/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Siab, Essence Cleric</name>
+			<text>Artifacts and enchantments you control have &quot;{T}: Gain 1 life.&quot;
+At the beginning of your end step, if you gained 7 or more life this turn, create a copy of target artifact or enchantment you control.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/20.jpg" num="51">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>1GWU</manacost>
+				<cmc>4</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>1/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Khar, The Conqueror</name>
+			<text>Flying, conquest (As this permanent enters the battlefield, gain control of up to one target artifact or creature until end of turn, untap it, it gains haste until end of turn.)
+At the beginning of your upkeep, for each opponent, gain control of a creature that player controls until end of turn. Untap those creatures and they gain haste until end of turn.
+Whenever a creature you control but don&apos;t own deals combat damage to a player conquer that player. (Exile the top card of that players library. You may play that card for as long as it remains exiled, and spend mana as though it was any color.)</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/21.jpg" num="43">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Manticore</type>
+				<maintype>Creature</maintype>
+				<manacost>1BRRGGG</manacost>
+				<cmc>7</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>6/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Ixillith, The Eclipse</name>
+			<text>When Ixillith, The Eclipse enters the battlefield, each player exiles their hands and graveyards. Turn all face-down cards in exile face up.
+Players can only play face up cards they own in exile.
+Whenever Ixillith, The Eclipse attacks, each player puts a card they own in exile into their owners hand.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/22.jpg" num="40">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Spirit Avatar</type>
+				<maintype>Creature</maintype>
+				<manacost>1WUUBBB</manacost>
+				<cmc>7</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>8/8</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Vrocax, Essence Lich</name>
+			<text>Sacrifice another artifact: Vrocax, Essence Lich gains indestructible until end of turn.
+Whenever an artifact is put into your graveyard, target opponent loses 2 life.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/23.jpg" num="54">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Skeleton Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>1UBR</manacost>
+				<cmc>4</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Domi, Vengeful Pal</name>
+			<text>Vigilance
+Whenever a token you control is put into a graveyard, Domi, Vengeful Pal deals damage equal to its power to target opponent.</text>
+			<set rarity="mythic" picurl="https://SJLee14.github.io/sets/JLC-files/img/24.jpg" num="36">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Snake Dog</type>
+				<maintype>Creature</maintype>
+				<manacost>1RGW</manacost>
+				<cmc>4</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Herald of Essence</name>
+			<text>Flying; prowess
+Noncreature spells you cast cost {2} less to cast.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/25.jpg" num="23">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Angel Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>2UUR</manacost>
+				<cmc>5</cmc>
+				<colors>UR</colors>
+				<coloridentity>UR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Magnificent Flame</name>
+			<text>Magnificent Flame deals 10 damage to each creature. Put target creature card from a graveyard on the battlefield under your control. It gains &quot;When this creature dies, each opponent loses 5 life.&quot; Exile Magnificent Flame.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/26.jpg" num="15">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>5BRR</manacost>
+				<cmc>8</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Infuse with Essence</name>
+			<text>Artifacts and enchantments you control become 3/3 Elemental creatures in addition to their types. Untap all creatures you control, they gain haste, flying and trample until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/27.jpg" num="30">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>2GGU</manacost>
+				<cmc>5</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Skybreaker&apos;s Gear</name>
+			<text>Flash
+Whenever a creature you control attacks, you may attach Skybreaker&apos;s Gear to that creature.
+Equipped creature gets +3/+0 and has first strike, flying, trample, and haste
+Equip {5}</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/28.jpg" num="28">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact — Equipment</type>
+				<maintype>Artifact</maintype>
+				<manacost>1RRW</manacost>
+				<cmc>4</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Essence Hunter</name>
+			<text>Reach, deathtouch
+Whenever a noncreature permanent an opponent controls is put into a graveyard, draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/29.jpg" num="25">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Human Ranger</type>
+				<maintype>Creature</maintype>
+				<manacost>1BBG</manacost>
+				<cmc>4</cmc>
+				<colors>BG</colors>
+				<coloridentity>BG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Dauntless Recruiter</name>
+			<text>First strike
+{1}{G}{W}: Put a +1/+1 counter onto target creature you control.
+Sacrifice Dauntless Recruiter: Permanents you control gain indestructible until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/30.jpg" num="19">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Human Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>GGW</manacost>
+				<cmc>3</cmc>
+				<colors>WG</colors>
+				<coloridentity>WG</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Death Harbinger</name>
+			<text>Flying, vigilance
+Whenever Death Harbinger attacks or blocks, you may exile a card from your graveyard. If you do, destroy target creature an opponent controls with mana value less than the number of cards you own in exile.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/31.jpg" num="21">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Angel Cleric</type>
+				<maintype>Creature</maintype>
+				<manacost>3WBB</manacost>
+				<cmc>6</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Angelic Ascension</name>
+			<text>Whenever a card you own is put into exile from your graveyard or library, create a 4/4 white and blue angel with flying and prowess. This only triggers once each turn.
+If you would draw a card except the first one you draw on each of your draw steps, you may exile the top card of your library instead. You may play that card until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/32.jpg" num="11">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>3WWU</manacost>
+				<cmc>6</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Villianous Consult</name>
+			<text>At the beginning of each players upkeep, they exile the top card of their library. They may play that card this turn.
+Whenever a opponent casts a spell from exile they lose 3 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/33.jpg" num="14">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Human Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>UBB</manacost>
+				<cmc>3</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+				<pt>2/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Inescapaple Hunt</name>
+			<text>Choose one —
+• Put X +1/+1 counters onto target creature. You may have it fight another target creature.
+• Destroy up to X target artifacts and/or enchantments.
+• Inescapable Hunt deals 3 damage to up to X target creatures.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/34.jpg" num="18">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>XRGG</manacost>
+				<cmc>3</cmc>
+				<colors>RG</colors>
+				<coloridentity>RG</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Mind Canvas</name>
+			<text>Exile the top three cards of each players library. Until the end of your next turn, you may play face-up cards in exile and spells you cast from exile cost {2} less to cast.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/35.jpg" num="13">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Sorcery</type>
+				<maintype>Sorcery</maintype>
+				<manacost>3UUB</manacost>
+				<cmc>6</cmc>
+				<colors>UB</colors>
+				<coloridentity>UB</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Imminent Devastation</name>
+			<text>Whenever a land enters the battlefield under your control, put a Devastation counter on Imminent Devastation. Then if Imminent Devastation has five or more Devastation counters on it, create a 3/3 red and green Dragon creature token with flying and devour 2. (As this enters, you may sacrifice any number of creatures. That creature enters with twice that many +1/+1 counters on it.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/36.jpg" num="17">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1RRG</manacost>
+				<cmc>4</cmc>
+				<colors>RG</colors>
+				<coloridentity>RG</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Thunderous Skyrazer</name>
+			<text>First strike
+{B}{R}: Thunderous Skyrazer deals 1 damage to each creature with flying.
+Whenever a creature with flying dies, Thunderous Skyrazer deals 3 damage to target opponent at random. This ability triggers only once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/37.jpg" num="16">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Demon Warlock Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>3BBR</manacost>
+				<cmc>6</cmc>
+				<colors>BR</colors>
+				<coloridentity>BR</coloridentity>
+				<pt>5/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Hexing Branch-Brawler</name>
+			<text>Trample
+When Hexing Branch-Brawler leaves the battlefield, for each opponent, target permanent that player controls loses all abilities and types and becomes a forest land.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/38.jpg" num="26">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Treefolk Warlock Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>3BGG</manacost>
+				<cmc>6</cmc>
+				<colors>BG</colors>
+				<coloridentity>BG</coloridentity>
+				<pt>6/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Rescue Detachment</name>
+			<text>At the beginning of your end step, you may put target face-up creature card you own in exile into your hand.
+Whenever a creature you control dies, you may exile it.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/39.jpg" num="22">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>2WWB</manacost>
+				<cmc>5</cmc>
+				<colors>WB</colors>
+				<coloridentity>WB</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Contested Skies</name>
+			<text>Creatures with flying have haste.
+Whenever a creature with flying attacks, if it&apos;s attacking one of your opponents, it deals 1 damage to any target.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/40.jpg" num="27">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Enchantment</type>
+				<maintype>Enchantment</maintype>
+				<manacost>1RWW</manacost>
+				<cmc>4</cmc>
+				<colors>WR</colors>
+				<coloridentity>WR</coloridentity>
+			</prop>
+			<tablerow>1</tablerow>
+		</card>
+		<card>
+			<name>Prowler Animator</name>
+			<text>At the beginning of combat on your turn, you may tap target artifact you control. If you do, create two 2/2 blue and red Cat Spirit creature tokens with haste.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/41.jpg" num="24">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact Creature — Construct Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>URR</manacost>
+				<cmc>3</cmc>
+				<colors>UR</colors>
+				<coloridentity>UR</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Brilliant Diviner</name>
+			<text>Flash
+You may cast artifact and enchantment spells as though they had flash.
+Sacrifice Brilliant Diviner: Counter target spell or ability that targets a noncreature permanent you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/42.jpg" num="12">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact Creature — Construct Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>WUU</manacost>
+				<cmc>3</cmc>
+				<colors>WU</colors>
+				<coloridentity>WU</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Essence Wingshaper</name>
+			<text>Flying
+Whenever you cast a noncreature spell, create a 1/1 blue Bird creature token with flying.
+Tap three creatures you control with flying: Tap or untap target artifact.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/43.jpg" num="29">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Elf Druid</type>
+				<maintype>Creature</maintype>
+				<manacost>1GUU</manacost>
+				<cmc>4</cmc>
+				<colors>UG</colors>
+				<coloridentity>UG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Herald of Bounty</name>
+			<text>Flying, shroud
+When Herald of Bounty enters the battlefield, double the number of counters on any number of target permanents you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/44.jpg" num="20">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Angel Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>5GWW</manacost>
+				<cmc>8</cmc>
+				<colors>WG</colors>
+				<coloridentity>WG</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Rally Storm</name>
+			<text>When you cast this spell, copy it for each time you&apos;ve cast your commander from the command zone this game.
+Creatures you control get +2/+2 and protection from a color of your choice. This effect does not remove auras or equipment you control from creatures you control. (It can&apos;t be blocked, targeted, dealt damage, enchanted, or equipped by anything of that color.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/45.jpg" num="2">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>1WW</manacost>
+				<cmc>3</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Spiteful Storm</name>
+			<text>When you cast this spell, copy it for each time you&apos;ve cast your commander from the command zone this game.
+Create a 6/6 red Dragon creature token with flying, haste, and &quot;{R}: This creature gets +1/+0 until end of turn.&quot;</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/46.jpg" num="8">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>4RR</manacost>
+				<cmc>6</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Soul Storm</name>
+			<text>When you cast this spell, copy it for each time you&apos;ve cast your commander from the command zone this game. You may choose new targets for those copies.
+Put target creature card from a graveyard onto the battlefield under your control. That creature is an artifact Skeleton in addition to its other types. lose 2 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/47.jpg" num="6">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2BB</manacost>
+				<cmc>4</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Dilligent Storm</name>
+			<text>When you cast this spell, copy it for each time you&apos;ve cast your commander from the command zone this game.
+Scry 3, draw two cards, then exile a card from your hand. You may play that card until the end of your next turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/48.jpg" num="3">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>3UU</manacost>
+				<cmc>5</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Enduring Storm</name>
+			<text>When you cast this spell, copy it for each time you&apos;ve cast your commander from the command zone this game.
+Put a +1/+1 on each creature you control and gain 4 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/JLC-files/img/49.jpg" num="9">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Instant</type>
+				<maintype>Instant</maintype>
+				<manacost>2GG</manacost>
+				<cmc>4</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+			</prop>
+			<tablerow>3</tablerow>
+		</card>
+		<card>
+			<name>Loyal Cartographer</name>
+			<text>Vigilance
+Lieutenant — At the beginning of your end step, if you control your commander, search your library for a basic Plains card and put it onto the battlefield tapped if an opponent controls more lands than you. If you searched your library this way, then shuffle.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/JLC-files/img/50.jpg" num="1">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Human Ranger Scout</type>
+				<maintype>Creature</maintype>
+				<manacost>1W</manacost>
+				<cmc>2</cmc>
+				<colors>W</colors>
+				<coloridentity>W</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Loyal Colony</name>
+			<text>Flying
+Lieutenant — At the beginning of combat on your turn, if you control your commander, create a token copy of Loyal Colony.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/JLC-files/img/51.jpg" num="5">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Bat</type>
+				<maintype>Creature</maintype>
+				<manacost>2B</manacost>
+				<cmc>3</cmc>
+				<colors>B</colors>
+				<coloridentity>B</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Loyal Hydra</name>
+			<text>Trample
+Loyal Hydra enters the battlefield with X +1/+1 counters on it.
+Lieutenant — As long as you control your commander, if damage would be dealt to Loyal Hydra, put that many +1/+1 counters on it instead.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/JLC-files/img/52.jpg" num="10">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Creature — Hydra</type>
+				<maintype>Creature</maintype>
+				<manacost>X1G</manacost>
+				<cmc>2</cmc>
+				<colors>G</colors>
+				<coloridentity>G</coloridentity>
+				<pt>1/0</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Loyal Tormentor</name>
+			<text>Haste
+Lieutenant — {T}: Loyal Tormentor Deals 3 damage to any player. Activate this ability only if you control your commander.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/JLC-files/img/53.jpg" num="7">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact Creature — Construct Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>3R</manacost>
+				<cmc>4</cmc>
+				<colors>R</colors>
+				<coloridentity>R</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Loyal Historian</name>
+			<text>Lieutenant — At the beginning of combat on your turn, if you control your commander, you may return target artifact card from your graveyard to your hand.</text>
+			<set rarity="uncommon" picurl="https://SJLee14.github.io/sets/JLC-files/img/54.jpg" num="4">JLC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Artifact Creature — Construct Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>2U</manacost>
+				<cmc>3</cmc>
+				<colors>U</colors>
+				<coloridentity>U</coloridentity>
+				<pt>1/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+	</cards>
+</cockatrice_carddatabase>

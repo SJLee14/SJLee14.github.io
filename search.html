@@ -1,14 +1,18 @@
 ﻿<html>
 <head>
 	<title>Search</title>
-	<link rel="icon" type="image/x-icon" href="/img/search.png">
-	<link rel="stylesheet" href="resources/mana.css">
-	<link rel="stylesheet" href="/resources/header.css">
+	<link rel="icon" type="image/x-icon" href="./img/search.png">
+	<link rel="stylesheet" href="./resources/mana.css">
+	<link rel="stylesheet" href="./resources/header.css">
+	<link rel="stylesheet" href="./resources/card-text.css">
 </head>
+<script title="root">
+	const rootPath = ".";
+</script>
 <style>
 	@font-face {
 		font-family: Beleren;
-		src: url('/resources/beleren.ttf');
+		src: url('./resources/beleren.ttf');
 	}
 	body {
 		font-family: 'Helvetica', 'Arial', sans-serif;
@@ -57,7 +61,7 @@
 		box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
 		outline: 0;
 	}
-	button:disabled {
+	button:disabled, select:disabled {
 		cursor: auto;
 		background-color: #f7fafa;
 		font-style: italic;
@@ -137,30 +141,6 @@
 		min-height: 75%;
 		margin-top: 3%;
 	}
-	.card-text div {
-		white-space: normal;
-		font-size: 15px;
-		padding-bottom: 10px;
-		padding-left: 12px;
-		padding-right: 12px;
-		line-height: 155%;
-	}
-	.card-text .name-cost {
-		font-weight: bold;
-		font-size: 20px;
-		white-space: pre-wrap;
-	}
-	.card-text .type {
-		font-size: 16px;
-	}
-	.card-text .pt {
-		font-weight: bold;
-	}
-	.card-text br {
-		content: "";
-		display: block;
-		margin-bottom: 5px;
-	}
 	.img-container {
 		position: relative;
 		width: 100%;
@@ -171,7 +151,7 @@
 		height: auto;
 	}
 	.img-container .btn {
-		background: url('img/flip.png') no-repeat;
+		background: url('./img/flip.png') no-repeat;
 		background-size: contain;
 		background-position: center;
 		width: 15%;
@@ -187,7 +167,7 @@
 		opacity: 0.5;
 	}
 	.img-container .btn:hover {
-		background: url('img/flip-hover.png') no-repeat;
+		background: url('./img/flip-hover.png') no-repeat;
 		background-size: contain;
 		background-position: center;
 	}
@@ -199,20 +179,60 @@
 		font-size: .97vw;
 		color: rgba(0, 0, 0, 0);
 	}
+	.no-results {
+		display: none;
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		width: 100%;
+	}
+	.no-results img {
+		width: 150px;
+		margin-bottom: 20px;
+		opacity: 0.3;
+		filter: drop-shadow(0 0 4px #000);
+	}
+	.no-results h1 {
+		font-family: Beleren;
+		color: #494949;
+		margin: 0;
+		font-size: 40px;
+	}
+	.no-results p {
+		color: #797979;
+		font-size: 18px;
+		margin-top: 10px;
+	}
 </style>
 <body>
 	<div class="header">
 		<div class="search-grid">
-			<a href="/"><img class="sg-logo" src="/img/banner.png"></a>
-			<img class="sg-icon" src="/img/search.png">
-			<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
-			<a href="/all-sets"><img src="/img/sets.png" class="sg-icon">Sets</a>
-			<a href="/deckbuilder"><img src="/img/deck.png" class="sg-icon">Deckbuilder</a>
-			<a onclick="randomCard()"><img src="/img/random.png" class="sg-icon">Random</a>
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deck" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
 		</div>
 	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-deck").src = rootPath + "/img/deck.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+		});
+
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
 	<div class="button-grid">
-		<div class="select-text"><div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display" id="display"><option value="cards-only">Cards Only</option><option value="cards-text">Cards + Text</option></select>sorted by<select name="sort-by" id="sort-by"><option value="name">Name</option><option value="set-code">Set / Number</option><option value="mv">Mana Value</option><option value="color">Color</option><option value="rarity">Rarity</option></select> : <select name="sort-order" id="sort-order"><option value="ascending">Asc</option><option value="descending">Desc</option></select></div>		
+		<div class="select-text"><div class="results-text" id="results-text">Loading ...</div>Cards displayed as<select name="display" id="display"><option value="cards-only">Cards Only</option><option value="cards-text">Cards + Text</option></select>sorted by<select name="sort-by" id="sort-by"><option value="name">Name</option><option value="set-code">Set / Number</option><option value="mv">Mana Value</option><option value="color">Color</option><option value="rarity">Rarity</option><option value="cube">Cube</option></select> : <select name="sort-order" id="sort-order"><option value="ascending">Asc</option><option value="descending">Desc</option></select></div>		
 		<div class="prev-next-btns">
 			<button type="submit" onclick="previousPage()" id="prevBtn" disabled>< Previous</button>
 			<button type="submit" onclick="nextPage()" id="nextBtn">Next 30 ></button>
@@ -223,6 +243,12 @@
 	</div>
 
 	<div class="image-grid-container" id="imagesOnlyGrid">
+	</div>
+
+	<div id="no-results" class="no-results">
+		<img src="./img/deck.png">
+		<h1>No cards found</h1>
+		<p>Your search didn't match any cards. Try adjusting your search terms.</p>
 	</div>
 
 	<div class="button-grid" id="footer">
@@ -242,13 +268,13 @@
 		let sets_json = {};
 
 		document.addEventListener("DOMContentLoaded", async function () {
-			await fetch('/lists/all-cards.json')
+			await fetch(rootPath + '/lists/all-cards.json')
 					.then(response => response.json())
 					.then(json => {
 						card_list = json;
 				}).catch(error => console.error('Error:', error));
 
-				await fetch('/resources/replacechars.txt')
+				await fetch(rootPath + '/resources/replacechars.txt')
 					.then(response => response.text())
 					.then(text => {
 						specialchars = text; 
@@ -256,8 +282,100 @@
 
 				card_list_arrayified = card_list.cards;
 
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1]);
+						}
+					}
+				});
 
-			await fetch('/lists/all-sets.json')
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
+
+
+			await fetch(rootPath + '/lists/all-sets.json')
 					.then(response => response.json())
 					.then(data => {
 						sets_json = data; 
@@ -276,11 +394,11 @@
 
 			card_list_arrayified.sort(compareFunction);
 
-			page = window.location.href.indexOf("page=") == -1 ? 0 : parseInt(window.location.href.substring(window.location.href.indexOf("page=") + 5)) - 1;
-
 			// refresh page values
-			let params = decodeURIComponent(window.location.href.indexOf("?search") == -1 ? "" : window.location.href.substring(window.location.href.indexOf("?search") + 8));
-			document.getElementById("search").value = (params.indexOf("&page=") == -1 ? params.replaceAll("+", " ") : params.substring(0, params.indexOf("&page=")).replaceAll("+", " "));
+			const params = new URLSearchParams(window.location.search);
+			page = params.get("page") ? params.get("page") : 0;
+			document.getElementById("search").value = params.get("search") ? decodeURIComponent(params.get("search")) : "";
+
 			if (sessionStorage.getItem("sortMethod"))
 			{
 				document.getElementById("sort-by").value = sessionStorage.getItem("sortMethod");				
@@ -326,6 +444,17 @@
 
 		function compareFunction(a, b) {
 			const sortMode = document.getElementById("sort-by").value;
+			color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
+
+			if (a.rarity.includes("masterpiece") && !b.rarity.includes("masterpiece"))
+			{
+				return 1;
+			}
+
+			if (!a.rarity.includes("masterpiece") && b.rarity.includes("masterpiece"))
+			{
+				return -1;
+			}
 
 			if (a.shape.includes("token") && !b.shape.includes("token"))
 			{
@@ -385,7 +514,6 @@
 			}
 			if (sortMode == 'color')
 			{
-				color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
 				a_color_index = -1;
 				b_color_index = -1;
 
@@ -435,7 +563,6 @@
 
 				if (a_rarity_index === b_rarity_index)
 				{
-					color_sort_order = ["W", "U", "B", "R", "G", "WU", "UB", "BR", "RG", "GW", "WB", "UR", "BG", "RW", "GU", "WUB", "UBR", "BRG", "RGW", "GWU", "RWB", "GUR", "WBG", "URW", "BGU", "WUBR", "UBRG", "BRGW", "RGWU", "GWUB", "WUBRG", ""];
 					a_color_index = -1;
 					b_color_index = -1;
 
@@ -469,9 +596,114 @@
 					return (a_rarity_index < b_rarity_index) ? -1 : 1;
 				}
 			}
+			if (sortMode == 'cube')
+			{
+				type_sort_order = [ 'Creature', 'Planeswalker', 'Instant', 'Sorcery', 'Artifact', 'Enchantment', 'Battle' ];
+				// color, type, MV
+				a_color_index = -1;
+				b_color_index = -1;
+
+				for (let i = 0; i < color_sort_order.length; i++)
+				{
+					if (a.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
+					{
+						a_color_index = i;
+					}
+					if (b.color.toLowerCase().split('').sort().join('') == color_sort_order[i].toLowerCase().split('').sort().join(''))
+					{
+						b_color_index = i;
+					}
+				}
+
+				if (a_color_index === b_color_index)
+				{
+					a_type_index = -1;
+					b_type_index = -1;
+
+					for (let i = type_sort_order.length - 1; i >= 0; i--)
+					{
+						if (a.type.includes(type_sort_order[i]))
+						{
+							a_type_index = i;
+						}
+						if (b.type.includes(type_sort_order[i]))
+						{
+							b_type_index = i;
+						}
+					}
+
+					if (a_type_index === b_type_index)
+					{
+						a_mv = isDecimal(a.cost.charAt(1)) ? parseInt(a.cost.substring(1, a.cost.indexOf('}'))) + a.cost.replaceAll('x','').split('{').length - 2 : a.cost.replaceAll('x','').split('{').length - 1;
+						b_mv = isDecimal(b.cost.charAt(1)) ? parseInt(b.cost.substring(1, b.cost.indexOf('}'))) + b.cost.replaceAll('x','').split('{').length - 2 : b.cost.replaceAll('x','').split('{').length - 1;
+						if (a_mv === b_mv)
+						{
+							if (a.card_name === b.card_name)
+							{
+								return 0;
+							}
+							else {
+								return (a.card_name < b.card_name) ? -1 : 1;
+							}
+						}
+						else {
+							return (a_mv < b_mv) ? -1 : 1;
+						}
+					}
+					else {
+						return (a_type_index < b_type_index) ? -1 : 1;
+					}
+				}
+				else {
+					return (a_color_index < b_color_index) ? -1 : 1;
+				}
+			}
 		}
 
 		function preSearch(setNewState) {
+			const searchTerms = document.getElementById("search").value.toLowerCase();
+			const tokens = tokenizeTerms(searchTerms) || [];
+			const sortBySelect = document.getElementById("sort-by");
+			const sortOrderSelect = document.getElementById("sort-order");
+
+			sortBySelect.disabled = false;
+			sortOrderSelect.disabled = false;
+
+			tokens.forEach(token => {
+				if (token.startsWith("sort:")) {
+					const val = token.substring(5);
+					const map = {
+						"name": "name",
+						"set": "set-code",
+						"mv": "mv",
+						"color": "color",
+						"rarity": "rarity",
+						"cube": "cube"
+					};
+					if (map[val]) {
+						const option = Array.from(sortBySelect.options).find(opt => opt.value === map[val]);
+						if (option) {
+							sortBySelect.value = map[val];
+							sortBySelect.disabled = true;
+						}
+					}
+				}
+				if (token.startsWith("direction:")) {
+					const val = token.substring(10);
+					const map = {
+						"asc": "ascending",
+						"desc": "descending"
+					};
+					if (map[val]) {
+						const option = Array.from(sortOrderSelect.options).find(opt => opt.value === map[val]);
+						if (option) {
+							sortOrderSelect.value = map[val];
+							sortOrderSelect.disabled = true;
+						}
+					}
+				}
+			});
+
 			card_list_arrayified.sort(compareFunction);
 			if (document.getElementById("sort-order").value == "descending")
 			{
@@ -518,12 +750,17 @@
 			cardGrid.innerHTML = "";
 
 			for (const card of card_list_arrayified) {
-				if (card.shape.includes("token") && !searchTerms.includes("*t:token") && !searchTerms.includes("t:token"))
+				if (card.shape.includes("token") && !searchTerms.includes("+t:token") && !searchTerms.includes("t:token"))
 				{
 					continue;
 				}
 
-				if (card.type.includes("Basic") && !searchTerms.includes("*t:basic") && !searchTerms.includes("t:basic"))
+				if (card.type.includes("Basic") && !searchTerms.includes("+t:basic") && !searchTerms.includes("t:basic"))
+				{
+					continue;
+				}
+
+				if (card.rarity.includes("masterpiece") && !searchTerms.includes("+r:masterpiece") && !searchTerms.includes("+r:mp") && !searchTerms.includes("t:basic"))
 				{
 					continue;
 				}
@@ -543,6 +780,14 @@
 			else
 			{
 				document.getElementById("results-text").innerText = "";
+			}
+
+			if (search_results.length == 0) {
+				document.getElementById("no-results").style.display = "block";
+				document.getElementById("footer").style.display = "none";
+			} else {
+				document.getElementById("no-results").style.display = "none";
+				document.getElementById("footer").style.display = "grid";
 			}
 
 			if (page != 0)
@@ -569,7 +814,7 @@
 
 					let url = (window.location.href.indexOf("page=") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("page="))));
 				let params = new URLSearchParams(url.search);
-				params.append("page", page+1);
+				params.append("page", page + 1);
 				history.replaceState({}, '', url.pathname + '?' + params.toString());
 				}
 
@@ -594,7 +839,7 @@
 		{
 			for (const li of list)
 			{
-				if (li.card_name == card.card_name && li.type == card.type)
+				if (li.card_name == card.card_name && li.type == card.type && li.rules_text == card.rules_text)
 				{
 					return true;
 				}
@@ -605,51 +850,28 @@
 
 		function tokenizeTerms(searchTerms)
 		{
-			let searchTokens = [];
-			let key = 0;
-			let inParens = false;
-			let inQuotes = false;
-			for (let i = 0; i < searchTerms.length; i++)
-			{
-				if (searchTerms.charAt(i) == '(')
-				{
-					inParens = true;
-				}
-				if (searchTerms.charAt(i) == ')')
-				{
-					inParens = false;
-				}
-				if (!inParens && !inQuotes && (searchTerms.charAt(i) == '"' || searchTerms.charAt(i) == '“' || searchTerms.charAt(i) == '/'))
-				{
-					inQuotes = true;
-				}
-				else if (!inParens && inQuotes && (searchTerms.charAt(i) == '"' || searchTerms.charAt(i) == '”' || searchTerms.charAt(i) == '/'))
-				{
-					inQuotes = false;
-				}
-				if (searchTerms.charAt(i) == ' ' && !inParens && !inQuotes)
-				{
-					searchTokens.push(searchTerms.substring(key, i));
-					key = i + 1;
-				}
-				if (i == searchTerms.length - 1)
-				{
-					searchTokens.push(searchTerms.substring(key));
-				}
-			}
+			let tokenRegex = /-?\w*[!:<>=]?(([^ "\(\)\/“”]+)|(\".+?\")|(\(.+?\))|(\/.+?\/)|(\“.+?\”))/g;
+			let searchTokens = searchTerms.match(tokenRegex);
 
 			return searchTokens;
 		}
 
 		function searchAllTokens(card, tokens)
 		{
-			if (tokens.length < 1)
+			if (tokens == null || tokens == '')
 			{
 				return true;
 			}
+
+			tokens = tokens.filter(t => !t.startsWith("sort:") && !t.startsWith("direction:"));
+			if (tokens.length == 0)
+			{
+				return true;
+			}
+
 			for (let i = 0; i < tokens.length; i++)
 			{
-				if (tokens[i].charAt(0) == '*')
+				if (tokens[i].charAt(0) == '+')
 				{
 					return searchAllTokens(card, tokens.slice(0, i)) && searchAllTokens(card, tokens.slice(i + 1));
 				}
@@ -691,6 +913,31 @@
 			return ret_str;
 		}
 
+		function convertToMV(cost)
+		{
+			let mv = 0;
+			
+			costTokens = cost.substring(1, cost.length - 1).replaceAll("}{"," ").split(' ');
+			for (const token of costTokens)
+			{
+				if (isDecimal(token))
+				{
+					mv += parseInt(token);
+				}
+				// 2brid
+				else if (token.includes('2'))
+				{
+					mv += 2;
+				}
+				else if (token != "x" && token != "")
+				{
+					mv += 1;
+				}
+			}
+
+			return mv;
+		}
+
 		function searchToken(card, token)
 		{
 			let card_stats = [];
@@ -708,13 +955,13 @@
 			}
 
 			let card_name = card_stats.card_name;
-			let card_color = card_stats.color != "" ? card_stats.color : "c";
+			let card_color = card_stats.color;
 			let card_rarity = card_stats.rarity;
 			let card_type = card_stats.type;
 			// 4: collector number
 			let card_ci = removeDuplicateChars(card_stats.color_identity);
 			let card_cost = card_stats.cost;
-			let card_mv = isDecimal(card_cost.charAt(1)) ? parseInt(card_cost.substring(1, card_cost.indexOf('}'))) + card_cost.replaceAll('x','').split('{').length - 2 : card_cost.replaceAll('x','').split('{').length - 1;
+			let card_mv = convertToMV(card_cost);
 			//Strip out the lingering [i][/i] and [b][/b] tags while we're searching just in case someone decided to bold something in the
 			//middle of their rules text for some reason
 			let card_oracle_text = card_stats.rules_text != "" ? card_stats.rules_text.replace(/\[(\/)?([ib])\]/g, "") : card_stats.special_text.replace(/\[(\/)?([ib])\]/g, "");
@@ -724,11 +971,14 @@
 			let card_set = card_stats.set;
 			let card_loyalty = card_stats.loyalty;
 			let card_notes = card_stats.notes;
+			let card_artist = card_stats.artist;
+			let card_alias = card_stats.alias ? card_stats.alias : ""; // do this so that we have backwards compatibility
+			let card_ft = card_stats.flavor_text ? card_stats.flavor_text : "";
 			let card_color_2 = "";
 			let card_cost_2 = "";
 			let card_power_2 = "";
 			let card_toughness_2 = "";
-			let card_loyalty_2 = ""
+			let card_loyalty_2 = "";
 
 			let color_map = new Map([
 				["azorius", "wu"],
@@ -759,16 +1009,20 @@
 				card_name = card_name + "	" + card_stats.card_name2;
 				card_type = card_type + "	" + card_stats.type2;
 				card_oracle_text = card_oracle_text + "	" + (card_stats.rules_text2 != "" ? card_stats.rules_text2.replace(/\[(\/)?([ib])\]/g, "") : card_stats.special_text2.replace(/\[(\/)?([ib])\]/g, ""));
-				card_color_2 = card_stats.color2 != "" ? card_stats.color2 : "c";
+				if (card_stats.flavor_text2)
+				{
+					card_ft = card_ft + "\n" + card_stats.flavor_text2;
+				}
+				card_color_2 = card_stats.color2;
 				card_cost_2 = card_stats.cost2;
 				card_power_2 = card_stats.pt2.substring(0,card_stats.pt2.indexOf('/'));
 				card_toughness_2 = card_stats.pt.substring(card_stats.pt.indexOf('/')+1);
 				card_loyalty_2 = card_stats.loyalty2;
 			}
 
-			token = token.replaceAll("~", card_name).replaceAll("cardname", card_name).replaceAll('"','').replaceAll('/','').replaceAll('“','').replaceAll('”','');
+			token = token.replaceAll("~", card_name).replaceAll("cardname", card_name).replaceAll('"','').replaceAll('“','').replaceAll('”','');
 
-			const modifierRegex = /[!:<>=]+/g;
+			const modifierRegex = /[!:<>=][=]*/g;
 			const match = token.match(modifierRegex);
 
 			if (match)
@@ -776,11 +1030,6 @@
 				const modifier = match[0];
 				const term = token.substring(0, token.indexOf(modifier));
 				let check = token.substring(token.indexOf(modifier) + modifier.length);
-
-				if (color_map.has(check))
-				{
-					check = color_map.get(check);
-				}
 
 				// availableTokens = ["mv", "c", "ci", "t", "o", "pow", "tou", "r", "is"]
 
@@ -804,7 +1053,7 @@
 
 					}
 				} */
-				if (term == "mv")
+				if (term == "mv" || term == "cmc")
 				{
 					if (modifier == "!" || modifier == "=")
 					{
@@ -833,57 +1082,83 @@
 				}
 				if (term == "c" || term == "color")
 				{
-					if (modifier == "!" || modifier == "=")
+					if (color_map.has(check))
 					{
-						if (!isNaN(check))
+						check = color_map.get(check);
+					}
+					if (!isNaN(check))
+					{
+						if (modifier == "!" || modifier == "=")
 						{
 							return card_color.length == parseInt(check);
 						}
-						return (card_color.split("").sort().join("") == check.split("").sort().join(""));
-					}
-					else if (modifier == ":")
-					{
-						if (!isNaN(check))
+						else if (modifier == ":")
 						{
 							return card_color.length == parseInt(check);
 						}
-						return hasAllChars(card_color, check);
-					}
-					else if (modifier == "<")
-					{
-						if (!isNaN(check))
+						else if (modifier == "<")
 						{
 							return card_color.length < parseInt(check);
 						}
-						return card_color == "c" || (check.length > card_color.length && hasAllChars(check, card_color));
-					}
-					else if (modifier == ">")
-					{
-						if (!isNaN(check))
+						else if (modifier == ">")
 						{
 							return card_color.length > parseInt(check);
 						}
-						return card_color.length > check.length && hasAllChars(card_color, check);
-					}
-					else if (modifier == "<=")
-					{
-						if (!isNaN(check))
+						else if (modifier == "<=")
 						{
 							return card_color.length <= parseInt(check);
 						}
-						return card_color == "c" || hasAllChars(check, card_color);
-					}
-					else if (modifier == ">=")
-					{
-						if (!isNaN(check))
+						else if (modifier == ">=")
 						{
 							return card_color.length >= parseInt(check);
 						}
-						return hasAllChars(card_color, check);
+					}
+					else
+					{
+						card_color = card_color == "" ? "c" : card_color;
+						if (check == "m")
+						{
+							if (modifier == "<")
+							{
+								return card_color.length < 2;
+							}
+							else
+							{
+								return card_color.length > 1;							
+							}
+						}
+						else if (modifier == "!" || modifier == "=")
+						{
+							return (card_color.split("").sort().join("") == check.split("").sort().join(""));
+						}
+						else if (modifier == ":")
+						{
+							return hasAllChars(card_color, check);
+						}
+						else if (modifier == "<")
+						{
+							return card_color == "c" || (check.length > card_color.length && hasAllChars(check, card_color));
+						}
+						else if (modifier == ">")
+						{
+							return card_color.length > check.length && hasAllChars(card_color, check);
+						}
+						else if (modifier == "<=")
+						{
+							return card_color == "c" || hasAllChars(check, card_color);
+						}
+						else if (modifier == ">=")
+						{
+							return hasAllChars(card_color, check);
+						}
 					}
 				}
 				if (term == "cost" || term == "mana")
 				{
+					if (color_map.has(check))
+					{
+						check = color_map.get(check);
+					}
 					if (modifier == "!" || modifier == "=" || modifier == ":")
 					{
 						card_cost_cleaned = card_cost.replaceAll('{', '').replaceAll('}', '');
@@ -892,62 +1167,68 @@
 				}
 				if (term == "ci" || term == "id")
 				{
-					if (modifier == "!" || modifier == "=")
+					if (color_map.has(check))
 					{
-						// why is this the best way to do this?
-						if (!isNaN(check))
+						check = color_map.get(check);
+					}
+					if (!isNaN(check))
+					{
+						card_ci = card_ci == "c" ? "" : card_ci;
+						if (modifier == "!" || modifier == "=")
 						{
 							return card_ci.length == parseInt(check);
 						}
-						return (card_ci.split("").sort().join("") == check.split("").sort().join(""));
-					}
-					else if (modifier == ":")
-					{
-						if (!isNaN(check))
+						else if (modifier == ":")
 						{
 							return card_ci.length == parseInt(check);
 						}
-						return hasAllChars(card_ci, check);
-					}
-					else if (modifier == "<")
-					{
-						if (!isNaN(check))
+						else if (modifier == "<")
 						{
 							return card_ci.length < parseInt(check);
 						}
-						return card_ci == "c" || (check.length > card_ci.length && hasAllChars(check, card_ci));
-					}
-					else if (modifier == ">")
-					{
-
-						if (!isNaN(check))
+						else if (modifier == ">")
 						{
 							return card_ci.length > parseInt(check);
 						}
-						return card_ci.length > check.length && hasAllChars(card_ci, check);
-					}
-					else if (modifier == "<=")
-					{
-						if (!isNaN(check))
+						else if (modifier == "<=")
 						{
 							return card_ci.length <= parseInt(check);
 						}
-						return card_ci == "c" || hasAllChars(check, card_ci);
-					}
-					else if (modifier == ">=")
-					{
-						if (!isNaN(check))
+						else if (modifier == ">=")
 						{
 							return card_ci.length >= parseInt(check);
 						}
-						return hasAllChars(card_ci, check);
+					}
+					else
+					{
+						if (modifier == "!" || modifier == "=")
+						{
+							return (card_ci.split("").sort().join("") == check.split("").sort().join(""));
+						}
+						else if (modifier == "<")
+						{
+							return card_ci == "c" || (check.length > card_ci.length && hasAllChars(check, card_ci));
+						}
+						else if (modifier == ">")
+						{
+							return card_ci.length > check.length && hasAllChars(card_ci, check);
+						}
+						else if (modifier == ":" || modifier == "<=")
+						{
+							return card_ci == "c" || hasAllChars(check, card_ci);
+						}
+						else if (modifier == ">=")
+						{
+							return hasAllChars(card_ci, check);
+						}
 					}
 				}
 				if (term == "t" || term == "type")
 				{
 					if (modifier == ":")
 					{
-						return card_type.includes(check);
+						regex = new RegExp("\\b" + check + "\\b");
+						return regex.test(card_type);
 					}
 					/* unsupported flows
 					if (modifier == "!" || modifier == "=")
@@ -967,8 +1248,17 @@
 				{
 					if (modifier == ":")
 					{
-						regex = new RegExp(check);
-						return regex.test(card_oracle_text);
+						if (check.startsWith("/") && check.endsWith("/"))
+						{
+							check = check.substring(1, check.length - 1);
+
+							regex = new RegExp(check.replaceAll("+","\\+"));
+							return regex.test(card_oracle_text);
+						}
+						else
+						{
+							return card_oracle_text.includes(check);
+						}
 					}
 					/* unsupported flows
 					if (modifier == "!" || modifier == "=")
@@ -1085,6 +1375,13 @@
 
 					} */
 				}
+				if (term == "cube")
+				{
+					if (modifier == ":" || modifier == "!" || modifier == "=")
+					{
+						return (card_notes.includes("cube:" + check));
+					}
+				}
 				if (term == "keyword" || term=="kw" || term == "has")
 				{
 					if (modifier == ":" || modifier == "!" || modifier == "=")
@@ -1131,6 +1428,13 @@
 					}
 					return false;
 				}
+				if (term == "lore")
+				{
+					if (modifier == ":")
+					{
+						return card_name.includes(check) || card_ft.includes(check);
+					}
+				}
 				if (term == "is")
 				{
 					if (modifier == ":" || modifier == "!" || modifier == "=")
@@ -1170,13 +1474,54 @@
 
 					} */
 				}
+				if (term == "not")
+				{
+					return !searchToken(card, token.replace("not:", "is:"));
+				}
 				if (term == "tag")
 				{
 					if (modifier == ":" || modifier == "=" || modifier == "!")
 					{
-						return card_notes.includes("!tag " + check);
+						regex = new RegExp("!tag " + check + "\\b");
+						return regex.test(card_notes);
 					}
 				}
+				if (term == "a" || term == "art" || term == "artist")
+				{
+					if (modifier == ":" || modifier == "=" || modifier == "!")
+					{
+						return card_artist.includes(check);
+					}
+				}
+				if (term == "ft" || term == "flavor" || term == "flavortext")
+				{
+					if (modifier == ":")
+					{
+						return card_ft.includes(check);
+					}
+				}
+				if (term == "godzilla" || term == "alias") {
+					if (modifier == "!" || modifier == "=")
+					{
+						return card_alias == check;
+					}
+					else if (modifier == ":")
+					{
+						return card_alias.includes(check);
+					}
+					else if (modifier == "<")
+					{
+						return card_alias < check;
+					}
+					else if (modifier == ">")
+					{
+						return card_alias > check;
+					}
+				}
+				if (modifier == ":" || modifier == "=" || modifier == "!") {
+                    let regex = new RegExp(`!tag<${term}> ${check}\\b`);
+                    return regex.test(card_notes);
+                }
 			}
 
 			return card_name.includes(token);
@@ -1237,7 +1582,7 @@
 			return str;
 		}
 
-		function gridifyCard(card_stats, card_text = false, rotate_card = false) {
+		function gridifyCard(card_stats, card_text = false, rotate_card = false, designer_notes = false) {
 			const card_name = card_stats.card_name;
 
 			if (displayStyle == "cards-only")
@@ -1269,11 +1614,13 @@
 			let card_effects = "";
 			if (card_stats.rules_text != "")
 			{
-				card_effects = card_stats.rules_text.split("\n");
+				card_effects = card_stats.rules_text + (card_stats.flavor_text != "[i][/i]" ? "\n" + "<hr class=\"ft-divider text-bg\">" + "\n" + card_stats.flavor_text.replace('\n','<br>') : ""); // this expression looks cursed but what it does is check if the ft is empty, and if it isn't, insert a divider + the ft
+			} else {
+				card_effects = "";
 			}
-			else
+			if ("v_mana" in card_stats)
 			{
-				card_effects = card_stats.special_text.split("\n");
+				card_effects = card_effects.replaceAll('{V}', '<img style="vertical-align: middle; padding: 0px 2px; display: inline; width: 15px;" src="' + rootPath + '/img/' + card_stats.v_mana + '">');
 			}
 			effect.innerHTML += prettifyEffects(card_effects);
 			text.appendChild(effect);
@@ -1291,6 +1638,15 @@
 				loyalty.className = "pt";
 				loyalty.textContent = "[" + card_stats.loyalty + "]";
 				text.appendChild(loyalty);
+			}
+
+			if(designer_notes && card_stats.designer_notes != null)
+			{
+				const dnotes = document.createElement("div");
+				dnotes.className = "designer-notes";
+				dnotes.innerHTML = "<u><b>Designer Notes</b></u>";
+				dnotes.innerHTML = dnotes.innerHTML + card_stats.designer_notes;
+				text.appendChild(dnotes);
 			}
 
 			// 13-name	14-color	15-type	16-ci	17-cost	18-ability	19-pt	20-special-text	21-loyalty
@@ -1311,11 +1667,13 @@
 				let card_effects_2 = "";
 				if (card_stats.rules_text2 != "")
 				{
-					card_effects_2 = card_stats.rules_text2.split("\n");
+					card_effects_2 = card_stats.rules_text2 + (card_stats.flavor_text2 != "[i][/i]" ? "\n" + "<hr class=\"ft-divider text-bg\">" + "\n" + card_stats.flavor_text2.replace('\n','<br>') : "");
+				} else {
+					card_effects_2 = "";
 				}
-				else
+				if ("v_mana" in card_stats)
 				{
-					card_effects_2 = card_stats.special_text2.split("\n");
+					card_effects_2 = card_effects_2.replaceAll('{V}', '<img width="15px;" style="vertical-align: middle; padding: 0px 2px;" src="' + rootPath + '/img/' + card_stats.v_mana + '">');
 				}
 				effect_2.innerHTML += prettifyEffects(card_effects_2);
 				text.appendChild(effect_2);
@@ -1349,19 +1707,31 @@
 			const img = document.createElement("img");
 			img.className = "card-image";
 			img.id = id;
-			// (card_stats[13].includes("_") ? card_stats[13] : card_stats[0]) for posterity
-			img.src = "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			img.loading = "lazy";
+
+			if ("position" in card_stats) {
+				img.src = rootPath + "/sets/" + card_stats.set + "-files/img/" + card_stats.position + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			}
+			else {
+				img.src = rootPath + "/sets/" + card_stats.set + "-files/img/" + card_stats.number + (card_stats.shape.includes("token") ? "t_" : "_") + card_stats.card_name + ((card_stats.shape.includes("double")) ? "_front" : "") + "." + card_stats.image_type;
+			}
 			
 			const link = document.createElement("a");
-			let card_name = card_stats.card_name;
-			for (const char of specialchars)
-			{
-				card_name = card_name.replaceAll(char, "");
+			
+			const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+			const params = {
+				set: card_stats.set,
+				num: card_stats.number,
+				name: card_stats.card_name
 			}
-			link.href = "/cards/" + card_stats.set + "/" + card_stats.number + "_" + card_name;
+			for (const key in params) {
+				url.searchParams.append(key, params[key]);
+			}
+			link.href = url.pathname + url.search;
+
 			link.appendChild(img);
 
-			if ((card_stats.shape.includes("spli") || card_stats.type.includes("Battle")) && rotate_card)
+			if (rotate_card)
 			{
 				const rotated_img = document.createElement("img");
 				rotated_img.className = "h-img";
@@ -1379,6 +1749,19 @@
 			{
 				const imgFlipBtn = document.createElement("button");
 				imgFlipBtn.className = "btn";
+				imgFlipBtn.style.background = "url('" + rootPath + "/img/flip.png') no-repeat";
+				imgFlipBtn.style.backgroundSize = "contain";
+				imgFlipBtn.style.backgroundPosition = "center";
+				imgFlipBtn.onmouseover = function() {
+					this.style.background = "url('" + rootPath + "/img/flip-hover.png') no-repeat";
+					this.style.backgroundSize = "contain";
+					this.style.backgroundPosition = "center";
+				};
+				imgFlipBtn.onmouseout = function() {
+					this.style.background = "url('" + rootPath + "/img/flip.png') no-repeat";
+					this.style.backgroundSize = "contain";
+					this.style.backgroundPosition = "center";
+				};
 				imgFlipBtn.onclick = function() { imgFlip(id, rotate_card); };
 				imgContainer.appendChild(imgFlipBtn);
 			}
@@ -1394,51 +1777,77 @@
 			return imgContainer;
 		}
 
-		function imgFlip(id, rotate_card = false) {
-			img = document.getElementById(id);
-			rotated_img = document.getElementById("h-img");
+		function imgFlip(id, rotate_card = false) { // comments in here by aanginer
+            const img = document.getElementById(id);
+            const seconds = 0.2;
 
-			cardName = img.src;
-			
-			if (cardName.includes("_front"))
-			{
-				img.src = cardName.replace("_front", "_back");
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(90deg)"; // rotate 90 degrees
 
-				if (rotate_card)
-				{
-					rotated_img.style.display = "none";
-					img.style.filter = "";
-				}
-			}
-			else
-			{
-				img.src = cardName.replace("_back", "_front");
+            const rotated_img = document.getElementById("h-img");
+            if (rotated_img)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
 
-				if (rotate_card)
-				{
-					rotated_img.style.display = "block";
-					img.style.filter = "blur(2px) brightness(0.7)";
-				}
-			}
-		}
+           		if (rotate_card && rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
 
-		function prettifyEffects(card_effects) {
+            setTimeout(function() { // wait for the rotation, then set the image's src correctly
+                const rotated_img = document.getElementById("h-img");
+
+                const cardName = img.src;
+                
+                if (cardName.includes("_front"))
+                {
+                    img.src = cardName.replace("_front", "_back");
+
+                    if (rotate_card)
+                    {
+                        rotated_img.style.opacity = "0";
+                        img.style.filter = "";
+                    }
+                }
+                else if (cardName.includes("_back"))
+                {
+                    img.src = cardName.replace("_back", "_front");
+
+                    if (rotate_card)
+                    {
+                        rotated_img.style.opacity = "1";
+                        img.style.filter = "blur(2px) brightness(0.7)";
+                    }
+                }
+
+                img.style.transition = seconds.toString() + "s";
+                img.style.transform = "rotateY(0deg)";
+
+                if (rotated_img)
+	            {
+	            	rotated_img.style.transition = seconds.toString() + "s";
+	           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+	            }
+            }, seconds * 1000);
+        }
+
+		function prettifyEffects(card_effect) {
 			let HTML = "";
+
+			let styled_effect = card_effect.replace(/(\[i\])+(.+?)(\[\/i\])+/gs, function(matched, _1, _2) {
+				return '<i>' + _2 + '</i>'
+			}).replaceAll(/(\[b\])+(.+?)(\[\/b\])+/gs, function(matched, _1, _2) {
+				return '<b>' + _2 + '</b>'
+			});
+
+			let card_effects = styled_effect.split("\n");
 
 			for (let i = 0; i < card_effects.length; i++)
 			{
-				let styled_effect = card_effects[i].replace(/\[i\]([^\]]+)\[\/i\]/g, function(matched, _1) {
-					return '<i>' + _1 + '</i>'
-				}).replace(/\[b\]([^\]]+)\[\/b\]/g, function(matched, _1) {
-					return '<b>' + _1 + '</b>'
-				})
-				
-				HTML += styled_effect;
-
-				if (i != card_effects.length - 1)
-				{
-					HTML += "<br>"
-				}
+				HTML += "<p>" + card_effects[i] + "</p>";
 			}
 			
 			let regexHTML = symbolize(HTML);
@@ -1503,7 +1912,7 @@
 			let params = new URLSearchParams(url.search);
 			if (page != 0)
 			{
-				params.append("page", page+1);
+				params.append("page", page + 1);
 			}
 			history.pushState({}, '', url.pathname + '?' + params.toString());
 
@@ -1529,7 +1938,7 @@
 			
 			let url = (window.location.href.indexOf("page=") == -1 ? new URL(window.location.href) : new URL(window.location.href.substring(0, window.location.href.indexOf("page="))));
 			let params = new URLSearchParams(url.search);
-			params.append("page", page+1);
+			params.append("page", page + 1);
 			history.pushState({}, '', url.pathname + '?' + params.toString());
 
 			cardGrid.innerHTML = "";
@@ -1553,13 +1962,19 @@
 
 		function randomCard() {
 				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
-				let card_name = card_list_arrayified[i].card_name;
-				for (const char of specialchars)
-				{
-					card_name = card_name.replaceAll(char, "");
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
 				}
 
-				window.location = ('/cards/' + card_list_arrayified[i].set + '/' + card_list_arrayified[i].number + '_' + card_name);
+				window.location.href = url.pathname + url.search;
 			}
 	</script>
 </body>

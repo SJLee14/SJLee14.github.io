@@ -1,0 +1,884 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Zion, Uniter of Seas",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{W}{U}",
+			"type": "Legendary Creature — Merfolk Cleric",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/58_Zion, Uniter of Seas.png"
+			}
+		},
+		{
+			"name": "Zander, Wavecaller Magi",
+			"rarity": "mythic",
+			"mana_cost": "{5}{G}{W}{U}",
+			"type": "Legendary Creature — Merfolk Wizard",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/57_Zander, Wavecaller Magi.png"
+			}
+		},
+		{
+			"name": "Viviane, Blood Sea Shaper",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Legendary Creature — Merfolk Warrior",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/52_Viviane, Blood Sea Shaper.png"
+			}
+		},
+		{
+			"name": "Aeces, Azure Sea Crafter",
+			"rarity": "mythic",
+			"mana_cost": "{G}{U}",
+			"type": "Legendary Creature — Merfolk Rogue",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/19_Aeces, Azure Sea Crafter.png"
+			}
+		},
+		{
+			"name": "Crash on the Rocks",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Enchantment",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/1_Crash on the Rocks.png"
+			}
+		},
+		{
+			"name": "Leering in the Water",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/8_Leering in the Water.png"
+			}
+		},
+		{
+			"name": "Harmonic Cultivation",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/17_Harmonic Cultivation.png"
+			}
+		},
+		{
+			"name": "Deep Sea Tritons",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Creature — Merfolk Warrior",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/28_Deep Sea Tritons.png"
+			}
+		},
+		{
+			"name": "Mistifying Trickster",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Merfolk Rogue",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/9_Mistifying Trickster.png"
+			}
+		},
+		{
+			"name": "Cove Maiden",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Creature — Merfolk Cleric",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/24_Cove Maiden.png"
+			}
+		},
+		{
+			"name": "Jade Shaper",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Creature — Merfolk Wizard",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/34_Jade Shaper.png"
+			}
+		},
+		{
+			"name": "Disdainful Swirl",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/7_Disdainful Swirl.png"
+			}
+		},
+		{
+			"name": "Bask on a Rock",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/21_Bask on a Rock.png"
+			}
+		},
+		{
+			"name": "Viviane's Tsunami",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{U}{U}",
+			"type": "Instant",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/53_Viviane's Tsunami.png"
+			}
+		},
+		{
+			"name": "Seacaller's Command",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{W}{U}",
+			"type": "Instant",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/43_Seacaller's Command.png"
+			}
+		},
+		{
+			"name": "Deep Blue Confluence",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/27_Deep Blue Confluence.png"
+			}
+		},
+		{
+			"name": "Sunseeker Merfolk",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Creature — Merfolk Rogue Wizard",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/47_Sunseeker Merfolk.png"
+			}
+		},
+		{
+			"name": "Swirling Recollection",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}{U}{U}",
+			"type": "Instant",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/49_Swirling Recollection.png"
+			}
+		},
+		{
+			"name": "Wavebreaker Priestess",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Creature — Merfolk Cleric",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/54_Wavebreaker Priestess.png"
+			}
+		},
+		{
+			"name": "Jade Champion",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Creature — Merfolk Warrior",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/33_Jade Champion.png"
+			}
+		},
+		{
+			"name": "Unite the Seas",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}",
+			"type": "Sorcery",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/14_Unite the Seas.png"
+			}
+		},
+		{
+			"name": "Tigershark Merfolk",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Merfolk Rogue",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/13_Tigershark Merfolk.png"
+			}
+		},
+		{
+			"name": "Angler Mystic",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Creature — Merfolk Wizard",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/6_Angler Mystic.png"
+			}
+		},
+		{
+			"name": "Reflection Merfolk",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}",
+			"type": "Creature — Merfolk Warrior",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/41_Reflection Merfolk.png"
+			}
+		},
+		{
+			"name": "Wavecrosser Merfolk",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Creature — Merfolk Cleric",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/55_Wavecrosser Merfolk.png"
+			}
+		},
+		{
+			"name": "Surrond the Ship",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/48_Surrond the Ship.png"
+			}
+		},
+		{
+			"name": "Manaray Sprawling",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{W}",
+			"type": "Enchantment",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/37_Manaray Sprawling.png"
+			}
+		},
+		{
+			"name": "Diversion Mystic",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}{U}",
+			"type": "Creature — Merfolk Cleric Warrior",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/29_Diversion Mystic.png"
+			}
+		},
+		{
+			"name": "Floodgate Takeover",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/32_Floodgate Takeover.png"
+			}
+		},
+		{
+			"name": "Kraken Grasping",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Enchantment",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/35_Kraken Grasping.png"
+			}
+		},
+		{
+			"name": "Coral Druid",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Creature — Merfolk Cleric Druid",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/23_Coral Druid.png"
+			}
+		},
+		{
+			"name": "Luminant Merfolk",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{U}",
+			"type": "Creature — Merfolk Wizard",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/36_Luminant Merfolk.png"
+			}
+		},
+		{
+			"name": "Swordfish Triton",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Creature — Merfolk Warrior",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/50_Swordfish Triton.png"
+			}
+		},
+		{
+			"name": "Exchange of Tales",
+			"rarity": "uncommon",
+			"mana_cost": "{G}{W}",
+			"type": "Instant",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/30_Exchange of Tales.png"
+			}
+		},
+		{
+			"name": "Sunken Suit",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/65_Sunken Suit.png"
+			}
+		},
+		{
+			"name": "Coralcrab Statue",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/61_Coralcrab Statue.png"
+			}
+		},
+		{
+			"name": "River Spirit Shrine",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/63_River Spirit Shrine.png"
+			}
+		},
+		{
+			"name": "Reach the Beach",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/18_Reach the Beach.png"
+			}
+		},
+		{
+			"name": "Spelunking Spectacle",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Instant",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/46_Spelunking Spectacle.png"
+			}
+		},
+		{
+			"name": "Riverbred Bounty",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/42_Riverbred Bounty.png"
+			}
+		},
+		{
+			"name": "Reel in the Catch",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Sorcery",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/3_Reel in the Catch.png"
+			}
+		},
+		{
+			"name": "Blubber Escort",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Instant",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/16_Blubber Escort.png"
+			}
+		},
+		{
+			"name": "Submerging Shells",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Sorcery",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/11_Submerging Shells.png"
+			}
+		},
+		{
+			"name": "Algae Druid",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Merfolk Druid",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/15_Algae Druid.png"
+			}
+		},
+		{
+			"name": "Pikehunter Triton",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Merfolk Rogue",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/10_Pikehunter Triton.png"
+			}
+		},
+		{
+			"name": "Seaside Seclusion",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/4_Seaside Seclusion.png"
+			}
+		},
+		{
+			"name": "Sink into Coral",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/5_Sink into Coral.png"
+			}
+		},
+		{
+			"name": "Charmbreaker Merfolk",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Creature — Merfolk Warrior",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/22_Charmbreaker Merfolk.png"
+			}
+		},
+		{
+			"name": "Psion of Solaris",
+			"rarity": "rare",
+			"mana_cost": "{5}{W}{U}",
+			"type": "Creature — Merfolk Wizard",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/39_Psion of Solaris.png"
+			}
+		},
+		{
+			"name": "Captured Ship",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/60_Captured Ship.png"
+			}
+		},
+		{
+			"name": "Seacrystal Compass",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/64_Seacrystal Compass.png"
+			}
+		},
+		{
+			"name": "Angler Gang",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Creature — Merfolk Rogue",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/20_Angler Gang.png"
+			}
+		},
+		{
+			"name": "Konch of the Deep",
+			"rarity": "mythic",
+			"mana_cost": "{3}",
+			"type": "Legendary Artifact — Equipment",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/62_Konch of the Deep.png"
+			}
+		},
+		{
+			"name": "Captain's Coin",
+			"rarity": "mythic",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/59_Captain's Coin.png"
+			}
+		},
+		{
+			"name": "Pyretic Merfolk",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{U}",
+			"type": "Creature — Merfolk Cleric",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/40_Pyretic Merfolk.png"
+			}
+		},
+		{
+			"name": "Triton Warrior",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{G}{U}",
+			"type": "Creature — Merfolk Warrior",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/51_Triton Warrior.png"
+			}
+		},
+		{
+			"name": "Diving Treasure",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/2_Diving Treasure.png"
+			}
+		},
+		{
+			"name": "Sunken Thoughts",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/12_Sunken Thoughts.png"
+			}
+		},
+		{
+			"name": "Extract from the Ruins",
+			"rarity": "mythic",
+			"mana_cost": "{4}{G}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/31_Extract from the Ruins.png"
+			}
+		},
+		{
+			"name": "Sky Kraken Blessing",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{G}{W}{W}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/45_Sky Kraken Blessing.png"
+			}
+		},
+		{
+			"name": "Whirl with the Waves",
+			"rarity": "rare",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/56_Whirl with the Waves.png"
+			}
+		},
+		{
+			"name": "Dark Tide Rising",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}{W}{U}",
+			"type": "Instant",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/26_Dark Tide Rising.png"
+			}
+		},
+		{
+			"name": "Sirens Guile",
+			"rarity": "mythic",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Sorcery",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/44_Sirens Guile.png"
+			}
+		},
+		{
+			"name": "Marius, the Jade Wave",
+			"rarity": "mythic",
+			"mana_cost": "{3}{G}{U}",
+			"type": "Legendary Creature — Merfolk Shaman",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/38_Marius, the Jade Wave.png"
+			}
+		},
+		{
+			"name": "Command Tower",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/67_Command Tower.png"
+			}
+		},
+		{
+			"name": "Paradise Grove",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/86_Paradise Grove.png"
+			}
+		},
+		{
+			"name": "Refreshing Palageo",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Island",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/96_Refreshing Palageo.png"
+			}
+		},
+		{
+			"name": "Refreshing Cliff",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Plains",
+			"collector_number": "94",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/94_Refreshing Cliff.png"
+			}
+		},
+		{
+			"name": "Refreshing Glade",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land — Forest",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/95_Refreshing Glade.png"
+			}
+		},
+		{
+			"name": "Washed Up Ruins",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/100_Washed Up Ruins.png"
+			}
+		},
+		{
+			"name": "Reefline Shipwreck",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Island",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/93_Reefline Shipwreck.png"
+			}
+		},
+		{
+			"name": "Breathtaking View",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land — Island",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/66_Breathtaking View.png"
+			}
+		},
+		{
+			"name": "Diamond, Azure Sea Capital",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Legendary Land — Island",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/68_Diamond, Azure Sea Capital.png"
+			}
+		},
+		{
+			"name": "Sparkling River",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/99_Sparkling River.png"
+			}
+		},
+		{
+			"name": "Sparkling Garden",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/97_Sparkling Garden.png"
+			}
+		},
+		{
+			"name": "Sparkling Park",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/98_Sparkling Park.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/77_Island.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/87_Plains.png"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/75_Forest.png"
+			}
+		},
+		{
+			"name": "Cyamiede, Siren of the Seven Seas",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Legendary Creature — Merfolk Pirate",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/YMD-files/img/25_Cyamiede, Siren of the Seven Seas.png"
+			}
+		}
+	]
+
+[rare(1)]
+	5 Zion, Uniter of Seas
+	5 Zander, Wavecaller Magi
+	5 Viviane, Blood Sea Shaper
+	5 Aeces, Azure Sea Crafter
+	5 Crash on the Rocks
+	5 Harmonic Cultivation
+	5 Deep Sea Tritons
+	5 Mistifying Trickster
+	5 Cove Maiden
+	5 Jade Shaper
+	5 Disdainful Swirl
+	5 Bask on a Rock
+	5 Viviane's Tsunami
+	5 Seacaller's Command
+	5 Deep Blue Confluence
+	5 Swirling Recollection
+	5 Wavebreaker Priestess
+	5 Jade Champion
+	5 Unite the Seas
+	5 Tigershark Merfolk
+	5 Angler Mystic
+	5 Reflection Merfolk
+	5 Wavecrosser Merfolk
+	5 Surrond the Ship
+	5 Manaray Sprawling
+	5 Floodgate Takeover
+	5 Kraken Grasping
+	5 Riverbred Bounty
+	5 Reel in the Catch
+	5 Blubber Escort
+	5 Submerging Shells
+	5 Psion of Solaris
+	5 Seacrystal Compass
+	5 Angler Gang
+	5 Konch of the Deep
+	5 Captain's Coin
+	5 Extract from the Ruins
+	5 Sky Kraken Blessing
+	5 Whirl with the Waves
+	5 Dark Tide Rising
+	5 Sirens Guile
+	5 Marius, the Jade Wave
+	5 Paradise Grove
+	5 Diamond, Azure Sea Capital
+	5 Sparkling River
+	5 Cyamiede, Siren of the Seven Seas
+[uncommon(3)]
+	5 Leering in the Water
+	5 Sunseeker Merfolk
+	5 Diversion Mystic
+	5 Coral Druid
+	5 Luminant Merfolk
+	5 Swordfish Triton
+	5 Exchange of Tales
+	5 Coralcrab Statue
+	5 River Spirit Shrine
+	5 Spelunking Spectacle
+	5 Charmbreaker Merfolk
+	5 Captured Ship
+	5 Pyretic Merfolk
+	5 Triton Warrior
+	5 Refreshing Palageo
+	5 Refreshing Cliff
+	5 Refreshing Glade
+[common(10)]
+	5 Sunken Suit
+	5 Reach the Beach
+	5 Algae Druid
+	5 Pikehunter Triton
+	5 Seaside Seclusion
+	5 Sink into Coral
+	5 Diving Treasure
+	5 Sunken Thoughts
+	5 Command Tower
+	5 Washed Up Ruins
+	5 Reefline Shipwreck
+	5 Breathtaking View
+	5 Sparkling Garden
+	5 Sparkling Park

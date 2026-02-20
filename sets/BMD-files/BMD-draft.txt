@@ -1,0 +1,884 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Bradius, Hell Carver",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{W}{B}",
+			"type": "Legendary Creature — Minotaur Berserker",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/30_Bradius, Hell Carver.png"
+			}
+		},
+		{
+			"name": "Gruvak, God of Horns",
+			"rarity": "mythic",
+			"mana_cost": "{4}{R}{W}{B}",
+			"type": "Legendary Creature — Minotaur God",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/40_Gruvak, God of Horns.png"
+			}
+		},
+		{
+			"name": "Syseus, Dungeon Clearer",
+			"rarity": "mythic",
+			"mana_cost": "{B}{R}",
+			"type": "Legendary Creature — Minotaur Berserker",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/54_Syseus, Dungeon Clearer.png"
+			}
+		},
+		{
+			"name": "Kaltagar, Dungeon Keeper",
+			"rarity": "mythic",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Legendary Creature — Minotaur Cleric",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/42_Kaltagar, Dungeon Keeper.png"
+			}
+		},
+		{
+			"name": "Skullkeeper's Culling",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/16_Skullkeeper's Culling.png"
+			}
+		},
+		{
+			"name": "Upon This Rock",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Enchantment",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/27_Upon This Rock.png"
+			}
+		},
+		{
+			"name": "Astral Release",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/2_Astral Release.png"
+			}
+		},
+		{
+			"name": "Deathcaller Warlock",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Creature — Minotaur Warlock",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/34_Deathcaller Warlock.png"
+			}
+		},
+		{
+			"name": "Fury Captain",
+			"rarity": "rare",
+			"mana_cost": "{5}{R}{W}",
+			"type": "Creature — Minotaur Soldier",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/38_Fury Captain.png"
+			}
+		},
+		{
+			"name": "A Second Breath",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/51_A Second Breath.png"
+			}
+		},
+		{
+			"name": "Captured Minotaur",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Minotaur",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/20_Captured Minotaur.png"
+			}
+		},
+		{
+			"name": "Gorclan Reaper",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Minotaur Warlock",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/10_Gorclan Reaper.png"
+			}
+		},
+		{
+			"name": "One Horned Trainee",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Creature — Minotaur Soldier",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/5_One Horned Trainee.png"
+			}
+		},
+		{
+			"name": "Bloodsoaked Berserker",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{W}{B}",
+			"type": "Creature — Minotaur Berserker",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/28_Bloodsoaked Berserker.png"
+			}
+		},
+		{
+			"name": "Bull Intervention",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Instant",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/32_Bull Intervention.png"
+			}
+		},
+		{
+			"name": "Horned Totem",
+			"rarity": "rare",
+			"mana_cost": "{B}{R}",
+			"type": "Artifact",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/41_Horned Totem.png"
+			}
+		},
+		{
+			"name": "Oathbound Cleaver",
+			"rarity": "rare",
+			"mana_cost": "{W}{B}",
+			"type": "Creature — Minotaur Cleric",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/45_Oathbound Cleaver.png"
+			}
+		},
+		{
+			"name": "Gore Shield",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/59_Gore Shield.png"
+			}
+		},
+		{
+			"name": "Bullrush Boulevard",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Enchantment — Saga",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/19_Bullrush Boulevard.png"
+			}
+		},
+		{
+			"name": "Bovine Transformation",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Enchantment — Saga",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/8_Bovine Transformation.png"
+			}
+		},
+		{
+			"name": "Tenacity of Thius",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Enchantment — Saga",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/6_Tenacity of Thius.png"
+			}
+		},
+		{
+			"name": "Longhorn Override",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Sorcery",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/26_Longhorn Override.png"
+			}
+		},
+		{
+			"name": "Abyssal Transition",
+			"rarity": "rare",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/1_Abyssal Transition.png"
+			}
+		},
+		{
+			"name": "Skullkeeper's Axe",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Artifact — Equipment",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/14_Skullkeeper's Axe.png"
+			}
+		},
+		{
+			"name": "Outerrealm Minotaur",
+			"rarity": "rare",
+			"mana_cost": "{5}{R}{W}",
+			"type": "Creature — Minotaur Shaman",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/47_Outerrealm Minotaur.png"
+			}
+		},
+		{
+			"name": "Stormhoof Charger",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Creature — Minotaur Berserker",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/52_Stormhoof Charger.png"
+			}
+		},
+		{
+			"name": "Festival of Gruvak",
+			"rarity": "mythic",
+			"mana_cost": "{R}{R}{R}{W}{W}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/37_Festival of Gruvak.png"
+			}
+		},
+		{
+			"name": "Brutal Shaman",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{R}",
+			"type": "Creature — Minotaur Shaman",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/31_Brutal Shaman.png"
+			}
+		},
+		{
+			"name": "Clear the Floor",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/33_Clear the Floor.png"
+			}
+		},
+		{
+			"name": "Goring Charm",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}{W}",
+			"type": "Enchantment",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/39_Goring Charm.png"
+			}
+		},
+		{
+			"name": "Thundering Captain",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/55_Thundering Captain.png"
+			}
+		},
+		{
+			"name": "Neck Snap",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Instant",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/13_Neck Snap.png"
+			}
+		},
+		{
+			"name": "Bring on the Bulls",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{R}",
+			"type": "Sorcery",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/18_Bring on the Bulls.png"
+			}
+		},
+		{
+			"name": "Unruly Removement",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Instant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/7_Unruly Removement.png"
+			}
+		},
+		{
+			"name": "Onslaught Sculpture",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/61_Onslaught Sculpture.png"
+			}
+		},
+		{
+			"name": "Guardian Tithe",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/11_Guardian Tithe.png"
+			}
+		},
+		{
+			"name": "Bullrush Sculpture",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/58_Bullrush Sculpture.png"
+			}
+		},
+		{
+			"name": "Bold-Bronze Sculpture",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/57_Bold-Bronze Sculpture.png"
+			}
+		},
+		{
+			"name": "Marbled Sculpture",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/60_Marbled Sculpture.png"
+			}
+		},
+		{
+			"name": "Plundering Hooves",
+			"rarity": "rare",
+			"mana_cost": "{R}{W}",
+			"type": "Enchantment",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/50_Plundering Hooves.png"
+			}
+		},
+		{
+			"name": "Labyrinth Keeper",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/12_Labyrinth Keeper.png"
+			}
+		},
+		{
+			"name": "Minotaur Bludgeoner",
+			"rarity": "rare",
+			"mana_cost": "{R}{W}",
+			"type": "Artifact — Equipment",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/44_Minotaur Bludgeoner.png"
+			}
+		},
+		{
+			"name": "Pincushion",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/49_Pincushion.png"
+			}
+		},
+		{
+			"name": "Cleave Through",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Sorcery",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/21_Cleave Through.png"
+			}
+		},
+		{
+			"name": "Grave Breaker Minotaur",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Minotaur Rogue",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/24_Grave Breaker Minotaur.png"
+			}
+		},
+		{
+			"name": "Unchained Pummeler",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Minotaur Berserker",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/17_Unchained Pummeler.png"
+			}
+		},
+		{
+			"name": "Suncleaver Minotaur",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{R}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/53_Suncleaver Minotaur.png"
+			}
+		},
+		{
+			"name": "Doom-Horn Reaver",
+			"rarity": "rare",
+			"mana_cost": "{6}{W}{B}",
+			"type": "Creature — Demon Minotaur",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/35_Doom-Horn Reaver.png"
+			}
+		},
+		{
+			"name": "Grand Slam",
+			"rarity": "rare",
+			"mana_cost": "{X}{R}",
+			"type": "Sorcery",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/23_Grand Slam.png"
+			}
+		},
+		{
+			"name": "Warhorn Bellow",
+			"rarity": "rare",
+			"mana_cost": "{R}{W}",
+			"type": "Instant",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/56_Warhorn Bellow.png"
+			}
+		},
+		{
+			"name": "Skullkeeper's Channeling",
+			"rarity": "rare",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/15_Skullkeeper's Channeling.png"
+			}
+		},
+		{
+			"name": "Bradius Calls the Slaughter",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}{B}",
+			"type": "Sorcery",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/29_Bradius Calls the Slaughter.png"
+			}
+		},
+		{
+			"name": "Felmunt, Igneous Inciter",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Legendary Creature — Minotaur Wizard Soldier",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/36_Felmunt, Igneous Inciter.png"
+			}
+		},
+		{
+			"name": "Lil Horn, Brawny Babe",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Legendary Creature — Minotaur",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/25_Lil Horn, Brawny Babe.png"
+			}
+		},
+		{
+			"name": "Oli, Taurus Farmhand",
+			"rarity": "mythic",
+			"mana_cost": "{W}{B}",
+			"type": "Legendary Creature — Minotaur Peasant",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/46_Oli, Taurus Farmhand.png"
+			}
+		},
+		{
+			"name": "Kultir, Terror of Ivenfel",
+			"rarity": "mythic",
+			"mana_cost": "{4}{B}{R}",
+			"type": "Legendary Creature — Minotaur Berserker",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/43_Kultir, Terror of Ivenfel.png"
+			}
+		},
+		{
+			"name": "Grim Shadow",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Instant",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/4_Grim Shadow.png"
+			}
+		},
+		{
+			"name": "Zarineb, Red Maze",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/100_Zarineb, Red Maze.png"
+			}
+		},
+		{
+			"name": "Desert Teeth",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/67_Desert Teeth.png"
+			}
+		},
+		{
+			"name": "Estin, Sunken Captial",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/68_Estin, Sunken Captial.png"
+			}
+		},
+		{
+			"name": "Chasm Bridge",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/64_Chasm Bridge.png"
+			}
+		},
+		{
+			"name": "Ramert, City of Blood",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/89_Ramert, City of Blood.png"
+			}
+		},
+		{
+			"name": "Graceful Valley",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/70_Graceful Valley.png"
+			}
+		},
+		{
+			"name": "Delvak, The Hollow Gate",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/66_Delvak, The Hollow Gate.png"
+			}
+		},
+		{
+			"name": "Sunsoaked Fort",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/90_Sunsoaked Fort.png"
+			}
+		},
+		{
+			"name": "Abstract Labyrinth",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/62_Abstract Labyrinth.png"
+			}
+		},
+		{
+			"name": "Tarnished Keep",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/98_Tarnished Keep.png"
+			}
+		},
+		{
+			"name": "Fellheight Hold",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/69_Fellheight Hold.png"
+			}
+		},
+		{
+			"name": "Command Tower",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/65_Command Tower.png"
+			}
+		},
+		{
+			"name": "Vibrant Pasture",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/99_Vibrant Pasture.png"
+			}
+		},
+		{
+			"name": "Prison Mines",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/88_Prison Mines.png"
+			}
+		},
+		{
+			"name": "Grazing Field",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/71_Grazing Field.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/96_Swamp.png"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/78_Mountain.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/84_Plains.png"
+			}
+		},
+		{
+			"name": "Ashtop, Frozen Labryinth",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/63_Ashtop, Frozen Labryinth.png"
+			}
+		},
+		{
+			"name": "Overcharged Gorger",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}{B}",
+			"type": "Creature — Minotaur Soldier",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/48_Overcharged Gorger.png"
+			}
+		},
+		{
+			"name": "Chasm Raid Captain",
+			"rarity": "rare",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Creature — Minotaur Berserker Warlock",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/9_Chasm Raid Captain.png"
+			}
+		},
+		{
+			"name": "Goldenhide Minotaur",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Minotaur Cleric",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/3_Goldenhide Minotaur.png"
+			}
+		},
+		{
+			"name": "Gatecrasher Minotaur",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Minotaur Berserker",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/BMD-files/img/22_Gatecrasher Minotaur.png"
+			}
+		}
+	]
+
+[rare(1)]
+	5 Bradius, Hell Carver
+	5 Gruvak, God of Horns
+	5 Syseus, Dungeon Clearer
+	5 Kaltagar, Dungeon Keeper
+	5 Skullkeeper's Culling
+	5 Upon This Rock
+	5 Astral Release
+	5 Deathcaller Warlock
+	5 Fury Captain
+	5 A Second Breath
+	5 Captured Minotaur
+	5 Gorclan Reaper
+	5 One Horned Trainee
+	5 Bloodsoaked Berserker
+	5 Bull Intervention
+	5 Horned Totem
+	5 Oathbound Cleaver
+	5 Gore Shield
+	5 Bullrush Boulevard
+	5 Bovine Transformation
+	5 Longhorn Override
+	5 Abyssal Transition
+	5 Skullkeeper's Axe
+	5 Outerrealm Minotaur
+	5 Stormhoof Charger
+	5 Festival of Gruvak
+	5 Brutal Shaman
+	5 Thundering Captain
+	5 Guardian Tithe
+	5 Plundering Hooves
+	5 Labyrinth Keeper
+	5 Minotaur Bludgeoner
+	5 Grave Breaker Minotaur
+	5 Unchained Pummeler
+	5 Suncleaver Minotaur
+	5 Doom-Horn Reaver
+	5 Grand Slam
+	5 Warhorn Bellow
+	5 Skullkeeper's Channeling
+	5 Bradius Calls the Slaughter
+	5 Felmunt, Igneous Inciter
+	5 Oli, Taurus Farmhand
+	5 Kultir, Terror of Ivenfel
+	5 Grim Shadow
+	5 Zarineb, Red Maze
+	5 Estin, Sunken Captial
+	5 Ramert, City of Blood
+	5 Delvak, The Hollow Gate
+	5 Sunsoaked Fort
+	5 Abstract Labyrinth
+	5 Fellheight Hold
+	5 Prison Mines
+	5 Ashtop, Frozen Labryinth
+	5 Overcharged Gorger
+	5 Chasm Raid Captain
+[uncommon(3)]
+	5 Tenacity of Thius
+	5 Clear the Floor
+	5 Goring Charm
+	5 Neck Snap
+	5 Bring on the Bulls
+	5 Pincushion
+	5 Cleave Through
+	5 Desert Teeth
+	5 Vibrant Pasture
+	5 Grazing Field
+	5 Goldenhide Minotaur
+	5 Gatecrasher Minotaur
+[common(10)]
+	5 Unruly Removement
+	5 Onslaught Sculpture
+	5 Bullrush Sculpture
+	5 Bold-Bronze Sculpture
+	5 Marbled Sculpture
+	5 Lil Horn, Brawny Babe
+	5 Chasm Bridge
+	5 Graceful Valley
+	5 Tarnished Keep
+	5 Command Tower
