@@ -1,4 +1,5571 @@
-﻿VERSION 2 CHANGELOG
+﻿VERSION 3 CHANGELOG
+====================
+
+Astrid of House Damiell added.
+Food added.
+Lucina, Ayra's Reflection added.
+Celica, Valentia's Hope added.
+Chrom, Ylissean Lord added.
+Lucina, Promised Blade added.
+Corrin, Regal Choice added.
+Corrin, Yato's Master added.
+Morgan, Righteous Exalt added.
+Robin, Garreg Mach Transfer added.
+Lucina, Grandmaster added.
+Lucina, Lynkin added.
+Micaiah, Renewing Ninja added.
+Setsuna, Cherry Blossom Sniper added.
+Lyn, Calamity's Wake added.
+Mirabilis, Daydream added.
+Peony, Gentle Dreams added.
+Plumeria, Twisted Dream added.
+Triandra, Frightening Dream added.
+Robin, Grand Mastermind added.
+
+Chrom, Exalt of Ylisse removed.
+Morgan, Brilliant Exalt removed.
+Lucina, Reverse Falchion removed.
+Grima, Manipulated Mastermind removed.
+Azura, All Alone removed.
+Celica, Queen of Valentia removed.
+Alm, Saint King removed.
+Corrin, Feral Dragon removed.
+Byleth, Silverheart removed.
+Miriel, Dark Knight removed.
+Virion, Archest Archer removed.
+Sumia, Falcon Knight removed.
+Robin, Grima's Bane removed.
+Frederick, Unquestioned Aid removed.
+Ena, Red Dragon removed.
+Lethe, Fierce Cat removed.
+Kronya, Gleaming Blade removed.
+Peri, Nohr's Nightfall removed.
+Scarlet, Wyvern Lord removed.
+Saber, Peerless Guardsman removed.
+Byleth, Savior of Fódlan removed.
+Flora, Special Delivery removed.
+Felicia, Cut Above removed.
+Garon, Puppet of Anankos removed.
+Katarina, Wayward One removed.
+Kyle, Paladin of Renais removed.
+Forde, Paladin of Renais removed.
+Leon, Heartseeker Knight removed.
+Edain, Reverent Healer removed.
+Franz, Faithul Paladin removed.
+Kaden, Nine-Tails removed.
+Keaton, Wolfssegner removed.
+Lukas, Dauntless Lieutenant removed.
+Noire, Wrong Side of the Bow removed.
+Panne, Taquel Forme removed.
+Peri, Nohr's Sadist removed.
+Vanessa, Falcoknight Extraordinaire removed.
+The Immaculate One removed.
+Astrid, Of House Damiell removed.
+Rajaion, Feral One removed.
+Astrid, Bow Paladin removed.
+Fjorm, Frigid Savior removed.
+Sumia, Light of Generoisty removed.
+Eldigan, Mystletainn's Wielder removed.
+Tanith, Deputy Commander removed.
+Marcia, Striding Falconknight removed.
+Fiona, Marado Knight Captain removed.
+Lilina, Flame and Thunder removed.
+Devdan, Lucky Halberdier removed.
+Marianne, Clearer View removed.
+Jill, Fiery Dracoknight removed.
+Lachesis, Striking Princess removed.
+Finn, Defiant Protector removed.
+Karin, Pegasus Knight removed.
+Tina, Lightbound Lockpick removed.
+Nel, Fell Dragon Form removed.
+Rafal, Fell Dragon Form removed.
+Ike, Ranger Paragon removed.
+Kamui, Dread Fighter removed.
+Olwen, Blue Mage Knight removed.
+Shiva, Light's Destruction removed.
+Alen, Fiery Paladin removed.
+Lex, Axe Knight of Nörr's Blood removed.
+Lester, Brave Knight removed.
+Shez, Asura removed.
+Ced, Crusader of Wind removed.
+Mia, Uncontested Swordmaster removed.
+Safy, Servant to the Gods removed.
+Shinon, Scathing Sniper removed.
+Darios, Dark Captive Prince removed.
+Kurthnaga, Prince of Goldoa removed.
+Saber, Yasha removed.
+Shannan, Astra's Master removed.
+Tharja, Dark Knight removed.
+Cain, King's Sword removed.
+Eliwood, Knight of Lycia removed.
+Florina, Lovely Falcon removed.
+Gordin, Potential Realized removed.
+Sigrun, Loyal Protector removed.
+Zelgius, General of Begnion removed.
+Caeda, Dracoknight removed.
+Caeldori, Superior Falcon removed.
+Caeldori, Kinshi Paragon removed.
+Cormag, Dragon Fang removed.
+Hana, Skynight Master removed.
+Luke, Untamed Knight removed.
+Marisa, Masterful Swordswoman removed.
+Minerva, Red Commander removed.
+Poe, Blossoming Judgement removed.
+Severa, Exceeding Expectations removed.
+Silas, Assuring Paladin removed.
+Tana, Wings of Love removed.
+Volug, Dark Sentinel removed.
+
+The Fall of Ylisse
+
+Lysithea's Mire
+type: Legendary Sorcery => Legendary Instant
+cost: {1}{B}{B} => {1}{B}
+
+Levin Sword
+cost: {3} => {2}
+
+Tiki, Naga's Voice
+
+Marth, Hero King
+
+Roy, the Young Lion
+
+Flare Blade
+
+Blade Rush
+type: Sorcery => Instant
+rules_text: Target creature you control can't be blocked this turn. If that creature is attacks a player with exactly one other creature, put a +1/+1 counter on them.
+Draw a card. => Target creature you control can't be blocked this turn. If that creature is attacking a player with exactly one other creature, put a +1/+1 counter on them.
+Draw a card.
+
+Edelgard, Flame Emperor
+
+Dimitri, Savior King
+
+Claude, King of Unification
+rules_text: Reach
+[i]Golden Deer[/i] — At the beginning of your end step, create a 1/1 1/1 white and green Citizen creature token.
+[i]Unity[/i] — At the beginning of each opponent's end step, if they didn't attack you, you and that player draw a card. => Reach
+[i]Golden Deer[/i] — At the beginning of your end step, create a1/1 green and white Citizen creature token.
+[i]Unity[/i] — At the beginning of each opponent's end step, if they didn't attack you this turn, you and that player draw a card.
+
+Draconic Maw
+
+Hilda, Free Spirit
+
+Severa, Secret Dreamer
+
+Gaius, Candy Stealer
+
+Anna, Traveling Merchant
+
+Ryoma, Supreme Samurai
+
+Ike, Radiant Hero
+
+Soren's Arcwind
+
+Soren's Arcfire
+
+Ike's Wrath
+
+Stahl, Viridian Knight
+
+Lissa, Sprightly Cleric
+
+Donnel, Village Hero
+
+Xander, Paragon Knight
+
+Cordelia, Knight Paragon
+
+Ophelia, Dramatic Heroine
+
+Sully, Crimson Knight
+
+Iron Lance
+
+Dragonstone
+
+The Beloved Zofia
+
+Ragnell
+
+Iron Gauntlets
+
+Eirika, Restoration Queen
+
+Ephraim, Restoration King
+
+Hinoka & Sakura, Hoshidan Sisters
+
+Camilla & Elise, Nohrian Sisters
+
+Emmeryn's Plea
+
+Leo's Gambit
+
+Nyx's Ginnungagap
+
+Titania, Mighty Mercenary
+
+Soren, Radiant Strategist
+
+Dorothea, Mystical Songstress
+
+Annette, Bloomed Overachiever
+
+Sharena, Princess of Askr
+
+The Last Battle
+
+Sully, Crimson Paladin
+
+Robin, Emblem of Bonds
+
+Robin's Charm
+
+Emmeryn, Light of Ylisse
+
+Chrom, Sword of Ylisse
+
+Robin's Ruin
+
+Robin's Flux
+
+Chrom, Fallen Lord of Ylisse
+
+Lissa's Fire
+
+Lissa's Mend
+
+Donnel Tinhead
+
+Chrom's Aether
+
+Vaike, Zero to Hero
+
+Lissa, War Cleric
+
+Soren, Radiant Confidant
+
+Lon'Qu, Gynophobe
+
+Cordelia, Dark Paragon
+
+Selena, Cutting Wit
+
+Severa, Gleaming Hero
+
+Assembling The Emblem
+
+Lon'Qu, Fearless Knight
+
+Kellam, Oft Forgotten
+
+Zelkov, Mystery Man
+
+Duty of the Shepherds
+
+Stahl, Viridian Paladin
+
+Lost in Thoughts All Alone
+
+Anna, Secretive Merchant
+
+Alm, Imperial Ascent
+
+Caeldori, Perfect Angel
+
+Sylvain, Noble Charmer
+
+Felix, Meandering Sword
+pt: 2/1 => 3/1
+
+Annette, Sage Teacher
+
+Bernadetta, Etenral Loner
+
+Catherine, Free Knight
+
+Claude, Emblem of Rivals
+
+Dimitri, Emblem of Rivals
+
+Edelgard, Emblem of Rivals
+
+Lyn, Emblem of Blazing
+
+Henry's Waste
+
+Dedue, Taciturn Devotee
+
+Celica, Puppet of Duma
+
+Micaiah, Dawn Priestess
+
+Felix, of House Fraldarius
+
+Tea Time
+
+Path of Radiance
+type: Enchantment => Legendary Enchantment
+
+Henry, Twisted Mind
+
+Selkie, Free Spirit
+
+Leonie, The Blade Breaker II
+rules_text: [i]Rivalry[/i] — Whenever an opponent attacks with two or more creatures, draws their second card each turn, or casts their second spell each turn, distribute three +1/+1 counters among any number of creatures you control.
+[i]Defiant Strength[/i] — Whenever Leonie, The Blade Breaker II attacks a player alone, double her power until end of turn.
+Promoted Class — {R}{W} => [i]Rivalry[/i] — Whenever an opponent attacks with two or more creatures, draws their second card each turn, or casts their second spell each turn, distribute three +1/+1 counters among any number of creatures you control.
+[i]Defiant Strength[/i] — Whenever Leonie, The Blade Breaker II attacks a player alone, double her power until end of turn.
+[i]Promoted Class[/i] — {R}{W}
+
+Lilith, Astral Guardian
+
+Lyndis, Sacaen Survivor
+
+Lysithea, Scholar of Misfortune
+rules_text: [i]Mastermind[/i] — If you would put one or more counters on a permanent you control, put that many plus one of that counter on that permanent instead.
+[i]Bearer of Two Crests[/i] — Whenever Lysithea attacks, put a +1/+1 counter on her and another target creature. => [i]Mastermind[/i] — If you would put one or more counters on a permanent you control, put that many plus one of that counter on that permanent instead.
+[i]Bearer of Two Crests[/i] — Whenever Lysithea attacks, put a +1/+1 counter on her and another target creature.
+[i]Promoted Class[/i] — {1}{W}{B}
+
+Marianne, Curse Survivor
+rules_text: [i]Crest of the Beast[/i] — Other creatures you control get +1/+1 for each Aura and Equipment attached to Marianne, Survivor of the Curse.
+[i]Animal Friend[/i] — {T}: Add {G}{W}. Spend this mana only to cast creature spells. You gain 2 life.
+Promoted Class — {1}{G}{W} => [i]Crest of the Beast[/i] — Other creatures you control get +1/+1 for each Aura and Equipment attached to Marianne, Survivor of the Curse.
+[i]Animal Friend[/i] — {T}: Add {G}{W}. Spend this mana only to cast creature spells. You gain 2 life.
+[i]Promoted Class[/i] — {1}{G}{W}
+
+Miriel's Bolganone
+
+Oboro, Fierce Fighter
+
+Villager Training
+
+Petra, Seafaring Princess
+rules_text: Haste
+[i]Hunter's Boon[/i] — As long as an opponent has 20 or less life, whenever one or more creature you control deal combat damage to that player, create a copy of target land you control.
+[i]Stealth[/i] — Petra has hexproof as long as you control another creature. => Haste
+[i]Hunter's Boon[/i] — As long as an opponent has 20 or less life, whenever one or more creature you control deal combat damage to that player, create a copy of target land you control.
+[i]Stealth[/i] — Petra has hexproof as long as you control another creature.
+[i]Promoted Class[/i] — {R}{G}
+
+Tharja, Grim Stalker
+
+Rhea, Loving Matriarch
+
+Reflection of Growth
+
+Saizo, Angry Ninja
+
+Shamir, Distant Archer
+
+Sylvain of House Gautier
+
+Takumi, Wild Card
+
+Tharja's Ruin
+
+Silver Bow
+
+Niles, Cruel to be Kind
+
+Gaius, Confectionery Pilferer
+
+Lon'Qu, Arena Champion
+
+Alear, Divine Dragon of Elyos
+
+Alfonse, Prince of Askr
+
+Boey, Mage of Novis
+
+Boey's Excalibur
+
+Bracelet of the Three Houses
+
+Caeda, Talys Princess
+
+Caeda, First to Fly
+
+Catria, Charming Whitewing
+
+Céline, Joyous Royal
+
+Charlotte, Wily Warrior
+
+Chloé, Fairy-Tale Flier
+rules_text: Flying
+[i]Foodie[/i] — At the beginning of your end step, create a Food token.
+[i]Fairy-Tale Folk[/i] — {1}{G}{W}, Sacrifice an artifact: Create two 1/1 white and green Citizen creature tokens. => Flying
+[i]Foodie[/i] — At the beginning of your end step, create a Food token.
+[i]Fairy-Tale Folk[/i] — {1}{G}{W}, Sacrifice an artifact: Create two 1/1 green and white Citizen creature tokens.
+
+Deen, Bladed Sandstorm
+
+Diamant, Rising Power
+
+Dieck, Wounded Tiger
+
+Effie, Army of One
+
+Blades Ablaze
+
+Est, Youngest Whitewing
+
+Etie, Fitness Fighter
+
+Faye, Devoted Heart
+
+Sombron, Great Fell Dragon
+
+Fogado, Affable Prince
+
+Genny, Endearing Ally
+
+Goldmary, Elegant Talent
+
+Gray, Wry Comrade
+
+Hector, Marques of Ostia
+
+Eliwood, Marques of Pherae
+
+Wolf Beil
+
+Chaos Surge
+
+Ike, Supreme Commander
+
+Micaiah, Queen of Daein
+
+Ivy, Snow Queen
+
+Kagetsu, Onigiri Samurai
+
+Kaze, Easygoing Ninja
+
+Kliff, Curious Spirit
+
+Lapis, Mighty Flower
+
+Leanne, Mesmerizing Chanteur
+
+Leif, Prince of Leonster
+
+Lowen, Swift Knight
+rules_text: [i]Fame of Pherae[/i] — Lowen, Swift Knight gets +1/+1 for each token you control.
+[i]Delivery[/i] — Whenever Lowen, Swift Knight attacks, create a 1/1 white and green Citizen creature token and a Food token. => [i]Fame of Pherae[/i] — Lowen, Swift Knight gets +1/+1 for each token you control.
+[i]Delivery[/i] — Whenever Lowen, Swift Knight attacks, create a 1/1 green and white Citizen creature token and a Food token.
+
+Lythos
+
+Mae, Upbeat Priestess
+
+Marth, Archanean King
+
+Caeda, Archanean Queen
+
+Minerva, Macedon Princess
+
+Minerva, True Leader
+
+Nailah, Queen of the Wolves
+
+Nemesis, King of Liberation
+
+Nils, Child of Destiny
+
+Ninian, Oracle of Destiny
+
+Nyx, Cursed by Youth
+
+Olivia, Shrinking Violet
+
+Orochi, Secret Keeper
+
+Palla, Eldest Whitewing
+
+Panette, Classy Brawler
+
+Rhajat, Cursed Onmyoji
+
+Rath, Son of the Kutolah Tribe
+
+Seiros, Daughter of Creation
+
+Reina, Morbid Fixation
+
+Reyson, White Prince
+
+Reunion of Emblems
+
+Lady Rhea, Archbishop of Seiros
+
+Rutger, Lone Swordsman
+
+Shade's Freeze
+
+Shade's Nosferatu
+
+Shade, of the Dark Shadow
+
+Sonya, Vengeful Mage
+
+Sonya's Fire
+
+Sothis, Girl on the Throne
+
+Sothis & Rhea, Nabatean
+
+Sumeragi, King of Hoshido
+
+Sue, Doe of the Plains
+
+Tibarn, Lord of the Air
+
+Tobin, The Clueless One
+
+Veronica, Princess of Emblia
+
+Velouria, Wolf Cub
+
+Xane, Shape-Shifter
+
+Triangle Attack
+
+Call The White Wings
+
+Confession of Secrets
+
+Byleth's Charm
+
+Constance, Sorcery Incarnate
+
+Cornelia, Adrestian Scholar
+
+Together, We Ride!
+
+Flora & Felicia, Frigid Maids
+
+Ingrid, Stalwart Knight
+
+L'Arachel, Princess of Light
+
+Lucina & Robin, Paired Up
+
+Azura, Lady of the Lake
+
+Elincia, Queen of Crimea
+
+Corrin, Crux of Fate
+
+Grima, Fell Dragon
+
+Bruno, Prince of Emblia
+
+Sword of Seiros
+
+Shield of Seiros
+
+Shadow Yato
+
+Aversa, Dark One
+
+Gangrel, Mad King of Plegia
+
+Armorer
+
+Hector, Emblem of Strength
+
+Alfred, Floral Protector
+
+Timerra, Desert Warrior
+
+Sword of The Creator
+
+God Shattering Star
+
+Down Time
+
+Count the Days
+
+Garreg Mach Vault
+
+Byleth, Emblem of the Academy
+
+Decietful Backstab
+
+Anna, Secret Seller
+
+Anna, Commander
+
+Ivy's Bolting
+
+Ashe, Daydreamer
+
+Lord's Prestige
+
+Balthus, King of Grappling
+
+Veyle, Fell Child
+
+Hinoka, Warrior Princess
+
+Elise, Budding Flower
+
+Archanea
+
+Camilla's Charm
+
+Camilla, Bewitching Beauty
+
+Hortensia, Little Charmer
+
+Will of the Creator
+
+Hapi, Beast Master
+
+Mercedes, Kindly Devotee
+
+Mercedes, Benevolent Soul
+
+Yuri, Underground Lord
+
+Lorenz, of House Gloucester
+
+Raphael, Beast of Leicester
+
+Hubert, Emperor's Confidant
+
+Hubert, Edelgard's Advisor
+
+Ferdinand, Noblest of Nobles
+
+Caspar, Roaming Instigator
+
+Hilda, Idle Maiden
+
+Hilda, of House Goneril
+
+Ignatz, Worldy Artist
+
+Linhardt, Ragamuffin Sage
+
+Plegia
+
+Nevassa
+
+Dragon's Gate
+
+Tellius
+
+Garreg Mach Monestary
+
+Ylisstol
+
+Dragon's Temple
+
+Arena Ferox
+
+Corrin's Fateful Choice
+
+Bracelet of the Lonely Heir
+
+Bracelet of the Ancestor
+
+Bracelet of the Doting Sister
+
+Ring of the Hero-King
+rules_text: {1}, {T}: Add {U}{R}.
+[i]Unyielding[/i] — Sacrifice Ring of the Hero-King: Regenerate target creature. [i](The next time this permanent would be destroyed this turn, it isn't. Instead tap it.)[/i] => {1}, {T}: Add {U}{R}.
+[i]Unyielding[/i] — Sacrifice Ring of the Hero-King: Regenerate target creature. [i](The next time this artifact would be destroyed this turn, it isn't. Instead tap it.)[/i]
+
+Bracelet of the Strategist
+
+Byleth's Wedding Ring
+
+Bracelet of the Shepherd Exalt
+
+Bracelet of the Brash General
+
+Ring of the Connector
+
+Ring of the Instructor
+
+Ring of the Caring Princess
+
+Ring of the Azure Twins
+
+Ring of the Radiant Hero
+
+Ring of the Sage Lord
+
+Ring of the Princess Exalt
+
+Ring of the Lady of the Plains
+
+Ring of the Dawn Maiden
+
+Ring of the Young Lion
+
+Ring of the Holy Knight
+
+Ring of the Crux of Fate
+
+Leo, Dark Prince
+
+Tethys, Beloved Dancer
+
+Bartre, Wild Axefighter
+
+Valm
+
+Regna Ferox
+
+Ylisse
+
+Rigel
+
+Zofia
+
+Thracia
+
+Manster
+
+Thabes Labyrinth
+
+Sacae
+
+Firene
+
+Duma, War Father
+
+Mila, Earth Mother
+
+Owain, Chosen One
+
+Ephraim, Solar Prince
+
+Eirika, Lunar Princess
+
+Tana, Winged Queen
+
+Innes, King and Strategician
+
+Dimitri, King of Faerghus
+
+Edelgard, Adrestian Emperor
+
+Claude, Almyra's King
+
+Arete, Requiem's Beauty
+
+Yune's Boon
+
+Sigurd, Holy Knight
+rules_text: Vigilance, first strike
+[i]Follow-Up[/i] — Whenever Sigurd, Holy Knight is blocked by a creature with lesser toughness, he gains double strike until end of turn.
+[i]Oath to Aid[/i] — {1}{R}{W}: Create a 2/2 white Knight creature token with vigilance.
+Partner with Deirdre, Lady of the Forest
+_ => Vigilance, first strike
+[i]Follow-Up[/i] — Whenever Sigurd, Holy Knight is blocked by a creature with lesser toughness, he gains double strike until end of turn.
+[i]Oath to Aid[/i] — {1}{R}{W}: Create a 2/2 white Knight creature token with vigilance.
+Partner with Deirdre, Lady of the Forest
+
+Travant, King of Thracia
+
+Seliph, Scion of Light
+
+Julia, Naga's Blood
+
+Deirdre, Lady of the Forest
+
+Quan, Luminous Lancer
+
+Saizo, Bursting Flame
+
+Kagero, Sparks Fly
+
+Cordelia, Perfect Mother
+
+Severa, Paragon's Daughter
+rules_text: Flying, first strike
+[i]In her Shadow[/i] — Whenever Severa, Paragon's Daughter attacks with another creature with flying, you may have creatures you control with flying have base power and toughness equal to the greatest power and toughness among creatures you control with flying until end of turn.
+[i]Pair Up[/i] — Whenever Severa attacks a player, if exactly one other creature is attacking that player, exile the top two cards of your library. You may play them for as long as they remain exiled.
+Partnered with Cordelia, => Flying, first strike
+[i]In her Shadow[/i] — Whenever Severa, Paragon's Daughter attacks with another creature with flying, you may have creatures you control with flying have base power and toughness equal to the greatest power and toughness among creatures you control with flying until end of turn.
+[i]Pair Up[/i] — Whenever Severa attacks a player, if exactly one other creature is attacking that player, exile the top two cards of your library. You may play them for as long as they remain exiled.
+Partnered with Cordelia, Perfect Mother [i](When this creature enters, target player may put Cordelia into their hand from their library, then shuffle.)[/i]
+
+Cain, The Bull
+
+Abel, The Panther
+
+Fjorm, Princess of Ice
+
+Nifl, Realm of Ice
+
+Múspell, Realm of Fire
+
+Anankos, Seething Silence
+
+Arthur, Star Striking Hero
+
+Athos, Living Legend
+
+Ashnard, Mad King of Daein
+
+Order Up!
+
+Asugi, Sweet-Toothed Ninja
+
+Azama's Calamity Gate
+
+Azama, Calm Philosopher
+
+Basilio, West Khan of Ferox
+
+Benny, Gentle Giant
+
+The Binding Blade
+
+Xander, Prince of Nohr
+
+Ryoma, Prince of Hoshido
+
+Brady, Daunting Priest
+
+Rinkah, Scion of Flame
+
+Cherche, Griffin Captain
+
+Cherche, Wyvern Friend
+
+Cherche, Virion's Retainer
+
+Feed the Flyers
+
+Cherche, Dragon Mother
+
+Gerome, Masked Rider
+
+Leif, Uniter of Thracia
+
+Nanna, Queen of Nordion
+rules_text: Lifelink
+[i]Queen's Charm[/i] — Whenever a creature you control with greater toughness than power attacks, you gain 2 life.
+Partner with Leif, Avenger of Thracia [i](When this creature enters, target player may put Leif into their hand from their library, then shuffle.)[/i] => Lifelink
+[i]Queen's Charm[/i] — Whenever a creature you control with greater toughness than power attacks, you gain 2 life.
+Partner with Leif, Uniter of Thracia [i](When this creature enters, target player may put Leif into their hand from their library, then shuffle.)[/i]
+
+Durandal, The Blazing Blade
+
+Ettard
+
+Hero's Prologue
+
+Cynthia, Hero Chaser
+
+Dwyer, Sleepy Butler
+
+Elise, Youngest Princess
+
+Sakura, Youngest Princess
+
+Kingdoms United
+
+Marth, First King
+
+Kris, First Avatar
+
+Legend of The Lords
+
+Felicia, Forever Loyal
+
+Clumsy Service
+
+Sharp Service
+
+Mask Service
+
+Flavia, East Khan of Ferox
+
+Flora, Icy Aid
+
+Freezing Service
+
+Rise and Shine
+
+Hríd, Prince of Nifl
+
+Confession of Eternity
+
+Confession of Strength
+
+Maribelle, Dire Damsel
+
+Fogado's Charm
+
+Geoffrey, Protector of the Realm
+
+Gilliam, Wall of Silence
+
+Gullveig, Seer Beyond Time
+
+Hana, Master of Arms
+
+Sword Master's Slash
+
+Hayato, The Kid
+
+Hayato's Ox Spirit
+
+Heath, Wandering Knight
+
+Heath, Wyvern Lord
+
+Heather, Alluring Rogue
+
+Nephenee, Relentless Halberdier
+
+Heather, Broken Hearts
+
+Heather's Stash
+
+Hinata, Takumi's Sword
+
+Oboro, Takumi's Spear
+
+Hisame, Pickle Pro
+
+Exceptional Service
+
+Ignatius, Frightened Knight
+
+Ignatius' Greatest Fear
+
+Inigo, Swooning Sword
+
+Inigo, Flower Picker
+
+Ishtar, Thunder Goddess
+
+Ishtar's Mjölnir
+
+Jaffar, Angel of Death
+
+Jaffar's Strike
+
+Jakob, Devoted Servant
+
+Jakob, Duty Calls
+
+Divine Service
+
+Kaden, Kitsune Braggart
+
+Kana, Dragon Prince
+
+Omega Yato
+
+Legacy's Weilder
+
+Kana, Fateborn Princess
+
+Kana, Fates Child
+
+Draconic Lineage
+
+Cyril, Limitless Potential
+
+Cyril, Rhea's Attendant
+
+Flayn, Slumbering Princess
+
+Lúin
+
+Katarina, Atoning Tactician
+
+Keaton, Lupine Collector
+
+Kiragi's Gale
+
+Kiragi, Upbeat Archer
+
+Sundering Strike
+
+Kjelle, Fair Fighter
+
+Chrom, Newly Exalted
+
+Chrom, Descendant of the First King
+
+Cut A Path
+
+Triandra, Sunlit Nightmare
+
+Triandra, Nightmare
+
+Triandra's Flower of Sorrow
+
+Robin's Act of Betrayal
+
+Robin's Thoron
+
+Robin's Levin Sword
+
+Laslow, Dancing Duelist
+
+Laurent, the Elucidator
+
+Breaking Strike
+
+Blinding Barrage
+
+Libra, Fetching Friar
+
+Lilith, Silent Broodling
+
+Hayato, Young Onmyoji
+
+Kaden, Refreshed Kitsune
+
+Lute, Prodigy
+
+Lysithea's Hades
+
+Defender of Time
+
+Bernadetta's Solitude
+
+Cordelia's Aspirations
+
+Dorothea, Gorgeous Mystic
+
+Lyon, Shadow Prince
+
+Ayra, Astra's Wielder
+
+Florina, Shy Pegasus Knight
+
+Lyon's Dark Awakening
+
+Fiora, Wing Borne Warrior
+
+Triangle Dive
+
+Guy, Kutolah Blade
+
+Igrene, Ninja of Nabata
+
+Igrene & Louise, Sworn Protectors
+
+Igrene, Nabata Protector
+
+Isadora, Eleanora's Stewardess
+
+Isadora, Escort of Pherae
+
+Karla, Sowrd Vassal
+
+Legault, The Hurricane
+
+Fomortiis, Distrubed Pawn
+
+Merlinus, Cheery Merchant
+
+Nah, Little Miss
+
+Oswin, Ostia's General
+
+Oswin, Hector's Shield
+
+Raven & Priscilla, Cornwell Nobles
+
+Priscilla's Kindness
+
+Priscilla, Delicate Princess
+
+Ricken, Upcoming Mage
+
+Sain, Lovestruck Knight
+
+Shura, Righteous Rebel
+
+Wil, Archer of Pherae
+
+Sothis, Goddess of Creation
+
+Python's Piercing Shot
+
+Ayra's Astra
+
+Ayra, Prideful Swordswoman
+
+Ayra's Blade
+
+Berkut and Rinea
+
+Clair, Soaring Beauty
+
+Colm, Lark's Theif
+
+Emma, Fresh Sky Knight
+
+Emma, Hoshidian Falcon
+
+Emma's Fortify
+
+Farina, Ilian Mercenary
+
+Uncounted Coins
+
+Fomortiis, Demon King
+
+Forsyth, Loyal Lieutenant
+
+Gerik, Mercenary Leader
+
+Gerik, the Desert Tiger
+
+Nidhogg, The Serpent Bow
+
+Slayer's Volley
+
+Jesse, Desert Mercenary
+
+Karel, The Sword Demon
+
+L'Arachel's Fortify
+
+L'Arachel's Divine
+
+Luthier, Pyretic Wayfarer
+
+Luthier's Sagittae
+
+Marcus, Knight of Pherae
+
+Mathilda, Legendary Knight
+
+Mathilda's Hit and Run
+
+Naesala, Sky's Shadow
+
+Nino, Ignorant Mage
+
+Randal, Evil Knight
+
+Randal's Wager
+
+Rebecca, Wild Flower
+
+Rebecca's Bow
+
+Saleh, Great Dragon Protector
+
+Sanaki, Begnion's Apostle
+
+Sanaki, Holy Empress
+
+Cymbeline
+
+Sanaki's Radiant Rexflame
+
+Sanaki's Arcfire
+
+Ragnell & Alondite
+
+Silque, Adherent of Mila
+
+Syrene, Graceful Rider
+
+Vaida's Goring
+
+Alm & Celica, Echo
+
+Alm, Villager
+
+Amelia, Paladin Path
+
+Amelia, Rose of the War
+
+Amelia, General Path
+
+Arthur's Crushing Heroism
+
+Artur, Saint of Light
+
+Artur's Cleansing Purge
+
+Ashera, Order Goddess
+
+Kronya's Stalking
+
+Yet the Waters Ever Change
+
+Camilla's Doting
+
+Camilla, Emlem of Revelation
+
+Alcryst, Tender Archer
+
+Alcryst's Sulking
+
+Amber, Alpaca Master
+
+Confession of Romanticism
+
+Alpaca's Aid
+
+Boucheron, Big Softy
+
+Confession of Authenticity
+
+Bunet, Culinary Artist
+
+Bunet's Culinary Artistry
+
+Citrinne, Caring Noble
+
+Confesssion of Luxury
+
+Clanne, Calm Steward
+
+Framme, Eager Steward
+
+Clanne's Pickle Prep
+
+Confession of Calmness
+
+Confession of Cheer
+
+Framme's Brazen Feasting
+
+Jade, Iron Wall
+
+Confession of Confidence
+
+Louis, Watchful Valet
+
+Confession of Service
+
+Merrin, Suave Knight
+
+Merrin's Dance
+
+Pandreo, Party Priest
+
+Pandreo's Panashe
+
+Rosado, Adorable Artist
+
+Confession of Individuality
+
+Seadall's Concealment
+
+Seadall, Mystic Dancer
+
+Seadall's Card Reading
+
+Vander's Groundkeeping
+
+Vander, Holy Veteran
+
+Restoration of Firene
+
+Bookkeeping of Brodia
+
+Recovery of Elusia
+
+Celebration of Solm
+rules_text: At the beginning of your upkeep, create a 1/1 white and green Citizen creature token.
+At the beginning of combat on your turn, if two or more nonland permanents entered this turn, support 1. [i](Put a +1/+1 counter on each of up to one target creature.)[/i] => At the beginning of your upkeep, create a 1/1 green and white Citizen creature token.
+At the beginning of combat on your turn, if two or more nonland permanents entered this turn, support 1. [i](Put a +1/+1 counter on each of up to one target creature.)[/i]
+
+Firene Customs
+
+Diamant's Coronation
+
+Trade Request
+
+Solmic Meat Run
+
+Inspired Revel
+
+Defiant Dive
+
+Emma's Amaterasu
+
+Emma's First Flight
+
+Cormag, Aloof Lanceman
+
+Corrin, For Hoshido
+
+Corrin, Emblem of Fate
+
+Corrin, For Nohr
+
+Yato
+
+Dorcas, Serene Warrior
+
+Dozla, Enduring Axe
+
+Dorothea's Serenade
+
+Dorothea's Thoron
+
+Nasir, Eternal Wanderer
+
+Edain's Fortify
+
+Erinys, Earnest Knight
+
+Erinys' Flurry
+
+Ewan, Enthusiastic Student
+
+Ewan's Meteor
+
+Sumia's Gentleness
+
+Alear, Awoken Divinity
+
+Alear, Engaging Fire
+
+Corrin's Dissonance
+
+Lucina's Charm
+
+Rinkah's Eruption
+
+Hinoka's Fury
+
+Forrest, Fashion Forward
+
+Fujin Yumi
+
+Garcia, Warrior Reborn
+
+Guinevere, Princess of Peace
+
+Hayato's Dragon Spirit
+
+Hayato's Rabbit Spirit
+
+Hilda's Charm
+
+Freikugel
+
+Urvan
+
+Vaida, Flying Fang
+
+Ismaire, Widowed Queen
+
+Jagen, Knight Progenitor
+
+Gunter, Inveterate Soldier
+
+Saizo's Flame Shuriken
+
+Face Adversity
+
+Kana, Dragon Princess
+
+Kaze's Hidden Blades
+
+Natasha, Sacred Healer
+
+Valbar, Honest Guardian
+
+Laurent's Study
+
+Lene, Daughter of Silvia
+
+Laylea, Flirting Fire
+
+Leo, Shrouded Prince
+
+Lucina, Father's Pride
+
+Lucina, Dark Past
+
+Lucina's Commitment
+
+Lucina, Reincarnate Lodestar
+
+Lute's Elfire
+
+Lyn's Charm
+
+Lugh's Aircalibur
+
+Marianne's Charm
+
+Lugh, Anima Child
+
+Merric, Changing Winds
+
+Merric's Excalibur
+
+Manuela's Charm
+
+Maria, Macedon Princess
+
+Lysithea's Charm
+
+Blutgang
+
+Maribelle, Noble Valkyrie
+
+Marisa, Crimson Flash
+
+Marisa, Crimson Finisher
+
+Matthew, Enigmatic Thief
+
+Sirius, Mysterious Knight
+
+Sirius' Sable Strike
+
+Medeus, the Shadow Dragon
+
+Melady, Crimson Rider
+
+Raven, Avenger of Cornwell
+
+Raven, Sublime Mercenary
+
+Micaiah's Charm
+rules_text: Choose one —
+• Support 3. [i](Put a +1/+1 counter on each of up to three target creatures.)[/i]
+• Target creature you control fights target creature you don't control.
+• You mill three cards and gain 4 life. => Choose one —
+• Support 3. [i](To support 3, put a +1/+1 counter on each of up to three target creatures.)[/i]
+• Target creature you control fights target creature you don't control.
+• You mill three cards and gain 4 life.
+
+Midori's Concotion
+
+Midori, Reliable Chemist
+
+Miriel's Study
+
+Mitama's Fire
+
+Mitama, Starry-Eyed Poet
+
+Lehran's Medallion
+
+Mist's Heal
+
+Mist, Hero's Valkyrie
+
+Mist, Healing Breeze
+
+Morgan's Tome Collection
+
+Morgan, Tactical Child
+
+Morgan, Gift from Afar
+
+Morgan, Child of Grand Design
+
+Moulder, Wise Counselor
+
+Mozu, Tragic Start
+
+Nagi, Dragon Avatar
+
+Nah, Roaring Hope
+
+Myrrh, the Great Dragon
+
+Neimi's Tearful Shot
+
+Neimi, Tearful Archer
+
+Noire's Demonic Volley
+
+Nowi, Eternal Youth
+
+Setsuna, Absent Archer
+
+Odin, Aching Blood
+
+Odin's Thunder
+
+Odin, Leo's Left Hand
+
+Niles, Leo's Right Hand
+
+Olivia's Charm
+
+Ophelia, Storm Sorceress
+
+Ophelia's Charm
+
+Ophelia's Library
+
+Ophelia's Crystals
+
+Ophelia's Missiletainn
+
+Owain, Chosen Blade
+
+Owain, Blades Unleahsed
+
+Mikoto, Queen of Hoshido
+
+Mozu, Rural Power
+
+Wild Connection
+
+Panne, Last of Her Kind
+
+On Wings We Ride
+
+Arete and Mikoto, Vallite Sisters
+
+Pent, Marquess of Reglay
+
+Louise' Charm
+
+Louise, Etenral Devotion
+
+Up, Up, and Away!
+
+Percy, Luck's Sidekick
+
+Petra's Waning Shot
+
+Petra, Queen of Brigid
+
+Petra, Magenta Blur
+
+Petrine, Flame Lancer General
+
+Peri's Charm
+
+Peri's Sadisitic Charge
+
+Peri's Lance
+
+Priam's Harty Hunt
+
+Poiseful Gaze
+
+Queen Mikoto's Dance
+
+Rennac, Rich Merchant
+
+Robin's Tactical Strike
+
+Seliph, Son of Sigurd
+
+Julia, Daughter of Deirdre
+
+Second Generation United
+
+Fredrick's Luna
+
+Sakura's Rod
+
+Hoshidan Food Market
+
+Sakura, Loving Priestess
+
+Sakura, Skyward Priestess
+
+Siblings Bond
+
+Yuzu, Fencing Crane
+
+Say'ri, Blade of the Resistance
+
+Selena, Flourspar
+
+Selena's Bolting
+
+Siegbert, Future King
+
+Rest Your Wings
+
+Selkie, Simple Fox Girl
+
+Velouria, Little Segnergirl
+
+Velouria's Charm
+
+Velouria, Full Moon
+
+Selkie, Sunrise
+
+Natural Friendship
+
+Serra, Cleric of Ostia
+
+Seth, The Silver Knight
+
+Setsuna's Trapfinding
+
+Setsuna, Sunken Archer
+
+Shade's Miasma
+
+Shigure's Peace
+
+Shigure's Uplifting Voice
+
+Shigure, Timeless Duet
+
+Azura, Angelic Voice
+
+Shiro's Command
+
+Shiro, Hoshidan Heir
+
+Lucky Catch
+
+Siegbert's Command
+
+Siegbert, Diligent Heir
+
+Crash of Blades
+
+Silas, Loyal Friend
+
+Silas, Loyal Knight
+
+Silvia, Traveling Dnacer
+
+Lewyn, Guiding Breeze
+
+Lewyn, The Keeper of Tales
+
+Scáthach, Son of The Sword Saint
+
+Ogma, Loyal Blade
+
+Scáthach, Astra's Master
+
+Ogma, Caeda's Shield
+
+Soleil, Sunlit Swordswoman
+
+Soleil's Sweetness
+
+Soleil, Adorable Adorer
+
+Sonia, Nergal's Black Fang
+
+Sonya, Desert Priestess
+
+Sophie, Clumsy Knight
+
+Sothe, Zephyr
+
+Subaki, Mr. Perfect
+
+Subaki, Tsunami's Wings
+
+White Wings
+
+Creator's Revelation
+
+Sumia's Charm
+
+Nanna's Charm
+
+Syrene, Falco Commander
+
+Cynthia's Charm
+
+Tatiana, Absentminded Saint
+
+Abel, The First Green Knight
+
+Cain, The First Red Knight
+
+Alfonse and Lif, Reflection
+
+Alfonse's Heroism
+
+Altina, Tellius Hero
+
+Dheginsea, Tellius Hero
+
+Soan, Tellius Hero
+
+Ayra's Charm
+
+Ayra's Lethality
+
+Eir, Princess of Life
+
+Emma, Sunrise Knight
+
+Erk, Wandering Mage
+
+Fir, Heir of the Sword Saint
+
+Talysian Mercenaries
+
+Triangle Axe
+
+Kagero, Traditonal Ninja
+
+Lif, General of the Dead
+
+Loki, The Trickster
+
+Loki's Undeniable Plot
+
+Marcus, Loyal Paladin
+
+Navarre, Scarlet Sword
+
+Nina, Eye Spy
+
+Ogma's Command
+
+Ogma's Levin Sword
+
+Plumeria's Orb
+
+Plumeria, Rapturous Dream
+
+Rebecca, Champion of the People
+rules_text: Reach
+[i]Champion of the People[/i] — Whenever Rebecca, Champion of the People enters or attacks, create a 1/1 white and green Citizen creature token.
+[i]Rally[/i] [i]Citizens[/i] — Citizens you control have reach. => Reach
+[i]Champion of the People[/i] — Whenever Rebecca, Champion of the People enters or attacks, create a 1/1 green and white Citizen creature token.
+[i]Rally[/i] [i]Citizens[/i] — Citizens you control have reach.
+
+Seth's Command
+
+Ross, His Father's Son
+
+Thrasir, General of the Dead
+
+Thrasir's Charm
+
+Roy, Brave Lion
+
+Al, The Blue Champion
+
+Saizo, Oni Ninja
+
+Kagero, Silver Ninja
+
+Tharja, Obsessive Shadow
+
+Rickard, Julian's Pal
+
+Niles Command
+
+Nina, Heartthrob Bow Knight
+
+Thórr, War God
+
+Thórr's Wrath
+
+Tiki's Timeless Journey
+
+Union of the Dragonkin
+
+Tiki, Scion of Life
+
+Tiki's Divine Entrance
+
+Tiki, Waking Dragon
+
+Titania's Grasp
+
+Titania's Charm
+
+Mozu, Master of Arms
+
+Nyna, Saint of Salvation
+
+Merric's Elwind
+
+Galle, Azure Knight
+
+Galle's Loyalty
+
+Yarne, Timid Taquel
+
+Zephiel, King of Bern
+
+Hinata's Stance
+
+Aymr
+
+Lysithea's Luna
+
+Vajra-Mushti
+
+Nina's Charm
+
+Areadbhar
+
+Failnaught
+
+Beowolf, Free Knight
+
+Bernadetta's Charm
+
+Brigid, Mistress of Fiana
+
+Thunderbrand
+
+Cassandra, Youthful Thunder
+
+Chad, Lycian Wildcat
+
+Brom, Rural Juggernaut
+
+Kris, Friend Above All
+
+Constance's Fire
+
+Dwyer's Treats
+
+Dheginsea, King of Goldoa
+
+Dimitri's Command
+
+Dimitri's Atrocity
+
+Delthea, Tatarrah's Puppet
+
+Edelgard's Command
+
+Kiran, Hero Summoner
+
+Faye, Devoted Priestess
+
+Elise, Nohrian Ninja
+
+Emma's Charm
+
+Emma, Wyvern Knight
+
+Felix's Swipe
+
+Osian, Fiana Freeblade
+
+Hapi's Aura
+
+Hinoka's Rally
+
+Jake, Good-Willed Ballistician
+
+Genny, Endearing Enchantress
+
+Joshua's Roaring Blade
+rules_text: If Joshua's Roaring Blade targets a creature with a [i]Crit[/i] ability, draw a card.
+Target creature you gains double strike until end of turn. Whenever that creature deals combat damage to a player, put a +1/+1 counter on each other attacking creature you control. => If Joshua's Roaring Blade targets a creature with a [i]Crit[/i] ability, draw a card.
+Target creature you control gains double strike until end of turn. Whenever that creature deals combat damage to a player, put a +1/+1 counter on each other attacking creature you control.
+
+Kliff, Curious Sage
+
+Ranulf, Friend of Nations
+pt: 1/1 => 3/3
+
+Larcei, Astra's Twin
+
+Leonie's Charm
+
+Leif's Command
+
+Leonie, Jeralt's Disciple
+rules_text: Reach
+[i]Break Shot[/i] — When Leonie, Jeralt's Disciple enters, destroy target artifact.
+[i]Join the Golden Deer[/i] — Whenever Leonie attacks, create a 1/1 white and green Citizen creature token. => Reach
+[i]Break Shot[/i] — When Leonie, Jeralt's Disciple enters, destroy target artifact.
+[i]Join the Golden Deer[/i] — Whenever Leonie attacks, create a 1/1 green and white Citizen creature token.
+
+Lewyn, Windsong
+
+Lewyn's Tunes and Tales
+
+Lif's Culling
+
+Linhardt, Dozing Off
+
+Lucia, Royal Guard Commnader
+
+Lucina, Exalt of Ylisse
+
+Lyon's Command
+
+Marianne, Friend of Animals
+
+Marianne's Stable Keeping
+
+Nanna, Divine Princess
+
+Nephenee, Sincere Halberdier
+
+Pelleas, Shackled Heir
+
+Petra's Voyage
+
+Roy's Command
+
+Roy's Deflecting Stance
+
+Saizo, Hoshidan Mercenary
+
+Saizo, Hoshidan Hero
+
+Tanya, Dagdar's Daughter
+
+Tanya's Phasing Shot
+
+Edelgard, The Future
+
+Dimitri, The Protector
+
+Claude, The Schemer
+rules_text: [i]Liecester Lineage[/i] — At the beginning of your upkeep, create a 1/1 white and green Citizen creature token.
+[i]Garreg Mach House Leader [/i]— Other creatures you control have skulk. If you control another Garreg Mach House Leader, creatures you control have reach and skulk. => [i]Liecester Lineage[/i] — At the beginning of your upkeep, create a 1/1 green and white Citizen creature token.
+[i]Garreg Mach House Leader [/i]— Other creatures you control have skulk. If you control another Garreg Mach House Leader, creatures you control have reach and skulk.
+
+Dorothea's Charm
+
+Larcei, Keen Kin
+
+Tine, Rumbling Thunder
+
+Tine's Thunder
+
+Tine's Thoron
+
+Berkut, Duma's Spear
+
+Rhajat, Black Magician
+
+Yuri, Lone Wolf
+
+Claude's Gambit
+
+Officer's Charm
+
+Tharja's Waste
+
+Cordelia's Charm
+
+Grima's Confluence
+
+Abel's Command
+
+Anna, Castle Keeper
+
+Lethe's Charm
+
+Lethe, Gallia's Claw
+pt: 1/1 => 2/2
+
+Elincia, Devoted Queen
+
+Elincia, Princess of Crimea
+
+Oscar, Agile Horseman
+
+Rhys, Gentle Saint
+
+Rolf, Faithful Student
+
+Celica's Ragnarok
+
+Ranulf's Tenacity
+
+Volke, Fireman
+
+Micaiah, Silver Haired Maiden
+
+Peony, Sweet Dream
+
+Falchion
+
+Soren's Elwind
+
+Sakura, Hoshidan Knight
+
+Micaiah's Revelation
+
+Lachesis, Princess of Nordion
+
+Surtr, King of Múspell
+
+Celica, Darling Queen
+
+Walhart, The Conqueror
+
+Beruka, Quiet Assassin
+
+Secrets of The Medallion
+
+Laevatein
+
+Celica's Fire
+
+Lyn, Carefree Lord
+
+Grima, Plotting Evil
+
+Alm's Rally
+
+Soren, Emblem of Acumen
+
+Titania, Scarlet Paladin
+
+Leif, Emblem of Genealogy
+
+Beruka's Fatal Blow
+
+For The Deliverance!
+
+Grima, Fell Mastermind
+
+Robin's Giga Thoron
+
+Lyn's Hospitality
+
+Roy, Hero of Elibe
+
+Yen'fay, Blade Legend
+
+Lyn, Restored Heritage
+
+Largo, Calil's Berserker
+
+The Blazing Lords
+
+Valentia's Shadow
+
+Oifey, Seliph's Guardian
+
+Celica, Lost Princess
+
+Peony's Charm
+
+Lyn's Mirror Storm
+
+Celica, Mila's Pilgrim
+
+Beruka's Ragnarok
+
+Ena, Red Tactician
+
+Volke's Cache
+
+Shade's Bolganone
+
+Roy, Emblem of Binding
+
+Elincia's Blade Blessing
+
+Celica, Alm's Foil
+
+The Black Knight
+
+Blessing of Mila
+
+Celica, Faith Restored
+
+Alm's Scendscale
+
+Risen Lord
+
+Alm, Village Hero
+
+Emma, Cheerful Cherub
+
+Leanne, Voice of Feathers
+
+Celica, Rigain
+
+Lyndis, Blade Queen
+
+Alm, Deliverance Leader
+
+Shadow Dragon's Confluence
+
+Al's Command
+
+Lyn, Sacaen Swiftblade
+
+Beruka. Camilla's Ace
+
+Ranulf's Sprint
+
+Emma, Warden of Hoshido
+
+Elincia's Charm
+
+Flavia's Command
+
+Eldigan's Command
+
+Nephenee's Charm
+
+Celica, Brave Priestess
+
+Nemesis' Command
+
+Sincere Service
+
+Beruka's Disarming Swing
+
+Beruka, Vaulted Slayer
+
+Gerome, Unmasked Legacy
+
+Celica's Charm
+
+Sigurd, Academy Student
+
+Sigurd's Charming Flourish
+
+Sigurd's Oath of Loyalty
+
+Laevatein, Searing Steel
+
+Laevatein, Princess of Múspell
+
+Joshua, Tempest King
+
+Stefan, Lion-Blooded
+
+Stefan's Astra
+
+Joshua, Jehanna's Luck
+
+Eriu, Thunder Mage
+
+Fotla, Wind Mage
+
+Banba, Fire Mage
+
+Volke, Man of Mysteries
+
+Zihark, Blade of Unity
+
+Zihark's Sharp Talent
+
+Marcia's Charm
+
+Athena, Wayward Swordmaster
+
+Athena, Borderland Sword
+
+Grima's Expiration
+
+Reverse Falchion
+
+Leo, Nohrian Samurai
+
+Kaze, Loyal Ninja
+
+Manfroy, Archbishop of Loptr
+
+Nailah's Comfort
+
+Valjean, Fishing Attendant
+
+Leonardo, Freedom's Arrow
+
+Elise, Dark Princess
+
+Lana, Liberation Army Cleric
+
+Quan's Command
+
+Larcei's Charm
+
+Sin, Falcon of Sacae
+
+Elincia's Escape
+
+Fee & Ced, Windborn
+
+Lucia, Majesty's Blade
+
+Azura's Charm
+
+Forsyth & Python, Deliverers
+
+Leo & Takumi, Rivals
+
+Lombard, Divine Axe
+
+Raphael, Hungry Titan
+
+Charlotte, Wayward Lady
+
+Niles, Nohrian Adventuer
+
+Elincia's Command
+
+Elise, Confection Queen
+
+Ethlyn, Spirited Princess
+
+Astolfo, Shadow of Ostia
+
+Eliwood, Lords of Elibe
+
+Marth, Youthful Hero
+
+Basilio's Enduring Might
+
+Jubelo, Prince of Grust
+
+Erinys' Charm
+
+Mia, Aspiring Lady of Blades
+
+Noah, Vagrant Knight
+
+Sharena & Peony, Dreamers
+
+Leonardo's Critical Barrage
+
+Ryoma, Hoshidan Dragoon
+
+Naesala, King of Ravens
+
+Almedha, Queen Mother of Daien
+
+Altena, Crossed Geneology
+
+Corrin, Resonating Blade
+
+Oboro's Charm
+
+Anna, Roadside Journeyman
+
+Kana's Charm
+
+Meg, Wayfaring Country Girl
+
+Raphael's Feast
+
+Nino's Elfire
+
+Lilina, Firelight Leader
+
+Severa's Charm
+
+Forrest's Strategy
+
+Fjorm's Charm
+
+Rhajat, Dark Concocter
+
+Roy, Blazing Lion
+
+Mist's Charm
+
+Izuka, Feral Summoner
+
+Samuel, Navarre's Imposter
+
+Lucina, Forseer
+
+Jakob's Deflection
+
+Azama's Wane Festal
+
+Oliver, Collector of Beauty
+
+Corrin's Rebuff
+
+Whitewing Charm
+
+Forrest's Charm
+
+Seliph & Julius, Blood Feud
+
+Lucina, Unmasked Hero
+
+Micaiah's Summons
+
+Randal's Armory
+
+Chrom's Command
+
+Gaius' Gift
+
+Hinoka's Charm
+
+Jill's Charm
+
+Effie's Breaking Stab
+
+Karla's Quick Draw
+
+Caineghis, Gallia's King
+
+Takumi, Hoshidan Cavalier
+
+Byleth, Ashen Demon
+
+Conrad, Unmasked Knight
+
+Sigurd's Blessing
+
+Altena, Adoptive Princess
+
+Hel, Death Soverign
+
+Yuzu, Mystic Crane
+
+Sophie's Charm
+
+Lysithea's Expirements
+
+Sakura, Hoshidan Troubadour
+
+Tailtiu, Daughter of Thunder
+
+Byleth's Divisive Choice
+
+Reina's Bounty
+
+Lilith's Treachery
+
+Peony, Cherished Dream
+
+Priam, Lost Hero
+
+Petra's Charm
+
+Annette, Promising Lioness
+
+Orochi's Rat Spirit
+
+Marth, Time Traveler
+
+Hardin, The Coyote
+
+Michalis, King of Macedon
+
+Hector's Command
+
+Yuzu, Cleaving Crane
+
+Sakura, Hoshidan Maid
+
+Ike & Soren, Sworn Allies
+
+Sue's Surviving Shot
+
+Sully & Stahl, Pair of Knights
+
+Yuzu, Piercing Crane
+
+Atrocity
+
+Conrad & Celica, Lost Nobles
+
+Lucia's Charm
+
+Altena's Charm
+
+Sylvain, Charming Lance
+
+Nyx's Curse
+
+Hector, Proud Marques
+
+Rowan's Command
+
+Shiro's Naginata Swing
+
+Tibarn's Command
+
+Lif & Thrasir, Dark Generals
+
+Julian, Noble Theif
+
+Claude, Verdant Wind
+
+Ilyana, Hungry Mage
+
+Faye, Obessed Harrier
+
+Asaello, Connacht Hitman
+
+Phina, Traveling Dancer
+
+Chrom, Falchion's Inheritor
+
+Daisy, Spirited Lifter
+
+Mercedes' Charm
+
+Berkut's Tragic Sacrifice
+
+Anna, Timeless Sister
+
+Selkie's Charm
+
+Tharja's Goetia
+
+Karla, Sword Mother
+
+Aran, Loyal Halberdier
+
+Rhajat's Dragon Spirit
+
+Panette, Unforgiving Doll
+
+Corrin's Dragon Fang Shot
+
+Mercedes, Bliss Sister
+
+Morgan's Charm
+
+Mist's Errand
+
+Lorenz, Noble of the Red Rose
+
+Shade, Dark Shadow Knight
+
+Rinea, Berkut's Heart
+
+Sothe, Dawn Theif
+
+Seteth, Hammer of Judgment
+
+Sigurd, Father of the Future
+
+Elice, Life Giver
+
+Dimitri, Azure Moon
+
+Edelgard, Crimson Flower
+
+Jamke, Prince of Verdane
+
+Dedue, Dimitri's Vassal
+
+Shigure's Command
+
+Delthea, Free Spirit
+
+Marth's Command
+
+Nation's Banner
+
+Soren's Rexcalibur
+
+Felix, Thunder Wolf
+
+Eir's Sorrow
+
+Jakob, Corrin's Butler
+
+Yune, Goddess of Chaos
+
+Sylvain, Great Knight
+
+Gunter, Unyielding Protector
+
+Daisy's Cache
+
+Larcei's Wyrmslayer
+
+Olivia, Demure Dancer
+
+Gaius, Sugar-Coated Assassin
+
+Lucina's Crest
+
+Annette, Server
+
+Ike, Wielder of Regalia
+
+Byleth, Silent Mentor
+
+Yune, Attuned to The Medallion
+
+Anna, Traveling Trickster
+
+Tiki, Divine Voice
+
+Mitama, Haiku's Point
+
+Charlotte, Perfect Picnic
+
+Tharja, Dark Lady
+
+Samuel, Irresponsible Soldier
+
+Randal's Gilded Armor
+
+Dedue, Fortress Knight
+
+Tiki, Last Divine Dragon
+
+Marth, First Lord
+
+Sharena's Dream
+
+Camilla, Nohrian Basara
+
+Ishtar's Charm
+
+Hardin, Dark Emperor
+
+Xander, Nohrian Onmyoji
+
+Odin, Dramatic Sorcerer
+
+Dayan, Silver Wolf
+
+Febail, Gallant Marksman
+
+Azura, Valla's Voice
+
+Draug, Gentle Giant
+
+Corrin's Valorous Stand
+
+Geoffrey, Elincia's Ward
+
+Midir, Yngvi Bow Knight
+
+Zelot, Leader of Knights
+
+Tharja's Charm
+
+Selena, Brash Bow Knight
+
+Sylvain' Charm
+
+Deirdre's Charm
+
+Céline's Charm
+
+Murdock's Command
+
+Ophelia, Starstruck Sorceress
+
+Lorenz' Charm
+
+Veronica's Contract
+
+Micaiah's Command
+
+Owain, Star Charter
+
+Lucius, The Light
+
+Tailtiu's Charm
+
+Azura, Vallite Avenger
+
+Azura & Corrin, Fated
+
+Zola, Illusionist
+
+The Flame Emperor
+
+Corrin's Feint
+
+Nina, Blushing Admirer
+
+Florina, Flora, & Farina
+
+Grima, Expirer
+
+Chrom & Robin, Awakening
+
+Chrom & Lucina, Exalted Lineage
+
+Noah, Mercenary-Errant
+
+Camilla, Night's Warden
+
+Lucina, Emblem of Awakening
+
+Greil, Mercenary Captain
+
+Charlotte's Charm
+
+Boyd, Mighty Soldier
+
+Sigurd, Emblem of the Holy War
+
+Confession of Passion
+
+Panette's Charm
+
+Lachesis' Charm
+
+Hinoka, Hoshidan Sunrise
+
+Camilla, Nohrian Sunset
+
+Hinoka, Hoshidan Maid
+
+Yuzu, Covert Crane
+
+Yuzu, Dreadful Crane
+
+Yuzu, Stormcatcher Crane
+
+Yuzu's Sword Mastery
+
+Yuzu, Nomadic Crane
+
+Yuzu's Charm
+
+Nina, Grand Adventurer
+
+Tiki, Dragon Scion
+
+Robin, High Deliverer
+
+Rowan, Prince of Aytolis
+
+Warrior's Might
+
+Warrior's Ideals
+
+Lianna's Command
+
+Lianna, Princess of Aytolis
+
+Warrior's Spirit
+
+Priam, Radiant Hero
+
+Celica, Emblem of Echoes
+
+Tiki, Emblem of Dragons
+
+Veronica, Emblem of Heroes
+
+Leif, Rebel Hero of Leonster
+
+Ike, Emblem of Radiance
+
+Eirika, Emblem of the Sacred
+
+Tiki's Confluence
+
+Tiki, Divine Manakete
+
+Tiki, Refreshing Divinity
+
+Tiki's Charm
+
+Celica, Mila's Faithful
+
+Alfonse & Kiran, Heroes
+
+Camus, the Sable
+
+Cecilia, Mage General of Etruria
+
+Deen, Wyvern Knight of Tarrah
+
+Deen, Hero of the Azure Skies
+
+Eda, Wyvern Rider of Thracia
+
+Eda's Charm
+
+Eirika, Kingdomless Princess
+
+Eirika, Sacred Twin
+
+Sieglinde
+
+Eirika, Wielder of Twins
+
+Eirika's Charm
+
+Unleash Sacred Twin, Sieglinde
+
+Eirika & Ephraim, Sacred Twins
+
+Siegmund
+
+Ephraim's Command
+
+Ephraim, Mastermind of War
+
+Ephraim, Wielder of Twins
+
+Unleash Sacred Twin, Siegmund
+
+Finn's Timely Counter
+
+Finn's Rescue
+
+Kiran's Gambit
+
+Leif, The Sage-Lord
+
+Lucina, Bride of Life
+
+Marth, Butterfly Effect
+
+Seliph & Leif, Destined Scions
+
+Selphina, Beautiful Bow Knight
+
+Shannam, Boastful Myrmidon
+
+Sharena, Leading Ladies
+
+Tina's Troubling Trove
+
+Zeke, Past Unknown
+
+Ike's Command
+
+Atlas, Forest Muscle
+
+Duel Against the Black Knight
+
+Face Off With The Grimleal
+
+Marth & Chrom, Heirs
+
+Tiki, Timely Hero
+
+Lucina, Timely Hero
+
+Veronica, Spring Princess
+
+Tiki's Timely Transformation
+
+Gregory, Fading Scar
+
+Confession of Empathy
+
+Jean, Budding Doc
+
+Confession of Dedication
+
+Lindon, Thunder Sage
+
+Confession of Faithfullness
+
+Madeline, Healing Heart
+
+Confession of Sincerity
+
+Mauvier, Penitent Knight
+
+Confession of Loyalty
+
+Zelestia, Loving Leader
+
+Confession of Zeal
+
+Représailles
+
+Nel's Day Off
+
+Confession of Familiar Bonds
+
+Confession of Attonment
+
+Saphir, Valiant Guard
+
+Confession of Will
+
+Joyous Reunion
+
+Gradlon Delivery
+
+Alear's Resting Grounds
+
+The Four Winds
+
+Collect the Emblem Bracelets
+
+Shatter The Fell Stone
+
+Dark Upbringing
+
+Four Winds Assault
+
+Heroes Gathering
+
+Lords United
+
+Alois, Sun of the Knights
+
+Elise, Supporting Cast
+
+Sakura, Supporting Cast
+
+Great Awakening
+
+Chrom, Arena Champion
+
+Heroic Rush
+
+Chulainn, Gladiator
+
+Diarmuid, Charming Knight
+
+Ike, Greil's Son
+
+Kris, First Choice
+
+Kris, Unsung Hero
+
+Leif's Gleaming Resistance
+
+Lissa's Disgust
+
+Mycen, Valentia's Chancellor
+
+Perne, Theif King of Dacia
+
+Saias, Bishop of Flame
+
+Sara's Miracle
+
+Sara, Girl of Sorrowful Fate
+
+Naoise, Red Blade
+
+Arden, Standstill
+
+Arden's Fury
+
+Asbel, Windswept Magi
+
+Azelle, Velthomer Flame
+
+Azelle's Bolganone
+
+Bors' Reflecting Whirl
+
+Bors, Iron Knight
+
+Cath, Master Theif
+
+Charlot, Hannibal's Son
+
+Charlot's Berserk
+
+Clarine's Anima Surge
+
+Clarine, Willful Lady
+
+Douglas, The Great General
+
+Fae, Divine Dragon
+
+Fae, Paradise Dragon
+
+Fred, Knight of House Stase
+
+Gonzalez, Kindly Bandit
+
+Hannibal, Shield of Thracia
+
+Hugh, Worldly Mage
+
+Klein, Silver Sniper
+
+Klein, Silver Nobleman
+
+Klein's Starshot
+
+Lilina, Bright Heir
+
+Ogier, The Little Hero
+
+Ogier's Heavy Slash
+
+Perceval, Knightly Ideal
+
+Raigh, Dark Child
+
+Roy, Idunn's Counter
+
+Shanna, Sprightly Flier
+
+Shanna, Mercenary Wings
+
+Shanna, Juno & Thea
+
+Sophia, Nabata Prophet
+
+Sophia's Nosferatu
+
+Thea, Wind Rider
+
+Sophia, Desert Druid
+
+Arden, Crab Claimer
+rules_text: Defender
+[i]Sand Crabs[/i] — {T}: Create a 0/3 blue Crab creature token with “Whenever a land enters the battlefield, each opponent mills two cards.” => Defender
+[i]Sand Crabs[/i] — {T}: Create a 0/3 blue Crab creature token with “Whenever a land enters the battlefield under your control, each opponent mills two cards.”
+
+Lance, Serene Knight
+
+Pent & Clarine, Wisdom
+
+Louise & Klein, Charisma
+
+Dorothy, Pure Archer
+
+Arvis' Bolganone
+
+Arvis, Emperor of Flame
+
+Clarine, Refined Noble
+
+Klein, Heir to House Reglay
+
+Clarine, Heir to House Reglay
+
+Claud, Bishop of Edda
+
+Echidna, Unyielding Idealist
+
+Elen, Saint of Bern
+
+Elffin, Truth Beholden
+
+Fergus' Parry
+
+Fergus, Carefree Free Knight
+
+Gwendolyn, Tiny Knight
+
+Lara, Step Lively
+
+Larum, Sprightly Dancer
+
+Triangle Rush
+
+Lifis, Shy Theif
+
+Lifis, Terror of Iz
+
+Lilina, Brilliant Flame
+
+Lilina's Elfire
+
+Lilina's Foreblaze
+
+Lot, Quiet Axeman
+
+Mareeta, Sword of Stars
+
+Mareeta's Flashing Blade
+
+Midir, Pursuing Arrow
+
+Narcian, Conniving General
+
+Patty's Cache
+
+Patty, Youthful Theif
+
+Rutger, Bern's Enemy
+
+Shanna, Falcoknight
+
+Sophia, Seer
+
+Tailtiu's Wrath
+
+Tailtiu, Thunder Noble
+
+Ward, Sincere Axeman
+
+Zephiel, Prince of Bern
+
+Brunnya, Devoted General
+
+Mercedes, Vigorous Bishop
+
+Annette's Sagittae
+
+Ashe, Aspiring Knight
+
+Ashe, Arrow of Justice
+
+Aversa, Falcon Knight
+
+Boey, Guru
+
+Boey, Boy From Novis
+
+Claude's Sunshot
+
+Clive, Gold Knight
+
+Cordelia's Flight
+
+Delthea's Skullbomb
+
+Edelgard, Chuch's Nemesis
+
+Est's Surging Swing
+
+Est's Pegasus
+
+Palla's Thrusting Jab
+
+Raphael's Clubs
+
+Robin's Thunder
+
+Grima's Nosferatu
+
+Robin's Elthunder
+
+Shamir's Plummeting Arrow
+
+Shamir, Silent Sniper
+
+Lance of Ruin
+
+Cordelia, Brave Falcon
+
+Officer's Academy
+
+Cordelia, Ray of Sunshine
+
+Silque's Charm
+
+Nuibaba, Witch Incarnate
+
+Atlas, Wayward Hunter
+
+Jedah, Archbishop of Duma
+
+Est, Whitewing
+
+Catria, Mild Middle Sister
+
+Genny's Charm
+
+Palla, Kind Eldest Sister
+
+Faye's Charm
+
+Silque, Flower Girl
+
+Palla, Pristine Falcon
+
+Grieth, King of All Brigands
+
+Olivia, Sky Dancer
+
+Crusher
+
+Zeke, Gold Knight
+
+Alm & Celica, United Cause
+
+Annette's Charm
+
+Maribelle's Noble Upbringing
+
+Maribelle's Charm
+
+Cordelia's Banner
+
+Catria's Charm
+
+Clive, Zofian Commander
+
+Three Hopes
+
+Cordelia's Thoron
+
+Boey & Mae, Mages of Novis
+
+Mathilda's Charm
+
+Mae, Energetic Mage
+
+Mae's Charm
+rules_text: Choose one —
+• Mae's Charm deals 3 damage to any target.
+• Support 2. [i](Put a +1/+1 counter on each of up to two target creatures.)[/i]
+• Creatures you control gain protection from a color of your choice until end of turn. This effect does not remove Auras you control. => Choose one —
+• Mae's Charm deals 3 damage to any target.
+• Support 2. [i](To support 2, put a +1/+1 counter on each of up to two target creatures.)[/i]
+• Creatures you control gain protection from a color of your choice until end of turn. This effect does not remove Auras you control.
+
+Cordelia, Heartstrung Bride
+
+Ricken, Adept Wizard
+
+Sumia, Sky High Dreamer
+
+Sully's Charm
+
+Sonya's Charm
+
+Sonya's Great Fire
+
+Sumia's Promise
+
+Sumia, Quiet Dreamer
+
+Cordelia, Perfect Ninja
+
+Tobin's Sharp Vision
+
+Sisters Set Off
+
+Palla, Guardian Sister
+
+Palla, Catria, & Est, Forever
+
+Edelgard, Eirika, & Cordelia
+
+Shepherds United
+
+Aversa's Night
+
+Knights of the Deliverance
+
+Celica's Party
+
+Alm, Young Leader
+
+Shez, Keen Mercenary
+
+Alm's Rush
+
+Alm & Celica, Newly Wed
+
+Lysithea's Flux
+
+Palla, Catria, & Est, Together
+
+Shamir, Lone-Moon Ninja
+
+Sothis' Genesis
+
+Alm's Command
+
+Alm's Lunar Flash
+
+Altina, Dawn's Strike
+
+Balthus' Dealth Blow
+
+Byleth's Command
+
+Est's Triangle Strike
+
+Lysithea's Dark Spikes
+
+Grima's Command
+
+Grima's Charm
+
+Rudolf's Command
+
+Byleth & Sothis' Will
+
+Ashe's Critical Draw
+
+Altina, Unrivaled Dawn
+
+Alfred's Floral Slash
+
+Alear's Flurry of Strikes
+
+Alear, Divine Hero
+
+Alear's Searing Libération
+
+Alear's Balancing Art
+
+Alcryst's Fortified Shot
+
+Alear, Dragon Child
+
+Silque's Mend
+
+Shez, Rising Mercenary
+
+Yuri's Parry
+
+Mercenary Clash
+
+The White Wings, Sisters
+
+Muarim, Desert's Water
+
+Volug, Black Wolf of the Sands
+
+Nealuchi, Wise Old Crow
+
+Giffca, Lion King's Shadow
+
+Xavier, Loyal Old General
+
+Troude, Man Called Death
+
+Sleuf, Priest of Bragi
+
+Salem, Dark Sage
+
+Robert, Bow Knight of Leonster
+
+Ralf, Wandering Mercenary
+
+Misha, Heavenly Knight
+
+Marty, Dagdar's Beloved Man
+
+Machyua, Blade of Gales
+
+Linoan, Flower of Tarrah
+
+Ilios, Aspiring Knight
+
+Homer, Traveling Bard
+
+Hicks, Axeman
+
+Halvan, Eyvel's Right-Hand
+
+Glade, Knight of Integrity
+
+Dalsin, Unwavering Resolve
+
+Dagdar, Ex-Bandit
+
+Conomor, Knight of Ulster
+
+Carrion, Nobleman of Leonster
+
+Cain, Lance of Leonster
+
+Brighton, Knight of Munster
+
+Amalda, Retired Paladin
+
+Alva, Lance Knight
+
+Miranda, Willfull Princess
+
+Knoll, Watcher of Darkness
+
+Galzus, Dark Blade of Od
+
+Bertram, Dread Cavalier
+
+Rafiel, Radiant Chorus
+
+Mordecai, Kindhearted Tiger
+
+Duessel, Obsidian General
+
+Cornelia Arim
+
+Cornelia's Asclepius
+
+Etie, Fit and Fierce
+
+Etie's Shattering Shot
+
+Ivy's Freezing Excalibur
+
+Pandreo's Mend
+rules_text: Target blocking creature gains lifelink until end of turn, then that creature explores twice. [i](To explore, reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)[/i] => Target blocking creature gains lifelink until end of turn, then that creature explores twice. [i](To have this creature explore, reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on that creature, then put the card back or put it into your graveyard.)[/i]
+
+Panette's Fiery Blow
+
+Robin, Exalt's Deliverer
+
+Robin, Exalt's Other Half
+
+Robin, Exalt's Right Hand
+
+Grima's Flametongue
+
+Grima's Arcane Manipulation
+
+Robin, Enigmatic Tactician
+
+Rosado's Resolute Slam
+
+Tharja, Shadow Ninja
+
+Timerra's Shuffling Stab
+
+Yuri's Deep Slash
+
+Ronan, Villager of Iz
+
+Bastian's Cutting Arcwind
+
+Bastian, Crimea's Keystone
+
+Brigid, Adopted Pirate
+
+Dispersing Wind
+
+Ced, Hero of the Wind
+
+Laura, Carefree Saint
+
+Laura, Deeply Devoted Priestess
+
+Nanna, Entrusted Thought
+
+Nanna's Flaming Thrust
+
+Rafiel's Grand Galdr
+
+Tormod, Fire of Freedom
+
+Tormod's Meteor
+
+Tormod's Flaming Escape
+
+Validar, Fell Architect
+
+Vika, Liberation's Talon
+
+Vika, Veiled Raven
+
+Brigid, Wielder of Yewfelle
+
+Kurthnaga, Uniter of Dragons
+
+Kurthnaga's Rage
+
+Alois, Shining Warrior
+
+Ashe's Worrying Wind Up
+
+Bernadetta's Barricade
+
+The Inexhaustible
+
+Boey's Fire
+
+Byleth, Teacher of Tactics
+
+Byleth, Wandering Flame
+
+Byleth's Mastery
+
+Byleth's Tea Service
+
+Byleth, Trusted Mercenary
+
+Lash of The Creator
+
+Byleth, From the Tombs
+
+Calill, First-Rate Sage
+
+Caspar's Rile
+
+Catria, Daring Middle Sister
+
+Catria, Middle Whitewing
+
+Ced's Forseti
+
+Clair's Charm
+
+Clair, Highborn Deliverer
+
+Claude, Battle Master
+
+Claude, Wyvern Master
+
+Claude's Command
+rules_text: Choose two —
+• Whenever a counter is put onto a creature you control this turn, untap it.
+• Support 3. [i](Put a +1/+1 counter on each of up to three target creatures.)[/i]
+• Each player draws two cards.
+• Exile target enchantment. => Choose two —
+• Whenever a counter is put onto a creature you control this turn, untap it.
+• Support 3. [i](To support 3, put a +1/+1 counter on each of up to three target creatures.)[/i]
+• Each player draws two cards.
+• Exile target enchantment.
+
+Claude's Barricade Barrage
+
+Claude's Training Technique
+
+Claude, Golden Deer
+
+Claude's Charm
+rules_text: Choose one —
+• Untap target attacking creature and remove it from combat.
+• Investigate [i](Create a Clue token. It's an artifact with “{2}, Sacrifice this token: Draw a card.”)[/i]
+• Each player may scry 3. => Choose one —
+• Untap target attacking creature and remove it from combat.
+• Investigate [i](To investigate, create a Clue token. It's an artifact with “{2}, Sacrifice this token: Draw a card.”)[/i]
+• Each player may scry 3.
+
+Claude's Pursuit
+cost: {1}{G}{G} => {1}{G}
+rules_text: Target creature you control deals damage equal to its power to another target creature. 
+Create a 1/1 white and green Citizen creature token. => Target creature you control deals damage equal to its power to another target creature. 
+Create a 1/1 green and white Citizen creature token.
+
+Clive, Deliverance Leader
+
+Clive, Idealistic Knight
+
+Conrad, Masked Rider
+
+Conrad, Masked Knight
+
+Constance, Fallen Noble
+
+Cordelia, Festive Flier
+
+Death Knight
+
+Dedue, Fierce Looking Servant
+
+Dedue's Resolve
+
+Delthea, Pawn Prodigy
+
+Delthea's Fire
+
+Dimitri's Skillful Strike
+
+Dimitri's Cross
+
+Dimitri, Blue Lions
+
+Dimitri's Slash
+
+Dimitri, Prince of Hope
+
+Dimitri, Young Prince of Faerghus
+
+Dimitri, Knightslayer
+
+Dorothea, Academy's Encore
+
+Edelgard's Flourish
+
+Edelgard's Raging Storm
+
+Edelgard's Dance
+
+Edelgard's Charm
+
+Edelgard, Black Eagles
+
+Edelgard's Fury
+
+Edward, Blade of Justice
+
+Est, Carefree Youngest Sister
+
+Eyvel's Petrification
+
+Faye, Flower Crowner
+
+Faye's Adventure Begins
+
+Faye, Mila's Cleric
+
+Felix's Riposte
+
+Felix's Sword Mastery
+
+Aegis Shield
+
+Ferdinand, Well Regarded
+
+Flayn, Cethleann Awakened
+
+Flayn's Flower Field
+
+Gareth, Crimson Bodygard
+
+Gatrie's Rebuff
+
+Gatrie, Perpetual Guardian
+
+Genny, Endearing Knight
+
+Genny, Novis Cleric
+
+Haar Rectruits Dracoknights
+
+Haar, Black Tempest
+
+Hubert's Command
+
+Ignatz' Stories
+
+Ingrid, Beacon of Honor
+
+Ingrid, Galatea's Heir
+
+Ingrid's Charm
+
+Janaff, Hawk King's Eyes
+
+Kieran, Fervent Veteran
+
+Kyza, Tiger of Fortune
+
+Laura's Heal
+
+Leonie's Bow
+
+Lon'Qu's Parry
+
+Lon'Qu's Killing Edge
+
+Lorenz' Favorite Tea
+
+Lysithea's Fire
+
+Mae's Thunder
+
+Makalov, Prince of Layabouts
+
+Marianne's Crest Calling
+
+Maribelle, Tea Time Noble
+
+Maribelle, Ruffled Rescuee
+
+Mia, Lady of Blades
+
+Mia, Flashing Blade
+
+Mia's Wild Strike
+
+Mia's Freezing Flourish
+
+Minerva, Festive Leader
+
+Mycen, Zofia's Champion
+
+Nanna's Mend
+
+Nolan, Wise Champion
+
+Palla, Brave Eldest Sister
+
+Robin, Chrom's Other Half
+
+Robin, Legendary Tactician
+
+Robin's Will
+
+Shannan, Nephew of Ayra
+
+Shinon's Deadly Arrow
+
+Silque's Surging Invoke
+
+Silque, Spritely Devotee
+
+Sothis, Eager Ally
+
+Sothis' Confluence
+
+Stahl, Viridian Great Knight
+
+Sully, Crimson Rider
+
+Sumia's Flower Reading
+
+Sylvain, Rivarly of the Houses
+
+Tauroneo, Steadfast Rider
+
+Tauroneo's Resolve
+
+Tharja's Flux
+
+Tharja's Vengeance
+
+Tobin, Clued In Bow Knight
+
+Tobin, Oblivious Oliphantier
+
+Ulki, Hawk King's Ears
+
+Valbar, Iron Companion
+
+Valbar, Spartan
+
+Yuri, Ashen Lord
+
+Anna, Gold Connoisseur
+
+Edelgard's Devotion
+
+Hubert's Devotion
+rules_text: Enchant creature
+Enchanted creature has deathtouch.
+{B}: Regenerate enchanted creature. [i](The next time this permanent would be destroyed this turn, it isn't. Instead tap it.)[/i] => Enchant creature
+Enchanted creature has deathtouch.
+{B}: Regenerate enchanted creature. [i](The next time this enchantment would be destroyed this turn, it isn't. Instead tap it.)[/i]
+
+Mercedes' Devotion
+
+Ingrid's Devotion
+
+Hanneman's Devotion
+
+Claude's Devotion
+
+Alois' Devotion
+
+Annette's Devotion
+
+Ashe's Devotion
+
+Balthus' Devotion
+
+Bernadetta's Devotion
+
+Caspar's Devotion
+
+Catherine's Devotion
+
+Constance's Devotion
+
+Cyril's Devotion
+
+Dedue's Devotion
+
+Dimitri's Devotion
+
+Dorothea's Devotion
+
+Felix's Devotion
+
+Ferdinand's Devotion
+
+Flayn's Devotion
+
+Hapi's Devotion
+
+Hilda's Devotion
+
+Ignatz's Devotion
+rules_text: Enchant creature
+Enchanted creature has Outlast {G} [i]({G}, {T}: Put a +1/+1 counter on that creature. Outlast only as a sorcery.)[/i]
+Whenever a counter is put onto enchanted creature, support 2. [i](Put a +1/+1 counter on each of up to two target creatures.)[/i] => Enchant creature
+Enchanted creature has Outlast {G} [i]({G}, {T}: Put a +1/+1 counter on this enchantment. Outlast only as a sorcery.)[/i]
+Whenever a counter is put onto enchanted creature, support 2. [i](Put a +1/+1 counter on each of up to two target creatures.)[/i]
+
+Jeritza's Devotion
+
+Leonie's Devotion
+
+Linhardt's Devotion
+
+Lorenz's Devotion
+
+Lysithea's Devotion
+
+Manuela's Devotion
+
+Marianne's Devotion
+
+Petra's Devotion
+
+Raphael's Devotion
+
+Shamir's Devotion
+
+Sothis' Devotion
+
+Sylvain's Devotion
+
+Yuri's Devotion
+
+Mila's Merry Band
+
+Wedding Journey
+
+Celica's Rebuff
+rules_text: Ward {3} [i](Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)[/i]
+When Celica's Rebuff enters, exile target nonland permanent until Celica's Rebuff leaves the battlefield. => Ward {3} [i](Whenever this enchantment becomes the target of a spell or ability an opponent controls, counter it unless that player pays {3}.)[/i]
+When Celica's Rebuff enters, exile target nonland permanent until Celica's Rebuff leaves the battlefield.
+
+Fearful Reunion
+
+Rudolf's Defeat
+
+Masked Rescue
+
+Jedah's Deal
+
+Brand Revelation
+
+First Skylight
+
+Ashen Wolves Orientation
+
+Jeritza's Fall
+
+Jeralt's Charming Gift
+
+Swiping the Chalice
+
+Capture of the Ashen Wolves
+
+Shez' Awakening
+
+Constance's Shade
+
+Hapi's Chorus
+
+Shadows of Valentia
+
+Alm Liberates Zofia
+
+Royal Sword
+
+Alm Rescues Silque
+
+Remembering Celica
+
+Join the Cause
+
+Mycen Hides Celica
+
+Celica Meets Saber
+
+Fernand's Bitter End
+
+Conrad's Unmasking
+
+Delthea's Possession
+
+Noble's Quarrel
+
+Liprica's Embrace
+
+Masked Rescue
+
+Mycen Fights Off Slayde
+
+Nuibaba's Plot
+
+Princess Celica's Recognition
+
+Clair's Liberation
+
+Sluice Gate
+
+Valentia Unified
+
+White wings Reunited
+
+Libération
+
+Singer's Silence
+
+Deceptive Death
+rules_text: Destroy target creature or artifact. That permanent can't be regenerated.
+{3}{B}{G}, Exile Deceptive Death from your graveyard: Regenerate target creature you control. [i](The next time that permanent would be destroyed this turn, it isn't. Instead tap it.)[/i] => Destroy target creature or artifact. That permanent can't be regenerated.
+{3}{B}{G}, Exile Deceptive Death from your graveyard: Regenerate target creature you control. [i](The next time this instant would be destroyed this turn, it isn't. Instead tap it.)[/i]
+
+Confession of Fears
+
+Confession of Growth
+
+Confession of Joy
+
+Confession of Taste
+
+Confession of Power
+
+Confession of Charm
+
+Confession of Boldness
+
+Confession of Expression
+
+Confession of Foregiveness
+
+Confession of Acceptance
+
+Confession of Grace
+
+Confession of Honesty
+
+Confession of Celebration
+rules_text: Whenever a creature you control attacks this turn, create a 1/1 white and green Citizen creature token.
+If you control your commander, create a Bond Ring token. => Whenever a creature you control attacks this turn, create a 1/1 green and white Citizen creature token.
+If you control your commander, create a Bond Ring token.
+
+Confession of Devotion
+
+Confession of Revelation
+
+Confession of Creativity
+
+Confession of Dreams
+
+Amber Saddles Up
+
+Boucheron's Pardon
+
+Bunet's Invitation
+
+Céline's Garden Stroll
+
+Céline's Greeting
+
+Chloé's Charm
+
+Chloé's Daydream
+
+Citrinne's Tome Shopping
+
+Citrinne's Charm
+
+Clanne's Focus
+
+Diamant's Command
+
+Etie's Tough Training
+
+Fogado's Command
+
+Framme's Charm
+
+Goldmary's Charm
+
+Goldmary's Delicious Stew
+
+Hortensia's Charm
+
+Hortensia's Caretaking
+
+Ivy's Dismissal
+
+Ivy's Charm
+
+Ivy's Bond
+
+Jade's Charm
+
+Jade's Diligent Caligraphy
+
+Kagetsu's Snack
+
+Lapis' Ingenuity
+
+Lapis' Caretaking
+
+Louis' Armor
+
+Louis' Contemplation
+
+Pandreo's Prayer
+
+Pandreo's Song
+
+Panette's Lantern
+
+Rosado Soars High
+
+Wyvern Keeping
+
+Timerra, Party Princess
+
+Timerra's Song
+
+Yunaka, Hidden Mask
+
+Yunaka's Knife
+
+Zelkov's Intel
+
+Zelkov's Antidote
+rules_text: Regenerate target creature. Remove all counters from it. [i](The next time that permanent would be destroyed this turn, it isn't. Instead tap it.)[/i] => Regenerate target creature. Remove all counters from it. [i](The next time this instant would be destroyed this turn, it isn't. Instead tap it.)[/i]
+
+Alear Saves Lythos
+
+Alfred Rebuilds Firene
+
+Diamant Reclaims The Throne
+
+Ivy's Coronation
+
+Timerra's Party
+rules_text: [i]Celebration[/i] — If two or more nonland permanents entered under your control this turn, creatures you control have vigilance and haste until end of turn.
+{1}{G}{W}: Create a 1/1 white and green Citizen creature token. => [i]Celebration[/i] — If two or more nonland permanents entered under your control this turn, creatures you control have vigilance and haste until end of turn.
+{1}{G}{W}: Create a 1/1 green and white Citizen creature token.
+
+Yuri, Honorable Wolf
+
+Alois, Knight Champion
+
+Ashe, Chivalric Archer
+
+Balthus, King of Combat
+
+Byleth, Guiding Teacher
+
+Caspar, Hotheaded Inciter
+
+Constance, of House Nuvelle
+
+Cyril, Able Aid
+
+Dorothea, Enduring Song
+
+Ferdinand, of House Aegir
+
+Flayn, Reawakened Saint
+
+Gilbert, Failed Knight
+
+Hanneman, Father of Crestology
+
+Hapi, Freed Spirit
+
+Hilda, Claude's Right Hand
+
+Hubert, of House Vestra
+
+Ignatz, Merchant of Creativity
+
+Jeralt, The Blade Breaker
+
+Jeritza, Bloodstained Demon
+
+Linhardt, of House Hevring
+
+Lorenz, Dazzling Rose
+
+Manuela, Divine Songstress
+
+Mercedes, of House Martritz
+
+Raphael, Golden Might
+rules_text: Vigilance, double strike
+[i]Packed Lunch Punch[/i] — Whenever you cast a noncreature spell create a Food token. Whenever you gain life, Raphael gets +3/+0 until end of turn.
+[i]Promoted Class[/i] — {2}{W}{W} => Vigilance, double strike
+[i]Packed Lunch[/i] — Whenever you cast a noncreature spell create a Food token. 
+[i]Packed Punch[/i] — Whenever you gain life, Raphael gets +3/+0 until end of turn.
+[i]Promoted Class[/i] — {2}{W}{W}
+
+Seteth, Seiros Adherent
+
+Sothis, Pregenitor
+
+Peace in Ylisse
+
+Fates United
+
+Micaiah, Emblem of Dawn
+
+Bernadetta, Shut In Sniper
+
+Marth, Worthy Wielder
+
+Lucina, Fate Changer
+
+Hana, Focused Samurai
+
+Leo, Sorcerous Prince
+
+Takumi, Troubled Heart
+
+Lucia's Sword
+
+Raijinito
+
+Fólkvangr
+
+Corrin's Command
+
+Disciple's of Order
+
+Nailah's Charm
+
+Nailah, Unflinching Eye
+
+The Sword of The Champion
+
+Alfonse's Command
+rules_text: Choose two —
+• You gain 3 life.
+• Draw a card.
+• Support 1. [i](Put a +1/+1 counter on each of up to one target creature.)[/i]
+• Tap target creature. => Choose two —
+• You gain 3 life.
+• Draw a card.
+• Support 1. [i](To support 1, put a +1/+1 counter on each of up to one target creature.)[/i]
+• Tap target creature.
+
+Arthur's Courageous Charge
+
+Astrid's Bow
+
+Azura's Scepter
+
+Boyd's Axe
+
+Valaskjálf
+
+Wing Spear
+
+Nohrian Winter
+
+Corrin, Grim Princess
+
+Corrin's Parry
+
+Darros, First Mate
+
+Dieck's Blade
+
+Dieck's Command
+
+Eliwood, Wielder of Durandal
+
+Rapier
+
+Ena's Charm
+
+Feh's Daily Bonus
+
+Leiptr
+
+Gatekeeper
+
+Gotoh, White Sage
+
+Gromell, Bolt Axe Dragonmaster
+
+Gunter's Tragic Fall
+
+Hans, Ambitious Brute
+
+Hawkeye, Desert Guardian
+
+Hector, General of Ostia
+
+Hector's Thunder
+
+Hinoka, Amaterasu
+
+Ike's Aether
+
+Ilyana, Shocking Appetite
+
+Inigo's Stroll
+
+Kilmar, Twin-Bladed Falcon
+pt:  => 5/5
+
+Kilmar's Mourning
+
+Laurent's Wind
+
+Leila, Ostia's Ace Spy
+
+Lena, Angel to All
+
+Lena's Warp
+
+Leo, Siegfried's Inheritor
+
+Lloyd, White Wolf
+
+Lucina, Exalt Anew
+
+Lucius, Bright Day
+
+Lute's Boundless Knowledge
+
+Lyn, Lady of The Lorca Tribe
+
+Mani Katti
+
+Lyon, Fomortiis' Pawn
+
+Maria, Wyvern Riding Mage
+
+Marth, Groom to Archanea
+
+Meg's Charm
+
+Merric's Cutting Gale
+
+Micaiah, Yune's Friend
+
+Midia, Anchor Paladin
+
+Morgan's Elfire
+
+Morgan's Ruin
+
+Morgan's Command
+
+Morgan's Fire
+
+Narcian's Scheme
+
+Narcian's Runesword
+
+Nergal, Traitor to Nabata
+
+Mystletainn
+
+Poe's Meteor Summoning
+
+Poe, Portal Cleric
+
+Unleash The Binding Blade
+
+Roy, The Boy on Fire
+
+Roy's Blade
+
+Ryoma's Sparking Slash
+
+Ryoma's Command
+
+Sedgar, Aurelian Star
+
+Selkie's Trinket
+
+Sephiran, Pilgrim of the Goddess
+
+Lehran, Light of Creation
+
+Shade's Lamp
+
+Sharena, Beacon of Askr
+
+Sharena, Spring Princess
+
+Sigrun's Charm
+
+Sigrun's Short Rest
+
+Soren's Blizzard
+
+Soren's Tornado
+
+Soren's Unrelenting Winds
+
+Soren, Revealing Gales
+
+Takumi, Diving Osprey
+
+Takumi's Ascension
+
+Takumi's Insight
+
+Duma Witch
+
+Wolf, Leader of Coyote's Men
+
+Wrys, Altean Healer
+
+Xander's Charge
+
+Xander's Compassion
+
+Xander's Conquest
+
+Xander's Command
+
+Yarne's Luck
+
+Yuliya, Blessed Archer
+
+Yuliya's Rescue
+
+Yuzu, Snow Samurai
+
+Zeke, Forsaken Past
+
+Nephenee's Strike
+
+Samson, Roaming Hero
+
+Sheena, Gra's Princess
+
+Sheena, Savior Princess
+
+Cain's Rally
+
+Soren's Forceful Gust
+
+Nephenee's Charge
+
+Gustav, Faithful Majesty
+
+Hríd, Icy Blade
+
+Draug's Defensive Strike
+
+Draug, Giant Bulwark
+
+Gunnthrá, Voice of Dreams
+
+Alfonse & Sharena, Askran Duo
+
+Henriette, Queen of Askr
+
+Nifl, God of Ice
+
+Gustav's Glitnir
+
+Múspell, Flame God
+
+Elena, Greil's Beloved
+
+Greil, Elena's Beloved
+
+Roy, Lordling of Pherae
+
+Lilina, Princess of Ostia
+
+Sharena's Jump
+
+Glitnir
+
+Fjorm & Nifl, Gleaming Ice Pair
+
+Surtr's Decree
+
+Veronica's Charm
+
+Ylgr, Fresh Snowfall
+
+Lucina's Temporal Journey
+
+Alfonse, Piercing Golden Desire
+
+Seliph, Heir of Light
+
+Julia's Light
+
+Julia's Charm
+
+Seliph's Command
+
+Seliph's Slim Sword
+
+Tyrfing
+
+Julia, Maiden of Fate
+
+Naga
+
+Seliph's Charm
+
+Julia, Tragic Princess of Light
+
+Order of Heroes Library
+
+Alice, Tiara of Justice
+
+Alice, Emmolating Mage Princess
+
+Alice, Divine Warrior Princess
+
+Alice, Bravefire Knight Princess
+
+Alice, Dark Aura Princess
+
+Alice, Gilded Draco Princess
+
+Arthur Sticks the Landing
+
+Ashunera, The Dawn
+
+Asugi, Saizo's Heir
+
+Azama's Naginata
+
+Song of Revelation
+
+Azura's Wave
+
+Song of Restoration
+
+Azura's Welcoming Voice
+
+Azura's Enchanting Melody
+
+Azura's Encore
+rules_text: Exile target creature card from your graveyard. For each opponent, create a token copy of that creature that isn't legendary. It gains haste and must attack that player. Sacrifice each token created this way at the next end step.
+Harmonize {6}{B}{G}{U} [i](You may cast this card from your graveyard for its harmonize cost. You may tap a creature you control to reduce that cost by {X}, where X is its power. Then exile this spell.)[/i] => Exile target creature card from your graveyard. For each opponent, create a token copy of that creature that isn't legendary. It gains haste and must attack that player. Sacrifice each token created this way at the beginning of the next end step.
+Harmonize {6}{B}{G}{U} [i](You may cast this card from your graveyard for its harmonize cost. You may tap a creature you control to reduce that cost by {X}, where X is its power. Then exile this spell.)[/i]
+
+Azura, Vallite Princess
+
+Bael
+
+Benny's Rush
+
+Benny's Post
+
+Zelgius, Black Knight Revealed
+
+Black Knight's Judgement
+
+Byleth, Mute Mercenary
+
+Caeda, Wings of Restoration
+
+Caeda, Angelic Advocate
+
+Caeda's Charm
+
+Caeda, Bride to Archanea
+
+Caeda's Grace
+
+Camilla's Axe
+
+Camilla's Takedown
+
+Marzia, Camilla's Wings
+
+Charlotte's Wedding Day
+
+Clarisse's Volley
+
+Clarisse, Sniper in the Dark
+
+Cordelia's Striking Dive
+
+Corrin's Coronation
+
+Corrin, Nohrian Inheritance
+
+Corrin's Charm
+rules_text: Choose one —
+• Support 2. [i](Put a +1/+1 counter on each of up to two target creatures.)[/i]
+• You and target opponent each draw a card.
+• Forge. => Choose one —
+• Support 2. [i](To support 2, put a +1/+1 counter on each of up to two target creatures.)[/i]
+• You and target opponent each draw a card.
+• Forge.
+
+Corrin, Hoshido's Hope
+
+Corrin's Dragon Fang Strike
+
+Corrin, In Bloom
+
+Corrin's Fateful Staff
+
+Corrin, Queen of Unity
+
+Corrin, Ballistician
+
+Corrin, Cheerful Spring
+
+Corrin, Hoshidan Legacy
+type: Legendary Creature — Human Dragon Lord Noble => Legendary Creature — Dragon Shapeshifter Lord Noble
+
+Corrin's Fatal Blow
+
+Corrin, Dark Shroud
+type: Legendary Creature — Human Dragon Lord Noble => Legendary Creature — Dragon Shapeshifter Lord Noble
+
+Corrin, Grim Savior
+
+Corrin, Nohr's Resolve
+type: Legendary Creature — Human Dragon Lord Noble => Legendary Creature — Dragon Shapeshifter Lord Noble
+
+Corrin, King of Unity
+type: Legendary Creature — Human Dragon Lord Noble => Legendary Creature — Dragon Shapeshifter Lord Noble
+
+Blazing Yato
+
+Corrin, Dark Flame
+type: Legendary Creature — Human Dragon Lord Noble => Legendary Creature — Dragon Shapeshifter Lord Noble
+rules_text: [i]Dark Flame[/i] — When Corrin, Dark Flame enters, if you cast it, destroy each creature target opponent controls.
+Partner with Corrin, Light Flame [i](When this creature enters, target player may put Corrin into their hand from their library, then shuffle.)[/i] => [i]Dark Flame[/i] — When Corrin, Dark Flame enters, if you cast him, destroy each creature target opponent controls.
+Partner with Corrin, Light Flame [i](When this creature enters, target player may put Corrin into their hand from their library, then shuffle.)[/i]
+
+Corrin, Light Flame
+type: Legendary Creature — Human Dragon Lord Noble => Legendary Creature — Dragon Shapeshifter Lord Noble
+rules_text: [i]Light Flame[/i] — When Corrin, Light Flame enters, return each creature card from your graveyard to the battlefield. Creatures you control gain haste until end of turn.
+Partner with Corrin, Dark Flame [i](When this creature enters, target player may put Corrin into their hand from their library, then shuffle.)[/i] => [i]Light Flame[/i] — When Corrin, Light Flame enters, if you cast her, return each creature card from your graveyard to the battlefield. Creatures you control gain haste until end of turn.
+Partner with Corrin, Dark Flame [i](When this creature enters, target player may put Corrin into their hand from their library, then shuffle.)[/i]
+
+Dieck's Direct Blow
+
+Draug's Resolve
+
+Draug, Champion of Deflection
+
+Swift Service
+
+Effie's Bulk
+
+Effie Rides Down
+
+Elen's Mend
+
+Elice's Aum
+
+Elise's Kindness
+
+Eliwood's Sharp Wit
+
+Eliwood's Blazing Blade
+
+Eliwood's Charm
+
+Eliwood's Command
+
+Eliwood, Hero's Descendant
+
+Eliwood, of House Pherae
+
+Eliwood's Greeting
+
+Eternal Blaze
+
+Emma, Moonlit Falcon
+
+Excellus, The Conqueror's Tactician
+
+Fae, Lively Dragon
+
+Felicia, Heartwarming Strategist
+
+Felicia's Charm
+
+Fernand, Traitorous Knight
+
+Fir's Charm
+rules_text: Choose one —
+• Target creature gains first strike and hexproof until end of turn.
+• Support 2. [i](Put a +1/+1 counter on each of up to two target creatures.)[/i]
+• Counter target noncreature spell unless its controller pays {3}. => Choose one —
+• Target creature gains first strike and hexproof until end of turn.
+• Support 2. [i](To support 2, put a +1/+1 counter on each of up to two target creatures.)[/i]
+• Counter target noncreature spell unless its controller pays {3}.
+
+Fir's Wo Dao
+
+Fir, Path of the Sword
+
+Fir's Blazing Technique
+
+Fjorm's Freeze
+
+Flora, Frigid Strategist
+
+Florina's Charm
+type: Legendary Creature — Human => Legendary Instant
+
+Florina's Grace
+
+Frederick's Command
+
+Frey's Taunt
+
+Frey, Brave Knight
+
+Fuga, Force of Gales
+
+Fuga's Gale
+
+Gaius, Sweet Trickster
+
+Gaius' Nectar Gnabbing
+
+Geoffrey's Vow
+
+Gerik's Invitation
+
+Gerik's Whirl
+
+Gharnef, Dark Pontifex
+
+Gordin's Bow
+
+Gregor, Swell Sword
+
+Gregor's Intervention
+
+Gregor, Wishing Well
+
+Greil's Command
+
+Gunter's Dark Origin
+
+Guy's Fearlessness
+rules_text: Enchant creature
+Enchanted creature gets +3/+1 and ward {2}. [i](Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)[/i] => Enchant creature
+Enchanted creature gets +3/+1 and ward {2}. [i](Whenever this enchantment becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)[/i]
+
+Guy's Blitz
+
+Hana's Blade Mastery
+
+Hector's Thundering Blow
+
+Henry, Last Laugh
+
+Henry's Goetia
+
+Henry's Walk
+
+Hinata, Triple Threat
+
+Hinata, Wild Samurai
+
+Hinoka's Invitation
+
+Hinoka, Ascending Sky
+
+Hinoka, Blaring Blossoming Falcon
+
+Hinoka's Scissor Strike
+
+Hinoka's Charge
+
+Ayuri, Hinoka's Pegasus
+
+Hinoka, Dismounted
+
+Hinoka's Bolt Naginata
+
+Hisame's Still Blade
+
+Hisame's Ritual
+
+Horace, Man of Worth
+
+Ignatius, Frozen Solid
+
+Ike, Awakening Legend
+
+Ike, Greil's Student
+
+Ike's Will
+
+Ike's Aether Flare
+
+Ike's Call To Battle
+
+Ike, Ragnell's Master
+
+Ike, Coming Into His Own
+
+Ilyana's Supper
+
+Ilyana's Bolting
+
+Ilyana, Storm Warden
+
+Ilyana's Elthunder
+
+Ilyana, Thunder Trader
+
+Ilyana's Feast
+
+Innes, Mastermind
+
+Innes, Regal Stratigician
+
+Izana, Archduke of Izumo
+
+Izana's Consultation
+
+Jagen, Bones of Iron
+
+Jakob, Clean Cut Cavalier
+
+Jeorge, Archer Captain
+
+Jeorge, Perfect Shot
+
+Jeorge's Heaven Render
+
+Jill, Misstress of Wyverns
+
+Jill's Crashing Sweep
+
+Jill, Blazing Wyvern Knight
+
+Jubelo's Ward
+rules_text: Enchant creature you control.
+When Jubelo's Ward enters, draw a card.
+Enchanted creature has ward {2} and first strike. [i](Whenever this permanent becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)[/i] => Enchant creature you control.
+When Jubelo's Ward enters, draw a card.
+Enchanted creature has ward {2} and first strike. [i](Whenever this enchantment becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)[/i]
+
+Jubelo's Fire
+
+Julian's Treasure Chest
+
+Julian's Scouting
+
+Kaden's Inspiration
+
+Kagero, Shadows Beauty
+
+Kana, Fog of War
+
+Kana, Unleashed Dragon
+
+Kaze, Rumbling Silence
+
+Kaze, Breeze Past
+
+Keaton's Inspiration
+
+Kellam, Invisible Wall
+
+Kellam's Stilness
+
+Kiragi's Galing Shot
+
+Kiragi's Score
+
+Kiragi, Kinshi Knight
+
+Kiragi's Youthful Burst
+
+Kjelle's Bolstering
+
+L'arachel's Protection
+
+L'arachel's Charm
+
+L'arachel's Ivaldi
+
+L'arachel's Party
+
+Laslow Cuts In
+
+Laslow's Charm
+
+Laurent's Excalibur
+
+Legault's Vault
+
+Legion, Masked Assassin
+
+Leo's Command
+
+Leo's Ginnungagap
+
+Leo's Brynhildr
+
+Leo's Tea Time
+
+Leonardo's Bow
+
+Libra's Recover
+
+Libra's Bolt Axe
+
+Lilina's Inheritance
+
+Linde, Aura's Wielder
+
+Linde, Miloah's Child
+
+Linde's Aura
+
+Linus, Savage Dog
+
+Lloyd, Black Fang Elite
+
+Lissa, Vitality Priestess
+
+Lissa's Recover
+
+Lissa's Defiant Fortify
+
+Lon'Qu's Parry
+
+Lowen's Stash
+
+Lucia's Levin Sword Strike
+
+Lucina, Dawns the Falchion
+
+Lucius' Patience
+
+Lyn's Command
+
+Lyn's Blade
+
+Lyre, Finder of Secrets
+
+Lyre's Swipe
+
+Malice, Deft Sellsword
+
+Marcia, Fair Far Traveller
+
+Marcia's Star Strike
+
+Marth's Vision
+
+Marth's Righteous Slash
+
+Matthew's Expertise
+
+Matthew's Critical Swipe
+
+Matthis, Foolish Noble
+
+Meg's Respite
+
+Merlinus, Pharae Official
+
+Merric's Mastery
+
+Micaiah, Dawn Maiden
+
+Midori, Concoction Contraption
+
+Midori, Reliable Adventurer
+
+Midori's Inventory
+
+Miriel, Supreme Sage
+
+Mist's Mend
+
+Mist's Surging Staff
+
+Mitama's Renewing Words
+
+Mozu's Roast
+
+Myrrh's Roar
+
+Naesala's Command
+
+Navarre, Master Fencer
+
+Navarre, Silent Sword
+
+Navarre's Cut
+
+Navarre, Scarlet Death
+
+Navarre, Scarlet Edge
+
+Nephenee, Angelic Halberdier
+
+Nephenee's Grace
+
+Niamh, Chaos Blades
+
+Niamh, Boundless Hypotheses
+
+Niamh, Chaotic Demon Lance
+
+Niamh, Desirer of Wisdom
+
+Niles, Late Night Watch
+
+Rescuing Ninian
+
+Ninian, Dancer of Destiny
+
+Nino, Beloved Sister
+
+Nino's Charm
+
+Noire's Predator Shot
+
+Norne, The Volunteer
+
+Oboro, Spear Fighter
+
+Oboro, Basara
+
+Oboro, Spear Master
+
+Ogma's Breaking Swipe
+
+Ogma's Fury
+
+Ogma's Stance
+
+Ogma, Pit Lion
+
+Oliver's Foul Rescue
+
+Orochi, Merry Diviner
+
+Owain, Last Choice
+
+Owain's Killing Edge
+
+Pent's Mystical Surge
+
+Poe's Arsenal Summoning
+
+Priscilla's Charm
+rules_text: Choose one —
+• Return target permanent card from your graveyard to your hand.
+• Put a lifelink counter onto target creature, then support 2. [i](Put a +1/+1 counter on each of up to two target creatures.)[/i]
+• Draw two cards. => Choose one —
+• Return target permanent card from your graveyard to your hand.
+• Put a lifelink counter onto target creature, then support 2. [i](To support 2, put a +1/+1 counter on each of up to two target creatures.)[/i]
+• Draw two cards.
+
+Rath's Pursuing Shot
+
+Reina's Charm
+
+Renault's Fortify
+
+Renault, Burdened Bishop
+
+Reyson's Galdrar
+
+Rhajat, Vile Basara
+
+Rinkah's Club
+
+Risen Dark Mage
+
+Roderick, Serene Knight
+
+Rolf's Bow
+
+Roshea, Aurelian Hope
+
+Roy's Rupturing Crash
+
+Roy's Charge
+
+Roy, Prince in Training
+
+Empowering the Binding Blade
+
+Roy's Flame Guard
+
+Roy's Blaze
+
+Roy's Confidence
+
+Rutger, Blood-Red Vengeance
+
+Rutger's Division
+
+Rutger's Bloodthirsty Edge
+
+Ryan, Fledgling Archer
+
+Ryoma's Duel
+
+Ryoma, Sauna Lord
+
+Ryoma, Future's Light
+
+Ryoma's Charge
+
+Ryoma, For Hoshido
+
+Sain's Charm
+
+Saizo's Galing Strike
+
+Sanaki's Rexflame
+
+Saul, Off Task Cleric
+
+Say'ri's Still Blade
+
+Scarlet's Axe
+
+Selena, Bitter Bow Knight
+
+Selena, Moonblessed Hero
+
+Selena's Slash
+
+Serra, Outspoken Cleric
+
+Serra's Physic
+
+Severa's Courage
+
+Severa's High Standards
+
+Shade's Fireworks
+
+Shade's Mend
+
+Sharena's Charm
+
+Sharena's Swipe
+
+Fensalir
+
+Sharena, Hopeful Princess
+
+Shigure, Singing Falcon
+
+Shiro, Unleashed
+
+Silas' Strike
+
+Silas' Command
+
+Skirmir's Command
+
+Skirmir, Fang of Gallia
+
+Soren, Schrewd Strategist
+
+Soren, Isolated Storm
+
+Soren, Hushed Voice
+
+Soren, Cunning Exile
+
+Soren, Radiant Winds
+
+Sothe, Searching For His Family
+
+Sothe, Wind Stealer
+
+Sothe's Flurry
+
+Micaiah's Thani
+
+Sothe's Bane
+
+Micaiah's Shine
+
+Stahl, Viridian Great Knight
+
+Subaki's Charm
+
+Subaki's Tempest
+
+Sully's Flaming Pierce
+
+Sumeragi's Command
+
+Sumeragi, Lord of Valla
+
+Takumi, Ruslted Feathers
+
+Takumi's Command
+
+Takumi's Precision
+
+Freeing Tana
+
+Tanith's Purging Strike
+
+Tibarn's Resolve
+
+Tibarn Rescues Reyson
+
+Tibarn & Naesala, Leaders
+
+Tiena, Light of Tania
+
+Tiki's Draconic Punch
+
+Titania & Greil, Mercenaries
+
+Titania Rides Out
+
+Titania's Axe
+
+Tormod's Escalating Flame
+
+Tormod's Elfire
+
+Ursula, Blue Crow
+
+Valter, Dark Moonstone
+
+Velouria, Howling Chill
+
+Virion, Snipest Sniper
+
+Virion's Galing Shot
+
+Vyland, Aurelian Son
+
+Wallace, the Caelin General
+
+Wendell, Wise Archmage
+
+Wil's Snipe
+
+Wil's Precision
+
+Wolt, Dutiful Archer
+
+Wolt's Snipe
+
+Wrys, Dark Turning
+
+Siegfried
+
+Xander's Judgement
+
+Xander, For Nohr
+
+Xander, Samurai Paragon
+
+Xander, Nohr's Honor
+
+Ryoma, Hoshido's Grace
+
+Yarne, Cowardly Rabbit
+
+Yen'fay Resolve
+
+Yukimura, Puppet Master
+
+Yuliya, Princess of Grust
+
+Yuliya, Willful Princess
+
+Yuzu's Deflection
+
+Marth, Emblem of Beginnings
+
+Marth, Promising Hero
+
+Marth's Sword
+
+Marth, Righteous Cause
+
+Marth & Caeda, Celebration
+
+Marth's Decree
+
+Marth, Emblem Wielder
+
+Sharena, Surfing Princess
+
+Sigurd's Command
+
+Niamh, Emergent From Chaos
+
+Niamh Rends Chaos
+
+Niamh, Chaos Unending
+
+Niamh, Beckoning Investigator
+
+Niamh, Collector of Rarities
+
+Niamh's Charm
+
+Cipher Collection
+
+Three Houses
+
+Awakening
+
+Chrom, Leader of the Shepherds
+
+Morgan, Grima's Child
+
+Lucina, Avenger of Time
+
+Robin, Trusted Tactician
+
+Azura, Lost in Thoughts
+
+Corrin, Fateful Princess
+
+Celica, Caring Princess
+
+Alm, Hero of Prophecy
+
+Birthright
+
+Radiant Dawn
+
+Conquest
+
+Echoes, Shadow of Valentia
+
+Byleth, The Instructor
+
+Miriel, Rapier Intellect
+
+Virion, Elite Archer
+
+Sumia, Maid of Flowers
+
+Robin, Mystery Tactician
+
+Frederick, Cold Lieutenant
+
+Fates
+
+Black Eagles
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Destroy up to two target creatures.
+Target opponent loses 1 life for each card in their hand.
+Forge, then forge again.
+Attach any number of Equipment tokens you control onto target creature you control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Destroy up to two target creatures.
+II — Target opponent loses 1 life for each card in their hand.
+III — Forge, then forge again.
+IV — Attach any number of Equipment tokens you control onto target creature you control.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Destroy up to two target creatures.
+Target opponent loses 1 life for each card in their hand.
+Forge, then forge again.
+Attach any number of Equipment tokens you control onto target creature you control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Destroy up to two target creatures.
+II — Target opponent loses 1 life for each card in their hand.
+III — Forge, then forge again.
+IV — Attach any number of Equipment tokens you control onto target creature you control.
+
+Blue Lions
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Investigate three times.
+Until end of turn, whenever you draw a card, create a 1/1 white Human Soldier creature token.
+Until end of turn, creatures you control get +1/+1 for each Clue you control.
+Surveil 2, then investigate. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Investigate three times.
+II — Until end of turn, whenever you draw a card, create a 1/1 white Human Soldier creature token.
+III — Until end of turn, creatures you control get +1/+1 for each Clue you control.
+IV — Surveil 2, then investigate.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Investigate three times.
+Until end of turn, whenever you draw a card, create a 1/1 white Human Soldier creature token.
+Until end of turn, creatures you control get +1/+1 for each Clue you control.
+Surveil 2, then investigate. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Investigate three times.
+II — Until end of turn, whenever you draw a card, create a 1/1 white Human Soldier creature token.
+III — Until end of turn, creatures you control get +1/+1 for each Clue you control.
+IV — Surveil 2, then investigate.
+
+Golden Deer
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Each player draws a card.
+Each player creates a 1/1 white and green Citizen creature token.
+Create a Treasure token for each opponent you have.
+Tap each creature target player controls. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Each player draws a card.
+II — Each player creates a 1/1 green and white Citizen creature token.
+III — Create a Treasure token for each opponent you have.
+IV — Tap each creature target player controls.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Each player draws a card.
+Each player creates a 1/1 white and green Citizen creature token.
+Create a Treasure token for each opponent you have.
+Tap each creature target player controls. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Each player draws a card.
+II — Each player creates a 1/1 green and white Citizen creature token.
+III — Create a Treasure token for each opponent you have.
+IV — Tap each creature target player controls.
+
+Crest of Flames
+
+Seiros, Saint of Legend
+
+Ena, Wish Spinner
+
+Engage
+
+Lethe, Gaillia's Valkyrie
+
+Monica, Stolen Identity
+
+Peri, Childish Ninja
+
+Saber, Driven Mercenary
+
+Scarlet, Rebellious Streak
+
+The White Wings
+
+Byleth, The Professor
+
+Iron Axe
+
+Steel Axe
+
+Silver Axe
+
+Brave Axe
+
+Iron Sword
+
+Brave Sword
+
+Silver Sword
+
+Steel Sword
+
+Brave Lance
+
+Iron Lance
+
+Silver Lance
+
+Steel Lance
+
+Soldier
+
+Id, Hope
+
+Citizen
+
+Risen
+
+Wolf
+
+Faceless
+
+Bear
+
+Dragon
+
+Pegasus Knight
+
+Soldier
+
+Skeleton
+
+Flora, Icy Twin
+
+Felicia, Icy Twin
+
+Garon, King of Nohr
+
+Bond Ring
+
+Reese, Violet Assassin
+
+Avenging Glen and Grado
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Create a 3/3 red Dragon Knight creature token with flying.
+Forge. Attach an equipment you control to target creature you control.
+Whenever you attack with a creature with flying this turn, Avenging Glen and Grado deals 2 damage to target opponent.
+Target creature you control fights another target creature. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Create a 3/3 red Dragon Knight creature token with flying.
+II — Forge. Attach an equipment you control to target creature you control.
+III — Whenever you attack with a creature with flying this turn, Avenging Glen and Grado deals 2 damage to target opponent.
+IV — Target creature you control fights another target creature.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+Create a 3/3 red Dragon Knight creature token with flying.
+Forge. Attach an equipment you control to target creature you control.
+Whenever you attack with a creature with flying this turn, Avenging Glen and Grado deals 2 damage to target opponent.
+Target creature you control fights another target creature. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — Create a 3/3 red Dragon Knight creature token with flying.
+II — Forge. Attach an equipment you control to target creature you control.
+III — Whenever you attack with a creature with flying this turn, Avenging Glen and Grado deals 2 damage to target opponent.
+IV — Target creature you control fights another target creature.
+
+Kyle, Ardent Knight
+
+Forde, Wild Knight
+
+Leon, True of Heart
+
+Dragon Spirit
+
+Edain, Yngvi Noblewoman
+
+Franz, The Faithul
+
+Kaden, Sprightly Kitsune
+
+Keaton, Rugged Wolfskin
+type: Legendary Creature — Fox Shapeshifter => Legendary Creature — Wolf Shapeshifter
+
+Lukas, Sharp Soldier
+
+Noire, Miss Personality
+
+Panne, Proud Taquel
+
+Peri, Childish Killer
+
+Spirit
+
+Risen
+
+Risen
+
+Corrupted
+
+Vanessa, Dutiful Rider
+
+Seiros, Revered Saint
+
+Marcia, Petulant Knight
+
+Rajaion, Heir to Goldoa
+
+Sumia, Gentle as a Feather
+
+Eldigan, Lionheart
+
+Fiona, Valiant Lady
+
+Tanith, Aspiring Leader
+
+Fjorm, Icy Regent
+
+Lilina, Delightful Noble
+
+Jill, Fiery Wyvern Knight
+
+Devdan, Luck Wayfarer
+
+Ashen Wolves
+
+Marianne, Skies Healer
+
+Lachesis, Lionheart's Sister
+
+Giant Demon Beast
+
+Genealogy of the Holy War
+
+Heroes
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Reveal the top card until you reveal a legendary creature. Put that card onto the battlefield, and put the rest on the bottom of your library in a random order.
+​
+​ => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II, III, IV, V, VI — Reveal the top card until you reveal a legendary creature. Put that card onto the battlefield, and put the rest on the bottom of your library in a random order.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Reveal the top card until you reveal a legendary creature. Put that card onto the battlefield, and put the rest on the bottom of your library in a random order.
+​
+​ => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II, III, IV, V, VI — Reveal the top card until you reveal a legendary creature. Put that card onto the battlefield, and put the rest on the bottom of your library in a random order.
+
+Sacred Stones
+
+Finn, Leif's Protector
+
+Karin, Driven Knight
+
+Tina, Mischievous Saint
+
+Nel, Stoic Dragon
+
+Rafal, Atoning Dragon
+
+Cipher
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Draw a card.
+Draw two cards, then discard a card.
+Draw three cards, then discard a card.
+You may cast a card from your hand without paying its mana costs this turn. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II — Draw a card.
+III, IV — Draw two cards, then discard a card.
+V — Draw three cards, then discard a card.
+VI — You may cast a card from your hand without paying its mana costs this turn.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Draw a card.
+Draw two cards, then discard a card.
+Draw three cards, then discard a card.
+You may cast a card from your hand without paying its mana costs this turn. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II — Draw a card.
+III, IV — Draw two cards, then discard a card.
+V — Draw three cards, then discard a card.
+VI — You may cast a card from your hand without paying its mana costs this turn.
+
+Ike, Destined Hero
+
+Kamui, Wandering Blade
+
+New Mystery of the Emblem
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+You may sacrifice a creature. If you do, discover 5.
+Each creature you control explores. You may play an additional land this turn.
+Put a noncreature permanent from your graveyard onto the battlefield.
+Tap all creatures you don't control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — You may sacrifice a creature. If you do, discover 5.
+II — Each creature you control explores. You may play an additional land this turn.
+III — Put a noncreature permanent from your graveyard onto the battlefield.
+IV — Tap all creatures you don't control.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+You may sacrifice a creature. If you do, discover 5.
+Each creature you control explores. You may play an additional land this turn.
+Put a noncreature permanent from your graveyard onto the battlefield.
+Tap all creatures you don't control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after IV.)[/i]
+I — You may sacrifice a creature. If you do, discover 5.
+II — Each creature you control explores. You may play an additional land this turn.
+III — Put a noncreature permanent from your graveyard onto the battlefield.
+IV — Tap all creatures you don't control.
+
+Shdaow Dragon & The Blade of Light
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Create a 1/1 white Soldier creature token for each creature you control.
+Creatures you control get +1/+1 until end of turn.
+Until end of turn, whenever a creature you control deals combat damage to a player, put that many +1/+1 counters on them. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II — Create a 1/1 white Soldier creature token for each creature you control.
+III, IV — Creatures you control get +1/+1 until end of turn.
+V, VI — Until end of turn, whenever a creature you control deals combat damage to a player, put that many +1/+1 counters on them.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Create a 1/1 white Soldier creature token for each creature you control.
+Creatures you control get +1/+1 until end of turn.
+Until end of turn, whenever a creature you control deals combat damage to a player, put that many +1/+1 counters on them. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II — Create a 1/1 white Soldier creature token for each creature you control.
+III, IV — Creatures you control get +1/+1 until end of turn.
+V, VI — Until end of turn, whenever a creature you control deals combat damage to a player, put that many +1/+1 counters on them.
+
+Shadow Dragon
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Search your library for a legendary creature card. Exile it, then shuffle. You may cast it from exile for as long as it remains exiled.
+[i][/i]Create a copy of target noncreature nonenchantment permanent you control.[i][/i]
+Create the Exalted Falchion.
+Creatures you control get +1/+1 for each Lord you control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after V.)[/i]
+I, II — Search your library for a legendary creature card. Exile it, then shuffle. You may cast it from exile for as long as it remains exiled.
+III — [/i]Create a copy of target noncreature nonenchantment permanent you control.[i]
+IV — Create the Exalted Falchion.
+V — Creatures you control get +1/+1 for each Lord you control.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Search your library for a legendary creature card. Exile it, then shuffle. You may cast it from exile for as long as it remains exiled.
+[i][/i]Create a copy of target noncreature nonenchantment permanent you control.[i][/i]
+Create the Exalted Falchion.
+Creatures you control get +1/+1 for each Lord you control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after V.)[/i]
+I, II — Search your library for a legendary creature card. Exile it, then shuffle. You may cast it from exile for as long as it remains exiled.
+III — [/i]Create a copy of target noncreature nonenchantment permanent you control.[i]
+IV — Create the Exalted Falchion.
+V — Creatures you control get +1/+1 for each Lord you control.
+
+Olwen, Blue Mage
+
+Shiva, Mercenary of Savan
+
+Alen, Fiery Knight
+
+Lex, Young Axe
+
+Lester, Tirnanog's Sharpshot
+
+Shez, Dual Blade Master
+
+Ced, Liberator of Wind
+
+Safy, Font of Piety
+
+Shinon, Deadly Adept
+
+Darios, Prince of Gristonne
+
+Kurthnaga, Young Dragon Prince
+
+Mia, Budding Blademaster
+
+Saber, Seafarer
+
+Shannan, Wielder of Astra
+
+Tharja, Plegian Defector
+
+Fates, Revelation
+rules_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Support 3. [i](Put a +1/+1 counter on each of up to three target creatures.)[/i]
+Create a non-legendary copy of target creature.
+Double the number of counters on each creature you control.
+Draw cards equal to the greatest power among creatures you control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II — Support 3. [i](Put a +1/+1 counter on each of up to three target creatures.)[/i]
+III — Create a non-legendary copy of target creature.
+IV, V — Double the number of counters on each creature you control.
+VI — Draw cards equal to the greatest power among creatures you control.
+special_text: [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)[/i]
+Support 3. [i](Put a +1/+1 counter on each of up to three target creatures.)[/i]
+Create a non-legendary copy of target creature.
+Double the number of counters on each creature you control.
+Draw cards equal to the greatest power among creatures you control. => [i](As this Saga enters and after your draw step, add a lore counter. Sacrifice after VI.)[/i]
+I, II — Support 3. [i](Put a +1/+1 counter on each of up to three target creatures.)[/i]
+III — Create a non-legendary copy of target creature.
+IV, V — Double the number of counters on each creature you control.
+VI — Draw cards equal to the greatest power among creatures you control.
+
+Cain, Altea's Sword
+
+Eliwood, Lord of Elibe
+
+Florina, Lovely Flier
+
+Gordin, Fledgling Archer
+
+Sigrun, Loyal Knight
+
+Zelgius, Begnion Knight
+
+Caeda, Lady of Talys
+
+Caeldori, Subaki's Student
+
+Caeldori, Aspiring Paragon
+
+Cormag, Driving Force
+
+Hana, Aspiring Skynight
+
+Luke, Charming Knight
+
+Marisa, Taciturn Mercenary
+
+Minerva, White Wing
+
+Poe, Wildflower
+
+Severa, High Aspirations
+
+Silas, Worried Friend
+rules_text: First strike
+[i]Vow of Friendship[/i] — Whenever you make a choice, put a +1/+1 counter on Silas, Loyal Knight.
+Promote — At the beginning of your end step, if Silas attacked with two or more counters on him this turn, transform him. => First strike
+[i]Vow of Friendship[/i] — Whenever you make a choice, put a +1/+1 counter on Silas, Loyal Knight.
+[i]Promote[/i] — At the beginning of your end step, if Silas attacked with two or more counters on him this turn, transform him.
+
+Tana, Princess of Frelia
+
+Volug, Reticent Fang
+
+
+VERSION 2 CHANGELOG
 ====================
 
 Claude, Emblem of Rivals added.
