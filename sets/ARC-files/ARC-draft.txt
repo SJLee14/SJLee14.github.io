@@ -1,0 +1,445 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Akemil, Gallant Horizon",
+			"rarity": "special",
+			"mana_cost": "{4}{R}{G}{W}",
+			"type": "Legendary Creature — Dragon",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/0.png"
+			}
+		},
+		{
+			"name": "Ganon, the Brachydios",
+			"rarity": "special",
+			"mana_cost": "{3}{G}{U}{R}",
+			"type": "Legendary Creature — Drake Beast",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/1.png"
+			}
+		},
+		{
+			"name": "Nimsle, Bloodsteel Prince",
+			"rarity": "special",
+			"mana_cost": "{2}{B}{R}{G}",
+			"type": "Legendary Artifact Creature — Dragon Noble",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/2.png"
+			}
+		},
+		{
+			"name": "Xet, Calamity Rescue Squad",
+			"rarity": "special",
+			"mana_cost": "{G}{W}{U}",
+			"type": "Legendary Creature — Human Artificer",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/3.png"
+			}
+		},
+		{
+			"name": "Emajin, Heir to the Faith",
+			"rarity": "special",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Legendary Creature — Human Warlock",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/4.png"
+			}
+		},
+		{
+			"name": "Coralina, Astrolamancer",
+			"rarity": "special",
+			"mana_cost": "{2}{U}{B}{R}",
+			"type": "Legendary Creature — Human Wizard",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/5.png"
+			}
+		},
+		{
+			"name": "Blair, Hex Kindler",
+			"rarity": "special",
+			"mana_cost": "{W}{B}{G}",
+			"type": "Legendary Creature — Elf Warlock",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/6.png"
+			}
+		},
+		{
+			"name": "Sabt, Bronze Hound",
+			"rarity": "special",
+			"mana_cost": "{R}{W}{B}",
+			"type": "Legendary Artifact Creature — Construct Dog Warrior",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/7.png"
+			}
+		},
+		{
+			"name": "Ruzmy, Scaleheart Seraph",
+			"rarity": "special",
+			"mana_cost": "{1}{U}{R}{W}",
+			"type": "Legendary Creature — Angel Warrior",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/8.png"
+			}
+		},
+		{
+			"name": "Akzenm, Death Vicar",
+			"rarity": "special",
+			"mana_cost": "{B}{G}{U}",
+			"type": "Legendary Creature — Orc Warlock",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/9.png"
+			}
+		},
+		{
+			"name": "Plxyth, Abominable Howler",
+			"rarity": "special",
+			"mana_cost": "{4}{B}{G}{U}",
+			"type": "Legendary Creature — Wolf Dragon Mutant",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/10.png"
+			}
+		},
+		{
+			"name": "Orilia, Baroness of Freldi",
+			"rarity": "special",
+			"mana_cost": "{3}{U}{R}{W}",
+			"type": "Legendary Creature — Elf Rogue Noble",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/11.png"
+			}
+		},
+		{
+			"name": "Magis-Khal, Mecha Oni",
+			"rarity": "special",
+			"mana_cost": "{2}{R}{W}{B}",
+			"type": "Legendary Artifact Creature — Construct Demon Warrior",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/12.png"
+			}
+		},
+		{
+			"name": "Vinca, Herald of Preservation",
+			"rarity": "special",
+			"mana_cost": "{3}{W}{B}{G}",
+			"type": "Legendary Creature — Angel Soldier",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/13.png"
+			}
+		},
+		{
+			"name": "Devis, Hoarding Husk",
+			"rarity": "special",
+			"mana_cost": "{1}{U}{B}{R}",
+			"type": "Legendary Artifact Creature — Lizard Skeleton Rogue",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/14.png"
+			}
+		},
+		{
+			"name": "Idabell, Polaris' Dagger",
+			"rarity": "special",
+			"mana_cost": "{1}{W}{U}{B}",
+			"type": "Legendary Creature — Elf Assassin",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/15.png"
+			}
+		},
+		{
+			"name": "Melian & Thenaris Beldin",
+			"rarity": "special",
+			"mana_cost": "{3}{G}{W}{U}",
+			"type": "Legendary Creature — Human Rogue Noble",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/16.png"
+			}
+		},
+		{
+			"name": "Felltooth, Brambling Predator",
+			"rarity": "special",
+			"mana_cost": "{B}{R}{G}",
+			"type": "Legendary Creature — Wolf Horror Demon",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/17.png"
+			}
+		},
+		{
+			"name": "K'Cota, Primordial Shepherd",
+			"rarity": "special",
+			"mana_cost": "{G}{U}{R}",
+			"type": "Legendary Creature — Lizard Shaman",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/18.png"
+			}
+		},
+		{
+			"name": "Feirmont, Autmoth Paladin",
+			"rarity": "special",
+			"mana_cost": "{R}{G}{W}",
+			"type": "Legendary Creature — Human Knight",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/19.png"
+			}
+		},
+		{
+			"name": "Rafon, Essence Former",
+			"rarity": "special",
+			"mana_cost": "{1}{G/W}{U}{U}",
+			"type": "Legendary Creature — Cat Spirit Cleric Warrior",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/20.png"
+			}
+		},
+		{
+			"name": "K.O., Simulation Tester",
+			"rarity": "special",
+			"mana_cost": "{1}{W}{W}{B/R}",
+			"type": "Legendary Artifact Creature — Construct Warrior",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/21.png"
+			}
+		},
+		{
+			"name": "Tyz, Lore Conductor",
+			"rarity": "special",
+			"mana_cost": "{2}{W/B}{G}{G}",
+			"type": "Legendary Artifact Creature — Construct Soldier",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/22.png"
+			}
+		},
+		{
+			"name": "Coron, Darkest Eclipse",
+			"rarity": "special",
+			"mana_cost": "{5}{B/R}{G}{G}",
+			"type": "Legendary Creature — Wolf Horror Dragon",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/23.png"
+			}
+		},
+		{
+			"name": "Jesiphin, Soulfire Warlock",
+			"rarity": "special",
+			"mana_cost": "{1}{U/B}{R}{R}",
+			"type": "Legendary Creature — Tiefling Warlock",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/24.png"
+			}
+		},
+		{
+			"name": "Wilkz, Unfinished Design",
+			"rarity": "special",
+			"mana_cost": "{W/U}{B}{B}",
+			"type": "Legendary Artifact Creature — Skeleton Horror Wizard",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/25.png"
+			}
+		},
+		{
+			"name": "Jasmina, Tea Flower",
+			"rarity": "special",
+			"mana_cost": "{4}{G/U}{R}{R}",
+			"type": "Legendary Creature — Elf Faerie Druid",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/26.png"
+			}
+		},
+		{
+			"name": "Seana, Gilded Herald",
+			"rarity": "special",
+			"mana_cost": "{2}{R/G}{W}{W}",
+			"type": "Legendary Creature — Angel Archer Warrior",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/27.png"
+			}
+		},
+		{
+			"name": "Thia, Eye of the Storm",
+			"rarity": "special",
+			"mana_cost": "{2}{U}{U}{R/W}",
+			"type": "Legendary Creature — Human Monk Warrior",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/28.png"
+			}
+		},
+		{
+			"name": "Reess, Cavern Adventurer",
+			"rarity": "special",
+			"mana_cost": "{X}{B}{B}{G/U}",
+			"type": "Legendary Creature — Snake Rogue Scout",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/29.png"
+			}
+		},
+		{
+			"name": "Rebecca, Refraction Druid",
+			"rarity": "special",
+			"mana_cost": "{1}{G}{U}{R}",
+			"type": "Legendary Creature — Human Druid",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/30.png"
+			}
+		},
+		{
+			"name": "Elian, Shaper of Freedom",
+			"rarity": "special",
+			"mana_cost": "{1}{G}{W}{U}",
+			"type": "Legendary Creature — Human Wizard",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/31.png"
+			}
+		},
+		{
+			"name": "G.L.U., Covert Sniper",
+			"rarity": "special",
+			"mana_cost": "{2}{B}{G}{U}",
+			"type": "Legendary Artifact Creature — Construct Scout",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/32.png"
+			}
+		},
+		{
+			"name": "Yim, Adaptive Lancer",
+			"rarity": "special",
+			"mana_cost": "{1}{W}{B}{G}",
+			"type": "Legendary Creature — Human Warrior",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/33.png"
+			}
+		},
+		{
+			"name": "Olympia, Fleet Commander",
+			"rarity": "special",
+			"mana_cost": "{1}{U}{R}{W}",
+			"type": "Legendary Creature — Human Pilot",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/34.png"
+			}
+		},
+		{
+			"name": "Madella, Free Caster",
+			"rarity": "special",
+			"mana_cost": "{2}{U}{B}{R}",
+			"type": "Legendary Creature — Human Warlock",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/35.png"
+			}
+		},
+		{
+			"name": "Lythienne, Colth's Inheritor",
+			"rarity": "special",
+			"mana_cost": "{1}{W}{U}{B}",
+			"type": "Legendary Creature — Elf Spirit Cleric Warrior",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/36.png"
+			}
+		},
+		{
+			"name": "Mercenith, Bloodletter",
+			"rarity": "special",
+			"mana_cost": "{1}{B}{R}{G}",
+			"type": "Legendary Creature — Vampire Noble",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/37.png"
+			}
+		},
+		{
+			"name": "Halaema, Duchess of Scales",
+			"rarity": "special",
+			"mana_cost": "{1}{R}{W}{B}",
+			"type": "Legendary Creature — Elf Cleric Noble",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/38.png"
+			}
+		},
+		{
+			"name": "Sorloc, Cloud Regent",
+			"rarity": "special",
+			"mana_cost": "{2}{R}{G}{W}",
+			"type": "Legendary Creature — Griffin",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/ARC-files/img/39.png"
+			}
+		}
+	]
+
+[cube(15)]
+	1 Akemil, Gallant Horizon
+	1 Ganon, the Brachydios
+	1 Nimsle, Bloodsteel Prince
+	1 Xet, Calamity Rescue Squad
+	1 Emajin, Heir to the Faith
+	1 Coralina, Astrolamancer
+	1 Blair, Hex Kindler
+	1 Sabt, Bronze Hound
+	1 Ruzmy, Scaleheart Seraph
+	1 Akzenm, Death Vicar
+	1 Plxyth, Abominable Howler
+	1 Orilia, Baroness of Freldi
+	1 Magis-Khal, Mecha Oni
+	1 Vinca, Herald of Preservation
+	1 Devis, Hoarding Husk
+	1 Idabell, Polaris' Dagger
+	1 Melian & Thenaris Beldin
+	1 Felltooth, Brambling Predator
+	1 K'Cota, Primordial Shepherd
+	1 Feirmont, Autmoth Paladin
+	1 Rafon, Essence Former
+	1 K.O., Simulation Tester
+	1 Tyz, Lore Conductor
+	1 Coron, Darkest Eclipse
+	1 Jesiphin, Soulfire Warlock
+	1 Wilkz, Unfinished Design
+	1 Jasmina, Tea Flower
+	1 Seana, Gilded Herald
+	1 Thia, Eye of the Storm
+	1 Reess, Cavern Adventurer
+	1 Rebecca, Refraction Druid
+	1 Elian, Shaper of Freedom
+	1 G.L.U., Covert Sniper
+	1 Yim, Adaptive Lancer
+	1 Olympia, Fleet Commander
+	1 Madella, Free Caster
+	1 Lythienne, Colth's Inheritor
+	1 Mercenith, Bloodletter
+	1 Halaema, Duchess of Scales
+	1 Sorloc, Cloud Regent

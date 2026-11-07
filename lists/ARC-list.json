@@ -1,0 +1,352 @@
+﻿[
+    {
+        "card_name": "Emajin, Heir to the Faith",
+        "number": 7,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "4"
+    },
+    {
+        "card_name": "Coralina, Astrolamancer",
+        "number": 4,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "5"
+    },
+    {
+        "card_name": "Felltooth, Brambling Predator",
+        "number": 9,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "17"
+    },
+    {
+        "card_name": "Akemil, Gallant Horizon",
+        "number": 1,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "0"
+    },
+    {
+        "card_name": "Elian, Shaper of Freedom",
+        "number": 6,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "31"
+    },
+    {
+        "card_name": "Idabell, Polaris' Dagger",
+        "number": 13,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "15"
+    },
+    {
+        "card_name": "Devis, Hoarding Husk",
+        "number": 5,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "14"
+    },
+    {
+        "card_name": "Mercenith, Bloodletter",
+        "number": 19,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "37"
+    },
+    {
+        "card_name": "Feirmont, Autmoth Paladin",
+        "number": 8,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "19"
+    },
+    {
+        "card_name": "Melian & Thenaris Beldin",
+        "number": 18,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "16"
+    },
+    {
+        "card_name": "Lythienne, Colth's Inheritor",
+        "number": 15,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "36"
+    },
+    {
+        "card_name": "Madella, Free Caster",
+        "number": 16,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "35"
+    },
+    {
+        "card_name": "Nimsle, Bloodsteel Prince",
+        "number": 20,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "2"
+    },
+    {
+        "card_name": "Sorloc, Cloud Regent",
+        "number": 27,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "39"
+    },
+    {
+        "card_name": "Xet, Calamity Rescue Squad",
+        "number": 29,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "3"
+    },
+    {
+        "card_name": "Wilkz, Unfinished Design",
+        "number": 40,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "25"
+    },
+    {
+        "card_name": "Jesiphin, Soulfire Warlock",
+        "number": 33,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "24"
+    },
+    {
+        "card_name": "Coron, Darkest Eclipse",
+        "number": 31,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "23"
+    },
+    {
+        "card_name": "Seana, Gilded Herald",
+        "number": 37,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "27"
+    },
+    {
+        "card_name": "Rafon, Essence Former",
+        "number": 35,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "20"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "Halaema, Duchess of Scales",
+        "number": 12,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "38"
+    },
+    {
+        "card_name": "Ganon, the Brachydios",
+        "number": 11,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "1"
+    },
+    {
+        "card_name": "Blair, Hex Kindler",
+        "number": 3,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "6"
+    },
+    {
+        "card_name": "Olympia, Fleet Commander",
+        "number": 21,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "34"
+    },
+    {
+        "card_name": "Akzenm, Death Vicar",
+        "number": 2,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "9"
+    },
+    {
+        "card_name": "Magis-Khal, Mecha Oni",
+        "number": 17,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "12"
+    },
+    {
+        "card_name": "K'Cota, Primordial Shepherd",
+        "number": 14,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "18"
+    },
+    {
+        "card_name": "Vinca, Herald of Preservation",
+        "number": 28,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "13"
+    },
+    {
+        "card_name": "Orilia, Baroness of Freldi",
+        "number": 22,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "11"
+    },
+    {
+        "card_name": "G.L.U., Covert Sniper",
+        "number": 10,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "32"
+    },
+    {
+        "card_name": "Sabt, Bronze Hound",
+        "number": 26,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "7"
+    },
+    {
+        "card_name": "Rebecca, Refraction Druid",
+        "number": 24,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "30"
+    },
+    {
+        "card_name": "Yim, Adaptive Lancer",
+        "number": 30,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "33"
+    },
+    {
+        "card_name": "Ruzmy, Scaleheart Seraph",
+        "number": 25,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "8"
+    },
+    {
+        "card_name": "Plxyth, Abominable Howler",
+        "number": 23,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "10"
+    },
+    {
+        "card_name": "K.O., Simulation Tester",
+        "number": 34,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "21"
+    },
+    {
+        "card_name": "Jasmina, Tea Flower",
+        "number": 32,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "26"
+    },
+    {
+        "card_name": "Tyz, Lore Conductor",
+        "number": 39,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "22"
+    },
+    {
+        "card_name": "Thia, Eye of the Storm",
+        "number": 38,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "28"
+    },
+    {
+        "card_name": "Reess, Cavern Adventurer",
+        "number": 36,
+        "shape": "normal",
+        "set": "ARC",
+        "rotated": false,
+        "position": "29"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    },
+    {
+        "card_name": "er"
+    }
+]

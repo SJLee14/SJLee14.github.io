@@ -1,8 +1,8 @@
 ﻿{
     "name": "Jaelicia Commander",
     "formats": "",
-    "image_type": "jpg",
-    "draft_structure": "play booster",
+    "image_type": "png",
+    "draft_structure": "cube",
     "unpreviewed": "card back",
     "image_name": "position",
     "v_mana": "",
@@ -10,7 +10,7 @@
         {
             "card_name": "Rylex, Shaper Savant",
             "color": "WUB",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Construct Knight",
             "number": 50,
             "color_identity": "WUB",
@@ -31,7 +31,7 @@
         {
             "card_name": "Pallin, Soul Gatekeeper",
             "color": "UBR",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Warlock",
             "number": 48,
             "color_identity": "UBR",
@@ -52,12 +52,12 @@
         {
             "card_name": "Thorne, Fiery Genesis",
             "color": "WRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Construct Knight",
             "number": 52,
             "color_identity": "WRG",
             "cost": "{2}{R}{G}{W}",
-            "rules_text": "Haste, trample\nWhenever Thorne, Fiery Genesis attacks, put a token onto the battlefield tapped and attacking that's a copy of another target attacking creature, except it isn't legendary.",
+            "rules_text": "Haste, trample\nWhenever Thorne, Fiery Genesis attacks, put a token onto the battlefield that is tapped and attacking that's a copy of another target attacking creature, except it isn't legendary.",
             "flavor_text": "[i][/i]",
             "pt": "3/5",
             "special_text": "",
@@ -73,7 +73,7 @@
         {
             "card_name": "Avaril, Renowned Tactician",
             "color": "WUG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Ranger",
             "number": 32,
             "color_identity": "WUG",
@@ -94,12 +94,12 @@
         {
             "card_name": "Emilia, Game Breaker",
             "color": "BRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Warrior",
             "number": 38,
             "color_identity": "BRG",
             "cost": "{B}{R}{G}",
-            "rules_text": "Trample\nWhenever a creature enters the battlefield under your control from a graveyard, it gets +2/+0 and gains haste until end of turn.\nWhenever you attack, you may cast a creature card from your graveyard until end of turn.",
+            "rules_text": "Trample\nWhenever a creature enters the battlefield under your control from a graveyard, it gets +2/+0 and gains haste until end of turn.\nDuring your first main phase, you may cast a creature card from your graveyard until end of turn. That creature enters with a finality counter on it.",
             "flavor_text": "[i][/i]",
             "pt": "3/2",
             "special_text": "",
@@ -115,7 +115,7 @@
         {
             "card_name": "Briana, Dune Temptress",
             "color": "WRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Shaman",
             "number": 33,
             "color_identity": "WRG",
@@ -136,7 +136,7 @@
         {
             "card_name": "Colth, Awakened Blade",
             "color": "WUB",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Soldier",
             "number": 35,
             "color_identity": "WUB",
@@ -157,7 +157,7 @@
         {
             "card_name": "Inxalor, Piercer of Souls",
             "color": "UBR",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Construct Knight",
             "number": 39,
             "color_identity": "UBR",
@@ -178,7 +178,7 @@
         {
             "card_name": "Ulfra, The Avalanche",
             "color": "WUG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Construct Knight",
             "number": 53,
             "color_identity": "WUG",
@@ -199,7 +199,7 @@
         {
             "card_name": "Lu, Demon Knight",
             "color": "BRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Construct Knight",
             "number": 46,
             "color_identity": "BRG",
@@ -220,7 +220,7 @@
         {
             "card_name": "Chama, Knowledge Reservoir",
             "color": "WUG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Hydra",
             "number": 34,
             "color_identity": "WUG",
@@ -241,7 +241,7 @@
         {
             "card_name": "Ocras, Essence Devourer",
             "color": "BRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Nightmare Hydra",
             "number": 47,
             "color_identity": "BRG",
@@ -262,7 +262,7 @@
         {
             "card_name": "Poltis, Lich of Judgement",
             "color": "WUB",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Skeleton Warlock",
             "number": 49,
             "color_identity": "WUB",
@@ -283,7 +283,7 @@
         {
             "card_name": "Kagiko, Dragon's Breath",
             "color": "UBR",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Construct Wizard",
             "number": 41,
             "color_identity": "UBR",
@@ -304,12 +304,12 @@
         {
             "card_name": "Arnold, The Unrighteous",
             "color": "WRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Noble",
             "number": 31,
             "color_identity": "WRG",
             "cost": "{1}{R}{G}{G}{W}{W}{W}",
-            "rules_text": "Whenever Arnold, the Unrighteous enters the battlefield, you become the monarch.\nModified creatures you control can't be blocked as long as another player is the monarch.\nAt the beginning of your end step, if you are the monarch, create a token copy of target aura or equipment you control.",
+            "rules_text": "Whenever Arnold, the Unrighteous enters the battlefield, you become the monarch.\nModified creatures you control can't be blocked as long as another player is the monarch.\nAt the beginning of your end step, if you are the monarch, create a token copy of target Aura or Equipment you control.",
             "flavor_text": "[i][/i]",
             "pt": "4/6",
             "special_text": "",
@@ -325,7 +325,7 @@
         {
             "card_name": "Legiaria, Radiant Hydra",
             "color": "WRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Hydra",
             "number": 45,
             "color_identity": "WRG",
@@ -346,7 +346,7 @@
         {
             "card_name": "Kuvirra, Vexing Song",
             "color": "UBR",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Angel Warlock",
             "number": 44,
             "color_identity": "UBR",
@@ -367,7 +367,7 @@
         {
             "card_name": "Elise, Invoker of Truth",
             "color": "WUB",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Angel Warrior Wizard",
             "number": 37,
             "color_identity": "WUB",
@@ -388,7 +388,7 @@
         {
             "card_name": "Keit, Brimstone Rider",
             "color": "BRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Knight",
             "number": 42,
             "color_identity": "BRG",
@@ -409,7 +409,7 @@
         {
             "card_name": "Zilassth, Soul Shifter",
             "color": "WUG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Viashino Wizard",
             "number": 55,
             "color_identity": "WUG",
@@ -430,7 +430,7 @@
         {
             "card_name": "Siab, Essence Cleric",
             "color": "WUG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Human Cleric",
             "number": 51,
             "color_identity": "WUG",
@@ -451,7 +451,7 @@
         {
             "card_name": "Khar, The Conqueror",
             "color": "BRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Manticore",
             "number": 43,
             "color_identity": "BRG",
@@ -472,7 +472,7 @@
         {
             "card_name": "Ixillith, The Eclipse",
             "color": "WUB",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Spirit Avatar",
             "number": 40,
             "color_identity": "WUB",
@@ -493,12 +493,12 @@
         {
             "card_name": "Vrocax, Essence Lich",
             "color": "UBR",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Artifact Creature \u2014 Skeleton Warlock",
             "number": 54,
             "color_identity": "UBR",
             "cost": "{1}{U}{B}{R}",
-            "rules_text": "Sacrifice another artifact: Vrocax, Essence Lich gains indestructible until end of turn.\nWhenever an artifact is put into your graveyard, target opponent loses 2 life.",
+            "rules_text": "Sacrifice another artifact: Vrocax, Essence Lich gains indestructible until end of turn.\nWhenever an artifact is put into your graveyard from anywhere, target opponent loses 2 life.",
             "flavor_text": "[i][/i]",
             "pt": "3/3",
             "special_text": "",
@@ -514,7 +514,7 @@
         {
             "card_name": "Domi, Vengeful Pal",
             "color": "WRG",
-            "rarity": "mythic",
+            "rarity": "cube",
             "type": "Legendary Creature \u2014 Snake Dog",
             "number": 36,
             "color_identity": "WRG",
@@ -535,7 +535,7 @@
         {
             "card_name": "Herald of Essence",
             "color": "UR",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Angel Wizard",
             "number": 23,
             "color_identity": "UR",
@@ -556,7 +556,7 @@
         {
             "card_name": "Magnificent Flame",
             "color": "BR",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 15,
             "color_identity": "BR",
@@ -577,7 +577,7 @@
         {
             "card_name": "Infuse with Essence",
             "color": "UG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Sorcery",
             "number": 30,
             "color_identity": "UG",
@@ -598,7 +598,7 @@
         {
             "card_name": "Skybreaker's Gear",
             "color": "WR",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Artifact \u2014 Equipment",
             "number": 28,
             "color_identity": "WR",
@@ -619,7 +619,7 @@
         {
             "card_name": "Essence Hunter",
             "color": "BG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Human Ranger",
             "number": 25,
             "color_identity": "BG",
@@ -640,7 +640,7 @@
         {
             "card_name": "Dauntless Recruiter",
             "color": "WG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Human Knight",
             "number": 19,
             "color_identity": "WG",
@@ -661,7 +661,7 @@
         {
             "card_name": "Death Harbinger",
             "color": "WB",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Angel Cleric",
             "number": 21,
             "color_identity": "WB",
@@ -682,7 +682,7 @@
         {
             "card_name": "Angelic Ascension",
             "color": "WU",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Enchantment",
             "number": 11,
             "color_identity": "WU",
@@ -703,7 +703,7 @@
         {
             "card_name": "Villianous Consult",
             "color": "UB",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Human Warlock",
             "number": 14,
             "color_identity": "UB",
@@ -724,7 +724,7 @@
         {
             "card_name": "Inescapaple Hunt",
             "color": "RG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 18,
             "color_identity": "RG",
@@ -745,7 +745,7 @@
         {
             "card_name": "Mind Canvas",
             "color": "UB",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Sorcery",
             "number": 13,
             "color_identity": "UB",
@@ -766,12 +766,12 @@
         {
             "card_name": "Imminent Devastation",
             "color": "RG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Enchantment",
             "number": 17,
             "color_identity": "RG",
             "cost": "{1}{R}{R}{G}",
-            "rules_text": "Whenever a land enters the battlefield under your control, put a Devastation counter on Imminent Devastation. Then if Imminent Devastation has five or more Devastation counters on it, create a 3/3 red and green Dragon creature token with flying and devour 2. [i](As this enters, you may sacrifice any number of creatures. That creature enters with twice that many +1/+1 counters on it.)[/i]",
+            "rules_text": "Whenever a land enters the battlefield under your control, put a Devastation counter on Imminent Devastation. Then if Imminent Devastation has five or more Devastation counters on it, create a 3/3 red and green Dragon creature token with flying and devour 2. [i](As that creature enters, you may sacrifice any number of creatures. That creature enters with twice that many +1/+1 counters on it.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -787,7 +787,7 @@
         {
             "card_name": "Thunderous Skyrazer",
             "color": "BR",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Demon Warlock Warrior",
             "number": 16,
             "color_identity": "BR",
@@ -808,12 +808,12 @@
         {
             "card_name": "Hexing Branch-Brawler",
             "color": "BG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Treefolk Warlock Warrior",
             "number": 26,
             "color_identity": "BG",
             "cost": "{3}{B}{G}{G}",
-            "rules_text": "Trample\nWhen Hexing Branch-Brawler leaves the battlefield, for each opponent, target permanent that player controls loses all abilities and types and becomes a forest land.",
+            "rules_text": "Trample\nWhen Hexing Branch-Brawler leaves the battlefield, for each opponent, target permanent that player controls loses all abilities and types and becomes a Forest land.",
             "flavor_text": "[i][/i]",
             "pt": "6/6",
             "special_text": "",
@@ -829,7 +829,7 @@
         {
             "card_name": "Rescue Detachment",
             "color": "WB",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Enchantment",
             "number": 22,
             "color_identity": "WB",
@@ -850,7 +850,7 @@
         {
             "card_name": "Contested Skies",
             "color": "WR",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Enchantment",
             "number": 27,
             "color_identity": "WR",
@@ -871,7 +871,7 @@
         {
             "card_name": "Prowler Animator",
             "color": "UR",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Artifact Creature \u2014 Construct Wizard",
             "number": 24,
             "color_identity": "UR",
@@ -892,7 +892,7 @@
         {
             "card_name": "Brilliant Diviner",
             "color": "WU",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Artifact Creature \u2014 Construct Wizard",
             "number": 12,
             "color_identity": "WU",
@@ -913,7 +913,7 @@
         {
             "card_name": "Essence Wingshaper",
             "color": "UG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Elf Druid",
             "number": 29,
             "color_identity": "UG",
@@ -934,7 +934,7 @@
         {
             "card_name": "Herald of Bounty",
             "color": "WG",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Creature \u2014 Angel Warrior",
             "number": 20,
             "color_identity": "WG",
@@ -955,12 +955,12 @@
         {
             "card_name": "Rally Storm",
             "color": "W",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 2,
             "color_identity": "W",
             "cost": "{1}{W}{W}",
-            "rules_text": "When you cast this spell, copy it for each time you've cast your commander from the command zone this game.\nCreatures you control get +2/+2 and protection from a color of your choice. This effect does not remove auras or equipment you control from creatures you control. [i](It can't be blocked, targeted, dealt damage, enchanted, or equipped by anything of that color.)[/i]",
+            "rules_text": "When you cast this spell, copy it for each time you've cast your commander from the command zone this game.\nCreatures you control get +2/+2 and protection from a color of your choice. This effect does not remove Auras or Equipment you control from creatures you control. [i](It can't be blocked, targeted, dealt damage, enchanted, or equipped by anything of that color.)[/i]",
             "flavor_text": "[i][/i]",
             "pt": "",
             "special_text": "",
@@ -976,7 +976,7 @@
         {
             "card_name": "Spiteful Storm",
             "color": "R",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 8,
             "color_identity": "R",
@@ -997,7 +997,7 @@
         {
             "card_name": "Soul Storm",
             "color": "B",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 6,
             "color_identity": "B",
@@ -1018,7 +1018,7 @@
         {
             "card_name": "Dilligent Storm",
             "color": "U",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 3,
             "color_identity": "U",
@@ -1039,7 +1039,7 @@
         {
             "card_name": "Enduring Storm",
             "color": "G",
-            "rarity": "rare",
+            "rarity": "cube",
             "type": "Instant",
             "number": 9,
             "color_identity": "G",
@@ -1060,7 +1060,7 @@
         {
             "card_name": "Loyal Cartographer",
             "color": "W",
-            "rarity": "uncommon",
+            "rarity": "cube",
             "type": "Creature \u2014 Human Ranger Scout",
             "number": 1,
             "color_identity": "W",
@@ -1081,7 +1081,7 @@
         {
             "card_name": "Loyal Colony",
             "color": "B",
-            "rarity": "uncommon",
+            "rarity": "cube",
             "type": "Creature \u2014 Bat",
             "number": 5,
             "color_identity": "B",
@@ -1102,7 +1102,7 @@
         {
             "card_name": "Loyal Hydra",
             "color": "G",
-            "rarity": "uncommon",
+            "rarity": "cube",
             "type": "Creature \u2014 Hydra",
             "number": 10,
             "color_identity": "G",
@@ -1123,7 +1123,7 @@
         {
             "card_name": "Loyal Tormentor",
             "color": "R",
-            "rarity": "uncommon",
+            "rarity": "cube",
             "type": "Artifact Creature \u2014 Construct Warlock",
             "number": 7,
             "color_identity": "R",
@@ -1144,7 +1144,7 @@
         {
             "card_name": "Loyal Historian",
             "color": "U",
-            "rarity": "uncommon",
+            "rarity": "cube",
             "type": "Artifact Creature \u2014 Construct Wizard",
             "number": 4,
             "color_identity": "U",

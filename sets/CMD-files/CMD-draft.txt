@@ -1,0 +1,1017 @@
+﻿[CustomCards]
+	[
+		{
+			"name": "Heimdallr, Heir of Crime",
+			"rarity": "mythic",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Legendary Creature — Demon Mercenary",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/42_Heimdallr, Heir of Crime.png"
+			}
+		},
+		{
+			"name": "Dezimophl, Naktuk Disciple",
+			"rarity": "mythic",
+			"mana_cost": "{4}{W}{U}{B}",
+			"type": "Legendary Creature — Sphinx Demon",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/38_Dezimophl, Naktuk Disciple.png"
+			}
+		},
+		{
+			"name": "Atheis, Bearer of Thesis",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Legendary Creature — Angel Demon Advisor",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/26_Atheis, Bearer of Thesis.png"
+			}
+		},
+		{
+			"name": "Capitalis, the Fine Print",
+			"rarity": "mythic",
+			"mana_cost": "{3}{U}{B}",
+			"type": "Legendary Creature — Demon Dragon",
+			"collector_number": "29",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/29_Capitalis, the Fine Print.png"
+			}
+		},
+		{
+			"name": "Round Em Up",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/3_Round Em Up.png"
+			}
+		},
+		{
+			"name": "Stick Em Up",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/23_Stick Em Up.png"
+			}
+		},
+		{
+			"name": "Enticing Offer",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/11_Enticing Offer.png"
+			}
+		},
+		{
+			"name": "Jaded Endings",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Enchantment",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/44_Jaded Endings.png"
+			}
+		},
+		{
+			"name": "Intercept Hit",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Instant",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/43_Intercept Hit.png"
+			}
+		},
+		{
+			"name": "Double the Pleasure",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/39_Double the Pleasure.png"
+			}
+		},
+		{
+			"name": "Rich Lich Walrus",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Walrus Demon Warlock",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/13_Rich Lich Walrus.png"
+			}
+		},
+		{
+			"name": "Skullcap Mob Boss",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Demon Advisor",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/5_Skullcap Mob Boss.png"
+			}
+		},
+		{
+			"name": "Sly Negotiator",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Demon Warrior",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/22_Sly Negotiator.png"
+			}
+		},
+		{
+			"name": "Deal Broker Sphinx",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}{B}",
+			"type": "Creature — Sphinx Demon",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/36_Deal Broker Sphinx.png"
+			}
+		},
+		{
+			"name": "Contract Binder",
+			"rarity": "rare",
+			"mana_cost": "{5}{U}{B}",
+			"type": "Creature — Dragon Demon Advisor",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/32_Contract Binder.png"
+			}
+		},
+		{
+			"name": "Nightclub Bouncer",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Creature — Bird Demon Mercenary",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/49_Nightclub Bouncer.png"
+			}
+		},
+		{
+			"name": "Deal Breaker Overseer",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Creature — Demon Mercenary Warlock",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/35_Deal Breaker Overseer.png"
+			}
+		},
+		{
+			"name": "Hush Crime",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Instant",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/1_Hush Crime.png"
+			}
+		},
+		{
+			"name": "Jig is Up",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Sorcery",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/21_Jig is Up.png"
+			}
+		},
+		{
+			"name": "Spectral Spying",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/15_Spectral Spying.png"
+			}
+		},
+		{
+			"name": "Meet Up Spot",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "62",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/62_Meet Up Spot.png"
+			}
+		},
+		{
+			"name": "Crime Scene",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/59_Crime Scene.png"
+			}
+		},
+		{
+			"name": "Frontal Lobe",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "58",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/58_Frontal Lobe.png"
+			}
+		},
+		{
+			"name": "Undercover Opperative",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}",
+			"type": "Creature — Demon Soldier Spy",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/57_Undercover Opperative.png"
+			}
+		},
+		{
+			"name": "Grizzly Bodyguard",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{B}",
+			"type": "Creature — Bear Demon Warrior",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/41_Grizzly Bodyguard.png"
+			}
+		},
+		{
+			"name": "Danger Angler",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Creature — Fish Demon Spy",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/34_Danger Angler.png"
+			}
+		},
+		{
+			"name": "Criminal Charm",
+			"rarity": "rare",
+			"mana_cost": "{W}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/33_Criminal Charm.png"
+			}
+		},
+		{
+			"name": "Draw Blood",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/4_Draw Blood.png"
+			}
+		},
+		{
+			"name": "Weapon Trafficking",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/10_Weapon Trafficking.png"
+			}
+		},
+		{
+			"name": "Hiring Goons",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/5_Hiring Goons.png"
+			}
+		},
+		{
+			"name": "Body Laundering",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/2_Body Laundering.png"
+			}
+		},
+		{
+			"name": "Bubbles, Gulp Blaster",
+			"rarity": "mythic",
+			"mana_cost": "{U}{B}",
+			"type": "Legendary Creature — Fish Demon Mercenary",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/27_Bubbles, Gulp Blaster.png"
+			}
+		},
+		{
+			"name": "Calihan, Swarm Boss",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{B}",
+			"type": "Legendary Creature — Rat Demon Rogue",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/28_Calihan, Swarm Boss.png"
+			}
+		},
+		{
+			"name": "Megiara, Ideal Dealer",
+			"rarity": "mythic",
+			"mana_cost": "{2}{W}{W}{U}{U}",
+			"type": "Legendary Creature — Sphinx Demon",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/48_Megiara, Ideal Dealer.png"
+			}
+		},
+		{
+			"name": "Sphinx of the Dark Tower",
+			"rarity": "rare",
+			"mana_cost": "{4}{W}{U}{B}",
+			"type": "Creature — Sphinx Demon",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/53_Sphinx of the Dark Tower.png"
+			}
+		},
+		{
+			"name": "Skeletal Drug Lord",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{W}",
+			"type": "Creature — Skeleton Demon Citizen",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/4_Skeletal Drug Lord.png"
+			}
+		},
+		{
+			"name": "Wrap Glove Brawler",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Ogre Demon Warrior",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/25_Wrap Glove Brawler.png"
+			}
+		},
+		{
+			"name": "Scheming Crime Lord",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Creature — Goblin Demon Rogue",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/14_Scheming Crime Lord.png"
+			}
+		},
+		{
+			"name": "Click Clack Ratta Tat",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Creature — Rat Demon Warrior",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/30_Click Clack Ratta Tat.png"
+			}
+		},
+		{
+			"name": "Sting Operative",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{B}",
+			"type": "Creature — Demon Advisor Spy",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/54_Sting Operative.png"
+			}
+		},
+		{
+			"name": "Loyal Space Gangster",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}{B}",
+			"type": "Creature — Alien Demon Warlock",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/47_Loyal Space Gangster.png"
+			}
+		},
+		{
+			"name": "Grizzly Blockrunner",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Bear Demon Warrior",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/12_Grizzly Blockrunner.png"
+			}
+		},
+		{
+			"name": "Unrighetous Secretary",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Demon Advisor",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/6_Unrighetous Secretary.png"
+			}
+		},
+		{
+			"name": "Nightclub Crackdown",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Enchantment — Saga",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/50_Nightclub Crackdown.png"
+			}
+		},
+		{
+			"name": "Koi Gang Crocodiles",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Enchantment — Saga",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/45_Koi Gang Crocodiles.png"
+			}
+		},
+		{
+			"name": "Purple Swag",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{B}",
+			"type": "Enchantment — Saga",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/51_Purple Swag.png"
+			}
+		},
+		{
+			"name": "Cold Hard Coin",
+			"rarity": "rare",
+			"mana_cost": "{4}{U}{B}",
+			"type": "Enchantment — Saga",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/31_Cold Hard Coin.png"
+			}
+		},
+		{
+			"name": "Feline Felony",
+			"rarity": "uncommon",
+			"mana_cost": "{W}{B}",
+			"type": "Enchantment — Saga",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/40_Feline Felony.png"
+			}
+		},
+		{
+			"name": "Tango Takedown",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{B}",
+			"type": "Enchantment — Saga",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/56_Tango Takedown.png"
+			}
+		},
+		{
+			"name": "Stuck In Tradition",
+			"rarity": "rare",
+			"mana_cost": "{3}{W}{B}",
+			"type": "Enchantment",
+			"collector_number": "55",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/55_Stuck In Tradition.png"
+			}
+		},
+		{
+			"name": "Sanctified Pacts",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/52_Sanctified Pacts.png"
+			}
+		},
+		{
+			"name": "Demonic Interogation",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Enchantment",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/37_Demonic Interogation.png"
+			}
+		},
+		{
+			"name": "Collective Crime",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/8_Collective Crime.png"
+			}
+		},
+		{
+			"name": "Behind the Chair",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{B}",
+			"type": "Enchantment",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/17_Behind the Chair.png"
+			}
+		},
+		{
+			"name": "Moonlight Operative",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Demon Rogue",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/2_Moonlight Operative.png"
+			}
+		},
+		{
+			"name": "Kuzenbo, Father of Crime",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{U}{B}",
+			"type": "Legendary Creature — Turtle Demon",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/46_Kuzenbo, Father of Crime.png"
+			}
+		},
+		{
+			"name": "Go For Broke",
+			"rarity": "mythic",
+			"mana_cost": "{5}{B}",
+			"type": "Sorcery",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/20_Go For Broke.png"
+			}
+		},
+		{
+			"name": "Beamtown Blow Up",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Instant",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/16_Beamtown Blow Up.png"
+			}
+		},
+		{
+			"name": "Drill Bit Blunder",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Instant",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/19_Drill Bit Blunder.png"
+			}
+		},
+		{
+			"name": "City Chemistry",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/7_City Chemistry.png"
+			}
+		},
+		{
+			"name": "Dark Copy",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{U}",
+			"type": "Sorcery",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/9_Dark Copy.png"
+			}
+		},
+		{
+			"name": "Unlocking the Clues",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/24_Unlocking the Clues.png"
+			}
+		},
+		{
+			"name": "Distilled Painting",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Clue",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/60_Distilled Painting.png"
+			}
+		},
+		{
+			"name": "Mayor's Compass",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Clue",
+			"collector_number": "61",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/61_Mayor's Compass.png"
+			}
+		},
+		{
+			"name": "Temporal Oddity",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Clue",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/63_Temporal Oddity.png"
+			}
+		},
+		{
+			"name": "Clean Cut",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Instant",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/18_Clean Cut.png"
+			}
+		},
+		{
+			"name": "Detective's Lab",
+			"rarity": "rare",
+			"mana_cost": "{U}",
+			"type": "Enchantment",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/10_Detective's Lab.png"
+			}
+		},
+		{
+			"name": "Cut Off the Top",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/3_Cut Off the Top.png"
+			}
+		},
+		{
+			"name": "Protect The Merchandise",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/6_Protect The Merchandise.png"
+			}
+		},
+		{
+			"name": "Spike The Punch",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/8_Spike The Punch.png"
+			}
+		},
+		{
+			"name": "Unpack The Loot",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/9_Unpack The Loot.png"
+			}
+		},
+		{
+			"name": "Return To Base",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/7_Return To Base.png"
+			}
+		},
+		{
+			"name": "Blood For Blood",
+			"rarity": "special",
+			"mana_cost": "",
+			"type": "Enchantment — Deal",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/1_Blood For Blood.png"
+			}
+		},
+		{
+			"name": "Booze Strip",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/64_Booze Strip.png"
+			}
+		},
+		{
+			"name": "Motel 12",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/78_Motel 12.png"
+			}
+		},
+		{
+			"name": "Smogg Station",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/90_Smogg Station.png"
+			}
+		},
+		{
+			"name": "Phobos, Neon Square",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "81",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/81_Phobos, Neon Square.png"
+			}
+		},
+		{
+			"name": "Orbital Observatory",
+			"rarity": "mythic",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/80_Orbital Observatory.png"
+			}
+		},
+		{
+			"name": "Telegram Station",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/99_Telegram Station.png"
+			}
+		},
+		{
+			"name": "Distinct Street",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/69_Distinct Street.png"
+			}
+		},
+		{
+			"name": "Westward Community College",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/100_Westward Community College.png"
+			}
+		},
+		{
+			"name": "Corner Store",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/66_Corner Store.png"
+			}
+		},
+		{
+			"name": "Office Warehouse",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/79_Office Warehouse.png"
+			}
+		},
+		{
+			"name": "Corporate Lounge",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/67_Corporate Lounge.png"
+			}
+		},
+		{
+			"name": "Demonic Watchtower",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/68_Demonic Watchtower.png"
+			}
+		},
+		{
+			"name": "Secure Safehouse",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/89_Secure Safehouse.png"
+			}
+		},
+		{
+			"name": "Library Locker",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/77_Library Locker.png"
+			}
+		},
+		{
+			"name": "The Hideout",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Legendary Land",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/70_The Hideout.png"
+			}
+		},
+		{
+			"name": "Reliquary Tower",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/88_Reliquary Tower.png"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/71_Island.png"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "91",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/91_Swamp.png"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "82",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/82_Plains.png"
+			}
+		},
+		{
+			"name": "Command Tower",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://SJLee14.github.io/sets/CMD-files/img/65_Command Tower.png"
+			}
+		}
+	]
+
+[rare(1)]
+	5 Heimdallr, Heir of Crime
+	5 Dezimophl, Naktuk Disciple
+	5 Atheis, Bearer of Thesis
+	5 Capitalis, the Fine Print
+	5 Round Em Up
+	5 Stick Em Up
+	5 Enticing Offer
+	5 Jaded Endings
+	5 Intercept Hit
+	5 Double the Pleasure
+	5 Rich Lich Walrus
+	5 Skullcap Mob Boss
+	5 Sly Negotiator
+	5 Deal Broker Sphinx
+	5 Contract Binder
+	5 Nightclub Bouncer
+	5 Deal Breaker Overseer
+	5 Crime Scene
+	5 Frontal Lobe
+	5 Undercover Opperative
+	5 Grizzly Bodyguard
+	5 Danger Angler
+	5 Criminal Charm
+	5 Bubbles, Gulp Blaster
+	5 Calihan, Swarm Boss
+	5 Megiara, Ideal Dealer
+	5 Sphinx of the Dark Tower
+	5 Skeletal Drug Lord
+	5 Wrap Glove Brawler
+	5 Scheming Crime Lord
+	5 Loyal Space Gangster
+	5 Nightclub Crackdown
+	5 Cold Hard Coin
+	5 Tango Takedown
+	5 Stuck In Tradition
+	5 Sanctified Pacts
+	5 Demonic Interogation
+	5 Kuzenbo, Father of Crime
+	5 Go For Broke
+	5 Unlocking the Clues
+	5 Detective's Lab
+	5 Phobos, Neon Square
+	5 Orbital Observatory
+	5 Corner Store
+	5 Office Warehouse
+	5 Corporate Lounge
+	5 Library Locker
+	5 The Hideout
+[uncommon(3)]
+	5 Hush Crime
+	5 Jig is Up
+	5 Spectral Spying
+	5 Meet Up Spot
+	5 Click Clack Ratta Tat
+	5 Sting Operative
+	5 Grizzly Blockrunner
+	5 Unrighetous Secretary
+	5 Koi Gang Crocodiles
+	5 Purple Swag
+	5 Feline Felony
+	5 Collective Crime
+	5 Behind the Chair
+	5 Moonlight Operative
+	5 Beamtown Blow Up
+	5 City Chemistry
+	5 Dark Copy
+	5 Booze Strip
+	5 Motel 12
+	5 Smogg Station
+	5 Westward Community College
+	5 Demonic Watchtower
+[common(10)]
+	5 Drill Bit Blunder
+	5 Distilled Painting
+	5 Mayor's Compass
+	5 Temporal Oddity
+	5 Clean Cut
+	5 Telegram Station
+	5 Distinct Street
+	5 Secure Safehouse
+	5 Reliquary Tower
+	5 Command Tower

@@ -1,0 +1,763 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cockatrice_carddatabase version='4'>
+	<sets>
+		<set>
+			<name>ARC</name>
+			<longname>Anshi Revi Commander</longname>
+			<settype>Custom</settype>
+			<releasedate>2026-11-07</releasedate>
+		</set>
+	</sets>
+	<cards>
+		<card>
+			<name>Akemil, Gallant Horizon</name>
+			<text>Eminence — Whenever a source you control deals noncombat damage to one or more opponents, if Akemil, Gallant Horizon is in the command zone or on the battlefield, create a 2/1 red, green and white Bird creature token with flying and haste. Do this only up to three times each turn.
+Flying, haste
+Whenever Akemil attacks, it deals X damage to any target, where X is the number of attacking creature tokens you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/0.png" num="1">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Dragon</type>
+				<maintype>Creature</maintype>
+				<manacost>4RGW</manacost>
+				<cmc>7</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Ganon, the Brachydios</name>
+			<text>Eminence — As long as Ganon is in the command zone or on the battlefield, whenever a land enters the battlefield under your control, you may pay {2}. If you do, Ganon deals 2 damage to each opponent.
+Trample
+You may play an additional land on each of your turns.
+Landfall — Whenever a land enters the battlefield under your control, mill two cards. You may return a permanent card milled this way to your hand.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/1.png" num="11">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Drake Beast</type>
+				<maintype>Creature</maintype>
+				<manacost>3GUR</manacost>
+				<cmc>6</cmc>
+				<colors>URG</colors>
+				<coloridentity>URG</coloridentity>
+				<pt>7/7</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Nimsle, Bloodsteel Prince</name>
+			<text>Eminence — As long as Nimsle, Bloodsteel Prince is in the command zone or on the battlefield, whenever one or more creatures you control die, create a Blood token. (It&apos;s an artifact with &quot;{1}, {T}, Discard a card, Sacrifice this token: Draw a card.&quot;)
+Flying
+Non-Human creature cards in your graveyard have scavenge {B}{R}{G}. ({B}{R}{G}, Exile this card from your graveyard: Put a number of +1/+1 counters equal to this card&apos;s power on target creature. Scavenge only as a sorcery.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/2.png" num="20">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Dragon Noble</type>
+				<maintype>Creature</maintype>
+				<manacost>2BRG</manacost>
+				<cmc>5</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Xet, Calamity Rescue Squad</name>
+			<text>Xet, Calamity Rescue Squad is also a Cleric, Rogue, Warrior and Wizard.
+Other Cleric, Rogue, Warrior and Wizard spells you cast have squad {2}.
+As long as you have a full party, whenever a creature you control deals combat damage to a player, return target artifact and/ or enchantment card from your graveyard to the battlefield with a finality counter on it.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/3.png" num="29">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Artificer</type>
+				<maintype>Creature</maintype>
+				<manacost>GWU</manacost>
+				<cmc>3</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>3/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Emajin, Heir to the Faith</name>
+			<text>At the beginning of your upkeep, exile the top card of your library face down. You may look at and play that card this turn.
+Whenever you cast a spell from anywhere other than your hand, create a 1/1 blue Bird creature token with flying. If this is the second time this ability has resolved this turn, you may sacrifice X Birds. If you do, put target creature card with mana value X in a graveyard or in exile onto the battlefield under your control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/4.png" num="7">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>WUB</manacost>
+				<cmc>3</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>3/1</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Coralina, Astrolamancer</name>
+			<text>Magecraft — Whenever you cast or copy an instant or sorcery spell, look at the top four cards of your library. You may reveal an artifact card from among them and put it into your hand, put the rest on the bottom of your library in a random order.
+Artifacts you control have, &quot;{T}: Add one mana of any color. Spend this mana only to cast instant and sorcery spells.&quot;</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/5.png" num="4">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>2UBR</manacost>
+				<cmc>5</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Blair, Hex Kindler</name>
+			<text>Sacrifice a historic permanent: Any number of players mills three cards. Then distribute X -1/-1 counters onto up to X target creatures you don&apos;t control, where X is the number of historic cards you milled this way.
+Whenever you put one or more counters onto a creature you don&apos;t control, goad it. It gains deathtouch until your next turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/6.png" num="3">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Elf Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>WBG</manacost>
+				<cmc>3</cmc>
+				<colors>WBG</colors>
+				<coloridentity>WBG</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Sabt, Bronze Hound</name>
+			<text>Menace
+Other creatures you control have retreat X {R}{W}{B}, where X is their modified power. (Exile this permanent face-down. Distribute up to X +1/+1 counters among up to X target creatures you control. Equipment, Auras you control, and counters are modifications.)
+Whenever a modified creature you control leaves the battlefield, you may have it deal damage equal to its power to target opponent. Do this only once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/7.png" num="26">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Dog Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>RWB</manacost>
+				<cmc>3</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Ruzmy, Scaleheart Seraph</name>
+			<text>Flying, vigilance, haste
+Whenever you cast your first noncreature spell during your main phase, scry X where X is that spells mana value.
+At the beginning of your combat step, reveal the top card of your library. Ruzmy gets +X/+0 until end of turn where X is that cards mana value.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/8.png" num="25">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Angel Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1URW</manacost>
+				<cmc>4</cmc>
+				<colors>WUR</colors>
+				<coloridentity>WUR</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Akzenm, Death Vicar</name>
+			<text>Whenever you cast a spell that targets a creature you control, that creature connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on that creature.)
+Whenever you discard one or more land cards, creatures you control get +1/+1 and gain trample until end of turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/9.png" num="2">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Orc Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>BGU</manacost>
+				<cmc>3</cmc>
+				<colors>UBG</colors>
+				<coloridentity>UBG</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Plxyth, Abominable Howler</name>
+			<text>Eminence — As long as Plxyth, Abominable Howler is in the command zone or on the battlefield, whenever another creature mutates, you may discard a card. If you do, exile target creature card from an opponents graveyard and put a howl counter on it.
+Mutate {5}{B}{G}{U}
+Whenever Plxyth enters the battlefield or mutates, exile the top card of each opponents library with a howl counter on it. 
+This creature has all abilities of creature cards in exile with howl counters on them.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/10.png" num="23">ARC</set>
+			<prop>
+				<layout>mutate</layout>
+				<side>front</side>
+				<type>Legendary Creature — Wolf Dragon Mutant</type>
+				<maintype>Creature</maintype>
+				<manacost>4BGU</manacost>
+				<cmc>7</cmc>
+				<colors>UBG</colors>
+				<coloridentity>UBG</coloridentity>
+				<pt>6/8</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Orilia, Baroness of Freldi</name>
+			<text>Eminence — As long as Orilia, Baroness of Freldi is in the command zone or on the battlefield, creatures you control have prowess.
+Noncreature spells you cast can&apos;t be countered.
+Whenever you cast an instant spell during your main phase, it gains rebound. (If you cast this spell from your hand, exile it as it resolves. At the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/11.png" num="22">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Elf Rogue Noble</type>
+				<maintype>Creature</maintype>
+				<manacost>3URW</manacost>
+				<cmc>6</cmc>
+				<colors>WUR</colors>
+				<coloridentity>WUR</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Magis-Khal, Mecha Oni</name>
+			<text>Eminence — At the beginning of your end step, if you attacked this turn, unsheath, then put a hone counter on up to one target Equipment. This ability triggers as long as Magis-Khal, Mecha Oni is in the command zone or on the battlefield. (Create a colorless Weapon artifact equipment token with &quot;Equipped creature gets +1/+1&quot; and &quot;Equip {1}.&quot; Each hone counter on an Equipment grants +1/+0 to equipped creature.)
+Haste
+Battalion — Whenever Magis-Khal and at least two other creatures attack, put a +1/+1 counter on each attacking creature you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/12.png" num="17">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Demon Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2RWB</manacost>
+				<cmc>5</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Vinca, Herald of Preservation</name>
+			<text>Eminence — As long as Vinca, Herald of Preservation is in the command zone or on the battlefield, other historic spells you cast cost {1} less to cast. (Artifacts, legendaries, and Sagas are historic.)
+Flying, vigilance
+At the beginning of your end step, you may mill five cards. If you do, distribute X +1/+1 counters and X shield counters among other creatures you control where X is the number of historic cards milled this way. (If a permanent with a shield counter on it would be dealt damage or destroyed, remove a shield counter from it instead. Artifacts, legendaries, and Sagas are historic.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/13.png" num="28">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Angel Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>3WBG</manacost>
+				<cmc>6</cmc>
+				<colors>WBG</colors>
+				<coloridentity>WBG</coloridentity>
+				<pt>5/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Devis, Hoarding Husk</name>
+			<text>Eminence — As long as Devis, Hoarding Husk is in the command zone or on the battlefield, whenever you cast or copy an instant or sorcery spell, you may pay {1}. If you do, create a tapped Treasure token.
+Whenever an artifact you control is put into a graveyard from the battlefield, target opponent loses 2 life.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/14.png" num="5">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Lizard Skeleton Rogue</type>
+				<maintype>Creature</maintype>
+				<manacost>1UBR</manacost>
+				<cmc>4</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Idabell, Polaris&apos; Dagger</name>
+			<text>Eminence — As long as Idabell, Polaris&apos; Dagger is in the command zone or on the battlefield, whenever you cast a spell from anywhere other than your hand, you may pay {1}. If you do, each opponent loses 2 life.
+Flash, first strike
+{2}, Return a land you control to your hand: Exile the top card of each players library. You may play up to two of those cards until the end of your next turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/15.png" num="13">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Elf Assassin</type>
+				<maintype>Creature</maintype>
+				<manacost>1WUB</manacost>
+				<cmc>4</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Melian &amp; Thenaris Beldin</name>
+			<text>Eminence — At the beginning of your end step, if Melian &amp; Thenaris Beldin is in the command zone or the battlefield, you may pay {3}. If you do, create a copy of target artifact or enchantment you control with mana value 3 or greater.
+Whenever you cast an artifact or enchantment spell for the first time each turn, discover X, where X is the greatest mana value among permanents you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/16.png" num="18">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Rogue Noble</type>
+				<maintype>Creature</maintype>
+				<manacost>3GWU</manacost>
+				<cmc>6</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>1/6</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Felltooth, Brambling Predator</name>
+			<text>Deathtouch
+Morbid — At the beginning of each end step, if a creature died this turn, draw a card.
+Whenever a creature card leaves your graveyard, you may have Felltooth fight target creature you don&apos;t control. (Each deals damage equal to its power to the other.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/17.png" num="9">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Wolf Horror Demon</type>
+				<maintype>Creature</maintype>
+				<manacost>BRG</manacost>
+				<cmc>3</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>5/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>K&apos;Cota, Primordial Shepherd</name>
+			<text>{1}{G}, {T}: Put target land card from your graveyard onto the battlefield under your control.
+Instant and sorcery cards in your graveyard have flashback {3}{U} (You may cast this card from your graveyard for its flashback cost. Then exile it.)
+Creature cards in your graveyard have unearth {4}{R} ({4}{R}: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the end step or if it would leave the battlefield. Unearth only as a sorcery.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/18.png" num="14">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Lizard Shaman</type>
+				<maintype>Creature</maintype>
+				<manacost>GUR</manacost>
+				<cmc>3</cmc>
+				<colors>URG</colors>
+				<coloridentity>URG</coloridentity>
+				<pt>4/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Feirmont, Autmoth Paladin</name>
+			<text>Vigilance
+Heroic — Whenever you cast a spell that targets Feirmont, Autmoth Paladin, creatures you control get +1/+0 and gain trample until end of turn.
+Whenever Feirmont, deals combat damage to a player, populate that many times.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/19.png" num="8">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Knight</type>
+				<maintype>Creature</maintype>
+				<manacost>RGW</manacost>
+				<cmc>3</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Rafon, Essence Former</name>
+			<text>Vigilance
+Whenever you cast an artifact or enchantment spell, you may bless or unsheath.
+Whenever a modified creature you control deals combat damage to a player, draw a card.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/20.png" num="35">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Cat Spirit Cleric Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1G/WUU</manacost>
+				<cmc>4</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>2/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>K.O., Simulation Tester</name>
+			<text>Flash
+During the declare attackers step, you may cast creature spells as though they had flash and Warp {W}{R}{B}. Those creatures enter tapped and attacking. (You may cast this card from your hand for its warp cost. Exile this creature at the beginning of the next end step, then you may cast it from exile on a later turn.)
+Whenever you exile a creature you control, put a +1/+1 counter on K.O., Simulation Tester.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/21.png" num="34">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1WWB/R</manacost>
+				<cmc>4</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>3/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Tyz, Lore Conductor</name>
+			<text>Ward {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)
+Whenever Tyz, Lore Conductor enters or deals combat damage to a player, proliferate.
+Whenever the final chapter ability of a Saga you control triggers, you may copy it. Do this once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/22.png" num="39">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Soldier</type>
+				<maintype>Creature</maintype>
+				<manacost>2W/BGG</manacost>
+				<cmc>5</cmc>
+				<colors>WBG</colors>
+				<coloridentity>WBG</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Coron, Darkest Eclipse</name>
+			<text>Flying, menace, trample
+Whenever Coron enters or deals combat damage to a player, exile up to one creature card from each players graveyard. You gain life equal to the total power of creatures exiled this way. For each non-Human creature exiled this way, create a 2/2 green Wolf creature token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/23.png" num="31">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Wolf Horror Dragon</type>
+				<maintype>Creature</maintype>
+				<manacost>5B/RGG</manacost>
+				<cmc>8</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>8/8</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Jesiphin, Soulfire Warlock</name>
+			<text>Prowess, menace
+When Jesiphin, Soulfire Warlock enters, you draw two cards, then discard two cards.
+Whenever Jesiphin attacks, exile target noncreature, nonland card from your graveyard and cipher it onto target attacking creature you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/24.png" num="33">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Tiefling Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>1U/BRR</manacost>
+				<cmc>4</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Wilkz, Unfinished Design</name>
+			<text>Nontoken creatures you control have retreat 2 {B}{B}. (Exile this permanent face-down. Distribute up to two +1/+1 counters among up to two target creatures you control.)
+Whenever one or more cards are put into exile, create a 1/1 colorless Skeleton artifact creature token.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/25.png" num="40">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Skeleton Horror Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>W/UBB</manacost>
+				<cmc>3</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>2/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Jasmina, Tea Flower</name>
+			<text>Flying, haste
+{T}: Add {G}{U}{R}.
+Whenever you activate an ability of a card in your graveyard or cast a spell from your graveyard, Jasmina, Tea Flower deals 2 damage to each opponent.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/26.png" num="32">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Elf Faerie Druid</type>
+				<maintype>Creature</maintype>
+				<manacost>4G/URR</manacost>
+				<cmc>7</cmc>
+				<colors>URG</colors>
+				<coloridentity>URG</coloridentity>
+				<pt>5/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Seana, Gilded Herald</name>
+			<text>Flying, vigilance
+Whenever Seana, Gilded Herald attacks, choose one for each differently named creature token you control. You may choose the same mode more than once.
+• Seana deals 1 damage to each opponent.
+• You create a 1/2 white Drake creature token with flying.
+• Put a +1/+1 counter on another creature you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/27.png" num="37">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Angel Archer Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2R/GWW</manacost>
+				<cmc>5</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>2/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Thia, Eye of the Storm</name>
+			<text>Hexproof
+Prowess, prowess
+Whenever you cast a noncreature spell, you may untap or tap target nonland permanent.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/28.png" num="38">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Monk Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>2UUR/W</manacost>
+				<cmc>5</cmc>
+				<colors>WUR</colors>
+				<coloridentity>WUR</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Reess, Cavern Adventurer</name>
+			<text>When Reess, Cavern Adventurer enters, it explores X times.
+Whenever you discard a land card, you may exile it with a torch counter on it.
+You may play land cards you own in exile with torch counters on them.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/29.png" num="36">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Snake Rogue Scout</type>
+				<maintype>Creature</maintype>
+				<manacost>XBBG/U</manacost>
+				<cmc>3</cmc>
+				<colors>UBG</colors>
+				<coloridentity>UBG</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Rebecca, Refraction Druid</name>
+			<text>Landfall — Whenever a land enters under your control, add one mana of any color.
+{8}: Create a copy of another target permanent you control.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/30.png" num="24">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Druid</type>
+				<maintype>Creature</maintype>
+				<manacost>1GUR</manacost>
+				<cmc>4</cmc>
+				<colors>URG</colors>
+				<coloridentity>URG</coloridentity>
+				<pt>2/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Elian, Shaper of Freedom</name>
+			<text>Vigilance
+{T}, Exile an artifact or enchantment you control: Until end of turn, creatures you control with the same mana value of the exiled permanent can&apos;t be blocked this turn and gain hexproof from spells of that mana value. Return the exiled permanent to the battlefield at the beginning of the next end step.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/31.png" num="6">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Wizard</type>
+				<maintype>Creature</maintype>
+				<manacost>1GWU</manacost>
+				<cmc>4</cmc>
+				<colors>WUG</colors>
+				<coloridentity>WUG</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>G.L.U., Covert Sniper</name>
+			<text>Reach
+Whenever G.L.U. becomes tapped, it connives.
+{T}, Exile three cards from your graveyard: Move any number of counters from target permanent onto another target permanent of the same type. If a permanent would die from this, draw two cards.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/32.png" num="10">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Artifact Creature — Construct Scout</type>
+				<maintype>Creature</maintype>
+				<manacost>2BGU</manacost>
+				<cmc>5</cmc>
+				<colors>UBG</colors>
+				<coloridentity>UBG</coloridentity>
+				<pt>3/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Yim, Adaptive Lancer</name>
+			<text>First strike
+Yim gets +1/+1 for each counter on permanents you control.
+Whenever you sacrifice a permanent that has one or more counters on it, draw two cards. This ability only triggers once each turn.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/33.png" num="30">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1WBG</manacost>
+				<cmc>4</cmc>
+				<colors>WBG</colors>
+				<coloridentity>WBG</coloridentity>
+				<pt>2/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Olympia, Fleet Commander</name>
+			<text>At the beginning combat during your turn, embark twice, and put a charge counter on any number of Spacecraft you control. (Create two 2/1 colorless Ship artifact vehicle tokens with flying and crew 2.)
+Whenever you cast a noncreature spell, create a 1/1 colorless Pilot creature token with &quot;This creature can saddle Mounts, crew Vehicles, and station Spacecraft as if its power were 2 greater.&quot;</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/34.png" num="21">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Pilot</type>
+				<maintype>Creature</maintype>
+				<manacost>1URW</manacost>
+				<cmc>4</cmc>
+				<colors>WUR</colors>
+				<coloridentity>WUR</coloridentity>
+				<pt>4/2</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Madella, Free Caster</name>
+			<text>The first noncreature spell you cast each turn has cascade.
+Whenever you cast a spell without paying its mana cost, add {U}{B}{R}. Until end of turn, you don&apos;t lose this mana as steps and phases end.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/35.png" num="16">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Human Warlock</type>
+				<maintype>Creature</maintype>
+				<manacost>2UBR</manacost>
+				<cmc>5</cmc>
+				<colors>UBR</colors>
+				<coloridentity>UBR</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Lythienne, Colth&apos;s Inheritor</name>
+			<text>Whenever Lythienne enters or attacks, abstract. If you abstracted a creature card, create a token copy of that creature, except it is not legendary, is a Spirit, and has base power and toughness 2/2. (Reveal a face-down card you own in exile, then put that card into your hand.)
+Whenever one or more cards are put into exile from anywhere, put a +1/+1 counter on Lythienne, Colth&apos;s Inheritor.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/36.png" num="15">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Elf Spirit Cleric Warrior</type>
+				<maintype>Creature</maintype>
+				<manacost>1WUB</manacost>
+				<cmc>4</cmc>
+				<colors>WUB</colors>
+				<coloridentity>WUB</coloridentity>
+				<pt>3/3</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Mercenith, Bloodletter</name>
+			<text>Lifelink, deathtouch
+Whenever a counter is put on a creature you control, create a Blood token.
+Creature cards you own have Mayhem {1}{BR}{G}. (You may cast this card from your graveyard for {1}{BR}{G} if you discarded it this turn. Timing rules still apply.)</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/37.png" num="19">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Vampire Noble</type>
+				<maintype>Creature</maintype>
+				<manacost>1BRG</manacost>
+				<cmc>4</cmc>
+				<colors>BRG</colors>
+				<coloridentity>BRG</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Halaema, Duchess of Scales</name>
+			<text>Dragons you control enter with an additional mobilize 2 counter on them.
+Raid — At the beginning of your post combat main phase, create a 3/3 black and red Dragon creature token with flying for each opponent that you dealt combat damage to with a modified creature.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/38.png" num="12">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Elf Cleric Noble</type>
+				<maintype>Creature</maintype>
+				<manacost>1RWB</manacost>
+				<cmc>4</cmc>
+				<colors>WBR</colors>
+				<coloridentity>WBR</coloridentity>
+				<pt>2/5</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+		<card>
+			<name>Sorloc, Cloud Regent</name>
+			<text>Flying
+Creature spells you cast with flying have offspring {RG}{W}.
+Whenever you attack an opponent with one or more creatures with flying, recruit.</text>
+			<set rarity="rare" picurl="https://SJLee14.github.io/sets/ARC-files/img/39.png" num="27">ARC</set>
+			<prop>
+				<layout>normal</layout>
+				<side>front</side>
+				<type>Legendary Creature — Griffin</type>
+				<maintype>Creature</maintype>
+				<manacost>2RGW</manacost>
+				<cmc>5</cmc>
+				<colors>WRG</colors>
+				<coloridentity>WRG</coloridentity>
+				<pt>4/4</pt>
+			</prop>
+			<tablerow>2</tablerow>
+		</card>
+	</cards>
+</cockatrice_carddatabase>
